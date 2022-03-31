@@ -19,8 +19,16 @@ _(Optional)_
 Account name::
 Enter the account name associated with your Snowflake connection.
 The account name is part of the URL that you use to access the Snowflake UI.
-It is the portion of the URL before `snowflakecomputing.com`. +
+- If you are using the Snowflake classic UI, it is the portion of the URL before `snowflakecomputing.com`.
++
+`<account name>.snowflakecomputing.com`
++
 *Example*: If your URL is `+https://abcd.xyz.efg.snowflakecomputing.com+`, your account name is `abcd.xyz.efg`.
+- If you are using the Snowsight UI, it is the portion after the region.
++
+`app.snowflake.com/<region>/<account name>`
++
+*Example* (using the US East Ohio region): https://app.snowflake.com/us-east-2.aws/abcd.xyz.efg
 
 Assume that the *account name* is _xy12345_.
 
