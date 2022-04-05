@@ -28,28 +28,28 @@ The account name is part of the URL that you use to access the Snowflake UI.
 +
 `app.snowflake.com/<region>/<account name>`
 +
-*Example* (using the US East Ohio region): https://app.snowflake.com/us-east-2.aws/abcd.xyz.efg
+*Example* (using the US East Ohio region): https://app.snowflake.com/us-east-2.aws/abcd.xyz.efg.us-east-2.aws
 
-Assume that the *account name* is _xy12345_.
+Assume that the *account name* is _abcd.xyz.efg_.
 
 [width="100%",cols="20%,40%,40%" options="header"]
 |====================
 |
 Cloud platform  | Region | Full account name
-| *AWS* | US East (N. Virginia) | xy12345.us-east-1
-|  | US East (Ohio) | xy12345.us-east-2.aws
-|  | US West (Oregon) | xy12345
-|  | Canada (Central) | xy12345.ca-central-1.aws
-|  | EU (Ireland) | xy12345.eu-west-1
-|  | EU (Frankfurt) | xy12345.eu-central-1
-|  | Asia Pacific (Singapore) | xy12345.ap-southeast-1
-|  | Asia Pacific (Sydney) | xy12345.ap-sowtheast-2
-| *GCP* *_- Preview_* | us-central1 (Iowa) | xy12345.us-central1.gcp
-| *Azure* | East US 2 | xy12345.east-us-2.azure
-|  | US Gov Virginia | xy12345.us-gov-virginia.azure
-|  | Canada Central | xy12345.canada-central.azure
-|  | West Europe | xy12345.west-europe.azure
-|  | Australia East | 	xy12345.australia-east.azure
+| *AWS* | US East (N. Virginia) | abcd.xyz.efg.us-east-1
+|  | US East (Ohio) | abcd.xyz.efg.us-east-2.aws
+|  | US West (Oregon) | abcd.xyz.efg
+|  | Canada (Central) | abcd.xyz.efg.ca-central-1.aws
+|  | EU (Ireland) | abcd.xyz.efg.eu-west-1
+|  | EU (Frankfurt) | abcd.xyz.efg.eu-central-1
+|  | Asia Pacific (Singapore) | abcd.xyz.efg.ap-southeast-1
+|  | Asia Pacific (Sydney) | abcd.xyz.efg.ap-sowtheast-2
+| *GCP* *_- Preview_* | us-central1 (Iowa) | abcd.xyz.efg.us-central1.gcp
+| *Azure* | East US 2 | abcd.xyz.efg.east-us-2.azure
+|  | US Gov Virginia | abcd.xyz.efg.us-gov-virginia.azure
+|  | Canada Central | abcd.xyz.efg.canada-central.azure
+|  | West Europe | abcd.xyz.efg.west-europe.azure
+|  | Australia East | 	abcd.xyz.efg.australia-east.azure
 |====================
 
 [#user]
