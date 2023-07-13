@@ -166,24 +166,8 @@ When new users receive a Share link to ThoughtSpot and view the shared object, t
 
 image::keep-exploring.png[Keep exploring button]
 
-////
-[#9-4-0-cl-snowflake-spotapp]
-[discrete]
-=== Snowflake Query Profile SpotApp
 
-// Naomi
-////
 
-////
-[#9-4-0-cl-connections]
-[discrete]
-=== Connection error messaging improvements
-
-// Naomi
-
-// scal-138770
-
-////
 
 // [#9-4-0-cl-ts-object]
 // [discrete]
@@ -249,6 +233,14 @@ Admin users can access the Indexing Queries Liveboard by searching the Liveboard
 
 image::liveboard-indexing-queries.png[Indexing queries Liveboard]
 endif::free-trial-feature[]
+
+[#9-4-0-cl-snowflake-spotapp]
+[discrete]
+=== Snowflake Query Profile SpotApp
+
+// Naomi
+
+The Snowflake Query Profile SpotApp is now available. Use this SpotApp to analyze Snowflake query data to understand execution time better and pinpoint key areas for query optimization.
 
 [#9-4-0-cl-connections]
 [discrete]
