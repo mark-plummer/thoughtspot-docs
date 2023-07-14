@@ -71,7 +71,9 @@ image::reusable-groups.png[Reusable group example]
 
 // Naomi -- screenshot, move further up. note whether you need to opt in or if it's on by default.
 
-You now receive in-app notifications when items are shared with you, or when other users request access to an Answer or Liveboard. To view these notifications, simply click on the user profile icon.
+You now receive in-app notifications when items are shared with you, or when other users request access to an Answer or Liveboard. To view these notifications, simply click on the user profile icon. In-app notifications are on by default.
+
+image::notification-center.png[Notifications appear under the user profile icon]
 
 [#9-4-0-cl-contextual]
 [discrete]
