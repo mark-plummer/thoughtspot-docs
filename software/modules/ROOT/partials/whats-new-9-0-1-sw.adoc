@@ -191,6 +191,8 @@ image::tml-export-fqn.png[Choose what to export modal with the export fqn option
 [discrete]
 === Visualization GUID support in TML files
 
+Liveboard ThoughtSpot Modeling Language (TML) files now contain distinct GUIDs for each visualization in the Liveboard by default. This ensures that the GUID for the visualization stays the same after you import or export it. To try it out, select the *Export TML* menu option for a Liveboard.
+
 [#9-0-0-sw-joins-rls]
 [discrete]
 === Delete joins and RLS rules through TML
