@@ -36,14 +36,22 @@ This page provides the end-of-service-life (EOSL) dates for each ThoughtSpot Sof
 
 |7.1.1.nov.sw
 |November 30, 2021
-|September 01, 2022
+|September 1, 2022
+
+|7.1.0.CU1
+|September 30, 2021
+|September 1, 2022
+
+|7.1.1.nov.sw
+|November 30, 2021
+|September 1, 2022
 
 |7.1.1.CU1
 |February 22, 2022
 |September 01, 2022
 
 |7.2.0.jan.sw
-|February 01, 2022
+|February 1, 2022
 |September 23, 2022
 
 |7.2.1.apr.sw
@@ -51,6 +59,18 @@ This page provides the end-of-service-life (EOSL) dates for each ThoughtSpot Sof
 |September 23, 2022
 
 |7.2.1.CU1
-|July 05, 2022
+|July 5, 2022
 |September 23, 2022
+
+|8.4.1.sw
+|September 1, 2022
+|May 15, 2023
+
+|8.8.1.sw
+|December 14, 2022
+|September 2023 (planned)
+
+|9.0.1.sw
+|May 15, 2023
+|March 2023 (planned)
 |===
