@@ -71,7 +71,7 @@ image::spotiq-v2-ui.png[New SpotIQ experience]
 [#8-8-0-sw-liveboard-experience]
 [discrete]
 === New Liveboard experience
-[discrete]
+
 
 The new Liveboard experience is GA and on by default. It contains new features and enhancements, including Liveboard tabs, custom visualization sizes, Edit mode, HTML in Liveboard titles and descriptions, and improved filtering. It is on by default. For more information,
 ifndef::pendo-links[]
@@ -325,10 +325,10 @@ endif::[]
 
 ThoughtSpot now securely stores your consumption data in a searchable Snowflake data store. For more information,
 ifndef::pendo-links[]
-see xref:consumption-pricing.adoc#_consumption_data_storage[Consumption data storage].
+see xref:consumption-pricing.adoc[Consumption data storage].
 endif::[]
 ifdef::pendo-links[]
-see xref:consumption-pricing.adoc#_consumption_data_storage[Consumption data storage,window=_blank].
+see xref:consumption-pricing.adoc[Consumption data storage,window=_blank].
 endif::[]
 
 [#8-8-0-sw-dbt-integration]
