@@ -223,7 +223,7 @@ Python 3.9 is now the default Python version for all ThoughtSpot Software cluste
 === Deploy ThoughtSpot on RHEL, OEL, or Amazon Linux 2 using your LDAP or AD service account
 When deploying ThoughtSpot on RHEL, OEL, or Amazon Linux 2, you can use your LDAP or Active Directory service account for installation, instead of using a local user.
 
-ifndef::free-trial-feature[]
+
 [#9-0-0-sw-early-access]
 [discrete]
 === Early Access features
@@ -237,7 +237,7 @@ ifdef::pendo-links[]
 xref:release-lifecycle.adoc[ThoughtSpot Software release life cycle,window=_blank].
 endif::[]
 Early Access features are disabled by default.
-endif::free-trial-feature[]
+
 
 [#tse]
 [discrete]
