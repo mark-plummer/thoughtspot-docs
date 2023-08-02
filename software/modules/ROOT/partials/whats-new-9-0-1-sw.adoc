@@ -122,12 +122,13 @@ This release improves the translated French keywords.
 [discrete]
 === _Other features and enhancements_
 
-[#9-0-0-sw-parameters]
 ifndef::pendo-links[]
+[#9-0-0-sw-parameters]
 [discrete]
 === Parameters [.badge.badge-beta]#Beta#
 endif::[]
 ifdef::pendo-links[]
+[#9-0-0-sw-parameters]
 [discrete]
 === Parameters [.badge.badge-beta-whats-new]#Beta#
 endif::[]
