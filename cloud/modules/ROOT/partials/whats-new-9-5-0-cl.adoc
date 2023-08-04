@@ -66,7 +66,7 @@ image:date-picker.png[Date picker for Answers]
 
 // shorten. add an image. remove "beta in this release"
 
-The new data panel experience is GA in this release. In the Search data page, you now see a short description of your selected data source which helps you understand the kinds of answers you can get from that data source. This is part of the Data Fluency feature.
+The new data panel experience is GA in this release. This is part of the Data Fluency feature.
 
 image:new_data_panel.png[new data panel]
 
@@ -127,7 +127,7 @@ We made the following changes to ThoughtSpot mobile:
 [#9-5-0-cl-rbac-granular]
 [discrete]
 === Introduction of roles and more granular access privileges
-ThoughtSpot introduces role-based access control (RBAC) to allow for more granular level privileges. Use roles to apply privileges customized for your organizational needs.
+ThoughtSpot introduces role-based access control (RBAC) to allow for more granular access privileges. Use roles to apply privileges customized for your organizational needs.
 ThoughtSpot includes some standard roles to help existing customers transition to RBAC.
 // Mary
 
