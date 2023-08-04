@@ -66,13 +66,9 @@ image:date-picker.png[Date picker for Answers]
 
 // shorten. add an image. remove "beta in this release"
 
-The new data panel experience is GA in this release. In the Search data page, you now see a short description of your selected data source which helps you understand the kinds of answers you can get from that data source. This is part of the new data panel experience, which is in beta in this release.
+The new data panel experience is GA in this release. In the Search data page, you now see a short description of your selected data source which helps you understand the kinds of answers you can get from that data source. This is part of the Data Fluency feature.
 
-Data source information includes the name, description, Liveboards created using the data source (if available), tags or classifications (if available), metadata, and experts (top users).
-
-Column information includes the name, description, synonyms (if available), column type, sample values, Parameters, and more.
-
-All of this information saves you time, by helping you find the right data source for the question you want to ask. For more information, see Start a new search with column and data source overview.
+image:new_data_panel.png[new data panel]
 
 // Mark
 
@@ -236,7 +232,7 @@ image::single-select.gif[When you set a filter to single-select, visitors to the
 
 [#9-5-0-cl-spotapp]
 [discrete]
-=== Fivetran SpotApp GA
+=== Fivetran SpotApp
 
 In this release, the Fivetran SpotApp is GA. The Fivetran SpotApp helps you move data from applications like Salesforce, ServiceNow, Jira and others into a cloud data warehouse to make it easier for you to use the SpotApps designed for those applications.
 
