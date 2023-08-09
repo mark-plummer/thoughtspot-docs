@@ -15,6 +15,9 @@ OIDC does not require user credentials to be stored or passed from the client ap
 Users attempting a connection to {connection} are redirected to the IDP login page to authenticate and obtain an access token.
 {connection}'s driver has options to pass an access token as a parameter in creating a connection.
 
+IMPORTANT: Each ThoughtSpot instance requires a unique {connection} security integration.
+Each user in {connection} must have a default warehouse and default role.
+
 == Setting up OIDC for {connection} with Okta ldP
 
 Setting up {connection} for OIDC authentication with Okta as IDP requires configuration on Okta and AWS.
