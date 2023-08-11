@@ -82,7 +82,7 @@ We made the following changes to the natural language search feature:
 
 * Redesigned search results page. Filtering facets are now in the left panel.
 * You can now interact with the Answers created by natural language search, including sorting values and drilling down.
-* Title and descriptions are now pre-populated when you save an AI Answer.
+
 
 
 [#9-4-0-cl-data-engineer]
