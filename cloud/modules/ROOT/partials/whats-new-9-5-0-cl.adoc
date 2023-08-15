@@ -241,19 +241,11 @@ In this release, the Fivetran connection to SpotApp is GA. Fivetran helps you mo
 
 // Mark
 
-
-ifndef::pendo-links[]
-[#9-5-0-cl-]
+[#9-5-0-cl-spotapp-service-now-snowflake]
 [discrete]
-=== Looker connection [.badge.badge-beta]#Beta#
-endif::[]
-ifdef::pendo-links[]
-[#9-5-0-cl-]
-[discrete]
-=== Looker connection [.badge.badge-beta-whats-new]#Beta#
-endif::[]
+=== ServiceNow Incident Management (Snowflake Connector for ServiceNow)
 
-In this release, you can now connect to Looker. Data engineers can use the Looker Modeler semantic layer to define their models and metrics using LookML, while business users can search and query the underlying Looker Explores.
+In this release, there is a new ServiceNow Incident Management SpotApp which allows you to use the ServiceNow Snowflake connector to move your data from ServiceNow to Snowflake.
 
 // Mark
 
