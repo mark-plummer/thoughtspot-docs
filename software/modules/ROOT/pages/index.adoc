@@ -61,6 +61,11 @@ ul li img {
     padding-right: 8px;
 }
 
+/* remove drop shadows from persona boxes */
+.home .columns .box {
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+    box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+}
 </style>
 ++++
 
