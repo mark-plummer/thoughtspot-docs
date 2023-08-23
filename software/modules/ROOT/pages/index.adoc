@@ -3,16 +3,6 @@
 
 ++++
 <style>
-/*slide what's new section left to align with preamble */
-.sect1 {
-    margin-left: 0px !important;
-}
-
-/* slide what's new up slightly to be closer to persona boxes */
-h2#_whats_new_in_thoughtspot_cloud {
-    margin-top: 10px !important;
-}
-
 /* remove drop shadows from persona boxes */
 .home .columns .box {
     -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
