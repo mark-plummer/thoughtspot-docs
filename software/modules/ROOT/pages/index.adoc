@@ -10,6 +10,11 @@
 .home .columns .box li img.inline {
     margin-top: 0;
 }
+/* remove drop shadows from persona boxes */
+.home .columns .box {
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+    box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+}
 </style>
 ++++
 
