@@ -1,6 +1,16 @@
 = ThoughtSpot Software Documentation
 :page-layout: home-branch
 
+++++
+<style>
+/* remove drop shadows from persona boxes */
+.home .columns .box {
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+    box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+}
+</style>
+++++
+
 ThoughtSpot Software is our original offering that you deploy and manage yourself. For details on all deployment options, see xref:deployment-sw.adoc[ThoughtSpot Software Deployment].
 
 Find topics for the common types of ThoughtSpot users below.
