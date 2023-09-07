@@ -36,10 +36,10 @@ Passthrough functions are subject to the following limitations:
 
 ThoughtSpot does not support passthrough functions for queries with chasm or fan traps.:: If the resulting query includes an aggregation from a table different to the one defined in the passthrough function, it generates an error. The query should be valid if a) the underlying query is defined upon a single table or b) the underlying query involves a single fact table and multiple dimension tables.
 
-ThoughtSpot does not support passthrough functions for queries with aggregate formulas.:: Aggregate formulas are not directly available in the formula editor. If wrapped in a group_aggregate function in the formula editor, an aggregate formula will likely generate an error.
+ThoughtSpot does not support passthrough functions for queries with aggregate formulas.:: Aggregate formulas are not directly available in the formula editor. It is possible to wrap an aggregate formula in a group_aggregate function. This will allow for the passthrough function to be saved. However, this will likely generate an error.
 
-ThoughtSpot does not validate the correctness of selected passthrough functions.:: The passthrough function is named based upon the expected return data type. For example, if the result returns a STRING value, then the correct passthrough function is `sql_string_*`. If the user defines the formula with `sql_number_*`, it will likely result in an error. +
-For each data type, the user can select an aggregate or scalar or non-aggregate passthrough function. The selection is dependent upon the underlying function the user is referencing, for example, `rank()` is an aggregate function while `concat()` is a scalar function.
+ThoughtSpot does not validate the correctness of selected passthrough functions.:: The passthrough function name is based upon the expected return data type. For example, if the expected result is a STRING value, then the correct passthrough function is `sql_string_*`. However, a user could write the ThoughtSpot formula referencing a function with a different return data type, for example, `sql_number_*`. This would likely result in an error. +
+For each data type, the user can select an aggregate or non-aggregate passthrough function. The selection is dependent upon the underlying function the user is referencing, for example, `rank()` is an aggregate function while `concat()` is a non-aggregate function.
 
 ThoughtSpot does not validate the correctness of the SQL statement.:: The user must ensure that the strings are correctly encapsulated. In the scenario where the statement includes double quotes, then the passthrough function should be wrapped in single quotes. +
 ThoughtSpot generates GROUP BY statements for all queries. The user must ensure that aggregate columns include the correct aggregation. +
@@ -64,7 +64,7 @@ However, *[Region][by Sales]* modifies the behavior of the Sales column to retur
 Cumulative sum window functions often generate an error for columns defined as measures.:: If the column defined in the window aggregation is a measure, it must be modified to act as an attribute. This is because ThoughtSpot includes GROUP BY statements in the underlying queries. If the search is defined as [Region][State][Sales], the formula results in an error. If the search is defined as [Region][State][by Sales], the formula returns a result. +
 `sql_double_aggregate_op ("sum({0}) over (partition by {1} order by {2} rows between unbounded preceding and current row)",sales,region,state)`
 
-Error handling and relevant messaging are limited.:: If the resulting query is invalid, ThoughtSpot returns a generic message, "Error Loading Data, Query execution failed on {connection} database." The resolution of this error involves copying the generated SQL and manually executing it in the underlying database.
+Error handling and relevant messaging are limited.:: If the resulting query is invalid, ThoughtSpot returns a generic message, "Error Loading Data, Query execution failed on {connection} database." If the same SQL is executed in the underlying database, then a more meaningful error is often displayed.
 
 Passthrough functions may generate columns that are not included in group by clauses.:: Assume that a column stores car sales information as a variant. The following formula will return the string value for the dealership. +
 `fxDealership = sql_string_op ("src:dealership::text")` +
