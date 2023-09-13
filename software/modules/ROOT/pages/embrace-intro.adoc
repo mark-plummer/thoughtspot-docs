@@ -1,6 +1,6 @@
 = Embrace overview
 :last_updated: 10/21/2019
-:toc: true
+
 
 Using Embrace, you can perform live queries on external databases.
 
