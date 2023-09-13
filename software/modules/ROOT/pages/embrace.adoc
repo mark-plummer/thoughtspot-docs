@@ -35,6 +35,7 @@ It's easy to apply transformations and filter the data also.
 * Save significant time and money by avoiding ETL pipelines.
 * Connect to multiple external databases.
 
+////
 == Recommended instance types
 
 The following sections contain the supported and recommended instance types for ThoughtSpot Embrace deployments in AWS, Azure, and GCP. When setting up your cluster, use the information here to select an instance type, configure the number of instances required for the storage you need, and add data volumes to your cluster.
@@ -60,6 +61,7 @@ include::partial$gcp-persistent-only-storage-embrace.adoc[]
 ==== VMs with Persistent Disk and Google Cloud storage
 
 include::partial$gcp-persistent-cloud-storage-embrace.adoc[]
+////
 
 == Limitations
 
@@ -110,6 +112,7 @@ The following matrix compares the features that are available in our internal hi
 | &cross;
 |===
 
+////
 === Function availability in Embrace
 
 The following matrix compares the specific function support across the different databases of Embrace.
@@ -241,6 +244,7 @@ Data types not listed here have full support.
 | &check;
 | &check;
 |===
+////
 
 === Additional specific exceptions
 
