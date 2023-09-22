@@ -583,6 +583,7 @@
 **** xref:security-rls-concept.adoc[How rule-based RLS works]
 **** xref:security-rls-implement.adoc[Set rule-based RLS]
 *** xref:security-thoughtspot-lifecycle.adoc[ThoughtSpot lifecycle]
+*** xref:encryption-in-transit.adoc[Encryption in transit]
 ** xref:worksheets.adoc[Simplify search with Worksheets]
 *** xref:worksheet-edit.adoc[Edit a Worksheet]
 *** xref:worksheet-formula.adoc[Create a formula in a Worksheet]
