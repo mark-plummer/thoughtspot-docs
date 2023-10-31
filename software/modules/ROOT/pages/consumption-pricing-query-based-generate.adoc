@@ -4,6 +4,7 @@
 :experimental:
 :page-aliases:
 :description:
+:jira: SCAL-179063
 
 Many actions that you do in ThoughtSpot generate queries. Use the following reference to find out the common actions that generate queries, and the ones that don't.
 
@@ -173,7 +174,6 @@ Here are common user actions that *don't* generate queries:
 - Downloading a pinboard visualization as a table in any format
 - Downloading an answer as a table in any format, NOT within a pinboard
 - Searching answers
-- Accessing system-default pinboards
 - Importing TML of an answer or a pinboard
 - Exporting TML of an answer or a pinboard without data (associated objects)
 - Creating a connection to an external data warehouse
