@@ -66,6 +66,11 @@ ul li img {
     margin-bottom: 5px !important;
 }
 
+box-button, .home .columns .box {
+    -webkit-box-shadow: 0 8px 25px rgba(0,0,0,0) !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0) !important;
+}
+
 #preamble+.sect1, .doc .sect1+.sect1 {
     margin-left: -1px !important;
 }
