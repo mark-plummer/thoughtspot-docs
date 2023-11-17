@@ -84,7 +84,6 @@ To go back to the top level where you started your drill down:
 
 For administrators::
 * To deploy the app to users in your company, see xref:mobile-deploy.adoc[Deploy mobile app].
-* To try the app before deploying it, see xref:mobile-deploy.adoc#try-the-mobile-app[Try mobile app].
 
 For users::
 * To install and set up the app, see xref:mobile-install.adoc[Install and set up mobile app].
