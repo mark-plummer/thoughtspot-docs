@@ -106,7 +106,6 @@ To go back to the top level where you started your drill down:
 === For administrators:
 
 * To deploy the app to users in your company, see xref:deploy-mobile.adoc[Deploy mobile app].
-* To try the app before deploying it, see xref:deploy-mobile.adoc#try-the-mobile-app[Try mobile app].
 
 === For users:
 
