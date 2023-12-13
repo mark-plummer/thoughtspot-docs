@@ -70,23 +70,6 @@ image::sql-view-edit.png[Edit SQL view]
 
 For information about how to edit the metadata of your view, see xref:data-modeling-settings.adoc[Data modeling settings].
 
-[#copy]
-== Make a copy of a SQL view
-
-You can create a copy of a SQL view, if you would like to make edits without changing the original SQL view.
-When saving, you can type in a different name for your copy.
-
-. Select *Data*, on the top navigation bar.
-. On the views list page, select the SQL view you would like to edit a copy of.
-. Open the *More* menu icon image:icon-more-10px.png[more options menu icon] and select *Make a copy*.
-
-+
-The *Make a copy* dialog appears.
-
-. Change the name and description, as needed, and select *Save*.
-+
-When you navigate back to the *Data* page, your newly created View appears in the list.
-
 == Managing SQL views
 
 You can use a SQL view just like any other data source.
