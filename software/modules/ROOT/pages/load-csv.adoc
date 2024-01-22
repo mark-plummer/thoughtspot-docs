@@ -3,6 +3,7 @@
 :linkattrs:
 :experimental:
 :page-aliases: /admin/loading/load-from-web-browser.adoc
+:jira: SCAL-190135
 
 The simplest way to load data is to upload a CSV or Excel file from the ThoughtSpot Web interface.
 
