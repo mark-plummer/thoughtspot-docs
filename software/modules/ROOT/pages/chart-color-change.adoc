@@ -3,6 +3,7 @@
 :linkattrs:
 :experimental:
 :page-aliases: /end-user/search/change-chart-colors.adoc
+:jira: SCAL-190016
 
 You can change the colors used in a chart.
 

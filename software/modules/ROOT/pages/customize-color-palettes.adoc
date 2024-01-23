@@ -34,6 +34,7 @@ Therefore, the secondary palette usually consists of secondary colors.
 
 . Click the *Reset* button on the upper right hand side of the section if you would like to bring back the default color palettes.
 
+[#color-rotation]
 == Disable color rotation
 
 You can disable color rotation for single-color charts.
