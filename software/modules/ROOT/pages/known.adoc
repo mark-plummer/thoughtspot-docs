@@ -4,6 +4,7 @@
 :experimental:
 :page-layout:
 :linkattrs:
+:jira: SCAL-192798
 
 These are the known issues in this release of ThoughtSpot Software.
 
