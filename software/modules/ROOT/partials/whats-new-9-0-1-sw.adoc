@@ -230,13 +230,16 @@ When deploying ThoughtSpot on RHEL, OEL, or Amazon Linux 2, you can use your LDA
 === Early Access features
 Administrators can see the available Early Access features and selectively enable or disable them for all users. To try it out, go to the *Admin* tab and select *Early Access features*.
 
-Early Access features are new in this release. For more information about them, see
+Early Access features are new in this release.
+////
+For more information about them, see
 ifndef::pendo-links[]
 xref:release-lifecycle.adoc[ThoughtSpot Software release life cycle].
 endif::[]
 ifdef::pendo-links[]
 xref:release-lifecycle.adoc[ThoughtSpot Software release life cycle,window=_blank].
 endif::[]
+////
 Early Access features are disabled by default.
 
 
