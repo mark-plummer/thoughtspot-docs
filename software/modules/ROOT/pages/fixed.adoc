@@ -28,7 +28,7 @@ Example: Showing 46 instead of 45.67.
 
 [#releases-8-4-x]
 == 8.4.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 8.4.1.sw::
 +
@@ -64,7 +64,7 @@ Example: Showing 46 instead of 45.67.
 
 [#releases-7-2-x]
 == 7.2.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 
 7.2.1::
@@ -135,7 +135,7 @@ Example: Showing 46 instead of 45.67.
 
 [#releases-7-1-x]
 == 7.1.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 
 7.1.1::
@@ -192,7 +192,7 @@ Example: Showing 46 instead of 45.67.
 
 [#releases-7-0-x]
 == 7.0.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 
 7.0.1::
@@ -241,7 +241,7 @@ Example: Showing 46 instead of 45.67.
 
 [#releases-6-3-x]
 == 6.3.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.3.1 CU4::
 +
@@ -370,7 +370,7 @@ Example: Showing 46 instead of 45.67.
 ====
 
 == 6.2.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.2.1::
 +
@@ -405,7 +405,7 @@ cookies for pages in a ThoughtSpot cluster do not have the new SameSite attribut
 
 [#releases-6-1-x]
 == 6.1.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.1.1::
 +
@@ -471,7 +471,7 @@ cookies for pages in a ThoughtSpot cluster do not have the new SameSite attribut
 ====
 
 == 6.0.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.0.5::
 +
