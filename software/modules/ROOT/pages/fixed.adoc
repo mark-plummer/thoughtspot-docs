@@ -3,7 +3,7 @@
 These are the issues we fixed in recent ThoughtSpot Releases.
 
 == 6.0.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.0.5::
 +
