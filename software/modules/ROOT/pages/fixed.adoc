@@ -10,7 +10,7 @@ These are the issues we fixed in recent ThoughtSpot releases.
 [#6-2]
 [#6-2-1]
 == 6.2.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.2.1::
 +
@@ -45,7 +45,7 @@ cookies for pages in a ThoughtSpot cluster do not have the new SameSite attribut
 
 [#6-1-x]
 == 6.1.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.1.1::
 +
@@ -111,7 +111,7 @@ cookies for pages in a ThoughtSpot cluster do not have the new SameSite attribut
 ====
 
 == 6.0.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.0.5::
 +
