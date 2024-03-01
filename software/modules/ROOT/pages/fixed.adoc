@@ -30,7 +30,7 @@ xref:6-0-x[6.0.X Releases]::
 
 [#releases-6-3-x]
 == 6.3.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.3.1 CU4::
 +
@@ -159,7 +159,7 @@ xref:6-0-x[6.0.X Releases]::
 ====
 
 == 6.2.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.2.1::
 +
@@ -194,7 +194,7 @@ cookies for pages in a ThoughtSpot cluster do not have the new SameSite attribut
 
 [#releases-6-1-x]
 == 6.1.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.1.1::
 +
@@ -260,7 +260,7 @@ cookies for pages in a ThoughtSpot cluster do not have the new SameSite attribut
 ====
 
 == 6.0.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.0.5::
 +
