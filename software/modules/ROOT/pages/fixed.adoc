@@ -8,7 +8,7 @@ These are the issues we fixed in recent ThoughtSpot releases.
 
 [#releases-7-1-x]
 == 7.1.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 
 7.1.1.CU1::
@@ -84,7 +84,7 @@ These are the issues we fixed in recent ThoughtSpot releases.
 
 [#releases-7-0-x]
 == 7.0.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 
 7.0.1::
@@ -133,7 +133,7 @@ These are the issues we fixed in recent ThoughtSpot releases.
 
 [#releases-6-3-x]
 == 6.3.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.3.1 CU4::
 +
@@ -262,7 +262,7 @@ These are the issues we fixed in recent ThoughtSpot releases.
 ====
 
 == 6.2.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.2.1::
 +
@@ -297,7 +297,7 @@ cookies for pages in a ThoughtSpot cluster do not have the new SameSite attribut
 
 [#releases-6-1-x]
 == 6.1.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.1.1::
 +
@@ -363,7 +363,7 @@ cookies for pages in a ThoughtSpot cluster do not have the new SameSite attribut
 ====
 
 == 6.0.X Releases fixed issues
-[tabset]
+[tabs]
 ====
 6.0.5::
 +
