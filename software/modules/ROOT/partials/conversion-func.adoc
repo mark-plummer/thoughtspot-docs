@@ -17,5 +17,5 @@ a| `to_string` a| Returns the input as a text string. To convert a date data typ
 
 `to_string (revenue - cost)`
 
-`to_string (date,('%m/%d/%y'))`
+`to_string (date,'%m/%d/%y')`
 |====================
