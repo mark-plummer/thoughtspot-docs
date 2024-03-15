@@ -2,8 +2,14 @@
 :last_updated: 06/23/2021
 :experimental:
 :linkattrs:
+<<<<<<< HEAD
 
 Use keywords to help define a search.
+=======
+:page-partial:
+:locale: Italiano
+:jira: SCAL-199692
+>>>>>>> db264547c (scal-199692)
 
 include::partial$keywords-note.adoc[]
 
