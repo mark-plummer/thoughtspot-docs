@@ -93,7 +93,7 @@ Norsk;; månedlig år-over-år
 include::partial$keywords/n_days_ago.adoc[]
 Norsk;; _n_ dager siden
 
-include::partial$keywords/last_n_days_for_each_month.adoc[]
+include::partial$keywords/n_days_for_each_month.adoc[]
 Norsk;; _n_ dager for hver måned
 
 include::partial$keywords/n_days_for_each_quarter.adoc[]
