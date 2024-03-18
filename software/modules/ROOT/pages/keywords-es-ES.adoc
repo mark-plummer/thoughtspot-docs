@@ -44,8 +44,3 @@ include::partial$keywords-location-es-ES.adoc[]
 
 include::partial$keywords-period-es-ES.adoc[]
 
-////
-## Help
-
-include::partial$keywords-help-es-ES.adoc[]
-////
