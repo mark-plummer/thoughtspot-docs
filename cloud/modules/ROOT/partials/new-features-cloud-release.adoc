@@ -79,7 +79,7 @@ You can now drill down on specific columns in change analysis, in order to ident
 // Naomi -- SCAL-127727, SCAL-164086, documentation JIRA scal-201033 (approved)
 Contextual alert creation on KPI charts:: ThoughtSpot now preserves the filters you use on a KPI when you create a Monitor alert. Users with view access to the underlying Liveboard can now receive alert emails for filtered KPIs without saving the filters on the Liveboard. For more information, see xref:monitor.adoc[Monitor alerts].
 
-// Naomi -- SCAL-159819, documentation JIRA scal-201314
+// Naomi -- SCAL-159819, documentation JIRA scal-201314 (approved)
 ThoughtSpot for Slack [.badge.badge-early-access-relnotes]#Early Access#::
 You can now ask ThoughtSpot questions using Slack. Install the ThoughtSpot Slack app, add it to a Slack channel, and you can ask questions of your data sources in natural language. ThoughtSpot answers in chart format. For more information, see xref:spotdev.adoc[].
 
@@ -104,7 +104,7 @@ Users with edit permissions on a Liveboard can set their preferred attribute col
 
 
 
-// Naomi -- scal-156247, documentation JIRA scal-201037
+// Naomi -- scal-156247, documentation JIRA scal-201037 (approved)
 Natural language search chart type:: You can now specify the answering chart type when you use Natural Language Search. For example, search for "sales by region pie chart", and the results appear in pie chart format. For more information, see xref:ai-answers.adoc[].
 
 
