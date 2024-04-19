@@ -45,10 +45,12 @@ Advanced conditional formatting [.badge.badge-early-access-relnotes]#Early Acces
 Rather than simply using conditional formatting comparing a column's measures to a single value (for example, `sales > 10000`), you can now use conditional formatting to compare a column's measures to another column or to a parameter. For example, if you search for `sales this year` versus `sales last year`, you can highlight where sales this year were less than last year. You can set multiple conditional formatting rules to a single table. For more information, see xref:search-conditional-formatting.adoc#advanced-conditional-formatting[Advanced conditional formatting].
 ////
 
+////
 // Mary -- SCAL-158469, Doc JIRA SCAL-201653
 Functional enhancements for verified Liveboards::
 You can now easily search for verified Liveboards with trusted content, and filter to view only verified content. Verified Liveboards are identified with a tag visible in all screens.
 You can also cancel verification requests when needed.
+////
 
 // Mark -- SCAL-189664
 Deprecation of SpotApps::
@@ -112,7 +114,7 @@ Natural language search chart type:: You can now specify the answering chart typ
 Add formula or parameter to Answer::
 You can now add a formula or parameter to an Answer by navigating to the *Category* image:icon-by-category.png[Category view] or *A to Z* image:icon-a-to-z.png[Alphabetical view] view of the Data panel, clicking *+ Add*, and selecting *Formula* or *Parameter*.
 
-//Mary -- scal-134503, SCAL-190081 Doc JIRA SCAL-201653
+//Mary -- scal-134503, SCAL-190081 Doc JIRA SCAL-201653. SCAL-158469, Doc JIRA SCAL-201653
 Functional enhancements for verified Liveboards:: Easily find verified Liveboards marked with banners, and icons. Sort search results to view content tagged as verified. Request verification of Liveboards and cancel requests when needed. For more information, see xref:liveboard-verify.adoc[Verify Liveboards].
 
 // Mark -- SCAL-178264
