@@ -92,7 +92,6 @@ Find topics for the common types of ThoughtSpot users.
        <li><a href="https://docs.thoughtspot.com/software/9.0.1.sw/saml">SAML authentication</a></li>
           <li><a href="https://docs.thoughtspot.com/software/9.0.1.sw/backup-strategy">Backup and restore</a></li>
           <li><a href="https://docs.thoughtspot.com/software/9.0.1.sw/deployment-sw">Software deployment</a></li>
-          <li><a href="https://docs.thoughtspot.com/software/9.0.1.sw/rhel">Oracle Enterprise Linux (OEL) support </a></li>
         </ul>
         </div>
  </div>
