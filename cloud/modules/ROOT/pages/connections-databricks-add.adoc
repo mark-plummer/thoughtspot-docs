@@ -6,10 +6,8 @@
 :page-layout: default-cloud
 :connection: Databricks
 :description: Learn how to add a Databricks connection.
-:jira: SCAL-136661
+:jira: SCAL-136661, SCAL-203358
 
-== Configuring OAuth
-If you need to use OAuth with {connection}, you must configure OAuth in Microsoft Azure. For details, see xref:connections-databricks-oauth.adoc[OAuth for a {connection} connection].
 
 == Adding a {connection} connection
 
@@ -35,6 +33,8 @@ For Service Account authentication, do the following:
 For OAuth authentication, do the following:
 
 - Enter Host, HTTP Path, OAuth Client ID, OAuth Client Secret, Scope, Auth URL, Access token URL, and Catalog (optional).
++
+If you need to use OAuth with {connection}, you must configure OAuth in Microsoft Azure. For details, see xref:connections-databricks-oauth-aad.adoc[OAuth with AAD for a {connection} connection] and xref:connections-databricks-oauth.adoc[OAuth for a {connection} connection].
 --
 
 +
@@ -112,6 +112,7 @@ Note that to remove share access from a connection, you must navigate to the *Sh
 > * xref:connections-databricks-delete-table.adoc[Delete a table from a {connection} connection]
 > * xref:connections-databricks-delete-table-dependencies.adoc[Delete a table with dependent objects]
 > * xref:connections-databricks-delete.adoc[Delete a {connection} connection]
+> * xref:connections-databricks-oauth-aad.adoc[Configure OAuth with AAD for a {connection} connection]
 > * xref:connections-databricks-oauth.adoc[Configure OAuth for a {connection} connection]
 > * xref:connections-databricks-private-link.adoc[]
 > * xref:connections-databricks-reference.adoc[Connection reference for {connection}]
