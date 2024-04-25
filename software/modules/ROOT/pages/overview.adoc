@@ -2,6 +2,7 @@
 :experimental:
 :last_updated: 11/18/2019
 :toc: true
+:jira: SCAL-71323
 
 The Overview Pinboard provides useful information about your cluster.
 
@@ -250,7 +251,7 @@ active users
 user != {null}
 ----
 
-This query relies on the `TS: BI server` worksheet.
+This query relies on the xref:ts-bi-server.adoc[`TS: BI Server` worksheet].
 
 == Monthly Ad-hoc Searches
 
@@ -276,7 +277,7 @@ monthly
 last 4 months this month
 ----
 
-This answer relies on data from the `TS: BI Server` worksheet.
+This answer relies on data from the xref:ts-bi-server.adoc[`TS: BI Server` worksheet].
 
 == Monthly Pinboard Views
 
@@ -303,7 +304,7 @@ monthly
 last 4 months this month
 ----
 
-The query uses the `TS: BI Server` data source.
+The query uses the xref:ts-bi-server.adoc[`TS: BI Server`] data source.
 
 == Top Users Last Month
 
@@ -323,7 +324,7 @@ user
 last 30 days today
 ----
 
-The query uses the `TS: BI Server` data source.
+The query uses the xref:ts-bi-server.adoc[`TS: BI Server`] data source.
 
 == Top Pinboards Last Month
 
@@ -345,7 +346,7 @@ pinboard
 last 30 days today
 ----
 
-The query uses the `TS: BI Server` data source.
+The query uses the xref:ts-bi-server.adoc[`TS: BI Server`] data source.
 
 == Configuration Events
 
