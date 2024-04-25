@@ -343,6 +343,7 @@
 *** xref:cluster-manager.adoc[Cluster manager board]
 *** xref:alerts-events.adoc[Alerts and events board]
 *** xref:worksheets.adoc[System worksheets]
+**** xref:ts-bi-server.adoc[TS:BI Server workhseet]
 *** xref:monitor-pinboards.adoc[System pinboards]
 *** xref:falcon-monitor.adoc[Falcon monitoring pinboards]
 ** Troubleshooting
