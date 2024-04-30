@@ -1,6 +1,6 @@
 site:
   title: ThoughtSpot Cloud
-  url: https://9-0-0-cl.netlify.app
+  url: https://9-0-0-cl.vercel.app
   start_page: cloud::index.adoc
 content:
   sources:
@@ -9,8 +9,6 @@ content:
     branches: HEAD
     start_paths:
       - cloud/
-urls:
-  html_extension_style: drop
 ui:
   bundle:
     url: ui-bundle/ui2-bundle.zip
