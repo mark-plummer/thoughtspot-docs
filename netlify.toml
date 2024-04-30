@@ -12,3 +12,5 @@ command = "node_modules/.bin/antora antora-playbook.yml --stacktrace"
   to = "https://beta-docs.thoughtspot.com/cloud/8.8.0.cl-beta/_attachments/robots.txt"
   status = 301
   force = true # COMMENT: ensure that we always redirect
+
+# testing
