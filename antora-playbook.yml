@@ -1,6 +1,6 @@
 site:
   title: ThoughtSpot Cloud
-  url: https://9-0-0-cl.vercel.app
+  url: https://ts-9-0-0-cl.vercel.app
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
