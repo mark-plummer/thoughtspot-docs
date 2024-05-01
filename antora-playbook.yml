@@ -4,10 +4,10 @@ site:
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
-  - url: ./
-    branches: HEAD
-    start_paths:
-      - cloud/
+  - url: git@github.com:thoughtspot/thoughtspot-docs.git
+    # Cloud docs branches
+    branches: ['9.9.0.cl']
+    start_path: cloud/
 ui:
   bundle:
     url: ui-bundle/ui2-bundle.zip
