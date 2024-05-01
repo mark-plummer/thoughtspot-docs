@@ -1,5 +1,11 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/cloud/notes",
+      "destination": "/cloud/9.9.0.cl/notes",
+      "statusCode": 301 }
+  ],
   "headers": [
     {
       "source": "/(.*)",
