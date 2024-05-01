@@ -10,7 +10,7 @@
 // ** xref:support.adoc[]
 * xref:ts-cloud-getting-started.adoc[Getting started]
 ** xref:ts-cloud-requirements-support.adoc[Requirements and support]
-** xref:gcp.adoc[Features not supported in GCP]
+** ++++<a class="nav-link" href:"https://docs.thoughtspot.com/cloud/9.9.0.cl/gcp">Features not supported in GCP</a>++++
 ** xref:user-account-activation-okta.adoc[Activate your account using IAMv2]
 ** xref:user-onboarding-experience.adoc[User onboarding experience]
 ** xref:navigating-thoughtspot.adoc[Finding your way around]
