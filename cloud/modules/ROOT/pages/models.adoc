@@ -5,7 +5,7 @@
 :page-layout: default-cloud-early-access
 :description: Models are logical views created on top of a more complex data model, to enable business users to more easily consume data.
 :model: Model
-:jira: SCAL-158357
+:jira: SCAL-158357, SCAL-207558 (note for role-playing dim)
 
 == Introducing Models
 
@@ -337,3 +337,4 @@ To implement role-playing dimensions with Models, do the following in the Model 
 +
 It will appear as a new table (with the alias assigned in step 4) on the left panel in the *Columns* tab of the model.
 
+CAUTION: Copies/aliases of tables that are on the "many" side of a join are not supported in models.
