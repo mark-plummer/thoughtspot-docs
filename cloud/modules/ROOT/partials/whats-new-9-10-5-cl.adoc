@@ -263,32 +263,6 @@ image::custom-groups.gif[Reusable set creation process]
 // PM: Damian - 9.4.0.cl BETA, updated terminology, needs new .gif as the UI has changed. Query sets remain beta for 9.11.0.cl. Damian has requeted that we don't mention the beta feature for this release as it will go EA in 9.12.0.cl, so this entry will be removed from the 9.11.0.cl WN.
 ////
 
-ifndef::free-trial-feature[]
-ifndef::pendo-links[]
-[#9-11-0-cl-byoc]
-[discrete]
-=== Custom charts [.badge.badge-beta]#Beta#
-endif::[]
-ifdef::pendo-links[]
-[#9-11-0-cl-byoc]
-[discrete]
-=== Custom charts [.badge.badge-beta-whats-new]#Beta#
-endif::[]
-
-
-You can now use custom charts created outside of ThoughtSpot, including third-party chart libraries. To enable this feature, contact {support-url}.
-For more information, see
-ifndef::pendo-links[]
-xref:chart-byoc.adoc[Custom charts].
-endif::[]
-ifdef::pendo-links[]
-xref:chart-byoc.adoc[Custom charts,window=_blank].
-endif::[]
-
-
-image::custom-chart-select.png[Custom Chart]
-
-// Mark -- scal-171984, scal-67410, doc jira: SCAL-179003. possibly below "other features". emphasize the vast range of charts you can now use? split into two blurbs-- business user / developer? include names of third-party providers?
 endif::free-trial-feature[]
 
 
@@ -637,32 +611,6 @@ endif::free-trial-feature[]
 // PM:Aashica - No doc required for 9.11.0.cl this is a design Epic.
 ////
 
-ifndef::free-trial-feature[]
-ifndef::pendo-links[]
-[#9-11-0-cl-byoc-develop]
-[discrete]
-=== Develop custom charts [.badge.badge-beta]#Beta#
-endif::[]
-ifdef::pendo-links[]
-[#9-11-0-cl-byoc-develop]
-[discrete]
-=== Develop custom charts [.badge.badge-beta-whats-new]#Beta#
-endif::[]
-
-Developers can now create custom charts for ThoughtSpot using the ThoughtSpot Charts SDK. To enable this feature, contact {support-url}.
-For more information, see
-ifndef::pendo-links[]
-xref:chart-byoc.adoc[Custom charts].
-endif::[]
-ifdef::pendo-links[]
-xref:chart-byoc.adoc[Custom charts,window=_blank].
-endif::[]
-ifndef::free-trial-feature[]
-// Mark -- scal-171984, scal-67410.  doc jira: SCAL-179003
-endif::free-trial-feature[]
-[#next-release]
-ifndef::free-trial-feature[]
-[discrete]
 === For the Developer
 
 For new features and enhancements introduced in this release of ThoughtSpot Embedded, see https://developers.thoughtspot.com/docs/?pageid=whats-new[ThoughtSpot Developer Documentation^].
