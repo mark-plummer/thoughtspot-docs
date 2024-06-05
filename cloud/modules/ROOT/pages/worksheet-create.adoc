@@ -48,6 +48,8 @@ image::workflow_create_worksheet.png[A flow chart with a Sales fact table at the
 To simplify data modeling, ThoughtSpot supports automated Worksheet creation during Setup.
 When creating a Worksheet through the Setup tab, you can view suggested joins, and take advantage of data modeling best practices, making your data easier to search.
 
+To prepare a worksheet for optimal performance with Sage, follow these essential preparatory steps outlined xref:worksheet-readiness.adoc[here].
+
 == Create a Worksheet through Setup
 
 To generate a Worksheet through the Setup tab, follow these steps:
