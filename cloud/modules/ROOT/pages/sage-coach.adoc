@@ -4,15 +4,16 @@
 :linkattrs:
 :experimental:
 :description:
-:jira: SCAL-154204
+:jira: SCAL-154204, SCAL-209705
+
 
 // designed specifically for data professionals and analysts
 
-Sage Coach allows analysts to fine-tune the results of natural language search by examining and validating the feedback users give. Analysts can hand-select examples and pieces of feedback, personalize Sage output for specific users and groups of users, or for the cluster as a whole.
+Sage Coach allows analysts to fine-tune the results of natural language search by examining and validating the feedback users give. Analysts can hand-select examples and pieces of feedback, personalize Sage output for specific users and groups of users, or for all queries on that Worksheet.
 
 == Review user feedback
 
-You can review user feedback from the Data workspace, and determine whether it should apply to only that user’s queries, or to the entire cluster. Use the query feedback modal to review feedback given to individual natural language queries, and use the query term feedback modal to review the translation of individual natural language terms to search tokens.
+You can review user feedback from the Data workspace, and determine whether it should apply to only that user’s queries, or to all queries on that Worksheet. Use the query feedback modal to review feedback given to individual natural language queries, and use the query term feedback modal to review the translation of individual natural language terms to search tokens.
 
 To give feedback on user queries, follow these steps:
 
@@ -24,7 +25,7 @@ A list of the natural language queries for which users gave feedback appears. No
 * the user rating.
 * the search tokens used to create the fixed answer.
 * the level of access the feedback is valid for.
-** Global feedback applies to the entire cluster, while user feedback applies only to the queries that user makes. Unless specified by an administrator, feedback applies only to the user level.
+** Global feedback applies to all queries on that Worksheet, while user feedback applies only to the queries that user makes. Unless specified by an administrator, feedback applies only to the user level.
 * the underlying Worksheet the query was generated from.
 * the user who gave the feedback.
 * the time stamp for when the query was generated.
