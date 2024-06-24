@@ -16,23 +16,23 @@ Currently, we offer the following keyword translations.
 
 [cols=5*]
 |===
-| xref:keywords-ja-JP.adoc[日本語]
-| xref:keywords-zh-CN.adoc[中文 (简体)]
-| xref:keywords-de-DE.adoc[Deutsch]
-| xref:keywords-es-US.adoc[Español (Latinoamérica)]
-| xref:keywords-es-ES.adoc[Español (España)]
-
-| xref:keywords-fr-CA.adoc[Français (Canada)]
-| xref:keywords-fr-FR.adoc[Français (France)]
-| xref:keywords-pt-BR.adoc[Português (Brasil)]
-| xref:keywords-pt-PT.adoc[Português (Portugal)]
-| xref:keywords-it-IT.adoc[Italiano]
-
 | xref:keywords-da-DK.adoc[Dansk]
+| xref:keywords-de-DE.adoc[Deutsch]
+| xref:keywords-es-ES.adoc[Español (España)]
+| xref:keywords-es-US.adoc[Español (Latinoamérica)]
+| xref:keywords-fr-CA.adoc[Français (Canada)]
+
+| xref:keywords-fr-FR.adoc[Français (France)]
+| xref:keywords-it-IT.adoc[Italiano]
+| xref:keywords-nl-NL.adoc[Nederland]
+| xref:keywords-nb-NO.adoc[Norsk]
+| xref:keywords-pt-PT.adoc[Português (Portugal)]
+
+| xref:keywords-pt-BR.adoc[Português (Brasil)]
 | xref:keywords-fi-FI.adoc[Suomi]
 | xref:keywords-sv-SE.adoc[Svenska]
-| xref:keywords-nb-NO.adoc[Norsk]
-| xref:keywords-nl-NL.adoc[Nederland]
+| xref:keywords-zh-CN.adoc[中文 (简体)]
+| xref:keywords-ja-JP.adoc[日本語]
 |===
 
 Also, see the topic on how to set xref:about-user.adoc[locale preferences in your user profile] to control language, date, and number formats on the ThoughtSpot UI.
