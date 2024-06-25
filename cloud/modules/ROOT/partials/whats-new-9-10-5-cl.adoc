@@ -607,6 +607,7 @@ endif::free-trial-feature[]
 // PM:Aashica - No doc required for 9.11.0.cl this is a design Epic.
 ////
 
+ifndef::free-trial-feature[]
 [discrete]
 === For the Developer
 
