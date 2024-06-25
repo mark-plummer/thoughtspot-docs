@@ -261,10 +261,10 @@ endif::[]
 image::custom-groups.gif[Reusable set creation process]
 // Mary -- SCAL-158899
 // PM: Damian - 9.4.0.cl BETA, updated terminology, needs new .gif as the UI has changed. Query sets remain beta for 9.11.0.cl. Damian has requeted that we don't mention the beta feature for this release as it will go EA in 9.12.0.cl, so this entry will be removed from the 9.11.0.cl WN.
-////
+
 
 endif::free-trial-feature[]
-
+////
 
 
 ifndef::free-trial-feature[]
@@ -611,6 +611,8 @@ endif::free-trial-feature[]
 // PM:Aashica - No doc required for 9.11.0.cl this is a design Epic.
 ////
 
+ifndef::free-trial-feature[]
+[discrete]
 === For the Developer
 
 For new features and enhancements introduced in this release of ThoughtSpot Embedded, see https://developers.thoughtspot.com/docs/?pageid=whats-new[ThoughtSpot Developer Documentation^].
