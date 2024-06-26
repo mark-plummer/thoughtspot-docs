@@ -534,7 +534,13 @@ ThoughtSpot now supports dbt version 1.7.
 [discrete]
 === SAML group mapping with Orgs
 You can now map your SAML groups and Orgs from your IDP to ThoughtSpot.
-For more information see, xref:saml-group-mapping.adoc[SAML group and Org mapping] .
+For more information see,
+ifndef::pendo-links[]
+xref:saml-group-mapping.adoc[SAML group and Org mapping].
+endif::[]
+ifdef::pendo-links[]
+xref:saml-group-mapping.adoc[SAML group and Org mapping,window=_blank].
+endif::[]
 // Mary -- scal-138809
 
 //[#9-10-0-cl-enterprise]
