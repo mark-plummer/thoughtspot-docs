@@ -1,4 +1,5 @@
 = Set up custom calendars
+:page-aliases: /admin/setup/set-custom-calendar.adoc
 
 With a custom calendar, you can choose when the year, quarter, or week starts, and search using date-related keywords.
 
