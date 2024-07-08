@@ -145,6 +145,7 @@ image::column-set.gif[Column set creation process]
 
 endif::free-trial-feature[]
 
+////
 [#9-10-5-cl-percentage]
 [discrete]
 === Keywords "of" and "percentage of"
@@ -154,7 +155,7 @@ endif::free-trial-feature[]
 
 
 The "of" and "percentage of" keywords are now on by default and available to all users. You can use the "of" and "percentage of" keywords to answer questions related to mix, contribution, share of, percentage, and total ratios. These keywords help answer questions such as "What is the share of a certain store’s sales as a percentage of the regional whole?" To try out this feature, enter a search phrase in the search bar containing the keyword, such as `sales percentage of store region`, and press *Go*.
-
+////
 
 
 [#9-10-5-cl-sync]
