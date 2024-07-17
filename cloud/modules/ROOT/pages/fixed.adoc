@@ -5,6 +5,7 @@
 :experimental:
 :linkattrs:
 :page-layout: default-cloud
+:page-toclevels: -1
 :description: These are the issues we fixed in recent ThoughtSpot Cloud releases.
 :jira: SCAL-197719
 
