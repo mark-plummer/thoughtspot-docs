@@ -16,7 +16,7 @@ For these instructions, see xref:ts-cloud-getting-started.adoc[Getting Started w
 [#9-12-0-cl-analyst]
 === For the Analyst
 
-// Naomi – SCAL-181312. documentation JIRA scal-201645. 
+// Naomi – SCAL-181312. documentation JIRA scal-201645.
 Remember personalized columns in change analysis::
 Personalized columns are now available to all users and on by default. Users with edit permissions on a Liveboard can set their preferred attribute columns through the change analysis window and select *Apply to all users* to keep those selections for any subsequent change analysis calculations on that Liveboard. Individual users can still override these preferences for their own calculations. +
 For more information, see
@@ -101,7 +101,7 @@ Liveboard filters are now accessible to all users who have view or edit permissi
 
 NOTE: Previously, users who did not have edit access to the underlying worksheet of a Liveboard with filters, could not update the Liveboard filters if the Liveboard used a hidden column. This was the case even if the user had view access to the underlying worksheets.
 
-For more information, see xref:liveboard-filters.adoc[Livebaord filters].
+For more information, see xref:liveboard-filters.adoc[Liveboard filters].
 // Mary – SCAL-157372 Doc JIRA SCAL-201823
 
 [#9-12-0-cl-data-engineer]
