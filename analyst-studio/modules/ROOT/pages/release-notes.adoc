@@ -1,0 +1,14 @@
+= Release notes
+:categories: ["Get started"]
+:categories_weight: 5
+:date: 2023-01-10
+:description: Stay up-to-date with the latest updates
+:ogdescription: Stay up-to-date with the latest updates
+:path: /articles/release-notes
+
+== Release notes
+
+You can access our release notes by following this link:https://updates.mode.com/[link].
+Additionally, you can locate all release notes by visiting the "Discover" page located on the left side of your dashboard.
+
+image::discover-page.png[Discover Page]

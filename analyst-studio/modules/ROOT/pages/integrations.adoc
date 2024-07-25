@@ -1,0 +1,18 @@
+= Integrations
+:author: Naomi
+:last_updated: 7/25/24
+:experimental:
+:linkattrs:
+:description: Integrations.
+:brand: Mode
+
+** xref:dbt-data-freshness.adoc[dbt data freshness] +
+{brand}'s dbt integration allows users to view metadata about data freshness from dbt directly in {brand} reports.
+** xref:github.adoc[GitHub sync] +
+An overview of {brand}'s GitHub sync.
+** xref:dbt-semantic-layer.adoc[Semantic layer integrations] +
+{brand}’s integration with semantic layers extends metrics defined in dbt and Looker so business teams can leverage them for code-free exploration and reporting.
+** xref:slack.adoc[Slack integration] +
+An overview of {brand}'s Slack Integration sync.
+** xref:webhooks.adoc[Webhooks] +
+An overview of webhooks and how to set them up in {brand}.

@@ -51,7 +51,7 @@
 ** xref:webhooks.adoc[Webhooks]
 
 * xref:administration.adoc[Administration]
-** xref:authentication-and-sso.adoc[Authentication and SSO]
+** xref:authentication-sso.adoc[Authentication and SSO]
 ** xref:permissions.adoc[Access control & permissions]
 ** xref:sharing-and-embedding.adoc[Sharing and embedding]
 ** xref:organizations.adoc[Workspaces]
@@ -61,3 +61,6 @@
 ** xref:api-reference.adoc[API reference]
 ** xref:discovery-api.adoc[Discovery API]
 ** xref:discovery-database.adoc[Discovery Database]
+
+* xref:faqs.adoc[FAQs]
+* xref:contact-us.adoc[Contact us]

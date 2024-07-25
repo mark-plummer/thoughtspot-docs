@@ -1,0 +1,70 @@
+= Quick reference guide
+:categories: ["Get started"]
+:categories_weight: 1
+:date: 2021-04-05
+:description: First steps with Mode
+:ogdescription: First steps with Mode
+:path: /articles/quick-reference-guide
+:brand: Mode
+
+We know, you're itching to get to the analysis.
+To help you and your team get started with {brand} as quickly as possible, we've put together this checklist of first steps.
+
+== Create a Workspace
+
+xref:organizations.adoc[Workspaces] are groups of {brand} users that can securely share database connections and analysis with each other.
+You must create a Workspace to xref:connecting-mode-to-your-database.adoc[connect your own database] to {brand}.
+
+When you link:https://app.mode.com/signup?src=help_site[create your user account], {brand} will help you create a Workspace.
+If you skipped this step when you created your account and now want to go back and create a Workspace, link:https://app.mode.com/organizations/new[start here].
+Once you have created a Workspace, you can xref:organizations.adoc#invite-a-new-member[send anyone an invitation to join it] so you can collaborate with them.
+
+image::create-a-workspace-2021.png[Create a Workspace]
+
+== Connect a database
+
+After creating a Workspace, you can xref:connecting-mode-to-your-database.adoc[connect one or more databases].
+{brand} can connect to link:https://mode.com/data-sources/[most popular SQL databases].
+Once you connect your data source, everyone in your Workspace can execute queries against it by default.
+
+image::database-connection.png[Connect your database]
+
+== Invite collaborators
+
+The easiest way to share reports, code, and database query access with others is to invite them to your {brand} Workspace.
+To send an invite, start from the link:https://app.mode.com/home/[{brand} home page] for your Workspace, click on your name in the upper left corner, and then click *Invite to {brand}*.
+
+== Create analysis
+
+The typical workflow for creating analysis in {brand} mirrors the typical workflow of an analyst:
+
+image::workflow.png[Workflow Basics]
+
+== Query data
+
+When creating an analysis, the first step is gathering and structuring all necessary data from one or more databases using SQL.
+To do this, you'll need to write and execute SQL code against one or more xref:connecting-mode-to-your-database.adoc[connected databases].
+In {brand}, this is done within a xref:organizing-reports.adoc[report].
+
+To create a new report, click the *new report* image:modal-add.svg[modal add] button in the upper right-hand corner of the link:https://app.mode.com/home/[{brand} home page], which will take you the Query Editor, where you can compose SQL code.
+
+image::sql-editor.png[Editor]
+
+TIP: Need to brush up on your technical chops? Check out our link:https://mode.com/sql-tutorial[SQL] and link:https://mode.com/python-tutorial[Python] tutorials.
+
+== Visualize results
+
+Once you've written a query or two and have some data to play with, click xref:report-layout-and-presentation.adoc#report-builder[Report Builder] in the left panel to begin curating components--data tables, charts, or Notebook output cells--in a shareable report.
+Design the report layout however you like: pick the charts and tables you want to show, rearrange their order, and specify each element's size.
+
+You can also click *</>* at the top of the Report Builder to modify the code behind the individual elements in your report or build something completely custom using CSS, HTML, JavaScript, D3, and much more.
+Check out the link:https://mode.com/example-gallery/[{brand} gallery] to see examples--the world is your oyster!
+
+image::reports.png[Reports]
+
+== Share your work
+
+xref:report-scheduling-and-sharing.adoc#sharing-and-scheduling[Share] your analysis with others.
+{brand} makes it easy to share your work with other members of your Workspace, whether via email, Slack, or sending a URL.
+
+When you share a report, viewers will be able to see the output of your work, including any visualizations, data tables, or code that went into creating it.

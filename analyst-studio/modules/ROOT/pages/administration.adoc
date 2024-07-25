@@ -1,0 +1,18 @@
+_= Administration
+:author: Naomi
+:last_updated: 7/25/24
+:experimental:
+:linkattrs:
+:description: Administration.
+:brand: Mode_
+
+** xref:authentication-sso.adoc[Authentication and SSO] +
+Ensure your accounts settings and verify a user’s identity.
+** xref:permissions.adoc[Access control and permissions] +
+How to manage Permissions in {brand}.
+** xref:sharing-and-embedding.adoc[Sharing and embedding] +
+Control your account’s sharing settings for embeds.
+** xref:organizations.adoc[Workspaces] +
+How to configure your {brand} Workspace.
+** xref:workspace-api-tokens.adoc[API tokens] +
+An overview of Workspace API Tokens.

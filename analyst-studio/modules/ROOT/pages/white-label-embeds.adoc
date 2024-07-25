@@ -1,0 +1,601 @@
+= White-label embedded reports
+:categories: ["Embedding"]
+:categories_weight: 10
+:date: 2020-08-27
+:description: Adding external facing embedded Mode reports to external sites
+:ogdescription: Adding external facing embedded Mode reports to external sites
+:path: /articles/white-label-embeds
+:versions: ["business"]
+:brand: Mode
+
+== Overview
+
+A {brand} report can be embedded into another website, such as a private wiki, blog, or any other website or application with access to the internet.
+An embed will display the full contents of the underlying report including charts, tables, and other xref:getting-started-with-mode.adoc#advanced-visualizations[custom visualizations].
+Any report can be embedded as a <<white-label-embed,White-Label Embed>> (WLE).
+
+A link:https://mode.com/embedded-analytics/[White-Label Embed] (WLE) may be seen by viewers who are not logged in to {brand} or members of your Workspace who do not have access to the underlying report.
+For a given embed, your host application securely controls who can see what using a signature process (and optionally, using xref:parameters.adoc[parameters]).
+
+[#white-label-embed]
+A White-Label Embed offers the following:
+
+* *No {brand} viewer authentication:* With WLEs, the embed host application, instead of {brand}, handles any required viewer authentication and programmatically controls access to the embedded reports by generating a unique, rapidly-expiring signed embed URL and (optionally) xref:parameters.adoc[parameters].
+* *No {brand} branding:* There is no {brand} Analytics label in the embed border or loading animation.
+* *Reduced viewer interactivity:* Some interactive features of {brand}'s xref:visualizations.adoc#built-in-charts-and-tables[built-in charts and tables] are not available, including some drill-down features and chart-specific URLs.
+* *Reduced underlying data access:* To prevent unintentional leakage of sensitive data, viewers cannot see any of the underlying report's metadata, code, historical runs, or query results.
+You may, however, elect to expose the ability for viewers to <<csv-export,download a CSV>> of the embedded report's results in your host application.
+
+[#example-implementation]
+[discrete]
+=== Example implementation
+
+To show a <<white-label-embed,White-Label Embed>> in action, we built a lightweight analytics portal for a fictional paper company named Parch & Posey.
+The analytics in the portal are provided by two parameterized and White-Label Embedded {brand} reports.
+
+Access the link:https://parch-posey-v3.herokuapp.com/[Parch & Posey example portal] using any of the following credentials:
+
+|===
+| Username | Password
+
+| walmart
+| pw
+
+| merck
+| pw
+
+| utc
+| pw
+|===
+
+When accessed, the portal runs the embedded reports with a parameter value specific to the logged-in customer.
+This means that the embeds will display data only for the logged-in customer.
+If a viewer attempts to change the embed URL in any way (including the parameter value) and then access the URL, the signature will no longer be valid, and the URL will return an error.
+
+The report shown on the *Overview* tab is built entirely with xref:visualizations.adoc#built-in-charts-and-tables[built-in visualizations].
+The report on the *All Orders* tab is built with a custom link:http://d3js.org/[D3] visualization.
+
+== Requirements
+
+To embed a report, the following requirements must be met:
+
+* The {brand} Workspace containing the target report must be on a link:https://mode.com/compare-plans/[paid plan].
+* If you plan to implement a link:https://mode.com/embedded-analytics/[White-Label Embed], White-Label Embeds must be included in your Workspace's paid plan.
+* The creator of the embedded report must be an active member of the same {brand} Workspace that contains the report.
+
+== Implementation steps
+
+Embed a {brand} report into a host application by following the steps below.
+
+[#create-an-embed-url]
+=== Create an embed URL
+
+An embed can point to either a standard report URL (which displays results from the most recent report run) or a xref:report-layout-and-presentation.adoc#run-history[static report run URL] (which displays results from a specific run).
+
+TIP: Static report run URLs always include `/runs/[RUN_TOKEN]/` in the URL path.
+
+Obtain the URL that suits your specific case and add `/embed` to the end of the path, for example:
+
+[source,html]
+----
+<!-- Report URL (always shows latest run) -->
+https://app.mode.com/[ORG_NAME]/reports/[REPORT_TOKEN]/embed
+                                                           ^^^^^^
+
+<!-- Static Report Run URL (always shows a specific run from a point in time) -->
+https://app.mode.com/[ORG_NAME]/reports/[REPORT_TOKEN]/runs/[RUN_TOKEN]/embed
+                                                                            ^^^^^^
+----
+
+=== Set refresh frequency
+
+Control how often your embed refreshes by specifying a `max_age` in the embed URL xref:report-layout-and-presentation.adoc#url-query-string[query string].
+The `max_age` specifies the maximum allowable age, in seconds, that a cached report run's results may be:
+
+* If the report has never run or the most recent run of the report is older than the specified number of seconds, the report will be fully run when accessed.
+Otherwise, the most recent report run results from {brand}'s servers will be returned.
+* If the URL query string includes values for xref:parameters.adoc[parameters], {brand} will return the most recent cached results using the same set of parameter values as long as those results are not older than the value of `max_age`.
+If the report has never been run with the specified parameter values, {brand} will run the report using them.
+
+This ensures the embedded report's data is refreshed as regularly as necessary while allowing you to balance the load the embed places on your database.
+For example, including `max_age=3600` in the URL query string ensures that the underlying report will refresh once the most recent results are more than 3600 seconds (that is, one hour) old.
+
+TIP: A valid embed URLs must include a `max_age`. To ensure the embedded report's data is refreshed every time the embed is accessed, specify `max_age=0`.
+
+The following example URL will update all queries and visualizations in the target report if it was last run over 3600 seconds (that is, 1 hour) prior to being accessed:
+
+[source,http]
+----
+https://app.mode.com/benn/reports/31baa986cdfd?max_age=3600
+----
+
+=== Specify parameter values (if required)
+
+A field-value pair must be provided for each report xref:parameters.adoc[parameter], if any are defined in the underlying report.
+
+For example:
+
+[source,html]
+----
+<!-- Example embed URL query string with a text parameter -->
+.../embed?param_sales_region=Asia
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+----
+
+To include one or more values for a xref:parameters.adoc#multiselect[multiselect parameter] in your report's URL query string, each individual value must be passed as its own key-value pair.
+
+For example:
+
+[source,html]
+----
+<!-- Example embed URL query string with multiple values for a multiselect parameter -->
+.../embed?param_sales_rep[]=Susan&param_sales_rep[]=Joe
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----
+
+*Important notes:*
+
+* Remember to link:https://www.w3schools.com/tags/ref_urlencode.asp[URL-encode] any special characters in the URL's query string, including parameter values and the `[]` in multiselect parameter keys.
+* Parameter keys and values are case-sensitive.
+* Parameter keys should be ordered alphabetically in the URL.
+
+=== Sign the embed URL (WLE only)
+
+To create a signed embed URL, follow the steps below to add three fields to the query string: a `timestamp`, a signature token `access_key`, and a unique `signature` that your host application generates each time the embed is rendered.
+
+Before you begin, ensure your back-end environment has access to the following information:
+
+* {blank} xref:sharing-and-embedding.adoc#white-label-embed-signature-tokens[**Signature token**]: +
+Generated by an admin of the Workspace that contains the target report.
+Ensure you have both the public access key and private access secret.
+* {blank}
+<<create-an-embed-url,**Embed URL**>>: +
+Includes the full path and query string (from the first two steps of this guide).
+* *Dynamic parameter values*: +
+All parameter values, including dynamically generated ones from your application's database, (for example, customer ID, etc.) must be link:https://www.w3schools.com/tags/ref_urlencode.asp[URL encoded].
+You'll need these values to build the request URL (outlined in step 2 below).
+* *Current timestamp*: +
+The current time, in seconds, in link:https://en.wikipedia.org/wiki/Unix_time[UNIX epoch time].
++
+IMPORTANT: Your host application **must** create the `signature` using a process that is not transparent to embed viewers. Exposing your signature token's access secret in front-end, client-side code will compromise the security of your {brand} account.
+
+[#1-enable-wle-for-the-report]
+==== 1. Enable WLE for the report
+
+White-Label Embedding must be explicitly enabled on a report-by-report basis.
+To enable it:
+
+. Open the report that you want to White-Label Embed and click *Edit* in the header.
+. Select *Embed* in the header.
+. In the pop-up, click the *White-Label Embed* tab.
+. Toggle the switch so it says _White-Label embedding of this report is ON_. +
+TIP: If you don't see the White-Label Embed tab, your Workspace does not have White-Label Embeds enabled. Contact your Workspace's {brand} admins or {brand} support to learn more about enabling White-Label Embeds.
+
+==== 2. Build request URL
+
+To create a valid request URL from an embed URL:
+
+. Add the `timestamp` and `access_key` fields to the query string, set equal to the current UNIX epoch time and the signature token access key, respectively.
+. Sort the query string alphabetically by field name.
+
+For example:
+
+[source,html]
+----
+
+<!-- Request URL (used to generate the signature) -->
+https://.../embed?access_key=9a51794bgrb3&param_sales_region=North%20America&run=now&timestamp=1532446786
+                             ^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^           ^^^^^^^^^^
+                              Access key            Sorted alphabetically                    UNIX epoch time
+----
+
+==== 3. Generate a signature
+
+To sign your WLE embed URL, you must first construct a `request_string`.
+This `request_string` will be hashed to create the signature.
+
+A `request_string` consists of a constant (`GET,,1B2M2Y8AsgTpgAmY7PhCfg==`), your request URL, and the current timestamp, separated by commas.
+For example:
+
+[source,html]
+----
+<!-- Request string structure -->
+'GET,,1B2M2Y8AsgTpgAmY7PhCfg==,[YOUR_REQUEST_URL],[YOUR_TIMESTAMP]'
+
+<!-- Example request string -->
+'GET,,1B2M2Y8AsgTpgAmY7PhCfg==,https://app.mode.com/octan/reports/0d57a7jr4b03/embed?access_key=9a51794bgrb3&param_sales_region=North%20America&timestamp=1532446786,1532446786'
+----
+
+IMPORTANT: The fields in the `request_url` query string **must** be in the order given above (that is, sorted alphabetically) or the signature will be invalid.
+
+Now, generate a signature by creating a base64-encoded SHA256 hash of the `request_string` using the xref:sharing-and-embedding.adoc#white-label-embed-signature-tokens[signature token access secret] as the `secret` (that is, hashing key).
+For example:
++++<code-tabs-wle-signature>++++++</code-tabs-wle-signature>+++
+
+==== 4. Create a signed embed URL
+
+Create a signed embed URL by adding the `signature` field, set equal to the signature generated in the previous step, to the end of the query string of the `request_url`.
+For example:
+
+[source,html]
+----
+<!-- Request URL (used to generate the signature) -->
+https://app.mode.com/octan/reports/e2e53h45ba18/embed
+?access_key=9a51794bgrb3
+&param_sales_region=North%20America
+&run=now
+&timestamp=1532446786
+
+<!-- Signed embed URL (suitable for White-Label Embed) -->
+https://app.mode.com/octan/reports/e2e53h45ba18/embed
+?access_key=9a51794bgrb3
+&param_sales_region=North%20America
+&run=now
+&timestamp=1532446786
+&signature=410b49b1d4042bcb0f72b657598cf41bb4f66005267eaf78e55307e18b293cb1
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       Unique signature generated at run time
+----
+
+The signed embed URL will now provide access to the specified report.
+If *any* part of the URL is changed or if the signature expires (which happens after 10 seconds), your host application must regenerate the signature.
+
+==== Example code
+
+The following examples show how to assemble a `request_string` and generate a signed embed URL given a signature token `access_key` and `access_secret`, a `timestamp`, and a `request_url` with all components of the query string already in alphabetical order:
++++<code-tabs-wle-embed-url>++++++</code-tabs-wle-embed-url>+++
+
+=== Place the embed URL into an iframe
+
+To finish creating your embed, add an iframe to your host application with the `src` attribute set equal to the signed embed URL.
+For example:
+
+[source,html]
+----
+<!-- iframe with Signed URL -->
+<iframe
+  src="https://app.mode.com/[ORG_NAME]/reports/[REPORT_TOKEN]/embed?access_key=[ACCESS_KEY]&max_age=[MAX_AGE]&param_xyz=123&timestampt=[TIME_STAMP]&signature=[SIGNATURE]"
+  width="100%"
+  height="300"
+  frameborder="0"
+</iframe>
+----
+
+Remember to adjust the `height` attribute so that the embed results are visible.
+You can also use {brand}'s xref:internal-embeds.adoc#javascript [JavaScript embed helper library] to dynamically set the height.
+
+If you are implementing a White-Label Embed, your back-end code will need to update the `src` attribute of the iframe with the dynamically-generated signed embed URL whenever the page loads or whenever the embed needs to be reloaded.
+
+== Common techniques
+
+=== Parameter forms
+
+The automatically-generated form at the top of a report containing parameters will not render in an embed.
+However, you can add interactive HTML elements to your host application (for example, buttons, drop-down menus, etc.) that viewers can manipulate, and then use JavaScript to update the parameter values in the embed URL, re-sign, and subsequently refresh the embed.
+
+An example of this can be seen in the <<example-implementation,Parch & Posey example portal>>.
+
+[#csv-export]
+=== CSV Export
+
+When a White-Label Embed loads successfully, it will post a JSON response.
+That response contains URLs that can be used to obtain a CSV of the underlying query results that are associated with the embedded report run.
+
+In your application, you can add an event listener to retrieve these URLs and expose them using any element on the page.
+
+For example, the following JavaScript listens for the embed response from {brand}, retrieves the CSV download URLs, and assigns them as the targets of a couple of corresponding `<a>` elements:
+
+[source,html]
+----
+<a id="csv-export-link" href=""> CSV Export </a>
+
+<script>
+  window.addEventListener('message', function (e) {
+    // always check the origin and make sure it is from app.mode.com
+    if (e.origin === 'https://app.mode.com') {
+      if (e.data['type'] == 'reportExportPaths') {
+        const modeBaseUrl = e.origin
+
+        // CSV Export
+        const csvExportUrl = e.data['report_csv_export_path']
+        csvExportLink = document.getElementById('csv-export-link')
+        csvExportLink.href = modeBaseUrl + csvExportUrl
+      }
+    }
+  })
+</script>
+----
+
+Unique CSV download URLs are generated every time a White-Label Embed renders, and they expire after 24 hours.
+If the White-Label Embed fails to load for any reason, the embed will not post a response containing these URLs.
+
+=== PDF Export
+
+Unlike CSV Export, where a click on the endpoint url itself would invoke a direct download, PDF Export requires a four-part process as described here in the link:https://mode.com/developer/api-cookbook/distribution/export-pdf/[{brand} API cookbook].
+
+* Get Report Latest Run
+* Get status of PDF Generation
+* Post Request to start PDF Generation
+* Get request to Download PDF
+
+We recommend that the four-part PDF requests be handled on the host application server side so that api keys and tokens will not be exposed on the client side.
+
+Here below is a Javascript example code snippet on server side:
+
+[source,html]
+----
+<script>
+  app.get("/pdf", (req, res) => {
+    if (fs.existsSync("./mode-report.pdf")) {
+      return res.status(200).download(path.join(__dirname, "/mode-report.pdf"));
+    } else {
+      request(
+        {
+          url: `${host}/api/${org}/reports/${report_token}/runs`,
+          json: true,
+          auth: { username, password }
+        },
+        (err, res, body) => {
+          let {
+            state,
+            token: mostRecentReportRunToken
+          } = body._embedded.report_runs[0];
+
+          if (state === "succeeded") {
+            state = "";
+            setTimeout(() => {
+              const timeout = Date.now() + 60 * 5; // close the call after 5 min
+              setInterval(() => {
+                if (state === "" || state === "enqueued") {
+                  request(
+                    {
+                      url: `${host}/api/${org}/reports/${report_token}/exports/runs/${mostRecentReportRunToken}/pdf`,
+                      method: "POST",
+                      auth: { username, password },
+                      json: true,
+                      body: { trk_source: "report" }
+                    },
+                    (err, res, body) => {
+                      const fileName = body.filename;
+                      state = body.state;
+                      if (state === "enqueued") {
+                        console.log("Download failed :( Please try again.");
+                      } else if (state === "completed") {
+                        request({
+                          url: `${host}/api/${org}/reports/${report_token}/exports/runs/${mostRecentReportRunToken}/pdf/download`,
+                          auth: { username, password },
+                          encoding: null
+                        })
+                          .on("error", err =>
+                            console.error(
+                              "Report's latest run failed. Please fix the queries errors before exporting again."
+                            )
+                          )
+                          .pipe(fs.createWriteStream("mode-report.pdf"));
+                      }
+                    }
+                  );
+
+                  if (Date.now() >= timeout) return;
+                }
+              }, 1000);
+            }, 5000);
+          }
+          return;
+        }
+      );
+    }
+  });
+
+  app.get("/pdfstatus", (req, res) => {
+    if (fs.existsSync("./mode-report.pdf")) {
+      return res.status(200).json("completed");
+    } else {
+      return res.status(200).json("incompleted");
+    }
+  });
+</script>
+----
+
+On the client side, you can add an `<a>` tag to invoke a request to the host application server side to initiate the PDF export process.
+Please note that generating a PDF will take a while. In order to provide a better user experience, you can add an event listener ("`click`") to check PDF status, which serves as a PDF generating progress indicator to end users.
+
+Here below is a Javascript example code snippet on client side:
+
+[source,html]
+----
+<a href="{base_url}/pdf" id="pdfExport">PDF Export</a>
+
+<script>
+  const pdfExport = document.getElementById("pdfExport");
+  pdfExport.addEventListener("click", () => {
+      pdfExport.innerText = "Generating PDF...";
+      const timer = setInterval(() => {
+          fetch("{base_url}/pdfstatus")
+          .then(res => res.json())
+          .then(data => {
+              if (data === "completed") {
+              pdfExport.innerHTML = "Download PDF";
+              pdfExport.style.backgroundColor = "lightblue";
+              clearInterval(timer);
+              }
+          })
+          .catch(err => {
+              console.log(err);
+          });
+      }, 1000);
+  });
+</script>
+----
+
+=== Filter panel toggle
+
+For White-Label Embeds, you can programmatically expose or hide the xref:interactivity.adoc#filters-and-parameters[filter] panel (if applicable) by posting a message to the embed iframe using JavaScript's link:https://mode.com/blog/custom-css-for-on-brand-dashboards/[`Window.postMessage()` function].
+
+The following example toggles the panel (that is, it opens the panel if it is closed, and closes the panel if it is open):
+
+[source,javascript]
+----
+// if you have multiple iframes, ensure you're referencing the correct one:
+const iframe = window.document.querySelector('iframe');
+
+iframe.contentWindow.postMessage({type: 'reportFilterPanelDisplay', togglePanel: true} ,'*');
+----
+
+The `postMessage` call supports the following three options:
+
+* Override the panel to be in the "open" state: `{type: 'reportFilterPanelDisplay', showPanel: true}`
+* Override the panel to be in the "closed" state: `{type: 'reportFilterPanelDisplay', showPanel: false}`
+* Toggle the panel state: +
+`{type: 'reportFilterPanelDisplay', togglePanel: true}`
+
+You can set up a "Toggle Filters" button by adding the following code to your page:
+
+[source,html]
+----
+<script type="text/javascript">
+  function toggleFilterPanel() {
+    const message = {type: 'reportFilterPanelDisplay', togglePanel: true};
+    const iframe = window.document.querySelector('iframe');
+    iframe.contentWindow.postMessage(message, '*');
+  };
+</script>
+<button onclick="toggleFilterPanel()">Toggle Filters</button>
+----
+
+=== Styling and branding
+
+You can use a xref:organizations.adoc#colors-and-styling[custom theme] or xref:report-layout-and-presentation.adoc#external-assets[CSS] to style an embedded report so its look and feel matches that of its host application.
+
+Learn more about link:https://mode.com/blog/custom-css-for-on-brand-dashboards/[how to style reports using custom CSS].
+
+=== Hide a report element
+
+You can instruct an embed to hide individual report elements by adding the `embed-hidden` class to it using the xref:report-layout-and-presentation.adoc#html-editor[HTML editor].
+The following example is the HTML for a report with two side-by-side charts:
+
+[source,html]
+----
+<div class="mode-grid container">
+  <div class="row">
+    <div class="col-md-6">
+      <!--This chart will be visible if the report is accessed in Mode and when rendered in an embed-->
+      <mode-chart id="chart_c5eff481380d" dataset="dataset" options="chart_options"></mode-chart>
+    </div>
+    <div class="col-md-6">
+      <!--This chart will be visible if the report is accessed in Mode, but NOT when rendered in an embed-->
+      <mode-chart id="chart_0d486a3942b3" class="embed-hidden" dataset="dataset" options="chart_options"></mode-chart>
+    </div>
+  </div>
+</div>
+----
+
+The `embed-hidden` class is automatically added to the `<div>` that contains the report's xref:report-layout-and-presentation.adoc#name-and-description[name and description].
+Accordingly, these are not rendered by default in an embed.
+
+IMPORTANT: Attaching the `embed-hidden` class to an element hides it when an embed renders but *does not* prevent that element's contents from being transmitted to the host application page. These contents will still be accessible if the host application viewer inspects the page.
+
+[#embedding-reports-built-using-the-mode-public-warehouse]
+=== Embedding reports built using the {brand} Public Warehouse
+
+Any {brand} user can create an embed from a report built with data from the xref:managing-database-connections.adoc#mode-public-warehouse[{brand} Public Warehouse], even if the report is in a Workspace that is not on a paid {brand} plan.
+However, the following limitations apply:
+
+* The underlying report must be in a xref:spaces.adoc#community-space[community Collection] and therefore may *only* use data contained in the xref:managing-database-connections.adoc#mode-public-warehouse[{brand} Public Warehouse].
+* Parameter values cannot be set using the embed xref:report-layout-and-presentation.adoc#url-query-string[URL's query string].
+* The `run=now` and `max_age` fields cannot be used in the embed xref:report-layout-and-presentation.adoc#url-query-string[URL's query string].
+In other words, you cannot set these embeds to run upon view nor to refresh when they reach a certain age.
+
+Anyone can view an embedded report built using {brand} Public Warehouse data when it is in a community Collection, even if they are not logged in to {brand} or do not have a {brand} account.
+
+[#test-your-white-label-embeds]
+== Test your White-Label Embeds
+
+Fill out the form below to test your White-Label Embeds.
+You can use this tool to see how your White-Label Embeds will look.
+You can also check the embed signature generated in your application against the signature created below.
+Note that you must include all the parameters in your report in order for the White-Label Embed to work.
+
+Learn more about <<white-label-embed,setting up White-Label Embeds>>, and <<troubleshooting,troubleshooting common issues>>.
+
++++<wle-tester>++++++</wle-tester>+++
+
+[#faqs]
+== FAQs
+
+[discrete]
+=== *Q: Why does my embed show a {brand}-branded border?*
+
+Only Internal Embeds include a {brand}-branded border.
+A White-Label Embed should not include a {brand}-branded border.
+If you are attempting to implement a White-Label Embed and the iframe includes a {brand}-branded border when it is accessed, it is not implemented correctly and the embed is falling back to an Internal Embed when accessed.
+
+To test this, attempt to access the embed while either logged out of {brand} or using a private browser mode (for example, incognito mode in Google Chrome).
+When you access the embed without an active {brand} session, it should return an <<troubleshooting,error message>> that you can use to troubleshoot.
+
+[#troubleshooting]
+== Troubleshooting
+
+Most issues with embeds stem from problems with generating the embed URL signature or other parts of the embed URL.
+{brand} offers a number of resources to help you test and troubleshoot White-Label Embeds:
+
+* Test your White-Label Embeds using <<test-your-white-label-embeds,this form>>.
+* Refer to the list of errors and their respective troubleshooting steps provided below.
+* {blank} xref:contact-us.adoc[Contact our support team].
+
+[discrete]
+=== *1. "Report cannot be displayed - Embed request signature cannot be verified. Please check signing method."*
+
+image::wle-troubleshooting-1.png[Troubleshoot White-Label Embeds]
+
+This error indicates there is a problem with the signature that is included in the signed embed URL.
+If you see this error, check that you are correctly generating the URL signature.
+An embed may return this error for any of the following reasons:
+
+* The `timestamp` value in the URL query string is in the future or is more than 10 seconds in the past.
+As an addition to this reason, make sure to check the local machine for a valid time as the users' device system clock being off can also cause an error.
+* The signed embed URL is different in any way from the URL that was used to generate the signature (including changes to xref:parameters.adoc[parameter] values included in the query string), with the exception of the addition of the `signature` field and corresponding value to the query string.
+* The xref:sharing-and-embedding.adoc#white-label-embed-signature-tokens[Embed Signature token] is deleted or otherwise invalidated.
+* The field-value pairs in the URL query string were not in alphabetical order when the signature was generated.
+
+[discrete]
+=== *2. "Report cannot be displayed - Embed parameters cannot be verified."*
+
+image::wle-troubleshooting-2.png[Troubleshoot White-Label Embeds]
+
+A valid signed embed URL must include a value for each of a report's defined xref:parameters.adoc[parameters] in the URL's query string.
+Check your embed URL for the following:
+
+* Ensure the entire URL (including the query string with any parameter values) link:https://www.w3schools.com/tags/ref_urlencode.asp[is URL-encoded].
+* Ensure the signature was generated with an link:https://www.w3schools.com/tags/ref_urlencode.asp[encoded URL].
+* A link:https://www.w3schools.com/tags/ref_urlencode.asp[URL-encoded] value is included for every parameter defined in the report.
+* Each parameter is included in the format `&param_[PARAM_NAME]=[PARAM_VALUE]`, where `[PARAM_NAME]` is the exact name used in the xref:parameters.adoc#defining-parameters[parameter definition].
+* Ensure the URL query string contains references only to parameters that are defined in the report.
+
+[discrete]
+=== *3. "Report cannot be displayed - This request has expired. Please try again."*
+
+image::wle-troubleshooting-3.png[Troubleshoot White-Label Embeds]
+
+A signed embed URL is only valid for 10 seconds.
+If you attempt to access a signed embed URL after 10 seconds, you will receive this error.
+(Note that the 10-second expiration only applies to initial requests for the report; results won't be removed after 10 seconds).
+
+[discrete]
+=== *4. "Report not found - You might not have permission to view this report."*
+
+image::wle-troubleshooting-4.png[Troubleshoot White-Label Embeds]
+
+Normally, this is a result of an error in the embed URL other than a parameter error or an incorrect signature.
+This error may occur when:
+
+* Ensure <<1-enable-wle-for-the-report,White-Label Embedding has been enabled>> for the report.
+* The `timestamp` value in the URL and signature generation is not a positive integer.
+* You are not using a valid xref:sharing-and-embedding.adoc#white-label-embed-signature-tokens[Embed Signature token] or the user account tied to that token does not have access to the report.
+* The URL path does not point to a valid report or report run.
+
+White-Label Embed viewers may also receive this error when they try to view the embed but the underlying report's creator is no longer an active member of the {brand} Workspace containing the report.
+To resolve this, please do any of the following:
+
+* Re-invite the report's creator/owner to the Workspace.
+* Have an active member duplicate the report and revise the White-Label Embed URL in your host application to point to this new report.
