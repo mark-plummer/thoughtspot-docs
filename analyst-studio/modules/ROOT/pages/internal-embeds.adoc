@@ -1,0 +1,150 @@
+= Internal embedded reports
+:categories: ["Embedding"]
+:categories_weight: 10
+:date: 2022-07-28
+:description: Adding internal facing embedded Mode reports to external sites
+:ogdescription: Adding internal facing embedded Mode reports to external sites
+:path: /articles/internal-embeds
+:versions: ["business"]
+:brand: Mode
+
+=== Overview
+
+An Internal Embed built using your private data is only visible to logged-in members of your {brand} Workspace who would otherwise have access to the underlying report.
+It can be embedded within private wiki, blog, or any other website or application with access to the internet.
+Here's an example of what an Internal Embed looks like:+++<iframe src="https://app.mode.com/modeanalytics/reports/e2e53f08ba18/embed" width="100%" height="430" frameborder="0">++++++</iframe>+++
+
+Click the green *Powered by {brand}* link at the bottom of the embed to open the underlying report in {brand}.
+
+NOTE: Generally, you must be logged in to {brand} and have access to the underlying report in order to view an Internal Embed. However, the above embedded report is built on xref:managing-database-connections.adoc#mode-public-warehouse[{brand}'s Public Warehouse] and is therefore viewable by anyone on the internet. Learn more about <<embedding-reports-built-using-the-mode-public-warehouse,embedding reports built on {brand}'s Public Warehouse>>.
+
+=== Create an internal embed URL
+
+An internal embed url can point to either a standard report URL (which displays results from the most recent report run) or a xref:report-layout-and-presentation.adoc#run-history[static report run URL] (which displays results from a specific run).
+
+TIP: Static report run URLs always include `/runs/[RUN_TOKEN]/` in the URL path.
+
+There are a couple of ways to create the necessary URL.
+The first would be to add `/embed` to the end of the path, for example:
+
+[source,html]
+----
+<!-- Report URL (always shows latest run) -->
+https://app.mode.com/[ORG_NAME]/reports/[REPORT_TOKEN]/embed
+                                                           ^^^^^^
+
+<!-- Static Report Run URL (always shows a specific run from a point in time) -->
+https://app.mode.com/[ORG_NAME]/reports/[REPORT_TOKEN]/runs/[RUN_TOKEN]/embed
+                                                                            ^^^^^^
+----
+
+Another option would be to grab code snippets including template code that you can customize and include in your host application that are generated in {brand}.
+Open the report editor for the report you want to embed and click *Embed* in the header to generate code snippets for one of two types of embed methods:
+
+image::internal_embed2023.png[Internal Embed modal]
+
+==== Static iframe
+
+Embeds using a static link:https://www.w3schools.com/tags/tag_iframe.asp[HTML iframe] do not require the execution of any client-side JavaScript and therefore may be more suitable for use with certain blogs or content management systems.
+However, you must set the height of the link:https://www.w3schools.com/tags/tag_iframe.asp[iframe] manually using the `height` attribute of the `<iframe>` (default is 300px).
+For example:
+
+[source,html]
+----
+<iframe src="https://app.mode.com/modeanalytics/reports/e2e53f08ba18/embed" width="100%" height="300" frameborder="0"></iframe>
+----
+
+[#javascript]
+==== JavaScript
+
+If your embed host application allows for client-side JavaScript, you can use the JavaScript embed method.
+The JavaScript snippet includes a link:https://app.mode.com/embed/embed.js[helper library] that automatically produces an iframe for the embed with the class `mode-embed`.
+For example:
+
+[source,html]
+----
+<a href="https://app.mode.com/modeanalytics/reports/e2e53f08ba18/embed" class="mode-embed">Mode Analytics</a>
+<script src="https://app.mode.com/embed/embed.js"></script>
+----
+
+The helper library adds the following inline styles to each iframe: `width: 100%;`, and `height` set dynamically based on the underlying report's content.
+
+TIP: If your host application has multiple embeds on a single page and you use this method, you only need to include the helper library once.
+
+=== Place the embed URL into an iframe
+
+To finish creating your embed, add an iframe to your host application with the `src` attribute set equal to the internal embed URL.
+For example:
+
+[source,html]
+----
+<!-- iframe with Signed URL -->
+<iframe
+  src="https://app.mode.com/[ORG_NAME]/reports/[REPORT_TOKEN]/embed"
+  width="100%"
+  height="300"
+  frameborder="0"
+</iframe>
+----
+
+Remember to adjust the `height` attribute so that the embed results are visible.
+You can also use {brand}'s <<javascript,JavaScript embed helper library>> to dynamically set the height.
+
+NOTE: Unlike White-Label Embeds, internal embeds do not allow for parameter values to be set within the URL.
+
+=== Common techniques
+
+==== Filter panel toggle
+
+Internal Embeds feature a branded {brand} border, which includes a *Filters* button in the lower right corner that you can use to toggle the xref:interactivity.adoc#filters-and-parameters[filter] panel open or closed.
+
+==== Styling and branding
+
+You can use a xref:organizations.adoc#colors-and-styling[custom theme] or xref:report-layout-and-presentation.adoc#external-assets[CSS] to style an embedded report so its look and feel match that of its host application.
+
+Learn more about link:https://mode.com/blog/custom-css-for-on-brand-dashboards/[how to style reports using custom CSS].
+
+==== Hide a report element
+
+You can instruct an embed to hide individual report elements by adding the `embed-hidden` class to it using the xref:report-layout-and-presentation.adoc#html-editor[HTML editor].
+The following example is the HTML for a report with two side-by-side charts:
+
+[source,html]
+----
+<div class="mode-grid container">
+  <div class="row">
+    <div class="col-md-6">
+      <!--This chart will be visible if the report is accessed in Mode and when rendered in an embed-->
+      <mode-chart id="chart_c5eff481380d" dataset="dataset" options="chart_options"></mode-chart>
+    </div>
+    <div class="col-md-6">
+      <!--This chart will be visible if the report is accessed in Mode, but NOT when rendered in an embed-->
+      <mode-chart id="chart_0d486a3942b3" class="embed-hidden" dataset="dataset" options="chart_options"></mode-chart>
+    </div>
+  </div>
+</div>
+----
+
+The `embed-hidden` class is automatically added to the `<div>` that contains the report's xref:report-layout-and-presentation.adoc#name-and-description[name and description].
+Accordingly, these are not rendered by default in an embed.
+
+IMPORTANT: Attaching the `embed-hidden` class to an element hides it when an embed renders but *does not* prevent that element's contents from being transmitted to the host application page. These contents will still be accessible if the host application viewer inspects the page.
+
+[#faqs]
+=== FAQs
+
+[#troubleshooting]
+==== Troubleshooting
+
+Similar to White-Label Embeds, issues can arise if the URL is incorrect or missing `/embed`.
+If the following error returns, it's likely that your URL is incorrect or pointing at a report that you may not have access to within {brand}.
+
+image::report_not_found.png[]
+
+* Click on the green *Powered by {brand}* link at the bottom of the embed to open the underlying report in {brand} to see if you have access.
+If the report is visible in {brand} and not within the embed, likely the URL is incorrect.
+* If a user is unable to see the embed in the application, have them make sure to sign into {brand} in another tab.
+Only users that are signed in to {brand} are able view internal embeds.
+* {blank}
+xref:contact-us.adoc[Contact our Support Team] +
+if issues persist after verifying the above details for assistance.

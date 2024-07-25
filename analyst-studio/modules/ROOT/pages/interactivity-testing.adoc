@@ -1,0 +1,824 @@
+= Test
+:categories: ["Visualize and present data"]
+:categories_weight: 5
+:date: 2021-04-12
+:description: Interact with your data using various tools
+:hide_from_nav: true
+:ogdescription: Interact with your data using various tools
+:path: /articles/testing
+:brand: Mode
+
+=== Overview
+
+Datasets are curated tables of data that can be reused across multiple reports.
+They are created by writing a SQL query and transforming the results of that query into a reusable asset.
+Datasets can then be shared across your organization.
+This allows multiple reports to be created off of the initial query, which can be set to refresh on a schedule.
+Reports created from Datasets will be able to consume the fresh data when available to ensure accuracy of the reporting over time.
+
+The data in a Dataset is cached in Helix, which enables more efficient data usage and improved performance for reports created from Datasets.
+Rather than each individual report hitting the warehouse, only the single Dataset hits the warehouse when it refreshes.
+That data then cascades to all associated reports.
+
+==== What are the benefits of using Datasets?
+
+Datasets can help make maintaining and scaling access to data efficient and cost-effective.
+They create a new layer between your data warehouse and reports in {brand}, which in practice allows for more control over governance, centralized logic, and data usage.
+
+Key benefits of Datasets:
+
+* *Centralize logic and data quality*: Datasets can power multiple reports, allowing analysts to write or update one query that cascades down across multiple reports.
+* *Manage data stack complexities*: Datasets introduces a new way data moves through {brand}, creating a middle governance later that can centralize logic and make scaling easier.
+* *Improve efficiency and performance*: With data cached in Helix, this provides incremental performance gains for each report refresh that doesn't have to hit the data warehouse.
+* *Cost savings*: Datasets are positioned between reports and warehouses for more efficient data usage and controlled warehouse hits.
+* *Confident self service access*: Datasets can be an approved source for teams within an organization to confidently build reports without writing any code, knowing the dataset has been published by the data team.
+* *Data accessibility*: Datasets can be organized in collections and browsed when creating reports.
+Datasets are subject to permissions just like reports.
+
+==== When should you use Datasets?
+
+Datasets are a great option for creating data assets that are reusable in nature.
+There are a couple of ways to think about reusability:
+
+* Creating Datasets with a single query on a specific topic.
+End users can explore the data in a report, as well as add additional datasets to the report to create a more cohesive story of the data.
+* A report that will be referenced regularly, such as a finance report, for example.
+This report may contain multiple queries, which can all be combined into a Dataset with a single refresh schedule.
+* A Dataset with a more broad data view, such as a Dataset created to answer questions about product engagement.
+The Dataset would be the source of truth for asking ad-hoc questions on this topic.
+
+Check out xref:datasets.adoc#what-makes-a-good-dataset[What Makes a Good Dataset?] to learn more about developing a Datasets strategy to determine when to use them.
+
+=== Creating a Dataset
+
+To create a new Dataset, select the create button in the top right corner of your {brand} home screen and choose *Dataset*.
+
+image::create-dataset.png[create dataset]
+
+This will open up the Datasets editor where you can write a new SQL query or insert SQL snippets using xref:definitions.adoc#overview[Definitions].
+
+image::create_dataset2.png[create dataset]
+
+==== Previewing your Dataset
+
+Once you run the query, you will be able to see the results below in the data view.
+This shows you the columns that were generated from the SQL query.
+
+image::data_view.png[data view]
+
+You can see a list of all of the available fields in the dataset from the Fields tab.
+
+image::fields_tab_dataset.png[Datasets from the Fields tab]
+
+==== Describing the fields in your Dataset
+
+We recommend adding field descriptions to all Workspace Datasets to build shared understanding around business and logic definition.
+
+To add a new field description, edit any Dataset and navigate to its Fields tab.
+From here, *double-click* on the row you'd like to edit.
+Descriptions support up to 350 characters, and text formatting such as bolding, italicizing, emojis, line breaks, and hyperlinks.
+
+image::1-add-description.png[Adding descriptions to the dataset]
+
+image::2-fields-view-page.png[View field descriptions on the dataset view page]
+
+Once added, field descriptions will appear in the Fields tab of a Dataset, and when hovering over the fields list in the chart builder.
+
+image::3-hover-description.png[Hover over fields to see descriptions in chart builder]
+
+TIP: Field description tooltips have a 250px max width.
+To see how your description will appear when charting off the data, add your Dataset to a Report and navigate to the given field from within the chart builder.
+
+Here are some use cases to think about when adding field descriptions to Dataset fields:
+
+[options="header"]
+|===
+| Use case      | Sample field         |  Sample Description
+
+| ----------------------     | --------------------          | --------------------------
+
+|*Shared understanding* +
+Codify business definitions and logic, especially when using calculated fields. | Engagement rate   | Calculates the % of users who are engaged, where engaged is defined as any user who has logged in and taken >1 action in the past 14 days.
+
+|*Expectation setting & data previews* +
+List out the possible values you'd expect the field to return.  | Order status  | Segments orders by canceled, completed, or returned.
+
+|*Disambiguation* +
+Help colleagues quickly discern between fields with similar names or meaning, for example, Organization (business) vs Customer (user).  | Order amount    | Total amount of order supply placed per order, for example, 8 units of paper. +
+⭐️ Tip: if you're looking for Total price, use Order price,
+
+|*Education* +
+Provide best practice and how-tos when charting.
+Consider including links out to sample Reports or charts. | Total signups     | Shows the total number of signups by week for every single row. +
+⚠️ Note: be careful when using to not overcount total signups.
+Use this field only when you have the data aggregated by week.
+//+++<u>+++**See example chart here**+++</u>+++
+|===
+
+==== Adding calculated fields to the Dataset
+
+You can add new calculated fields to the Dataset from the Fields tab.
+Doing so will add the calculated field to the list of available fields, and also make it available in any reports created from the Dataset.
+
+To add a new calculated field, first select the *New field* button.
+
+image::add_calc_fields.png[Adding calculated fields to the dataset]
+
+Then enter the formula for your calculated field, along with adding a name.
+To save the calculated field, select the *Apply & Close* button.
+
+image::add_calc_fields2.png[Adding calculated fields to the dataset]
+
+==== Viewing the source syntax
+
+The source syntax of the query run can be accessed from the *Source* tab.
+
+image::view_sourceSyntax.png[Viewing the source syntax]
+
+==== Adding a name and description to the Dataset
+
+You can add a name and description to the Dataset.
+To do so, select the caret next to the placeholder name, "`Untitled Dataset.`" From the dropdown, select *Rename*.
+
+image::addingName_Description.png[Adding name and description]
+
+Enter the desired Dataset name and description.
+Then select *Save*.
+
+image::rename_dataset.png[Adding name and description]
+
+We recommend using consistent naming conventions and adding detailed descriptions to your datasets.
+Doing so will help other team members find and understand how to use the Dataset.
+
+==== Scheduling a Dataset
+
+You can set a schedule for your Dataset to refresh.
+When a dataset refreshes, all associated reports built using that dataset will receive a prompt to pull in the fresh data.
+
+To create a new schedule, select the carat next to the dataset name and choose *Schedule*.
+
+image::schedule_ds.png[Schedule a dataset]
+
+Then, select *Create New Schedule* to open the scheduling options.
+From here, you can set the refresh frequency, as well as the specific time and timezone.
+
+image::create_new_schedule.png[Schedule a dataset]
+
+==== Moving a Dataset to a Collection
+
+The final step to create a dataset is to move the dataset into a Collection.
+You can think of this action as publishing the dataset, as it makes the dataset available for other team members to access and use it.
+
+To move the dataset to a Collection, select the *Move to a Collection* button in the top right corner of the screen.
+
+This will open a modal displaying all of the available Collections.
+
+image::move_to.png[Moving a dataset]
+
+Select the Collection you want to add the dataset to, then select *Move*.
+
+==== Viewing a created Dataset
+
+To view a dataset you've just created, select the *View* button in the top right corner of the screen.
+
+image::view_dataset.png[View a dataset]
+
+You will be able to view the Data, Fields, and Source tabs, dataset details, as well as export or copy the data from this view.
+
+image::viewing_a_dataset.png[View a dataset]
+
+You can share the dataset with others on your team by selecting the *Share* button.
+
+image::share_ds.png[Share a dataset]
+
+Or, if you're ready to create a new report using this dataset, select the *Use in new Report button*.
+
+image::newReport_ds.png[Share a dataset]
+
+This will create a new report and you can begin creating visualizations using the data in the dataset.
+
+image::viewing_a_dataset1.png[Share a dataset]
+
+=== Using Datasets in Reports
+
+You can add a Dataset to any Report for which you have edit access.
+This is true whether the report was initially started with a SQL query, or another Dataset.
+To do so, open any Report in Edit mode and select the *Add Data* button from the left-side menu.
+
+image::add_ds_to_a_report.png[Using a dataset in reports]
+
+This will provide the options to add additional data via a new query, or using a Dataset.
+Select *Use a Dataset*.
+
+This will open up a modal that allows you to browse existing Datasets to add to your Report.
+
+image::use_a_ds.png[Using a dataset in reports]
+
+You can use the search bar to filter for a specific Dataset, then select the one you want to work with.
+Datasets from Workspace Collections you have access to will appear here.
+If you want to use a personal Dataset, you'll need to use the *By URL* option and paste the URL in the search bar.
+
+Once you select a Dataset, it will be added to your Report.
+You'll be able to view the data as well as begin building visualizations from it.
+
+image::use_ds1.png[Using a dataset in reports]
+
+==== Starting a new Report from a Dataset
+
+You can create a Report from a Dataset in one of two ways.
+
+. *Creating a new Report using the Create button in the top header* +
+ This workflow is great when you know what data you want to analyze, and want to pull in the most relevant Dataset to use in your Report.
+. *Creating a new Report from the Dataset* +
+ This workflow is great when you've found a Dataset that you'd like to explore and analyze further.
+
+==== Creating a Report from the Create button
+
+To create a new report, select the *Create* button in the {brand} header, and choose *Report*.
+
+image::create_report_fromDS.png[Creating a report from the create button]
+
+From here, you will be prompted to choose how you want to start your Report.
+Select *Dataset*.
+
+image::start_report.png[Creating a report from the create button]
+
+This will open up a modal that allows you to browse existing Datasets to use as the foundation of your Report.
+
+You can use the search bar to filter for a specific Dataset, then select the one you want to work with.
+
+image::use_a_ds.png[Use a dataset]
+
+Datasets from Workspace Collections you have access to will appear here.
+If you want to use a personal Dataset, you'll need to use the *By URL* option and paste the URL in the search bar.
+
+image::use_a_ds_byURL.png[Use a dataset]
+
+Selecting a Dataset will open it.
+
+==== Creating a Report from the Dataset view
+
+You can start a new Report while viewing a Dataset.
+From the Dataset view, select the green *Use in new Report* button from the top menu.
+
+image::newReport_ds.png[Use a dataset]
+
+This will create a new Report that you can start exploring and adding new visualizations to.
+
+==== Personalizing the Dataset
+
+From the Dataset, you can start to explore by browsing the fields and adding your own custom functions on the fly.
+
+To add a function, navigate to the Fields tab and click the *New Field* button.
+
+image::4-new-field.png[Add a function to a dataset]
+
+Enter the function for your calculated field, and give it a name.
+To save the field, select the *Apply & Close* button.
+The field will be saved locally to your Report, allowing you to personalize your view of the data without impacting the original Dataset.
+
+image::5-save-local-formula.png[Save a function for a dataset]
+
+To describe your own local fields, *double-click* on the row for a given field within the Fields tab.
+
+Field descriptions support up to 350 characters, and text formatting such as bolding, italicizing, emojis, line breaks, and hyperlinks.
+
+image::6-add-local.png[Add descriptions to local fields]
+
+Descriptions you add to your local fields will appear when hovering over the fields list in the chart builder, alongside any other field descriptions that were added directly to the source Dataset.
+
+image::7-see-local.png[See local field descriptions on hover]
+
+NOTE: You won't be able to edit or delete field descriptions that were added to the source Dataset while using its data within a Report.
+To add or change a source field's description, edit the original Dataset.
+
+==== Creating charts using Dataset data
+
+From the Dataset, you can start to explore by browsing the fields and adding custom functions on the fly.
+This allows you to personalize your view of the data without impacting the original Dataset.
+
+image::9-data-view.gif[Use a dataset]
+
+To explore the data visually, select the *New Chart* button from either the top menu or left-side menu.
+
+image::10-new-chart-ctas.png[New chart]
+
+Choose the chart type you want to create.
+Doing so will open the visualization builder.
+From here, you can drag and drop the fields you want to analyze to create your chart.
+
+image::11-make-chart.png[New chart]
+
+==== Adding charts to the report builder
+
+To add your charts to the report builder, select the chart's context menu from either the top menu or left-side menu.
+Then choose *Add to Report Builder*.
+
+image::12-add-to-builder.png[Add chart]
+
+You can access the report builder by selecting *Report Builder* from the left-side menu.
+Once in the Report Builder, you can configure the layout and customize the look and feel of your Report.
+
+image::13-report-builder.png[Add chart]
+
+You can learn more about using the report builder in this xref:report-layout-and-presentation.adoc#report-builder[article].
+
+To give your Report a name, hover over the Report title in the navigation panel and click on the pencil icon.
+This will open a modal where you can give the Report a name and description.
+
+image::14-rename-report.png[Add chart]
+
+By default, the report will live in your personal collection.
+To move it to a different collection, select the dropdown menu next to Report, then choose *Move to*.
+
+A window will appear displaying an option to create a new collection, or to select from any collections you have access to.
+
+image::move_to.png[Add chart]
+
+Once you choose where to move the report to, you will be able to find the report in that collection.
+Anyone else with access to the collection will also be able to see and find the report.
+
+Learn more about organizing and managing reports in collections in this xref:spaces.adoc[article].
+
+Learn more about sharing reports in this xref:report-scheduling-and-sharing.adoc[article].
+
+=== Datasets planning guide
+
+[discrete]
+===== A step-by-step guide to planning and building your first Datasets
+
+Datasets are robust on multiple fronts.
+As curated data tables that can be reused across multiple reports, Datasets introduce a new way that data can move through {brand}.
+They allow you to write SQL once and get no-code, self-serve for your stakeholders.
+From a deeper level, Datasets creates a middle governance layer that can centralize logic and simplify scaling.
+However, it's essential to think about how to best implement Datasets within your organization to extract the most value from your new Datasets.
+
+[discrete]
+===== Step 1
+
+* Review the xref:datasets.adoc#overview[Datasets overview] and Datasets FAQ to get started.
+* Communicate with your stakeholders that Datasets are being turned on to let them know your organization is participating in the Datasets Beta.
+* Share documentation on creating and using datasets with other members of your data team.
+ ** {blank}
+ xref:datasets.adoc#what-makes-a-good-dataset[What Makes a Good Dataset Guide]
+ ** {blank} xref:datasets.adoc#overview[Overview of Datasets in {brand}]
+ ** {blank} xref:datasets.adoc#creating-a-dataset[Creating a Dataset in {brand}]
+ ** {blank} xref:datasets.adoc#using-datasets-in-reports[Using Datasets in Reports]
+
+[discrete]
+===== Step 2
+
+* Select a stakeholder team you work with often to begin using Datasets. +
+TIP: Look for the team that asks frequent questions or has multiple reports based on similar queries.
+
+* Collaborate with your selected stakeholder team to align around a specific Dataset to build first.
+ ** Use the xref:datasets.adoc#what-makes-a-good-dataset[What Makes a Good Dataset Guide] and xref:datasets.adoc#what-type-of-data-asset-do-you-need[What Type of Data Asset do You Need?] to help facilitate this discussion.
+
+[discrete]
+===== Step 3
+
+* Once you have collaborated with your stakeholders and discussed what Dataset to build, begin building your first Dataset(s).
+ ** Use the xref:datasets.adoc#creating-a-dataset[Creating a Dataset in {brand}] article for guidance.
+
+[discrete]
+===== Step 4
+
+* Send to the business team and have them begin using your new Dataset.
+ ** Provide them with the xref:datasets.adoc#using-datasets-in-reports[Using Datasets in Reports] article for guidance.
+* Then let the business team build their own Reports starting with a Dataset.
+ ** Provide the following resources for creating charts and reports in {brand}:
+  *** link:https://university.mode.com/understanding-the-data-you-have-to-work-with[Understanding the Data You Have to Work With] course
+  *** link:https://university.mode.com/creating-basic-drag-drop-visualizations[Creating Basic Drag and Drop Visualizations] course
+  *** link:https://university.mode.com/determining-what-type-of-chart-to-create[Determining What Type of Chart to Create] course
+  *** {brand} University's link:https://university.mode.com/page/video-library[Video Library]
+
+[discrete]
+===== Step 5
+
+* Sync back with the business team to collaborate on what went well and what could change.
+* Rinse and repeat, and expand this process to other teams!
+
+=== What makes a good Dataset?
+
+[discrete]
+===== Questions and best practices to consider for your Datasets strategy
+
+Datasets are curated data tables that can be reused across multiple reports by stakeholders without code.
+They introduce a new way that data can move through {brand}, creating a middle governance layer that can centralize logic and make scaling easier.
+
+Datasets can power multiple reports, allowing analysts to write or update one query that cascades down across multiple reports.
+With data cached in Helix, this provides incremental performance gains for each report refresh that doesn't have to hit the customer's data warehouse.
+
+. *How reusable is the proposed dataset?* +
+ There are a couple of ways to think about reusability:
+ ** Creating Datasets with a single query on a specific topic.
+End users can explore the data in a report, as well as add additional datasets to the report to create a more cohesive story of the data.
+ ** A report that will be referenced regularly, such as a finance report, for example.
+This report may contain multiple queries, which can all be combined into a Dataset with a single refresh schedule.
+ ** A Dataset with a more broad data view, such as a Dataset created to answer questions about product engagement.
+The Dataset would be the source of truth for asking ad-hoc questions on this topic.
+
++
+⭐️ *Best Practice*
+ ** Ask a series of re-usable questions to help determine the required utility of the data.
+For example:
+  *** What is the frequency in which this data needs to be viewed?
+  *** What is the frequency in which this needs to be refreshed?
+  *** Who is the audience for this data?
+  *** What level of governance is required for this data?
+  *** What level of access is required for this data?
+. *Is the size of the Dataset appropriate for the intended use of the Dataset?* +
+The structure and nature of columns provided in a Dataset will influence how completely end users are able to explore the Dataset to answer their business questions.
+** Balancing the breadth of a Dataset along with practical usability of the Dataset is key to a Datasets strategy.
+You want to provide enough dimensions and measures to enable asking iterative questions on the topic.
+At the same time, including too many fields in a Dataset puts a heavy load on the visualization system and can slow down speed to insight when exploring data visually.
+
++
+⭐️**Best Practice**:
+ ** We recommend keeping Datasets between 10-50 columns of fields.
+ ** Dataset creation is governed by the query size limits of your {brand} plan.
+. *Does the dataset require parameters or pre-filtering to be functionally usable?* +
+Datasets are dynamic queries that update when the data is refreshed, making the data available for associated reports.
+Because of this nature, Datasets do not support parameters.
+ ** Consider what types of questions your end users will try to answer using the Dataset.
+How will they want to drill into the data and further slice it?
+This will help determine what types of filters to make available.
+
++
+⭐️**Best Practice**:
+ ** Work with business users to understand their desired (and most comfortable) workflow for drilling down into their data.
+. *What can you do during the Dataset creation phase to set yourself up for long-term success?*  +
+Datasets are currently in beta, so you can expect the features and functionality to expand over time.
+You can take some steps now to make utilizing those features easier down the road.
+ ** Align with stakeholders on preferred naming conventions for metrics and dimensions.
+ ** Determine what some medium term requirements might look like for primary consumers of the Dataset.
+
++
+⭐️ *Best Practice*:
+** Renaming columns in Datasets for consistency across different tables.
+** Consider where you prefer ETL to live, and whether moving upstream would be preferable.
+. *Have you established naming conventions for Datasets?* +
+Using consistent naming conventions impact usability in several ways, such as:
+** Is it clear from the title of the Dataset that it is vetted?
+** Does the Dataset description make it clear what data is available and recommended use cases?
+** Does the Collection organization make the Dataset discoverable and available to the people who would need it?
+
++
+⭐️ *Best Practice*:
+** Establish clear naming, description, and organization conventions at the forefront of your Datasets strategy.
+** Consider using emojis in your Dataset titles for quick visual communication.
+. *Should you focus on net new creation of Dataset assets, or migrating existing queries to Datasets?* +
+The answer to this question depends on your priorities.
+Consider the following:
+** The benefit of creating net new Datasets is that you are able to apply best practices to create assets that can be impactful across the org.
+** Migrating existing queries to Datasets is a valid approach if your primary concerns are to reduce the number or cost of query runs to your database.
+For example, if you have a handful of reports that are being run very frequently by team members, it may be worth the time to rebuild the queries and associated reports using a Dataset with a single refresh schedule.
+
++
+⭐️ *Best Practice*:
+** Establish clear priorities that you want to accomplish with your Datasets strategy.
+The priorities you set should determine how you decide to start creating and using Datasets.
+. *What will the process and criteria be for updating the Dataset?* +
+Provide clear guidance to the data team on what types of requests and analysis require the following approaches:
+ ** Creating a new Dataset.
+ ** Adding an additional column(s) to a Dataset.
+ ** Creating a new SQL query report.
+
++
+⭐ *Best Practice*:
+** Thinking through these questions and situations at the forefront of your strategy will likely provide clarity on other elements of your strategy as well.
+
+=== What type of data asset do you need?
+
+[discrete]
+===== Questions and best practices to help stakeholders effectively collaborate with their data team on a Datasets strategy.
+
+Datasets are curated tables of data that can be reused across multiple reports.
+They are created by writing a SQL query and transforming the results of that query into a reusable asset.
+Datasets can then be shared across your organization.
+This allows multiple reports to be created off of the initial query, which can be set to refresh on a schedule.
+Reports created from Datasets will be able to consume the fresh data when available to ensure accuracy of the reporting over time.
+
+. *Does some variation of the data you are looking for exist?*
+** *Yes*: What about the current data would you like to see changed?
+*** I want the data in a different format (for example, it's currently in a report, and I want the raw data).
+*** There is data missing that is limiting my ability to answer questions.
+*** I think the data is there, but I need a different visualization to answer my questions.
+*** The data exists, but it's not updated at the frequency I need it to be (for example, currently it updates monthly, but I need it weekly).
+** *No*: Do you need data related to a new vendor or to track a new initiative?
+*** Reach out to your data team to kickstart a new project.
+** *I'm not sure*: Have you tried searching for the data you need?
+*** Try searching for existing data assets in {brand}.
+*** Ask your data team for assistance finding existing reports or Datasets that may help you answer your questions.
+. *How would you like to use this data?*
+** *Raw data to explore*: I want access to data that I can visually analyze and answer questions at my own pace.
+*** Talk with your data team about the types of questions you imagine asking, and where the data to answer those questions comes from.
+** *Finished report*: I want a report with charts and visualizations I can check on a regular basis, and explore further when needed.
+*** Talk with your data team about the specific metrics you'd like to track and how you plan to use the report.
+** *To export*: I want access to data that I can export and analyze in the tool of my preference.
+*** Talk with your data team about what data you need access to, what tool you plan to use to analyze the data and your overall goals associated with the data.
+. *Who else would use this data?*
+** *Multiple people/teams*: There are multiple stakeholders that would use this data.
+*** Seek alignment from all stakeholders on expectations of what data should be included and how that data will be used in practice.
+** *I'm not sure*: Right now, all I know is that I need access to this data.
+*** Connect with your data team to see if other stakeholders have requested similar data assets.
+*** Reach out to collaborators in other orgs to see if they have interest in accessing similar data.
+
+=== FAQs
+
+==== Dataset creation & management
+
+[discrete]
+====== *Q: Where do Datasets live?*
+
+Datasets leverage the same organizational structure as Reports.
+When you create one, it will start in your Personal Collection.
+You can move Datasets across Collections just as you would Reports or xref:collaboration-and-discovery.adoc#report-shortcut[shortcut the Dataset] to reference it across multiple Collections.
+Look for the purple Datasets icon to differentiate between a Report and a Dataset.
+
+image::1-collections.png[Dataset location]
+
+TIP: Add descriptions to every Dataset, as they're used in place of a thumbnail image within Collection views.
+
+[discrete]
+====== *Q: How does a Dataset become reusable?*
+
+As soon as a Dataset returns its first successful run, you can begin using it in Reports so long as you have view access to the Collection it lives in and view access to its underlying warehouse connection.
+
+NOTE: Personal Datasets aren't browseable or discoverable by other Workspace members. We strongly encourage moving Datasets out of your Personal Collection if you want them to be used by other members.
+
+[discrete]
+====== *Q: Can Datasets be scheduled?*
+
+Yes.
+You can create one or more run schedules from the Datasets editor to refresh your Dataset on a cadence.
+
+[discrete]
+====== *Q: Can I add Calculated Fields to my Dataset?*
+
+Yes.
+You can add Calculated Fields by navigating to the Fields tab and clicking on the *New Field* button.
+After a field is added, it will appear in your list of fields.
+
+NOTE: When you add, edit, rename, or remove Calculated Fields from your Dataset, changes are automatically made available to any Reports using the data.
+
+image::2-add-calc.png[Calculated Field in Dataset]
+
+[discrete]
+====== *Q: Can I use Parameters in my Dataset?*
+
+No.
+Parameters are not supported within Datasets.
+You can use liquid templating in your SQL query code, but it's not recommended.
+There is no affordance for interacting with Parameter inputs when viewing or scheduling a Dataset or when using its data within Reports
+
+[discrete]
+====== *Q: Is there an approval or verification process when making changes to Datasets?*
+
+Currently, there is no process for approving changes or verifying Datasets.
+If you have edit access to a Dataset via its Collection and underlying warehouse connection, you can make changes to it.
+
+TIP: We encourage the use of xref:permissions.adoc#set-up-collection-permissions[Collections permissions] to limit which workspace members can edit Datasets.
+
+[discrete]
+====== *Q: Can I tell which Reports use a given Dataset?*
+
+Yes.
+When viewing or editing a Dataset, you can access a list of every Report that uses its data.
+This modal can be accessed via a usage link in the right-hand side of the toolbar in edit mode, and the bottom of the Details pane in view mode.
+
+NOTE: Reports you don't have access to will still appear in the count, but will be obfuscated or un-viewable.
+
+image::3-view-usage.png[Reports using a given dataset]
+
+[discrete]
+====== *Q: What happens if my Dataset fails and it's being used in Reports?*
+
+If a Dataset run is canceled or fails, all Reports using its data will fall back to the last successful run until the issue is resolved.
+Within Reports, Datasets are badged to notify the user when there's an issue.
+NOTE: Even if a query run is successful, changing field names or removing fields can cause breaking changes to Reports.
+
+[discrete]
+====== *Q: What happens if I delete a Dataset?*
+
+The Dataset will be permanently removed from your Workspace, and any dependent Reports, Charts, or Calculated Fields will break
+
+image::4-delete-dataset.png[deleted dataset]
+
+[discrete]
+====== *Q: How are Datasets different from Definitions?*
+
+Definitions are SQL snippets that allow you to write logic in one place and reference that logic across multiple queries.
+Like Datasets, when run as a query, they produce a data table and refer to a specific schema within a particular connection.
+But to reference them in a Report, you must run a new query each time.
+
+Unlike Definitions, Datasets are refreshed and materialized independently.
+All Reports referencing a Dataset can accept newer runs, so you only need to run the data once.
+
+There's also no way to use a Definition without writing SQL.
+You need to have both permissions to query against the Connection a Definition is built on top of, and feel comfortable writing a query to take advantage of its data.
+
+[discrete]
+====== *Q: When should I think about using Datasets vs {brand}'s new dbt Semantic Layer Integration?*
+
+Datasets are reusable containers of curated data intended to cover much broader topics and subject areas.
+You might consider using a Dataset to return an entire table that you've modeled in dbt, whereas metrics are typically much more tightly scoped.
+Metrics are also aimed at allowing users to quickly find answers to very well-defined questions (for example, 'How much revenue did we make last week?'), whereas Datasets can be used for more open-ended, exploratory self-serve analysis (for example, 'Why is my revenue lower this quarter than last quarter?').
+
+While both features allow you to analyze data in a code-free environment, they can have different impacts on your warehouse or Helix usage.
+Datasets are refreshed independently and materialized into {brand}'s data engine, Helix, allowing you to run a Dataset once and leverage its results across multiple Reports.
+
+Unlike Datasets, dbt metric logic is run directly through dbt's SQL proxy and server to ensure the data is aggregated correctly.
+This requires each individual Metric chart to be run independently.
+However, we take advantage of Helix for all stylistic and formatting changes to avoid round trips to the database whenever possible.
+
+Learn more about dbt Semantic Layer Integration link:https://mode.com/get-dbt/[here].
+
+==== Dataset Usage
+
+[discrete]
+====== *Q: Can a Report have a mix of Queries and Datasets?*
+
+Of course!
+Reports can contain only Queries, only Datasets, or a combination of Queries and Datasets.
+
+[discrete]
+====== *Q: My Report uses a Dataset. How/when does its data refresh?*
+
+Datasets run independently of Reports.
+When you run your Report or refresh an individual Dataset, {brand} will check to see if there's a newer Dataset run available, load it in, and snapshot its results within your Report's Run History.
+
+Datasets in your Report are also badged when they have fresher runs available, so you know when to refresh.
+
+image::5-refresh-dataset.gif[Dataset refresh]
+
+NOTE: Changes to a Dataset's calculated fields will be reflected immediately on page load, regardless of whether there's a newer run available.
+
+You can also compare how recently your entire Report ran relative to when the Datasets were last run by navigating to your Report's Activity popover.
+
+image::6-activity-popover.png[Dataset refresh]
+
+[discrete]
+====== *Q: Does a Report schedule run the Datasets I'm using?*
+
+No.
+Report schedules only run query data within your Report and do not cause any source Datasets to be re-run.
+When a Report schedule runs, {brand} checks to see if any of the Datasets in use have newer runs available and loads in the data.
+The data is captured in run history as a part of the Report run.
+
+[discrete]
+====== *Q: Can I add Calculated fields to a Dataset within my Report?*
+
+Yes.
+In addition to inheriting any calculated fields that are added to the source Dataset, you can create your own, personal calculated fields without impacting the original Dataset.
+
+image::7-local-field.png[Adding Calculated fields to a Dataset]
+
+[discrete]
+====== *Q: What happens if a Dataset field shares the same name as a calculated field I've added within my Report?*
+
+It's rare, but there may be situations where a field is changed or added to the source Dataset resulting in a name collision on your Report's Dataset instance.
+In a name collision, the source Dataset field will override the local field and invalidate the formula.
+
+If this happens, you'll be notified via an error icon and tooltip.
+Simply update the name of your local field to resolve the issue
+
+image::8-name-conflict.png[Name conflict]
+
+[discrete]
+====== *Q: Can I add or promote my local field back to the source Dataset?*
+
+Not today, but we'll keep an eye out for use cases for doing something like this!
+
+[discrete]
+====== *Q: Can I filter Dataset data within my Report?*
+
+Yes.
+You can add Report filters to Reports created using Datasets.
+You can also filter individual chart's data in the visualization builder using the filter dropzone.
+
+[discrete]
+====== *Q: Can I analyze Dataset data within the Notebook?*
+
+No.
+Only query data within a Report is accessible within the Notebooks.
+
+[discrete]
+====== *Q: Can I add custom HTML to Reports that are using Datasets?*
+
+You can customize the styling of your Report's layout using the HTML editor, but link:https://mode.com/example-gallery/[example gallery] code that uses link:https://github.com/mode/alamode[alamode] is unsupported for Reports using Datasets.
+
+[discrete]
+====== *Q: Can I explore a Dataset?*
+
+You can't explore Datasets directly, but you can explore Report visualizations that are built on a Dataset.
+Currently, saving these Explorations is unsupported.
+
+[discrete]
+====== *Q: Is there an automated way to migrate existing queries to Datasets without manually copy/pasting the SQL?*
+
+No.
+There currently isn't a way to automate the migration of existing queries to Datasets.
+
+[discrete]
+====== *Q: Is there an automated way to copy charts and visualizations from SQL query-based reports to Dataset powered reports?*
+
+No.
+This functionality is not available today.
+However, our Product team is considering multiple enhancements to aid in the facilitation of this workflow.
+
+[discrete]
+====== *Q: Do Dataset runs count towards our data compute usage? Where can I view our data usage statistics?*
+
+When a Dataset's query is run (either manually from the Dataset editor or as the result of a Dataset schedule) it will count towards your data compute usage.
+
+However, Reports built on Datasets use the data available from the Dataset rather than hitting the data warehouse themselves.
+When a Report uses a Dataset, or is refreshed to load in a new Dataset run that's made available, data compute usage won't be impacted.
+
+Data usage from running Datasets will be reflected in your overall data usage on the Stats page in your {brand} Workspace Settings.
+
+[discrete]
+====== *Q: How do database and Collection permissions affect who can view Datasets and create new reports from them?*
+
+The table below indicates what access is needed in order to achieve desired actions:
+
+|===
+| Desired Action | Database Connection Access | Collection Access
+
+| Create a Dataset
+| Query
+| Editor
+
+| Edit a Dataset
+| Query
+| Editor
+
+| Move a Dataset to a different Collection
+| Query
+| Editor
+
+| View a Dataset
+| View
+| View
+
+| Use Dataset in a Report
+| View
+| View
+
+| View a Report that uses a Dataset
+| View
+| Collection that houses: +
+*Report* itself - View +
+Source *Dataset* - View
+
+| View a Report that uses a Dataset and contains one or more Queries
+| Connection(s) backing: +
+*Dataset* - View +
+*Queries* - View
+| Collection that houses: +
+*Report* itself - View +
+Source *Dataset* - View
+
+| Edit a Report that uses a Dataset
+| View
+| Collection that houses: +
+*Report* itself - Edit +
+Source *Dataset* - View
+
+| Edit a Report that uses a Dataset and contains one or more Queries
+| Connection(s) backing: +
+*Dataset* - View +
+*Queries* - Edit
+| Collection that houses: +
+*Report* itself - Edit +
+Source *Dataset* - View
+|===
+
+[discrete]
+====== *Q: Can a Dataset be made available in multiple Collections?*
+
+Like a report, a Dataset will live in a single Collection.
+But, it can be shortcutted to display in another Collection(s).
+
+image::multiplecollections.png[Dataset]
+
+A user's ability to view the Dataset will be determined by their granted access to both the database connection the Dataset uses and Collection it lives in.
+_See table in previous answer._
+
+For example, if you add a Dataset to a Collection that only a sub group of users have view access to, you could shortcut that Dataset into an All Company Collection with a broader audience.
+However, the expectation is that if a user without access to the original Collection clicks on the Dataset from the All Company Collection, they'll see a permissions error.
+
+[discrete]
+====== *Q: Is it possible to build a dataset on top of an existing dataset? Or join two or more Datasets together in a new Dataset?*
+
+No.
+It's not possible to reference Dataset results in SQL queries today.
+That means there isn't a way to leverage an existing dataset within a new Dataset, or join the results of multiple Datasets together.
+
+[discrete]
+====== *Q: Is it possible to create a report using a Dataset that lives in a personal Collection?*
+
+Yes.
+Personal Datasets can be used in Reports, by either pasting the URL into the Datasets browser or clicking on the "Use in new Report" button from its view page.
+
+However, Datasets in personal Collections aren't browseable or discoverable by other Workspace members so we strongly encourage moving Datasets out of your Personal Collection before using them in Reports.

@@ -1,0 +1,140 @@
+= Frequently Asked Questions
+:categories: ["FAQs"]
+:categories_weight: 11
+:date: 2023-01-22
+:description: Common questions and solutions
+:ogdescription: Common questions and solutions
+:path: /articles/faqs
+:brand: Mode
+
+=== Frequently Asked Questions and common errors
+
+Welcome to our FAQ page, where you'll find answers to some of the most frequently asked questions regarding {brand}.
+To help you quickly find what you need, we've organized the FAQs by category.
+
+On this page, you'll find links to the FAQ sections for each of our product area.
+Whether you're looking for assistance with connecting your database, troubleshooting, or general usage, our FAQs have you covered.
+We've included information on common errors, as well as tips to help you get the most out of {brand}.
+
+If you're unable to find the information you're looking for, please don't hesitate to reach out to our xref:contact-us.adoc[support team].
+We'll be happy to assist you further.
+
+==== Access control and permissions
+
+* xref:permissions.adoc#faqs[FAQs]
+
+==== API reference
+
+* xref:api-reference.adoc#faqs[FAQs]
+
+==== Authentication and SSO
+
+* xref:authentication-sso.adoc#faqs[FAQs]
+* xref:authentication-sso.adoc#troubleshooting[Common Errors]
+
+==== Calculated fields
+
+* xref:cal-fields.adoc#faqs[FAQs]
+* xref:cal-fields.adoc#troubleshooting[Common Errors]
+
+==== Collections
+
+* xref:spaces.adoc#faqs[FAQs]
+
+==== Collaboration and discovery
+
+* xref:collaboration-and-discovery.adoc#faqs[FAQs]
+
+==== Connecting to your database
+
+===== *Direct Connect*
+
+* xref:connecting-mode-to-your-database.adoc#faqs[FAQs]
+* xref:connecting-mode-to-your-database.adoc#troubleshooting[Common Errors]
+
+===== *Bridge*
+
+* xref:connecting-mode-to-your-database.adoc#faqs-bridge[FAQs]
+* xref:connecting-mode-to-your-database.adoc#troubleshooting-bridge[Common Errors]
+
+==== Datasets
+
+* xref:datasets.adoc#faqs[FAQs]
+
+==== dbt data freshness
+
+* xref:dbt-data-freshness.adoc#faqs[FAQs]
+* xref:dbt-data-freshness.adoc#troubleshooting[Common Errors]
+
+==== dbt and Looker Semantic Layer Integration
+
+* xref:dbt-semantic-layer.adoc[FAQs]
+* xref:dbt-semantic-layer.adoc[Common Errors]
+
+==== Discovery database
+
+* xref:discovery-database.adoc#faqs[FAQs]
+
+==== Explorations
+
+* xref:explorations.adoc#faqs[FAQs]
+
+==== Github
+
+* xref:github.adoc#faqs[FAQs]
+
+==== Internal embedded reports
+
+* xref:internal-embeds.adoc#troubleshooting[Common Errors]
+
+==== Notebook
+
+* xref:notebook.adoc#faqs[FAQs]
+
+==== Parameters
+
+* xref:parameters.adoc#faqs[FAQs]
+* xref:parameters.adoc#troubleshooting[Common Errors]
+
+==== Querying data
+
+* xref:querying-data.adoc#faqs[FAQs]
+* xref:querying-data.adoc#troubleshooting[Common Errors]
+
+==== Report scheduling and sharing
+
+* xref:report-scheduling-and-sharing.adoc#faqs[FAQs]
+* xref:report-scheduling-and-sharing.adoc#troubleshooting[Common Errors]
+
+==== Slack integration
+
+* xref:slack.adoc#faqs[FAQs]
+
+==== Supported databases
+
+* xref:supported-databases.adoc#faqs[FAQs]
+
+==== Visual Explorer
+
+* xref:visual-explorer.adoc#faqs[FAQs]
+
+==== Visualization filters
+
+* xref:viz-filters.adoc#faqs[FAQs]
+
+==== Visualizations
+
+* xref:visualizations.adoc#faqs[FAQs]
+
+==== Webhooks
+
+* xref:webhooks.adoc#faqs[FAQs]
+
+==== White-label embedded reports
+
+* xref:white-label-embeds.adoc#faqs[FAQS]
+* xref:white-label-embeds.adoc#troubleshooting[Common Errors]
+
+==== Workspaces
+
+* xref:organizations.adoc#faqs[FAQs]

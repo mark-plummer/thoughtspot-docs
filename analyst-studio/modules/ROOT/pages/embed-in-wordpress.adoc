@@ -1,0 +1,93 @@
+= Embedding a report in a Wordpress site
+:categories: ["Embedding"]
+:categories_weight: 30
+:date: 2018-05-17
+:description: How to embed a Mode report in a Wordpress site.
+:ogdescription: How to embed a Mode report in a Wordpress site.
+:path: /articles/embed-in-wordpress
+:brand: Mode
+
+=== Overview
+
+The link:https://wordpress.org/plugins/mode-analytics/[{brand} Wordpress plugin] allows you to easily xref:white-label-embeds.adoc[White-Label Embed] a {brand} report into a Wordpress site.
+
+image::wordpress-embed.png[Embed Mode Reports in WordPress]
+
+TIP: This link:https://wordpress.org/plugins/user-switching/[User Switching plugin] can help you quickly swap between user accounts in WordPress. This is handy for seeing what your users are able to see on each page, or for admins to switch between multiple accounts to manage reports.
+
+=== Requirements
+
+* The {brand} Workspace containing the target report must be on a link:https://mode.com/compare-plans/[paid plan] that includes xref:white-label-embeds.adoc[White-Label Embeds].
+* You must have a valid xref:organizations.adoc#white-label-embed-signature-tokens[**signature token**] for the Workspace that contains the target report.
+Ensure you have both the public access key and private access secret.
+* You must have administrative access to the Wordpress site where you want to embed the report.
+* Your Wordpress site must be part of a WordPress.com Business account or a link:http://wordpress.org/[WordPress.org] account.
+
+=== Implementation steps
+
+[#install-the-mode-wordpress-plugin]
+==== Install the {brand} WordPress plugin
+
+Log in to your WordPress dashboard to install the {brand} Wordpress plugin:
+
+. In the left navigation panel, click *Plugins*, and then *Add New*.
+. Search for *{brand} Analytics* and the latest version will appear at the top of the list of results.
+. Click *Install Now*.
+. Wait for the installation to finish, then click *Activate*.
+
+==== Input your {brand} signature token
+
+In the WordPress dashboard, go to *Settings* \-> *{brand} Analytics*.
+Paste your signature token *Access Key* and *Access Secret* into the plugin.
+
+==== Add and configure the report embed
+
+Click *Add Report* and fill in the following fields:
+
+* *Max Age:* An integer specifying the maximum allowable age, in seconds, that a cached report run's results may be.
+If the report was last run more than the defined number of seconds ago, the report will rerun and return fresh results.
+Set to `0` to ensure the report runs every time the embed is viewed.
+* *Report URL:* Enter the report's URL (for example, `+https://app.mode.com/octan/reports/35c9sh5a174f/+`)
+* *Embed Type:* Select White-Label Embeds.
+* *Short Code Report Name:* Select a name to be used to embed this report.
+* *Select Buttons (Optional):* For White-Label Embeds, you have the option to allow CSV export and report filters (if defined in the report).
+
+==== Configure parameters (if required)
+
+On a report, click *Add Parameters* and fill in the following fields:
+
+* *Parameter Slug:* This should be consistent with the xref:parameters.adoc[Parameters] used in the report.
+* *Data Types:* Select the type of data input: text, number, or date.
+* *Users Can Edit:* This enables report viewers to select Parameters.
+* *Default Value:* Select which Parameter you would like viewers to see as the default.
+
+==== Add the embed to a page
+
+. On the left navigation panel, select *Pages*, and click *New Page*.
+. Create a page title.
+. In the content section, insert the Short Code Report name from your plugin settings: `[mode-analytics report_name="Short Code Report Name"]`.
+. Under *Publish*, select *Preview Changes* or view the page outside of the editor by clicking the *Permalink*.
+
+=== User tokens
+
+With <<install-the-mode-wordpress-plugin,{brand}'s WordPress plugin>>, admins can set up user authentication Parameters or tokens.
+You can create a custom attribute for each user's profile that will dynamically replace the token (for example, `+{{account_id}}+` in the Parameter default value field) when an embed is rendered.
+This will ensure that the user is shown the embed with the correct Parameters.
+
+==== Create a user-specific token in WordPress
+
+. Go to *User Settings* and then select a *User Profile*.
+. Scroll to the bottom of the user profile page.
+. Select *Add Token*.
+. Create a unique token in the *Token Name*. We recommend creating one token per report.
+. In *Custom Value*, enter the parameter value you intend to replace the token with.
+The parameter value should be specific to the user who is viewing the report.
+_Make sure that the value you insert to substitute the token is the same value that you've assigned in your {brand} report._
+
+==== Add token parameter into a report in WordPress
+
+. Go to *Settings*, then *{brand} Analytics*.
+. In the Parameter section of the report, enter the following:
+ ** *Parameter Slug:* The same Parameter you used in the {brand} Report.
+ ** *Data Type:* Select Text, as the Default Value will be the User Token you created above.
+ ** *Default Value:* The user-specific token name you created on the WordPress User Profile above.

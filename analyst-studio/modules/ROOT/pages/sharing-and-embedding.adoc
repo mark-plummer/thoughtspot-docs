@@ -1,0 +1,81 @@
+= Sharing and embedding
+:categories: ["Administration"]
+:categories_weight: 3
+:date: 2021-04-08
+:description: Control your account’s sharing settings for embeds
+:ogdescription: Control your account’s sharing settings for embeds
+:path: /articles/sharing-and-embedding
+:brand: Mode
+
+[#sharing]
+=== Sharing
+
+Admins can control how members of their Workspace are able to share reports both internally and externally:
+
+. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Click on *Sharing & Embedding* under Features.
+
+Adjust the toggles next to each of the following options and click *Save settings* when you are done to confirm:
+
+[discrete]
+===== Allow external sharing of reports
+//+++<flag-icon>++++++</flag-icon>+++
+
+Disabled by default.
+External sharing must be enabled in Workspace Settings before anyone can share reports outside of your Workspace.
+Enabling external sharing in Workspace Settings will *not* cause any reports or data to be shared;
+external sharing must be enabled for each individual report.
+
+Disabling this setting will immediately cause all xref:report-scheduling-and-sharing.adoc#link[external links] to all reports in your Workspace to stop functioning and return a `404 - Not Found` error.
+Any reports which previously had external sharing enabled will therefore become inaccessible to viewers who are not logged-in members of your Workspace.
+
+If you are an admin of {brand}'s paid plan Workspace and you do not see the setting to enable External Sharing, it may not be included as part of your paid agreement.
+xref:contact-us.adoc[Contact our success team] to learn more.
+
+[discrete]
+===== Allow data previews, PDFs, and CSVs to be included in emails and Slack messages
+
+Enabled by default.
+When disabled, report image previews will no longer appear the message bodies of Slack or email shares, and reports shared via email can no longer contain attached PDFs or CSVs.
+
+[discrete]
+===== Allow users to access and move reports into your Workspace's Community space
+
+Disabled by default.
+Enable to make the xref:spaces.adoc#community-space[community Collection] visible to all members of your Workspace and allow users to move reports into it.
+Hiding the community Collection will not delete reports already inside it.
+Reports already in the community Collection will still exist and will be available via URL or discoverable through {brand} search.
+However, members will not be able to move any new reports into the community Collection.
+
+[discrete]
+===== Require transport encryption for emails
+
+Disabled by default.
+Enable this feature to prevent {brand} from being able to send emails related to your Workspace, such as when members share via email, to servers that don't have transport encryption enabled.
+
+=== Embedding
+
+[#white-label-embed-signature-tokens]
+==== White-Label Embed signature tokens
+
+You must use a valid signature token for your {brand} Workspace to successfully generate a signature for a White-Label Embed URL.
+Signature tokens can only be created by a Workspace admin.
+To create or modify a signature token:
+
+image::signature-token-settings.png[New signature token]
+
+. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Click on *Sharing & Embedding* under Features.
+. Click on the *Embedding* tab.
+. To create a new signature token, enter a unique name and click *Create token*.
+The new token's public *access key* and private *access secret* will appear.
+. To rename or invalidate a signature token, click *Edit* next to its name in the list.
++
+WARNING: Remember to store the access secret securely. Do not expose the access secret on public sites, in client-side code, or in public code repositories.
+
+=== Slack integration
+
+NOTE: {brand} will be sunsetting the legacy Slack integration in September 2022. To upgrade your workspace to the latest Slack integration version, follow the instructions xref:slack.adoc[here].
+
+The link:https://slack.com/apps/A1KBFDRGR-mode[{brand} Slack app] enables members of your Workspace to link:https://mode.com/integrations/slack/[share reports via Slack] directly from {brand}.
+Set up your xref:slack.adoc#setting-up[Slack Integration] today and xref:report-scheduling-and-sharing.adoc#slack[start sharing].

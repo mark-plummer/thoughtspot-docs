@@ -1,0 +1,86 @@
+= Organizing reports
+:categories: ["Navigate and organize content"]
+:categories_weight: 5
+:date: 2018-05-17
+:description: How to create, duplicate, delete, archive, and move reports in Mode.
+:ogdescription: How to create, duplicate, delete, archive, and move reports in Mode.
+:path: /articles/organizing-reports
+:brand: Mode
+
+=== Create a new Report
+
+. Navigate to the link:https://app.mode.com/home/[{brand} home page] and (if necessary) sign in to {brand}.
+. Click on the *New* image:modal-add.svg[new] button in the upper right corner of the window.
+. A new, empty Report will be created in your personal Collection.
+
+=== Star a Report
+
+Use stars to privately mark the reports you use the most so you can find them quickly.
+To star a Report:
+
+. Navigate to the Collection where the Report is located.
+. Hover over the Report thumbnail;
+an empty star will appear next to the Report name.
+. Click on the *Star* image:inline-star-default.svg[star].
+
+To see a list of all the starred reports, regardless of where they live, click on *Starred* on the left side of your link:https://app.mode.com/home/[{brand} home page].
+To remove a star from a Report, repeat the above steps.
+
+=== Duplicate a Report
+
+{brand} lets you copy an existing Report so that you can modify or build on it without making changes to the original.
+You can duplicate any Report that you created.
+In a paid plan Workspace, you can duplicate any Report visible to you, as long as you have access to all of the database connections used in that Report.
+
+To duplicate a Report:
+
+. Navigate to the Collection containing the Report you want to duplicate.
+. Hover over the Report thumbnail and click the overflow menu icon image:menu-dots-gray-press.svg[menu] that appears in the upper right.
+. Alternatively, you can access the same affordance from the Report Settings menu in the header while editing a Report, or the More menu in the header when viewing.
+. Click *Duplicate*.
+. Stay on the page to be notified when the copy is ready and available to use.
+. A duplicated Report, including all code, results, and visualizations, will be created in your Personal Collection with you as the creator.
+
+You may now modify this duplicated Report without impacting the original Report in any way.
+
+=== Archive a Report
+
+You can archive reports that you want to hide from view but are not yet ready to delete.
+To archive a Report:
+
+. Navigate to the Collection containing the Report you want to archive.
+. Hover over the Report thumbnail and click on the overflow menu icon image:menu-dots-gray-press.svg[menu] that appears in the upper right.
+. Click *Archive*.
+. The Report will be hidden from view, but it will not be modified in any other way.
+
+Archived reports are still accessible to Workspace members via direct link or search.
+You can see all of the archived reports in a Collection by navigating to that Collection and clicking on the *View All Reports* dropdown in the upper right, and clicking *Archive*.
+You can unarchive any of the reports in this view by hovering over the Report thumbnail, clicking on the overflow menu icon image:menu-dots-gray-press.svg[menu] button that appears in the upper right, and clicking *Unarchive*.
+
+=== Delete a Report
+
+Deleting a Report removes it from your Workspace, including all of its code, results, run history, and visualizations.
+When you delete a Report, it will no longer be visible in {brand}, and links to that Report will no longer work.
+To delete a Report:
+
+. Navigate to the Collection containing the Report you want to delete.
+. Hover over the Report thumbnail and click on the overflow menu icon image:menu-dots-gray-press.svg[menu]that appears in the upper right.
+. Click *Delete*.
+
+When you delete a Report, it will no longer be accessible by anyone in your {brand} Workspace.
+To recover a deleted Report, contact customer support.
+
+[#move-a-report-to-another-collection]
+=== Move a Report to another Collection
+
+. Navigate to the Collection containing the Report you want to move.
+. Click the overflow menu icon image:menu-dots-gray-press.svg[menu] in the upper right corner.
+. Click *Move to...*
+. Find and click on the Collection to which you want to move the Report.
+. Click *Move*.
+
+You can move reports that you can edit into any Collection that you have edit access to.
+If you have view-only access to a Collection, you will not be able to move reports into it.
+NOTE: Once you move a Report from your xref:spaces.adoc#personal-space[Personal Collection] to another Collection, you cannot move it back. A workaround would be to duplicate the Report back to your Personal Collection.
+
+You cannot move a Report to the xref:spaces.adoc#community-space[community collection] if any query within it has ever been run against any database other than the {brand} Public Warehouse.
