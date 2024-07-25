@@ -61,3 +61,6 @@
 ** xref:api-reference.adoc[API reference]
 ** xref:discovery-api.adoc[Discovery API]
 ** xref:discovery-database.adoc[Discovery Database]
+
+* xref:faqs.adoc[FAQs]
+* xref:contact-us.adoc[Contact us]
