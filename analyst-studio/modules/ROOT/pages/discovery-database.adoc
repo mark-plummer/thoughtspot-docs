@@ -9,7 +9,7 @@
 
 //+++<flag-icon>++++++</flag-icon>+++
 
-=== Overview
+== Overview
 
 For qualifying customers, {brand}'s Discovery Database provides access to your Workspace's usage data.
 This data is provided via link:https://docs.snowflake.com/en/user-guide/data-sharing-intro.html#what-is-a-share[Secure Data Sharing by Snowflake] which allows {brand} to securely share your usage data in a Snowflake database unique to your Workspace.
@@ -22,10 +22,10 @@ In other words, with the Discovery Database, you can use {brand} to measure and 
 See the full documentation for {brand}'s Discovery Database link:https://mode.com/developer/discovery-database/introduction/[here].
 
 [#faqs]
-=== FAQs
+== FAQs
 
 [discrete]
-====== *Q: How to check which reports are scheduled and viewed*
+=== *Q: How to check which reports are scheduled and viewed*
 
 *API method*
 
@@ -40,7 +40,7 @@ You can also use the Discovery Database to obtain the same information for their
 The documentation for the Discovery Database can be found link:https://mode.com/developer/discovery-database/introduction/[here].
 
 [discrete]
-====== *Q: How often is data in the Discovery Database refreshed?*
+=== *Q: How often is data in the Discovery Database refreshed?*
 
 The Discovery database is updated overnight each day, specifically at 4:00 am Pacific time.
 Because data is synced to Snowflake on an hourly basis, data from 3am - 4am Pacific will not sync to Snowflake before the 4am daily update.

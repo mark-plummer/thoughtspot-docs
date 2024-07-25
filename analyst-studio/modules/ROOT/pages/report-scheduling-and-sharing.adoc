@@ -9,12 +9,12 @@
 :brand: Mode
 
 [#sharing-and-scheduling]
-=== Sharing and scheduling
+== Sharing and scheduling
 
 To share a report, open it and click *Share* in the report header.
 
 [#email]
-==== Email
+=== Email
 
 image::share-via-email.png[Share via email]
 
@@ -22,28 +22,28 @@ To share a report via email with one or more teammates (or even with yourself), 
 You can include a short message to provide context and use the options at the bottom to further customize the email they will receive.
 When you click *Send*, {brand} sends the email immediately.
 
-You can choose whether or not to include links to {brand} reports when you share them via email, Slack, or PDF.
+You can choose whether to include links to {brand} reports when you share them via email, Slack, or PDF.
 To remove report links when sharing, un-check *Include report links*.
 
 NOTE: All recipients must be members of your {brand} Workspace or have an email address in a xref:organizations.adoc#claimed-domains[domain claimed by your Workspace], unless the report has <<external-sharing,external sharing>> enabled.
 
-If the report does not have external sharing enabled and you enter an email address which is in a domain claimed by your Workspace but which is not a member of that Workspace, the user will automatically be invited to join your {brand} Workspace, and must become a member in order to see the report.
+If the report does not have external sharing enabled, and you enter an email address which is in a domain claimed by your Workspace but which is not a member of that Workspace, the user will automatically be invited to join your {brand} Workspace, and must become a member in order to see the report.
 
 [#slack]
-==== Slack
+=== Slack
 
 image::share-via-slack.png[Share via slack]
 
 To share a report to a channel in a xref:slack.adoc[connected Slack workspace], select the name of the Slack channel and optionally include a message to provide context.
 The Slack message will always include your name, the report title, and an <<link,internal link>> to the report.
-An xref:organizations.adoc#sharing[image preview of the report output] will also be included unless this setting is disabled for your Workspace by an admin.
+An xref:sharing-and-embedding.adoc#sharing[image preview of the report output] will also be included unless this setting is disabled for your Workspace by an admin.
 When you click *Send*, {brand} will post the message to the designated Slack channel immediately.
 
 To share a report to a private channel in a xref:slack.adoc[connected Slack workspace], type the private channel name into the Channel picker exactly as it is;
 private channel names will not be autocompleted.
 
 Prior to clicking *Send*, be sure to add the @Mode slack bot to any private channels that will be sharing destinations.
-You can do this by mentioning `@Mode` in the channel and then you'll be given the option to add the bot to that channel.
+You can do this by mentioning `@Mode` in the channel, and then you'll be given the option to add the bot to that channel.
 Private channels without the @Mode bot cannot receive shared reports.
 Here's an example showing how to add a bot to a Slack channel:
 
@@ -53,7 +53,7 @@ Everyone in the Slack channel you choose will see the message you share (includi
 However, only those who have access to the report in {brand} will be able to access it via the included report link.
 
 [#link]
-==== Link
+=== Link
 
 image::share-via-link.png[Share via link]
 
@@ -77,7 +77,7 @@ Click *Copy* next to any link to copy that link to your clipboard.
 TIP: An easy way to tell the difference between a report link and a static run link is that a static run link will always have `/runs/[RUN_TOKEN]/` near the end of the URL path.
 
 [#scheduled-runs]
-==== Scheduled runs
+=== Scheduled runs
 
 image::refresh-on-a-schedule.png[Share via schedule]
 
@@ -100,7 +100,7 @@ At that point, the Notebook will refresh when the report itself is re-run.
 To add a Notebook output to your report, click *Add to Report* located on the Main or Cell xref:notebook.adoc#toolbar[Toolbar] of the Notebook.
 
 [#external-sharing]
-==== External sharing
+=== External sharing
 //+++<flag-icon>++++++</flag-icon>+++
 
 External sharing must be explicitly enabled on a report-by-report basis.
@@ -113,7 +113,7 @@ The underlying code, other report runs, and any other information won't be visib
 +
 IMPORTANT: Take care when distributing external report links to prevent unauthorized access to your private data.
 
-Once an admin has xref:organizations.adoc#sharing[enabled external sharing for your Workspace], as long as the report has been moved to a collection, anyone with edit access to a report may enable or disable external sharing for it.
+Once an admin has xref:sharing-and-embedding.adoc#sharing[enabled external sharing for your Workspace], as long as the report has been moved to a collection, anyone with edit access to a report may enable or disable external sharing for it.
 To enable or disable external sharing for a report:
 
 . Open the report and click *Share* in the report header.
@@ -126,7 +126,7 @@ If you disable external sharing for a report, any previously generated <<link,ex
 
 TIP: To simulate what someone outside your Workspace can see with an <<link,external link>> to a report, try accessing it using your browser's link:https://www.howtogeek.com/269265/how-to-enable-private-browsing-on-any-web-browser/[private mode].
 
-=== PDF exports
+== PDF exports
 
 PDFs are a great way to take a point-in-time snapshot of your content in {brand} to share with others.
 {brand} PDFs are single-scroll documents that mimic the experience of viewing a report in {brand}.
@@ -180,10 +180,10 @@ status.end('script is done processing'); // signals the work segment is finished
 image::pdfhtmlcss.png[pdf exports]
 
 [#faqs]
-=== FAQs
+== FAQs
 
 [discrete]
-====== *Q: Can you subscribe a user to a report without sending an email notification?*
+=== *Q: Can you subscribe a user to a report without sending an email notification?*
 
 If you subscribe a user to a report, they will always receive an email notification letting them know that they have been subscribed.
 There is no way to disable this notification, so users should be aware that they will receive an email each time they are subscribed to a report.
@@ -192,7 +192,7 @@ It's important to keep this in mind when subscribing users to reports, as they m
 They will have the option to unsubscribe.
 
 [discrete]
-====== *Q: Is there a way to disable the generated image in Slack when creating schedules?*
+=== *Q: Is there a way to disable the generated image in Slack when creating schedules?*
 
 Allowing data previews, PDFs, and CSVs to be included in emails and Slack messages is enabled by default.
 When disabled, report image previews will no longer appear the message bodies of Slack or email shares, and reports shared via email can no longer contain attached PDFs.
@@ -203,17 +203,17 @@ Admins can control how members of their Workspace are able to share reports both
 See the full documentation for sharing data in {brand} xref:sharing-and-embedding.adoc[here].
 
 [discrete]
-====== *Q: How long is the generated image in Slack available for?*
+=== *Q: How long is the generated image in Slack available for?*
 
 The report image preview is live for four days after posting in the Slack channel.
 After this time, the image will be replaced with a stock image stating that the report preview has expired.
 Users with {brand} access can still access the report to view data from the latest run via clicking the URL shared in the Slack message.
 
 [discrete]
-====== *Q: How to create a schedule with dynamic date parameters.*
+=== *Q: How to create a schedule with dynamic date parameters.*
 
 When creating schedules in {brand}, you may want to set up a date parameter that's relative to the time the schedule runs.
-For example, rather than setting a date parameter to show data from January 1, 2023 to today, you may want the set up the parameter to show data over the last week.
+For example, rather than setting a date parameter to show data from January 1, 2023 to today, you may want to set up the parameter to show data over the last week.
 
 You can do this using an `if` statement in your query.
 The query below shows an example.
@@ -271,17 +271,17 @@ You can do things like this with `if` statements in {brand} because it uses the 
 You can read more about what you can do in {brand} with this language and xref:querying-data.adoc#extending-sql-with-liquid[common techniques here].
 
 [discrete]
-====== *Q: Can you remove the {brand} branding from a PDF export from within {brand}'s UI?*
+=== *Q: Can you remove the {brand} branding from a PDF export from within {brand}'s UI?*
 
 At this time, there is no currently available method for removing the {brand} logo from PDFs.
 However, if your report has <<external-sharing,external sharing>> enabled, the downloaded PDF will not include the {brand} logo at the bottom of the PDF.
 Additionally, you can also try enabling this feature in White Label Embed reports.
 
 [#troubleshooting]
-==== Troubleshooting
+=== Troubleshooting
 
 [discrete]
-====== *1. Why didn't my scheduled report send?*
+=== *1. Why didn't my scheduled report send?*
 
 If the schedule for the report does not fire or is not sent, it could be due to an error in the underlying SQL query.
 This could be caused by a change in the query or database schema, a loss of connection between {brand} and your database, or one or more queries in the report taking too long to run and timing out.

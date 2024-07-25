@@ -8,7 +8,7 @@
 :versions: ["business"]
 :brand: Mode
 
-=== Overview
+== Overview
 
 An Internal Embed built using your private data is only visible to logged-in members of your {brand} Workspace who would otherwise have access to the underlying report.
 It can be embedded within private wiki, blog, or any other website or application with access to the internet.
@@ -16,9 +16,9 @@ Here's an example of what an Internal Embed looks like:+++<iframe src="https://a
 
 Click the green *Powered by {brand}* link at the bottom of the embed to open the underlying report in {brand}.
 
-NOTE: Generally, you must be logged in to {brand} and have access to the underlying report in order to view an Internal Embed. However, the above embedded report is built on xref:managing-database-connections.adoc#mode-public-warehouse[{brand}'s Public Warehouse] and is therefore viewable by anyone on the internet. Learn more about <<embedding-reports-built-using-the-mode-public-warehouse,embedding reports built on {brand}'s Public Warehouse>>.
+NOTE: Generally, you must be logged in to {brand} and have access to the underlying report in order to view an Internal Embed. However, the above embedded report is built on xref:managing-database-connections.adoc#mode-public-warehouse[{brand}'s Public Warehouse] and is therefore viewable by anyone on the internet. Learn more about xref:white-label-embeds.adoc#embedding-reports-built-using-the-mode-public-warehouse[embedding reports built on {brand}'s Public Warehouse].
 
-=== Create an internal embed URL
+== Create an internal embed URL
 
 An internal embed url can point to either a standard report URL (which displays results from the most recent report run) or a xref:report-layout-and-presentation.adoc#run-history[static report run URL] (which displays results from a specific run).
 
@@ -43,7 +43,7 @@ Open the report editor for the report you want to embed and click *Embed* in the
 
 image::internal_embed2023.png[Internal Embed modal]
 
-==== Static iframe
+=== Static iframe
 
 Embeds using a static link:https://www.w3schools.com/tags/tag_iframe.asp[HTML iframe] do not require the execution of any client-side JavaScript and therefore may be more suitable for use with certain blogs or content management systems.
 However, you must set the height of the link:https://www.w3schools.com/tags/tag_iframe.asp[iframe] manually using the `height` attribute of the `<iframe>` (default is 300px).
@@ -55,7 +55,7 @@ For example:
 ----
 
 [#javascript]
-==== JavaScript
+=== JavaScript
 
 If your embed host application allows for client-side JavaScript, you can use the JavaScript embed method.
 The JavaScript snippet includes a link:https://app.mode.com/embed/embed.js[helper library] that automatically produces an iframe for the embed with the class `mode-embed`.
@@ -71,7 +71,7 @@ The helper library adds the following inline styles to each iframe: `width: 100%
 
 TIP: If your host application has multiple embeds on a single page and you use this method, you only need to include the helper library once.
 
-=== Place the embed URL into an iframe
+== Place the embed URL into an iframe
 
 To finish creating your embed, add an iframe to your host application with the `src` attribute set equal to the internal embed URL.
 For example:
@@ -92,19 +92,19 @@ You can also use {brand}'s <<javascript,JavaScript embed helper library>> to dyn
 
 NOTE: Unlike White-Label Embeds, internal embeds do not allow for parameter values to be set within the URL.
 
-=== Common techniques
+== Common techniques
 
-==== Filter panel toggle
+=== Filter panel toggle
 
 Internal Embeds feature a branded {brand} border, which includes a *Filters* button in the lower right corner that you can use to toggle the xref:interactivity.adoc#filters-and-parameters[filter] panel open or closed.
 
-==== Styling and branding
+=== Styling and branding
 
 You can use a xref:organizations.adoc#colors-and-styling[custom theme] or xref:report-layout-and-presentation.adoc#external-assets[CSS] to style an embedded report so its look and feel match that of its host application.
 
 Learn more about link:https://mode.com/blog/custom-css-for-on-brand-dashboards/[how to style reports using custom CSS].
 
-==== Hide a report element
+=== Hide a report element
 
 You can instruct an embed to hide individual report elements by adding the `embed-hidden` class to it using the xref:report-layout-and-presentation.adoc#html-editor[HTML editor].
 The following example is the HTML for a report with two side-by-side charts:
@@ -131,10 +131,10 @@ Accordingly, these are not rendered by default in an embed.
 IMPORTANT: Attaching the `embed-hidden` class to an element hides it when an embed renders but *does not* prevent that element's contents from being transmitted to the host application page. These contents will still be accessible if the host application viewer inspects the page.
 
 [#faqs]
-=== FAQs
+== FAQs
 
 [#troubleshooting]
-==== Troubleshooting
+=== Troubleshooting
 
 Similar to White-Label Embeds, issues can arise if the URL is incorrect or missing `/embed`.
 If the following error returns, it's likely that your URL is incorrect or pointing at a report that you may not have access to within {brand}.
@@ -144,7 +144,7 @@ image::report_not_found.png[]
 * Click on the green *Powered by {brand}* link at the bottom of the embed to open the underlying report in {brand} to see if you have access.
 If the report is visible in {brand} and not within the embed, likely the URL is incorrect.
 * If a user is unable to see the embed in the application, have them make sure to sign into {brand} in another tab.
-Only users that are signed in to {brand} are able view internal embeds.
+Only users that are signed in to {brand} are able to view internal embeds.
 * {blank}
 xref:contact-us.adoc[Contact our Support Team] +
 if issues persist after verifying the above details for assistance.

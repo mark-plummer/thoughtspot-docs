@@ -7,7 +7,7 @@
 :path: /articles/managing-database-connections
 :brand: Mode
 
-=== Overview
+== Overview
 
 You can connect as many private databases to your {brand} Workspace as you like.
 {brand} supports connecting to most popular types of https://mode.com/data-sources/[relational databases].
@@ -15,9 +15,9 @@ When you connect a database to your {brand} Workspace, by default all members of
 
 All Workspaces are also automatically connected to the <<mode-public-warehouse,{brand} Public Warehouse>>.
 
-=== Private data connections
+== Private data connections
 
-==== Connect a new database
+=== Connect a new database
 
 To connect your database to your {brand} xref:organizations.adoc[organization]:
 
@@ -30,7 +30,7 @@ Learn more about xref:connecting-mode-to-your-database.adoc[how {brand} connects
 
 IMPORTANT: Any active member of a {brand} Workspace can create a new database connection. By default, new database connections may be queried by all members of the Workspace. To restrict non-admin access to a data source, you can <<limit-access-to-a-data-connection-in-mode,limit access to it to specific users>>.
 
-==== Modify or disconnect a connected database
+=== Modify or disconnect a connected database
 
 You can only delete or modify the settings and credentials for a database connection if you're an admin or if you were the member who connected it to the Workspace.
 
@@ -44,7 +44,7 @@ Click *Delete* to disconnect this database from {brand}.
 IMPORTANT: Deleting a database connection from {brand} will prevent all reports built using that connection from running until a new connection is selected. Deleting a database connection will not, however, have any effect on the database itself.
 
 [#update-preferred-jdbc-driver]
-==== Update preferred JDBC driver
+=== Update preferred JDBC driver
 
 To update the driver {brand} uses to connect to one of your data sources, you must have the Manage Data Source permission or higher.
 
@@ -65,11 +65,11 @@ image:save_driver_update_changes.png[Enter Password]
 . You should see a blue banner at the top of the screen indicating the connection properties have been updated.
 +
 image:driver_saved_ribbon.png[Data Source Saved]
-. An error like the following indicates the user name and password (or equivalent) must be re-entered before saving the driver changes.
+. An error like the following indicates the username and password (or equivalent) must be re-entered before saving the driver changes.
 +
 image:driver_update_auth_fail_ribbon.png[Data Source Auth Fail]
 
-==== Disable or enable Automatic Schema Refresh
+=== Disable or enable Automatic Schema Refresh
 
 For Admins and users with "manage" permission:
 
@@ -79,7 +79,7 @@ For Admins and users with "manage" permission:
 Schema refresh will now be disabled or enabled.
 . Manually refresh the schema with the button at the top of the page.
 
-==== Trigger a Schema Refresh
+=== Trigger a Schema Refresh
 
 {brand}'s schema update frequency is daily at 3:05pm UTC (7:05am PST / 8:05am PDT based on daylight savings).
 However, you can trigger a schema refresh at any time.
@@ -91,13 +91,13 @@ image:schema-browser-refresh.png[Schema Browser Refresh]
 +
 image:workplace-settings.png[Workplace Settings] +
 Then go to *Manage Connections* under the Data section to select the data source.
-Select the *Refresh schema* button on the top right corner.
+Select the *Refresh schema* button in the top right corner.
 +
 image:manage-connections-refresh-schema.png[Manage Connections Refresh]
 
-=== Controlling access
+== Controlling access
 
-==== Database user permissions
+=== Database user permissions
 
 Most databases provide robust permission systems, which let you manage user roles to set detailed schema- and table-level permissions.
 In {brand}, your Workspace will access each data connection through a single user, which we recommend you or your database admin create expressly for use with {brand}.
@@ -110,7 +110,7 @@ One way is to leverage the permissions granted to the single user your Workspace
 Limiting that user's permissions on the database side will, in turn, restrict the access of all members of your {brand} Workspace for that data connection.
 
 [#limit-access-to-a-data-connection-in-mode]
-==== Limit access to a data connection in {brand}
+=== Limit access to a data connection in {brand}
 //+++<flag-icon>++++++</flag-icon>+++
 
 Admins in a paid plan Workspace can also limit access to a data connection to specific non-admin users or user groups directly in {brand}.
@@ -149,13 +149,13 @@ When in the pop-up box, click on each user or user group that you want to grant 
 . Once you click on the user or user group, you will have the option to grant *Query*, *View*, or *Manage* access.
 . If you change your mind and want to remove that member, click on the user or user group, then click on the *Access Type* and choose *Remove Access*. Then confirm *Remove Access*.
 
-==== How database permissions and {brand} permissions interact
+=== How database permissions and {brand} permissions interact
 //+++<flag-icon>++++++</flag-icon>+++
 
 Here's an example of how this setup might look for a company with a single database, connected to {brand} via two different database user roles.
 
 Note that these permissions only determine query access.
-Users in your Workspace will be able to see a report created with one of these data connections unless the report is in a xref:spaces.adoc#private-space[private Collection].
+Users in your Workspace will be able to see a report created with one of these data connections unless the report is in a xref:spaces.adoc#personal-space[private Collection].
 
 image::data-source-roles-with-query-access.png[Database roles with query access]
 
@@ -171,8 +171,8 @@ Note that the default name will be the name of the database (for example, Redshi
 They will not have access to any sensitive financial information.
  ** A user with query access to "`All`" will be able to query the marketing and finance tables.
 
-[#query-headers-&-footers]
-=== Query headers and footers
+[#query-headers-and-footers]
+== Query headers and footers
 //+++<flag-icon>++++++</flag-icon>+++
 
 {brand} enables customers to annotate queries in two ways:
@@ -183,7 +183,7 @@ This metadata can include {brand} user or query attributes (for example, usernam
 * {brand} automatically appends a SQL comment to each query with the following static {brand} user attributes: email, timestamp of query run, {brand} query run URL, and a boolean value indicating whether the query was executed manually or scheduled.
 {brand} calls these Query *Footers*.
 
-==== Query headers
+=== Query headers
 
 Custom query headers allow admins to prepend queries with code that executes every time a query is run against the data connection.
 Using custom query headers you can:
@@ -194,7 +194,7 @@ Using custom query headers you can:
 +
 IMPORTANT: Headers are injected only once per {brand} SQL query, even if that query is split into multiple statements. Query Headers appear as part of the syntax executed by the database. Query Headers are not visible in {brand}'s SQL Editor, but are viewable in a historical query run.
 
-===== Modify a data connection's query header
+=== Modify a data connection's query header
 
 You must be the creator of a data connection or a Workspace admin to modify its query header.
 
@@ -206,7 +206,7 @@ You must be the creator of a data connection or a Workspace admin to modify its 
 . In the space provided, add or modify any valid SQL code (including comments and valid Liquid code) that you want {brand} to prepend to all queries run against this connection.
 . When you are finished, click *Save*.
 
-===== Variables
+==== Variables
 
 Each time a query is executed, {brand} automatically defines a number of Liquid variables containing useful audit information.
 You can reference these variables in your custom query headers to add audit information that will appear in your database's logs.
@@ -241,9 +241,9 @@ false otherwise.
 
 _*Find a group's token by going to Settings > Groups > click a group. The token is a 12-character string at the end of the URL._
 
-===== Examples
+==== Examples
 
-====== Assign scheduled queries to a different group in Redshift
+===== Assign scheduled queries to a different group in Redshift
 
 [source,sql]
 ----
@@ -252,14 +252,14 @@ SET query_group TO scheduled_queries;
 {% endif %}
 ----
 
-====== Set a default schema
+===== Set a default schema
 
 [source,sql]
 ----
 SET SEARCH_PATH TO 'webapp';
 ----
 
-====== Add comments with run date, type, and running user
+===== Add comments with run date, type, and running user
 
 This example is illustrated with a multi-statement query to show how headers and footers interact.
 
@@ -312,7 +312,7 @@ SELECT 2
 -- {"user":"@jane_doe","email":"hi@modeanalytics.com","url":"https://modeanalytics.com/modeqa/reports/1820851ba5a0/runs/a85b6da6912d/queries/d7f43f015d70","scheduled":false}
 ----
 
-==== Query footers
+=== Query footers
 
 {brand} always appends a non-customizable SQL comment annotation at the end of a query.
 By default, this annotation is made per query.
@@ -329,7 +329,7 @@ The annotation always includes:
 * url: complete query run url
 * scheduled: true/false
 
-===== Examples
+==== Examples
 
 In {brand}:
 
@@ -361,7 +361,7 @@ SELECT 2
 ----
 
 [#mode-public-warehouse]
-=== {brand} Public Warehouse
+== {brand} Public Warehouse
 
 {brand} hosts a public PostgreSQL data warehouse so you can share data and analysis with the entire {brand} community.
 The {brand} Public Warehouse is a great tool that you can use to:
@@ -373,7 +373,7 @@ The {brand} Public Warehouse is a great tool that you can use to:
 Anyone with a {brand} account has access to the {brand} Public Warehouse and can build reports on top of the data inside it.
 
 [#uploading-data]
-==== Uploading data
+=== Uploading data
 
 IMPORTANT: **All data uploaded into the {brand} Public Warehouse is publicly accessible by anyone on the internet, so take care not to upload anything sensitive or confidential.**
 
@@ -390,7 +390,7 @@ In the example below, the user's account name is "tutorial", so the uploaded tab
 
 image::public-data-customize-columns.png[Adding Public Data]
 
-Tables names in the {brand} Public Warehouse must:
+Table names in the {brand} Public Warehouse must:
 
 * Be 4-63 characters in length.
 * Start with a lowercase letter.
@@ -404,7 +404,7 @@ If you are unsure about the data type for any particular column or would like a 
 When you are finished, *check the box* next to "I understand this table will be public to all {brand} users", and then click *Finish Import* at the bottom of the Customize Columns screen.
 You can now query this data in {brand} by selecting {brand} Public Warehouse as the database.
 
-==== Deleting data
+=== Deleting data
 
 To remove a table you've uploaded to {brand}'s Public Warehouse:
 

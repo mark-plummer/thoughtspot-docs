@@ -7,7 +7,7 @@
 :path: /articles/spaces
 :brand: Mode
 
-=== Overview
+== Overview
 
 A Collection is a place for {brand} users to organize reports and Datasets around a team, project, or common theme.
 All {brand} reports and Datasets live in exactly one Collection, but a report or Dataset can be easily xref:organizing-reports.adoc#move-a-report-to-another-collection[moved] to a different Collection within the same {brand} Workspace.
@@ -24,10 +24,10 @@ Workspaces with a paid {brand} plan can have an unlimited number of Collections,
 Users can see all Collections they have access to in the Collections list when they click on *Collections* in their navigation panel.
 
 [#types-of-spaces]
-=== Types of Collections
+== Types of Collections
 
 [#personal-space]
-==== Personal content
+=== Personal content
 
 You have a personal Collection in each {brand} Workspace in which you are a member.
 Your personal Collection is created for you when you join a Workspace, and it cannot be renamed or deleted.
@@ -46,7 +46,7 @@ You can also specifically grant individuals and groups access to view and edit P
 image::personal_manage_access.png[Reports in Personal collection]
 
 [#community-space]
-==== Community Collection
+=== Community Collection
 
 Reports in the community Collection are public and can be viewed, shared, run, or duplicated by anyone on the internet.
 Building reports based on data in the xref:managing-database-connections.adoc#mode-public-warehouse[{brand} Public Warehouse] and saving them in the community Collection is a great way to demonstrate and share your analytics and visualization skills with the entire {brand} community and beyond.
@@ -58,10 +58,10 @@ The community Collection can only include reports with queries that run against 
 If a report has ever queried a database other than the {brand} Public Warehouse, such as any of your Workspace's private connected databases, the report can no longer be moved into the community Collection.
 This is true even if the most recent run of the report only queries the {brand} Public Warehouse.
 
-=== Managing Collections
+== Managing Collections
 //+++<flag-icon>++++++</flag-icon>+++
 
-==== Create a Collection
+=== Create a Collection
 
 Any member of a Workspace can create a new Collection:
 
@@ -79,7 +79,7 @@ Click *Add* next to any members or member groups that you want to become a membe
 <<membership-and-visibility,Learn more about what it means to be a member of a Collection>>.
 . Click *Done*.
 
-==== Delete a Collection
+=== Delete a Collection
 
 Before you delete a Collection, you must first remove all reports from that Collection, including any archived reports.
 You can either move the reports to another Collection or delete the reports.
@@ -92,9 +92,9 @@ To delete a Collection once it contains no reports:
 . A pop-up will appear confirming that you want to delete this Collection.
 Click *Ok* to delete the Collection.
 +
-NOTE: You cannot delete your personal Collection. While you cannot delete the community Collection, it can be xref:organizations.adoc#sharing[disabled] by a Workspace admin.
+NOTE: You cannot delete your personal Collection. While you cannot delete the community Collection, it can be xref:sharing-and-embedding.adoc#sharing[disabled] by a Workspace admin.
 
-==== Change a Collection's name or description
+=== Change a Collection's name or description
 
 Only users with Editor access to a Collection can change the name or description.
 
@@ -106,7 +106,7 @@ Only users with Editor access to a Collection can change the name or description
 . Click *Save*.
 
 [#membership-and-visibility]
-=== Membership and visibility
+== Membership and visibility
 //+++<flag-icon>++++++</flag-icon>+++
 
 All Collections you have access to and have been added to your navigation will be listed in the Collections section on the left side of your {brand} home page.
@@ -121,7 +121,7 @@ image::add-to-nav.png[Add collection to navigation]
 
 For more information on how to manage access, check out xref:permissions.adoc#set-up-collection-permissions[Collection permissions].
 
-==== Add other members to a Collection
+=== Add other members to a Collection
 
 Only users with *Editor* access can add new members to a Collection.
 Here's how:
@@ -134,7 +134,7 @@ Here's how:
 Next to each one, click *Add*.
 . When you are finished, click *Done*.
 
-==== Remove other members from a Collection
+=== Remove other members from a Collection
 
 Only users with *Editor* access can remove members from the Collection.
 To remove members or groups from a Collection:
@@ -146,16 +146,16 @@ To remove members or groups from a Collection:
 . Click the dropdown next to the member or group you want to remove access for and click *Remove Access*.
 
 [#faqs]
-=== FAQs
+== FAQs
 
 [discrete]
-====== *Q: Are restricted collections synced to GitHub?*
+=== *Q: Are restricted collections synced to GitHub?*
 
-Both restricted and public collections are synced to Github.
+Both restricted and public collections are synced to GitHub.
 Reports in users' personal Collections or the community Collection will not be synced.
 
 [discrete]
-====== *Q: How do Collection and Connection permissions determine Report access for users?*
+=== *Q: How do Collection and Connection permissions determine Report access for users?*
 
 Users must both have permission for the Connections used in a Report and the Collection that contains a Report in order to access the Report.
 For example, if a user has view permission for all Connections used in a Report but is not a member of the private Collection containing the Report, they will be unable to view the Report.

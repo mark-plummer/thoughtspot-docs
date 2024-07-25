@@ -8,12 +8,12 @@
 :versions: ["business"]
 :brand: Mode
 
-=== Overview
+== Overview
 
 You can connect {brand} to a GitHub repository of your choice.
 This will create a two-way sync between {brand} and GitHub, where changes made in {brand} can be pushed to the GitHub repository, and changes made in GitHub will be automatically pushed to {brand}.
 
-=== Requirements
+== Requirements
 
 Before you begin, you must meet the following requirements in order to set up the {brand} sync with GitHub:
 
@@ -24,15 +24,15 @@ Before you begin, you must meet the following requirements in order to set up th
 * The default branch cannot be protected and must be titled either "`main`" or "`master`". +
 NOTE: A branch must be created prior to starting the integration setup. {brand} will not automatically create a branch as part of this process.
 
-=== How it works
+== How it works
 
 [#mode-github]
-==== {brand} → GitHub
+=== {brand} → GitHub
 
 Edit Datasets, Reports, or Definitions in {brand} as usual, and move Datasets and Reports to a Workspace collection.
 Datasets and Reports in users' personal Collections or the community Collection will not be synced.
 
-When you are ready to push changes for a Dataset to Github, edit the Dataset, and click on the downward caret ▼ next to the Dataset name, and select *Push to GitHub*.
+When you are ready to push changes for a Dataset to GitHub, edit the Dataset, and click on the downward caret ▼ next to the Dataset name, and select *Push to GitHub*.
 image:github_push_dataset.jpg[Merge GitHub changes]
 
 To push changes for a Report to GitHub, edit the Report, click *Report* in the menu, and select *Push to GitHub*.
@@ -43,7 +43,7 @@ image:github_push_definition.png[Merge GitHub changes]
 
 Enter a commit message to describe the changes, and your updates will be pushed to GitHub.
 
-==== Batch updates from {brand} → GitHub
+=== Batch updates from {brand} → GitHub
 
 {brand} admins can push the latest version of all Datasets, Reports, Definitions, and themes from {brand} to GitHub in a batch update.
 
@@ -57,11 +57,11 @@ To push all updates:
 This will resolve any differences between {brand} and GitHub by overwriting what's in GitHub with what's in {brand}.
 Please note that this may take a few minutes.
 
-==== GitHub → {brand}
+=== GitHub → {brand}
 
 Any commit to the default branch in your GitHub repository will automatically trigger a push to {brand}.
 
-==== Uncommitted changes in {brand}
+=== Uncommitted changes in {brand}
 
 If you push changes for a given object (Dataset, Report, Definition, or theme) from GitHub to {brand}, your push will only affect that object.
 In other words, you will not overwrite uncommitted changes to other objects in {brand}.
@@ -82,28 +82,28 @@ For example, say you have three reports in {brand}:
 |===
 
 * Report `A` is the same in both {brand} and GitHub.
-* Report `B` has been updated in {brand} (`B*`) but has not been synced to Github.
-* Report `C` has been updated in a branch on Github (`C*`) but that branch has not yet been merged with the default branch.
+* Report `B` has been updated in {brand} (`B*`) but has not been synced to GitHub.
+* Report `C` has been updated in a branch on GitHub (`C*`) but that branch has not yet been merged with the default branch.
 Therefore, `C*` (the changes to report `C`) will not be visible in {brand}.
 
-When the branch containing `C*` is merged with the default branch, Report C in {brand} will updated to `C*`.
+When the branch containing `C*` is merged with the default branch, Report C in {brand} will be updated to `C*`.
 However, `B*` will not be overwritten by `B`.
 
-==== Pull requests
+=== Pull requests
 
 Changes to a branch other than the default branch won't be reflected in {brand}.
 You can create branches and open pull requests in GitHub as normal without affecting your reports in {brand} until those branches are merged into the default branch.
 
-==== Merging changes to default branch
+=== Merging changes to default branch
 
 Merge to the default branch in GitHub and changes will automatically sync to {brand}.
-If your branch causes any issues, you can revert back to the previous version in GitHub.
+If your branch causes any issues, you can revert to the previous version in GitHub.
 
 image::github_actions.png[Merge GitHub changes]
 
 Note that the owner of your GitHub organization will need to install the link:https://github.com/apps/modeanalytics[{brand} GitHub app] in order to use the {brand} Github sync.
 
-==== Repository structure
+=== Repository structure
 
 When you connect your {brand} Workspace to your GitHub repository, the following assets will be synced:
 
@@ -157,7 +157,7 @@ All code pushed from your {brand} Workspace to your GitHub repository will be st
 This is to allow you to nest other analytics code (for example,
 dbt, airflow, etc.) within this repository.
 
-=== Setting up the sync
+== Setting up the sync
 
 . Create a GitHub organization if you don't already have one.
 +
@@ -188,15 +188,15 @@ The ID appears as numerical code at the end of the installation success page's U
  .. Click *Initialize Setup*.
 This may take a few minutes to complete.
 
-=== Maintaining your repository
+== Maintaining your repository
 
-==== Modifying the sync
+=== Modifying the sync
 
 {brand} does not support editing the repository name or the GitHub organization name.
 Changes to these names in GitHub will cause the {brand}-GitHub sync to break.
 If you'd like to change the repository you use for the sync, you will have to delete your existing sync in {brand} and restart the setup process.
 
-==== Deleting the sync
+=== Deleting the sync
 
 Deleting your GitHub sync details from {brand} will prevent {brand} from syncing changes with your GitHub repo, but it will not remove your repo.
 To delete your Workspace's existing {brand}-GitHub sync:
@@ -205,28 +205,28 @@ To delete your Workspace's existing {brand}-GitHub sync:
 . Select *GitHub* from the left navigation panel under *Features*.
 . Click on the gear icon next to GitHub and select *Delete*.
 
-==== User administration
+=== User administration
 
 Administration of users will be up to you.
 Anyone making changes through the {brand} UI can push those changes to GitHub.
 However, if users want to make changes in GitHub, they'll need to be added to the GitHub repository.
 
-==== Repository visibility
+=== Repository visibility
 
 If you have non-{brand} data in the GitHub repository used for the {brand}-GitHub sync, please be aware that {brand} has visibility to the entire repository.
 
 [#faqs]
-=== FAQs
+== FAQs
 
 [discrete]
-====== *Q: Where is the button for admins to push all reports to Github all at once*
+=== *Q: Where is the button for admins to push all reports to GitHub all at once*
 
 The "Push All" button is found by accessing the Workspace Settings menu, going to the GitHub tab under Features (highlighted in red below), selecting the Unresolved Differences tab (highlighted in orange below), and looking on the right side of the Resolve All Differences section (highlighted in pink below).
 
 image::githubunresolved.png[Github Unresolved Differences]
 
 [discrete]
-====== *Q: Are restricted collections synced to GitHub?*
+=== *Q: Are restricted collections synced to GitHub?*
 
-Both restricted and public collections are synced to Github.
+Both restricted and public collections are synced to GitHub.
 Reports in users' personal Collections or the community Collection will not be synced.

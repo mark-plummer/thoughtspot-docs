@@ -7,7 +7,7 @@
 :path: /articles/querying-data
 :brand: Mode
 
-=== Overview
+== Overview
 
 The report is where analysis happens in {brand}.
 Navigate to the link:https://app.mode.com/home/[{brand} home page] and click the *New* image:modal-add.svg[new] button in the upper right corner of the window to create a new report and get started.
@@ -69,7 +69,7 @@ TIP: Quickly expand or collapse the Data View by double-clicking its header.
 // The query editor accepts any valid SQL code for the selected database and valid <<extending-sql-with-liquid,Liquid template code>>. Use Liquid to extend the functionality of your SQL code or add xref:parameters.adoc[parameter input forms] to your report to make it more interactive and extensible.
 
 [#schema-browser]
-=== Schema browser
+== Schema browser
 
 The schema browser lets you explore the schemas, tables and columns in the selected database.
 Drag to resize to fit longer table names.
@@ -91,15 +91,15 @@ The symbol next to the column name refers to the type of data in that column (fo
 
 NOTE: The **play** button is not available for certain database types, including those that charge on a per-query basis (for example, Google BigQuery, Amazon Athena, etc.).
 
-=== Querying multiple data sources
+== Querying multiple data sources
 
 {brand} reports can contain multiple queries, and each individual query can retrieve data from any one connected database.
 Different visualizations, each with data from different databases, can exist side-by-side within the same report.
 
 You cannot `JOIN` data sets between different connections in a single query.
-However, you can combine result sets from multiple databases and visualize the combined data using xref:notebook.adoc#accessing-query-results[Python or R in the Notebook], or using <<advanced-visualizations,JavaScript in the HTML editor>>.
+However, you can combine result sets from multiple databases and visualize the combined data using xref:notebook.adoc#accessing-query-results[Python or R in the Notebook], or using xref:report-layout-and-presentation.adoc#html-editor[JavaScript in the HTML editor].
 
-=== Complex and multi-statement queries
+== Complex and multi-statement queries
 
 {brand} performs very little translation or manipulation of your code before sending it to your database for execution.
 This means that {brand} will be able to execute any code that's valid for your database.
@@ -110,7 +110,7 @@ you can do anything your database lets you do, including:
 * INSERT, DELETE and UPDATE operations.
 * Creating, modifying, or employing user-defined functions.
 
-{brand} will execute code containing multiple SQL statements, separated by semi-colons.
+{brand} will execute code containing multiple SQL statements, separated by semicolons.
 For example, the following code is valid in {brand}:
 
 [source,sql]
@@ -128,9 +128,9 @@ SELECT * FROM temp1;
 ----
 
 [#extending-sql-with-liquid]
-=== Extending SQL with Liquid
+== Extending SQL with Liquid
 
-==== Overview
+=== Overview
 
 You can extend the power of your SQL queries in many interesting ways by using the open source link:http://liquidmarkup.org/[Liquid template language].
 Using Liquid, the SQL behind your {brand} reports can be manipulated at report run time using loops, if/then statements, and other advanced structures that might be difficult or impossible to do in SQL alone.
@@ -151,10 +151,10 @@ Tags don't themselves produce output that gets rendered into your query, but the
 
 Full documentation on what's possible with Liquid is available on the link:https://help.shopify.com/themes/liquid[Shopify help site] and link:https://shopify.github.io/liquid/[documentation for the Liquid GitHub repo].
 
-==== Common techniques
+=== Common techniques
 
 [#variables]
-===== Variables
+==== Variables
 
 Use variables in Liquid to make your code more extensible and maintainable.
 Declare a variable using the link:https://help.shopify.com/themes/liquid/tags/variable-tags#assign[`assign`] method.
@@ -176,7 +176,7 @@ SELECT * FROM employee_table WHERE favorite_food = 'peaches'
 
 NOTE: Variables are scoped only to the query in which they are declared using `assign`. They cannot be referenced across reports or across queries within the same report.
 
-===== If/else
+==== If/else
 
 Use if/else statements and other link:https://help.shopify.com/themes/liquid/tags/control-flow-tags[control flow tags] to change your SQL code dynamically in response to inputs from things like <<variables,variables>> or xref:parameters.adoc[parameters].
 In the following example, the query that is executed against the database will be different depending on the value of the `car_type` variable:
@@ -207,7 +207,7 @@ If `car_type = 'cars'`, the following code is executed:
 SELECT * FROM car_table
 ----
 
-===== Loops
+==== Loops
 
 Loops and other Liquid link:https://help.shopify.com/themes/liquid/tags/iteration-tags[iteration tags] can be used to programmatically generate lists of variables, join statements, columns to select, unions, and other things.
 The query below shows a simple example of a For loop:
@@ -260,7 +260,7 @@ Therefore, the value in the `unless` statement--a comma--gets added to your quer
 This link:https://app.mode.com/benn/reports/a1a90160334c/runs/f98a3c7657cf/query[query] contains two examples of a loop.
 This link:https://app.mode.com/benn/reports/24f312e9c69a/runs/7e110a436792/query[query], which uses the `assign` method below, shows one example.
 
-===== Array variables
+==== Array variables
 
 Typically, `for` loops cycle through collections of values, such as link:https://docs.python.org/3/glossary.html#term-iterable[iterable objects] in Python or vectors in R.
 Liquid doesn't allow you to create arrays of values the same way you would in most languages (for example, `list = ['candy','beans']`).
@@ -280,29 +280,29 @@ For example:
 The above code converts the comma-delimited string 'candy,beans,pizza' to an array and assigns that array to the variable `food`.
 The `for` loop then iterates over each value in the array variable `food`.
 
-===== Comments
+==== Comments
 
 Use `{% comment %}` and `{% endcomment %}` tags to instruct {brand} to ignore whatever text or code is written between them.
 
-===== Parameters
+==== Parameters
 //+++<flag-icon>++++++</flag-icon>+++
 
 xref:parameters.adoc[Parameters] allow you to define forms that are configurable by viewers of your report and which return Liquid objects in your report's code.
 Parameters are a great way to make reports more extensible, maintainable, and scalable.
 
-===== Query headers
+==== Query headers
 //+++<flag-icon>++++++</flag-icon>+++
 
-Liquid templates can be used when defining xref:managing-database-connections.adoc#query-headers-&-footers[custom query headers] in data sources connected to your {brand} Workspace.
+Liquid templates can be used when defining xref:managing-database-connections.adoc#query-headers-and-footers[custom query headers] in data sources connected to your {brand} Workspace.
 A custom query header is prepended to every query run against that data source and is a great way to increase logging fidelity in your database.
 
 [#sql-keyboard-shortcuts]
-=== SQL keyboard shortcuts
+== SQL keyboard shortcuts
 
 {brand}'s SQL Editor runs using the Ace Editor library, and we have enabled most of the link:https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts[default keyboard shortcuts] for things like commenting or indenting blocks of text.
 We've also added some {brand}-specific keyboard shortcuts:
 
-==== General
+=== General
 
 |===
 | Action | Mac | PC
@@ -384,7 +384,7 @@ We've also added some {brand}-specific keyboard shortcuts:
 | `Ctrl` `Space`
 |===
 
-==== Selection
+=== Selection
 
 |===
 | Action | Mac | PC
@@ -430,7 +430,7 @@ We've also added some {brand}-specific keyboard shortcuts:
 | `Ctrl` `Shift` `D`
 |===
 
-==== Go to
+=== Go to
 
 |===
 | Action | Mac | PC
@@ -468,7 +468,7 @@ We've also added some {brand}-specific keyboard shortcuts:
 | `Ctrl` `End`
 |===
 
-==== Line operations
+=== Line operations
 
 |===
 | Action | Mac | PC
@@ -511,10 +511,10 @@ We've also added some {brand}-specific keyboard shortcuts:
 |===
 
 [#faqs]
-=== FAQs
+== FAQs
 
 [discrete]
-====== *Q: The schema browser is empty or missing tables I know to be in the database.*
+=== *Q: The schema browser is empty or missing tables I know to be in the database.*
 
 The tables listed in {brand}'s schema browser may differ from what you expect for a number of reasons:
 
@@ -525,7 +525,7 @@ If you recently connected a new database, an automatic update is triggered and t
 If new tables were added to an existing database, you will need to manually trigger the schema refresh to see the updates.
 To instruct {brand} to perform a schema browser refresh, click on the image:menu-dots-gray-press.svg[menu] button in the upper right corner of the schema browser and click *Refresh*.
 +
-New tables and databases, however, may be queried immediately regardless of whether or not they appear in the schema browser.
+New tables and databases, however, may be queried immediately regardless of whether they appear in the schema browser.
 
 * *You don't have permission to see the missing tables.*
 +
@@ -539,7 +539,7 @@ These configurations are defined by the database and typically managed by databa
 These permissions cannot be changed directly in {brand}.
 
 [discrete]
-====== *Q: Does {brand} time-out long-running queries or reports?*
+=== *Q: Does {brand} time-out long-running queries or reports?*
 
 {brand} will cancel any incomplete queries or report runs after a certain period of time to prevent long-running queries from degrading the performance of {brand} or your database.
 Note that your database may be configured to time-out queries sooner than the times listed below:
@@ -564,14 +564,14 @@ Note that your database may be configured to time-out queries sooner than the ti
 |===
 
 [discrete]
-====== *Q: In what order are queries executed during a report and scheduled run?*
+=== *Q: In what order are queries executed during a report and scheduled run?*
 
 Queries are initiated simultaneously and the results are returned based on the processing time of your database.
 This allows for efficient and concurrent query processing, ensuring that your queries are executed as quickly as possible.
 By starting queries simultaneously, we can maximize the use of your database resources and minimize the overall time it takes to retrieve the results of your queries.
 
 [discrete]
-====== *Q: Does {brand} support real-time data?*
+=== *Q: Does {brand} support real-time data?*
 
 At this time, {brand} does not maintain active connections to client databases for security and data cost purposes, and does not support real-time data.
 All reports, whether scheduled or ad hoc, create new connections on demand.
@@ -581,7 +581,7 @@ We also suggest taking a look at our xref:datasets.adoc#overview[Datasets] docum
 This allows multiple reports to be created off of an initial query, which can be set to refresh on a schedule as well.
 
 [discrete]
-====== *Q: What type and version of SQL does {brand} use for the Public Warehouse?*
+=== *Q: What type and version of SQL does {brand} use for the Public Warehouse?*
 
 Our {brand} Public Warehouse is a PostgreSQL data source using version 13.1.
 When connecting to a private database, {brand} does not enforce any specific SQL syntax.
@@ -589,23 +589,23 @@ Instead, we support any version of SQL that your connected database supports, al
 This allows you to use the most up-to-date SQL features and ensures that your queries are optimized for your specific database environment.
 
 [discrete]
-====== *Q: Is there a query limit for reports?*
+=== *Q: Is there a query limit for reports?*
 
 Yes, currently the limit is 160 queries per report.
 
 [#troubleshooting]
-==== Troubleshooting
+== Troubleshooting
 
 [#sorry-this-data-is-larger-than-your-limit]
 [discrete]
-====== *1. Sorry, this data is larger than your limit.*
+=== *1. Sorry, this data is larger than your limit.*
 
 {brand} limits the size of query results that you can access depending on whether you're using {brand} Studio, or which paid plan you've chosen.
 
 For {brand} Business and Enterprise customers, we offer different plans that support increased capacity up to 10 GB.
 
 [discrete]
-====== *2. Query result is too large. Please try adding a LIMIT clause.*
+=== *2. Query result is too large. Please try adding a LIMIT clause.*
 
 Query results over 10 GB cannot be returned to {brand} from a database.
 If your results exceed this limit, add a LIMIT statement to your query to return a smaller set of results.

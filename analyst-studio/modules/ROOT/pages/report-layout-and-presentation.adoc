@@ -8,7 +8,7 @@
 :brand: Mode
 
 [#name-and-description]
-=== Name and description
+== Name and description
 
 After a report has been successfully run at least once, you can change its name and description:
 
@@ -20,7 +20,8 @@ You can remove the report's name and/or description from the report layout using
 
 TIP: You can refer to the report's name and description in the HTML editor using the `{{ title }}` and `{{ description }}` template code. These templates will render to the report's name and description values when the report is viewed.
 
-=== Report themes
+[#colors-and-themes]
+== Report themes
 
 Your Workspace includes a number of built-in themes which you may be able to complement with custom themes.
 Themes can be applied to a report in <<settings,report settings>>.
@@ -58,7 +59,7 @@ Set this theme as the default for all new reports.
 Does not impact any existing reports.
 ** *Delete*: Deletes the theme.
 
-=== Color palettes
+== Color palettes
 
 Your Workspace includes a number of pre-defined color palettes which you may be able to compliment with additional custom color palettes.
 
@@ -94,7 +95,7 @@ Does not impact any existing reports.
 ** *Delete*: Deletes the palette.
 
 [#report-details]
-=== Report details
+== Report details
 
 Open a report and click *View Details* in the header to see additional details about the report, including the logic and data behind it.
 Along the left side, you may see some or all of the following sections, depending on your level of access to the report:
@@ -107,9 +108,9 @@ Along the left side, you may see some or all of the following sections, dependin
 TIP: Don't see **View Details** in the report header? You may be in the report editor. If so, click **View** in the header first.
 
 [#run-history]
-==== Run history
+=== Run history
 
-Every time you run a report, {brand} saves a copy of its configuration and results (excluding Notebook code, HTML, Chart configuration, and Calculated Field formulas) so you can see exactly how a report looked from a given point in time.
+Every time you run a report, {brand} saves a copy of its configuration and results (excluding Notebook code, HTML, Chart configuration, and Calculated Field formulas), so you can see exactly how a report looked from a given point in time.
 A historical run is saved even if the queries in the report do not complete successfully.
 Historical report runs are accessible indefinitely unless the report is deleted.
 
@@ -120,7 +121,7 @@ Each historical run has a unique static report run URL so that specific run can 
 IMPORTANT: {brand} only stores query results for historical runs, not the underlying data from your database. When a report is deleted, historical report run results are retained on {brand}'s servers for 30 days. After 30 days, historical run results are automatically deleted from {brand}'s servers. After an additional 30 days, historical run results are automatically deleted from {brand}'s backups and cannot be recovered by {brand}.
 
 [#report-builder]
-=== Report builder
+== Report builder
 
 The report builder is a drag-and-drop interface for laying out and adding context to the components of your report.
 When editing a report, access the report builder by clicking on *Report Builder* on the left side of the window.
@@ -137,7 +138,7 @@ For display tables, you may also set the height to *full* to show up to 1000 rec
 IMPORTANT: Any report content added via the <<html-editor,HTML editor>> (for example, D3 visualizations, HTML elements, etc.) will be visible in the report builder, but their size and layout cannot be changed using the drag-and-drop interface.
 
 [#text-boxes]
-==== Text boxes
+=== Text boxes
 
 In the report builder, you can add text boxes (including text, links, images, and more) to provide more context for your report:
 
@@ -147,7 +148,7 @@ You can also embed an image.
 . When you are finished editing, click anywhere outside the text box to save.
 
 [#html-editor]
-=== HTML editor
+== HTML editor
 
 To modify the HTML of a report, click *Edit HTML* at the top of the <<report-builder,report builder>>.
 After modifying code in the HTML editor, click *Update* to preview your changes.
@@ -156,13 +157,13 @@ Any valid HTML can be added to a report using the HTML editor, including JavaScr
 image::html-panel.png[The HTML Editor]
 
 The report's HTML will automatically adjust as you rearrange and resize any of the elements using the drag-and-drop interface.
-However, for more fine-grained control over report layout and styling, or to add <<advanced-visualizations,advanced visualizations>> using JavaScript, you must use the HTML editor.
+However, for more fine-grained control over report layout and styling, or to add advanced visualizations using JavaScript, you must use the <<html-editor,HTML editor>>.
 
 link:https://app.mode.com/modeanalytics/reports/8f9f78bee527[This report] shows how you can combine various built-in and custom visualizations.
 Use the Details tab to view the HTML code and see how it works.
 
 [#layout-grid]
-==== Layout grid
+=== Layout grid
 
 Built-in charts (including tables), text boxes, and Notebook visualizations are automatically arranged along a 12-column grid inside a `div` of class `mode-grid container`.
 The structure of the HTML is shown below:
@@ -174,7 +175,7 @@ The structure of the HTML is shown below:
   <div class="row">                   <!-- There is a div with class "row" for each row.        -->
 
     <div class="col-md-7">            <!-- Each chart is inside a div with class "col-md-X".    -->
-      <mode-chart ... ></mode-chart>  <!-- X equals the the number of columns wide (of 12) the  -->
+      <mode-chart ... ></mode-chart>  <!-- X equals the number of columns wide (of 12) the  -->
     </div>                            <!-- chart should be. This chart is 7 of 12 columns wide. -->
 
     <div class="col-md-5">            <!-- The second chart is 5 columns wide, occupying the    -->
@@ -207,14 +208,14 @@ Either can be removed from the layout by deleting them using the HTML editor.
 When a report is xref:white-label-embeds.adoc[embedded], the contents of this `<div>` (including the name and description), will not be rendered in the embed output unless the `embed-hidden` class is removed.
 
 [#external-assets]
-==== External assets
+=== External assets
 
 You may include external assets (for example, JavaScript libraries, stylesheets, images, JSON files, etc.) in your report by referencing them via URL with the appropriate tags in the report's HTML.
 
-NOTE:
+[NOTE]
 ====
 * Any external assets must be hosted on the internet ({brand} does not host custom assets) and loaded securely using HTTPS, _not_ HTTP.
-* link:http://d3js.org/[D3] (v3.5.17) and link:http://jquery.com/[JQuery] (v2.2.4), two JavaScript libraries commonly used for data visualization, are pre-loaded into all {brand} reports.
+* link:http://d3js.org/[D3] (v3.5.17) and link:http://jquery.com/[JQuery] (v2.2.4), two JavaScript libraries commonly used for data visualization, are preloaded into all {brand} reports.
 You do not need to add `<script>` tags to your report to use these libraries.
 ====
 
@@ -223,7 +224,7 @@ For example, consider the following Population Map report, specifically the link
 * JavaScript libraries link:https://github.com/mbostock/topojson[TopoJSON] and link:https://underscorejs.org/[Underscore.js] are included at the beginning of the ``<body>``tag.
 * A hosted JSON file required to draw the U.S. map is loaded on line 257.
 
-==== Loading state customization
+=== Loading state customization
 
 In the HTML editor or in a custom theme, you can target a number of CSS classes to customize elements of a report's presentation while data is being loaded and visualizations are being rendered:
 
@@ -238,7 +239,7 @@ _Default: "`Fetching your notebook data...`" with an animated ellipses._
 * `.ph-color-dark`: The third color included in the placeholder image that appears in the center of the loading state.
 _Note: Only some of the SVGs feature three colors._
 
-=== Access query results with JavaScript
+== Access query results with JavaScript
 
 Results from any query in your report can be accessed using JavaScript in the HTML editor via the `datasets` array available in any JavaScript scope.
 The `content` property of any dataset within datasets contains the query results.
@@ -313,7 +314,7 @@ If true, `content[]` will be empty.
 
 Queries are added to `datasets[]` in the order that they were added to the report, regardless of the order that they appear in {brand}.
 
-==== Example
+=== Example
 
 For example, suppose the first query (named "2006 Oscar Nominees") in a report returned the following data:
 
@@ -343,7 +344,7 @@ Accessing `datasets[0]` would return the following JSON object containing all of
 
 You can see a live example of this dataset, and learn more about accessing and using the `datasets[]` JSON object, in link:https://app.mode.com/modeanalytics/reports/22bea18bd49e[this example report].
 
-==== Accessing data by query name
+=== Accessing data by query name
 
 Use the JavaScript link:https://www.w3schools.com/jsref/jsref_filter.asp[`filter()` method] to search `datasets[]` and return the result set for that query.
 This example declares a new variable (`data`) and sets it equal to the results of a query called "My Query":
@@ -353,7 +354,7 @@ This example declares a new variable (`data`) and sets it equal to the results o
 var data = datasets.filter(function(d) { return d.queryName == "My Query"; })[0].content;
 ----
 
-=== Report virtualization
+== Report virtualization
 
 Virtualization, or virtual scrolling, allows the display of a large number of visualizations in a Report by prioritizing displaying only content that is currently visible to the user.
 Subsequently, when content is no longer in view it can be "`detached`" or temporarily hidden, which helps maintain consistent performance regardless of the number of visualizations in the Report.
@@ -364,10 +365,10 @@ Our virtualized rendering logic will only apply Quick Charts and Visual Explorer
 Customization of chart sizes, arrangements, and layouts via CSS, custom JQuery plugins, etc., might result in the virtualization behavior not working correctly.
 The following line can be added to the top of the HTML layout `+<!-- no-virtual-scroll -->+` to turn off virtualization if needed.
 
-=== Additional options
+== Additional options
 
 [#settings]
-==== Settings
+=== Settings
 
 To access additional report settings from the report editor view, click *Report* in the header and select *Settings*:
 
@@ -380,10 +381,10 @@ When the button is disabled, reports can still be run via a schedule or from the
 
 image::report-settings-refresh.png[Report Settings]
 
-==== Fullscreen mode
+=== Fullscreen mode
 
 Fullscreen mode maximizes the content of your report so it occupies the entire screen, eliminating all other parts of the {brand} interface and browser window.
-A report in fullscreen mode will automatically refresh and display the latest data whenever the report is successfully run unless you access it using a static <<link,run link>>.
+A report in fullscreen mode will automatically refresh and display the latest data whenever the report is successfully run unless you access it using a static xref:report-scheduling-and-sharing.adoc#link[run link].
 To enable fullscreen mode:
 
 . In the report header, click *Fullscreen* (this option may be in the *More* menu).
@@ -396,7 +397,7 @@ To include more elements in your dashboard, enable full width mode in <<settings
 TIP: Don't see the **Fullscreen** button in the report header? You may be in the report editor. Click **View** in the report header and repeat the above steps.
 
 [#url-query-string]
-==== URL query string
+=== URL query string
 //+++<flag-icon>++++++</flag-icon>+++
 
 You may add one or more field-value pairs to a {brand} report's URL link:https://en.wikipedia.org/wiki/Query_string[query string] to control that report's behavior.
@@ -404,7 +405,7 @@ You may combine multiple field-value pairs in a report's URL query string, separ
 
 TIP: All {brand} URLs, including query strings, are case-sensitive.
 
-===== `run`
+==== `run`
 
 Forces the report to re-run and refreshes all query results, Notebook output, and visualizations.
 
@@ -420,7 +421,7 @@ The following example URL will update all queries and visualizations each time i
 https://app.mode.com/benn/reports/31baa986cdfd?run=now
 ----
 
-===== `param_[PARAMETER_NAME]`
+==== `param_[PARAMETER_NAME]`
 
 Specifies the value that should be used for a given report xref:parameters.adoc[parameter] of `[PARAMETER_NAME]`.
 
@@ -439,9 +440,9 @@ https://app.mode.com/modeanalytics/reports/a9e1fe690f93?param_sales_region[]=Mid
 ----
 
 [#report-builder-keyboard-shortcuts]
-=== Report builder keyboard shortcuts
+== Report builder keyboard shortcuts
 
-==== Text boxes
+=== Text boxes
 
 |===
 | Action | Mac | PC
@@ -479,8 +480,7 @@ https://app.mode.com/modeanalytics/reports/a9e1fe690f93?param_sales_region[]=Mid
 | `Ctrl` `↓`
 |===
 
-[#html-editor]
-==== HTML editor
+=== HTML editor
 
 |===
 | Action | Mac | PC
@@ -518,10 +518,10 @@ https://app.mode.com/modeanalytics/reports/a9e1fe690f93?param_sales_region[]=Mid
 | `Alt` `Shift` `↑`
 |===
 
-=== FAQs
+== FAQs
 
 [discrete]
-====== *Q: Why does the custom styling on chart titles appear to be broken?*
+=== *Q: Why does the custom styling on chart titles appear to be broken?*
 
 {brand} made some updates to chart titles and chart descriptions that would require changes to the CSS code.
 Please see the example below to update your custom report theme accordingly.
@@ -543,7 +543,7 @@ Please see the example below to update your custom report theme accordingly.
 ----
 
 [discrete]
-====== *Q: Why does the custom styling on pivot tables appear to be broken?*
+=== *Q: Why does the custom styling on pivot tables appear to be broken?*
 
 {brand} made some updates to pivot tables that would require changes to the CSS code.
 The CSS selector `muze-layer-text-cell` is now two selectors:

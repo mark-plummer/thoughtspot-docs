@@ -7,7 +7,7 @@
 :path: /articles/organizations
 :brand: Mode
 
-=== Overview
+== Overview
 
 Workspaces are groups of {brand} users that can securely share database connections and analyses with each other.
 You may be a member of any number of Workspaces.
@@ -15,10 +15,10 @@ By default, any member of a Workspace can query any of the Workspace's private l
 
 Anyone with a {brand} user account can link:https://app.mode.com/organizations/new[create a Workspace] for free.
 
-=== Managing membership
+== Managing membership
 
 [#roles-and-permissions]
-==== Roles and permissions
+=== Roles and permissions
 
 You can see all the current and former members of your Workspace, as well as their current role, from the Members page in Workspace Settings:
 
@@ -37,7 +37,7 @@ Full members may create new database connections. They have query access to all 
 These users no longer have access and cannot rejoin unless an admin re-invites them.
 
 [#change-the-role-of-a-member]
-==== Change the role of a member
+=== Change the role of a member
 
 You must be an admin to change a member's role in your Workspace:
 
@@ -48,11 +48,11 @@ You must be an admin to change a member's role in your Workspace:
 * *Make Admin:* Grant admin rights to a Full Member.
 * *Remove Admin:* Removes admin rights from a member, making them a Full Member.
 
-==== Add a member
+=== Add a member
 
 [#invite-a-new-member]
 [discrete]
-====== Invite a new member
+==== Invite a new member
 
 By default, any member of your Workspace can invite new users to join.
 Invitees are required to verify their email address before being allowed to join the Workspace.
@@ -60,12 +60,12 @@ Invitations expire after seven days.
 
 . Navigate to the link:https://app.mode.com/home/[{brand} home page] and click on your name in the upper left corner of the window.
 . Select *Invite to {brand}* from the dropdown menu.
-. Enter the email address of the person you want to invite and add an invite message.
+. Enter the email address of the person you want to invite and add an invitation message.
 . Click *Invite*.
 . You can see the status of your past invites--as well as resend pending invites--by clicking *See the invites you've already sent*.
 
 [discrete]
-====== Resend an invitation
+===== Resend an invitation
 
 You can see the invites you've already sent and resend invitations to users from Workspace Settings:
 
@@ -75,7 +75,7 @@ You can see the invites you've already sent and resend invitations to users from
 . Click on the names of invitees who have signed up to see their profiles. To re-invite someone who hasn't signed up for {brand} yet, click the *Resend* button next to their name.
 
 [discrete]
-====== Reinvite a former member
+===== Reinvite a former member
 
 To reinvite a former member of your Workspace:
 
@@ -84,7 +84,7 @@ To reinvite a former member of your Workspace:
 . Select *Reinvite to org*.
 . The user will receive an email invitation that they must accept before being granted access to the Workspace again.
 
-==== Remove a member
+=== Remove a member
 
 You must be an admin to remove a member from your Workspace:
 
@@ -95,7 +95,7 @@ You must be an admin to remove a member from your Workspace:
 IMPORTANT: Removing a member from your Workspace does not remove any reports or other assets they created.
 
 [#groups]
-==== Groups
+=== Groups
 //+++<flag-icon>++++++</flag-icon>+++
 
 Groups allow Workspace admins to easily modify and control access to database connections and Collection membership for logical clusters of members with similar needs (for example, departments, project teams, etc.).
@@ -110,14 +110,14 @@ To create a new group or manage members of an existing group:
 All of the groups in your Workspace will be listed on the right.
 Admins can perform the following actions:
 
-===== Create a new group
+==== Create a new group
 
 . Click *Create Group*.
 . Enter a name for your group and click *Create*.
 . Find the Workspace members in the list that you want to add to the group and click *Add* next to each one.
 . When you are finished adding members, click *Done*.
 
-===== Add or remove members
+==== Add or remove members
 
 . Hover over the group in the list and click *Members*.
 . To add new members to the group, click on *Add Members*.
@@ -125,13 +125,13 @@ Find all members you want to add in the list and click *Add*.
 When you are finished, click *Done*.
 . To remove a member, hover over the name of the member you want to remove and click *Remove Member*.
 
-===== Delete a group
+==== Delete a group
 
 . Hover over the group in the list and click on it.
 . Next to the group's name, click on the *gear* image:settings-mini-hover.svg[gear icon].
 . Click *Delete*.
 
-==== Workspace permissions
+=== Workspace permissions
 
 Admins can restrict who can create Collections and database Connections.
 
@@ -142,7 +142,7 @@ To restrict Collection and database Connection creation to Admins, select "Only 
 
 image::CollectionRestriction.png[Member Authorization Settings]
 
-==== Notifications
+=== Notifications
 
 Workspace admins can elect to receive emails from {brand} when new users sign up, Workspace membership changes, and more:
 
@@ -151,7 +151,7 @@ Workspace admins can elect to receive emails from {brand} when new users sign up
 . Toggle the notifications that you want to receive on or off.
 . Click *Save settings*.
 
-==== Restricting invitations
+=== Restricting invitations
 //+++<flag-icon>++++++</flag-icon>+++
 
 Admins in {brand}'s paid plans can control and restrict the onboarding of new members:
@@ -164,13 +164,13 @@ Admins in {brand}'s paid plans can control and restrict the onboarding of new me
 image::Member-Authorization-settings.png[Member Authorization Settings]
 
 [discrete]
-====== Who can invite new members?
+===== Who can invite new members?
 
 * *All Members*: (Default) Any existing member can invite new users to the Workspace.
 * *Only Admins*: Only admins can invite new users to the Workspace.
 
 [discrete]
-====== What should happen when someone with your domain email address signs up for {brand}?
+===== What should happen when someone with your domain email address signs up for {brand}?
 
 This setting will only be visible if your Workspace has <<claimed-domains,claimed a domain>>.
 
@@ -178,7 +178,7 @@ This setting will only be visible if your Workspace has <<claimed-domains,claime
 * *Require Approval*: An admin must approve each new member after they are invited to join the Workspace.
 
 [#claimed-domains]
-==== Claimed domains
+=== Claimed domains
 
 {brand} customers have the option to "claim" their corporate email address domains.
 Any users who sign up for {brand} subsequent to the domain being claimed, with a verified email address in the claimed domain, will be automatically added to the Workspace that claimed the domain.
@@ -186,13 +186,13 @@ Once a Workspace claims a domain, no subsequent Workspace can claim the same dom
 
 This is designed to create a streamlined onboarding process for new {brand} users who work at the same company by ensuring that new users are added to the company's existing {brand} workspace.
 
-===== Requirements
+==== Requirements
 
 To claim a domain, the following requirement must be met:
 
 * The {brand} Workspace must be on a link:https://mode.com/compare-plans/[paid plan].
 
-====== How claimed domains work
+===== How claimed domains work
 
 For this example we'll use a fictitious company called Octan Industries.
 All employees at Octan Industries have an email address ending in @octan.com.
@@ -201,7 +201,7 @@ Ann works for Octan industries and has the email address ann@octan.com.
 She verifies her email address and creates a new {brand} Workspace.
 Ann elects to purchase a link:https://mode.com/compare-plans/[paid {brand} plan] on behalf of her company.
 Ann wants to ensure that every Octan industries user who signs up for a {brand} account on their own ends up in the workspace she is managing, instead of creating their own free workspace.
-Therefore Ann reaches out to {brand}'s support team to claim the @octan.com domain.
+Therefore, Ann reaches out to {brand}'s support team to claim the @octan.com domain.
 
 Later, when bill@octan.com signs up for {brand} and verifies his email address, he will be automatically added to the Octan Workspace and can collaborate with Ann in {brand}.
 
@@ -212,9 +212,9 @@ IMPORTANT: Some domains are not available to be claimed. For example, they may b
 
 '''
 
-=== User account
+== User account
 
-==== Update your profile
+=== Update your profile
 
 Your user profile allows you to customize your {brand} experience across all of the {brand} Workspaces where you are a member.
 To update your profile, start by navigating to the link:https://app.mode.com/home/[{brand} home page] and signing in if you aren't already:
@@ -230,7 +230,7 @@ Here you'll find a number of tabs containing settings for your profile that will
 * *Avatar* - Change the avatar associated with your user account.
 If you have a link:https://en.gravatar.com/[Gravatar] account, you can link it on this page to use your Gravatar as your {brand} avatar.
 
-==== Verify your email address
+=== Verify your email address
 
 You can access much of {brand}'s public functionality without verifying your email address.
 However, if you'd like to join Workspaces and access private data, you will need to verify your email address.
@@ -238,7 +238,7 @@ However, if you'd like to join Workspaces and access private data, you will need
 When you create an account or update your email address, {brand} automatically sends you an email asking you to confirm your email address.
 To verify your email, simply click the link in that email.
 
-==== Delete your account
+=== Delete your account
 
 Deleting your account will delete any reports you created against the {brand} Public Warehouse and delete any data you uploaded to the {brand} Public Warehouse.
 Reports created inside of any other Workspace will not be deleted--other members inside that Workspace will still have access to those reports.
@@ -249,7 +249,7 @@ Reports created inside of any other Workspace will not be deleted--other members
 . Click *Delete account...* in the lower right corner.
 . Type your username in the text box and click *Permanently Delete Account*.
 
-==== Leave a Workspace
+=== Leave a Workspace
 
 If you are the only admin of a Workspace, you cannot leave the Workspace until you <<change-the-role-of-a-member,make another member an admin>>.
 
@@ -260,7 +260,7 @@ If you are the only admin of a Workspace, you cannot leave the Workspace until y
 . Click the leave button *Leave* under Actions.
 . Confirm you want to leave this Workspace by clicking the *Leave* button again.
 
-===== What happens when you leave a {brand} Workspace
+==== What happens when you leave a {brand} Workspace
 
 Leaving a Workspace does not delete your {brand} account, even if you leave all Workspaces in which you are a member.
 When you leave a Workspace:
@@ -270,7 +270,7 @@ These assets will continue to show your name as the owner.
 * Any report in your xref:spaces.adoc#types-of-spaces[personal Collection] will remain in your personal Collection and remain accessible by any member of the Workspace in possession of the report URL.
 * An admin of the Workspace can invite you back to the Workspace at any time.
 
-==== Personal API tokens
+=== Personal API tokens
 
 We recommend using Workspace API tokens rather than personal ones.
 You can continue to use existing personal API tokens with the API.
@@ -281,16 +281,16 @@ xref:workspace-api-tokens.adoc[See here for more information on Workspace API to
 When using personal API tokens, access to resources in the API directly matches your level of permissions in the {brand} Workspace you're calling.
 Before returning a response, {brand} validates every API call against your permissions in that Workspace.
 
-=== Privacy and security
+== Privacy and security
 
-==== Report visibility
+=== Report visibility
 
 Everyone on the internet can access your {brand} Workspace's public profile page (for example, https://app.mode.com/modeanalytics) as well as the reports in your Workspace's xref:spaces.adoc#community-space[community Collection].
 In addition, all {brand} users can access any data uploaded by members of your Workspace to xref:managing-database-connections.adoc#mode-public-warehouse[{brand}'s Public Warehouse].
 
 Any other report in your Workspace, including its code and query results, is *only* visible to other members of your {brand} Workspace unless someone has explicitly enabled external sharing for that report.
 
-==== GDPR
+=== GDPR
 
 {brand} is committed to meeting the requirements of the General Data Protection Regulation ('GDPR').
 The GDPR is a landmark EU data privacy law, effective May 2018, which affects both European and non-European businesses.
@@ -301,7 +301,7 @@ link:https://mode.com/gdpr/[Learn more about {brand}'s GDPR readiness, security 
 The DPA can be found link:https://mode.com/legal/dpa/[here].
 
 [#managing-schedules]
-=== Managing Schedules
+== Managing Schedules
 
 Workspace Admins can edit individual and delete multiple report schedules from the Schedules page.
 Admins will be able to see all report schedules for their organization/workspace.
@@ -312,7 +312,7 @@ Filters can be applied to locate schedules based on schedule attributes such as 
 
 image::workspace_settings_schedules_1.gif[managing schedules 1]
 
-=== Custom calendar
+== Custom calendar
 
 The custom calendar settings can be found in the default settings tab within workspace settings.
 Administrators have the ability to modify the year and week start preferences for their workspace.
@@ -324,15 +324,15 @@ image::custom-calendar.png[custom calendar]
 NOTE: The custom calendar settings will not be applicable to Reports and Datasets in Community collections.
 
 [#colors-and-styling]
-=== Colors and styling
+== Colors and styling
 
 [#report-themes]
 [discrete]
-===== Report themes
+=== Report themes
 
 Your Workspace includes a number of built-in xref:report-layout-and-presentation.adoc#colors-and-themes[themes] which you may be able to compliment with custom themes.
 
-==== Add a custom theme
+=== Add a custom theme
 //+++<flag-icon>++++++</flag-icon>+++
 
 . Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
@@ -347,7 +347,7 @@ To import a hosted CSS file, you can use an `@import` statement (for example, `+
 Any valid CSS can be included in a custom theme.
 While you cannot include any JavaScript in a custom theme, you can embed JavaScript in reports directly using the HTML Editor.
 
-==== Manage custom themes
+=== Manage custom themes
 //+++<flag-icon>++++++</flag-icon>+++
 
 Any member can use or create a custom theme, however, a custom theme can only be edited or deleted by its creator and/or Workspace admin.
@@ -365,11 +365,11 @@ Set this theme as the default for all new reports.
 Does not impact any existing reports.
  ** *Delete*: Deletes the theme.
 
-===== Color palettes
+==== Color palettes
 
 Your Workspace includes a number of pre-defined xref:report-layout-and-presentation.adoc#colors-and-themes[color palettes] which you may be able to compliment with additional custom color palettes.
 
-==== Add a custom color palette
+=== Add a custom color palette
 //+++<flag-icon>++++++</flag-icon>+++
 
 . Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
@@ -384,7 +384,7 @@ Use the X button to remove the value.
 Input a color link:http://htmlcolorcodes.com/[hex codes] for each end of the color gradient.
 . Click *Save*.
 
-==== Manage custom color palettes
+=== Manage custom color palettes
 //+++<flag-icon>++++++</flag-icon>+++
 
 Any member can use or create a custom color palette, however, a custom color palette can only be edited or deleted by its creator and/or Workspace admin.
@@ -401,7 +401,7 @@ Set this palette as the default for all new reports.
 Does not impact any existing reports.
  ** *Delete*: Deletes the palette.
 
-=== Billing
+== Billing
 //+++<flag-icon>++++++</flag-icon>+++
 
 To manage billing communications and view billing history:
@@ -429,11 +429,11 @@ To manage billing communications and view billing history:
 Eligible customers may elect to be billed by means other than credit card (such as by wire).
 Please reach out to your account manager or xref:contact-us.adoc[contact our success team] for more information.
 
-==== Flexible seat and monthly data compute rates
+=== Flexible seat and monthly data compute rates
 
 While all paid {brand} plans are on an annual term, you have the flexibility to scale up and down seats and monthly compute data outside of your annual plan at a "flex rate".
 
-==== Seat flex rates
+=== Seat flex rates
 
 For any users beyond the number of included users in your {brand} agreement, you will be charged a pro-rated amount for each user based on the number of days in the billing period (typically monthly) that the user was a member of your Workspace.
 
@@ -444,7 +444,7 @@ If you remove another team member the same day, you would be billed for 1/3 of $
 
 You can add additional seats to your annual agreement at the annual price at any time by contacting your CSM or link:mailto:customersuccess@mode.com[customersuccess@mode.com].
 
-==== Data compute flex rates
+=== Data compute flex rates
 
 For any data compute used beyond the monthly limit included in your {brand} agreement, you will be charged for the total GB used over your limit pro-rated to the "flex rate" based on your current {brand} plan.
 Data compute for your {brand} Workspace is calculated monthly by adding the GB from the total cumulative queries pulled into {brand}'s Helix Data Engine for the month.
@@ -459,12 +459,12 @@ Your overall bill would be ((105 - 100)/100 * 1250) + ((120-100)/100 * 1250) = 6
 
 You can add additional monthly data compute throughput to your annual agreement at the annual price at any time by contacting your CSM or link:mailto:customersuccess@mode.com[customersuccess@mode.com].
 
-==== Tracking insights on seats and data compute usage
+=== Tracking insights on seats and data compute usage
 
 Want to track account usage or learn more about how your teams are using {brand}?
 We provide a handful of resources.
 
-===== Workspace Stats page
+==== Workspace Stats page
 
 To review current trends and usage:
 
@@ -474,13 +474,13 @@ To review current trends and usage:
 . In the *Workspace* section, click *Stats*.
 . Here you'll find of number of sections where you can view trends.
 
-===== Discovery Database
+==== Discovery Database
 
 The Discovery Database allows your team to analyze trends, monitor usage, and glean insights on how your teams are using {brand} by providing you with a data connection directly in your {brand} Workspace.
 
 NOTE: Included in Business and Enterprise Plans. link:https://mode.com/developer/discovery-database/introduction/[Additional Discovery Database Details and Developer Guides]
 
-===== {brand}'s Discovery API
+==== {brand}'s Discovery API
 
 The Discovery API provides API access to metadata that gives you insights on reports, usage, and access to help you understand your content and how your teams are using {brand}.
 
@@ -489,7 +489,7 @@ NOTE: Included in Enterprise Plan link:https://mode.com/developer/discovery-api/
 Still have questions?
 Please reach out to your CSM or link:mailto:support@mode.com[support@mode.com] so we can get you answers!
 
-=== Delete a Workspace
+== Delete a Workspace
 
 WARNING: Deleting a Workspace will remove all associated data, including public warehouse tables, historical runs, and reports. This action **cannot** be undone.
 
@@ -505,10 +505,10 @@ To delete a Workspace:
 IMPORTANT: When a Workspace is deleted, all reports contained within that Workspace are automatically deleted and historical report run results are retained on {brand}'s servers for 30 days. After 30 days, all of the Workspace's report run results are automatically deleted from {brand}'s servers. After an additional 30 days, these report run results are automatically deleted from {brand}'s backups and cannot be recovered by {brand}.
 
 [#faqs]
-=== FAQs
+== FAQs
 
 [discrete]
-====== *Q: If a user is deactivated, can we retrieve the reports in their personal collection?*
+=== *Q: If a user is deactivated, can we retrieve the reports in their personal collection?*
 
 Yes.
 Since {brand} reports are owned by workspaces rather than individuals, all of the reports the user created should remain unchanged after they leave the workspace.
@@ -519,7 +519,7 @@ Please note that the report tokens are required for this automation.
 If you need a list of the report tokens in the deactivated user's personal collection, please have a workspace admin contact Support.
 
 [discrete]
-====== *Q: What are the potential impacts when a user is deactivated?*
+=== *Q: What are the potential impacts when a user is deactivated?*
 
 Please note that if a user is deactivated, the following may experience technical issues:
 
@@ -533,7 +533,7 @@ If the reports are in a public collection, they will still be accessible to the 
 However, if the reports are in a private collection and the user is the only member of this collection, they will not be viewable or movable due to current limitations on permissions.
 
 [discrete]
-====== *Q: How to cancel an invite sent out by an admin?*
+=== *Q: How to cancel an invite sent out by an admin?*
 
 As an admin, you have the ability to cancel an invite by following these steps:
 
@@ -544,7 +544,7 @@ As an admin, you have the ability to cancel an invite by following these steps:
 . Click on *Cancel Invite*.
 
 [discrete]
-====== *Q: Users signed up for {brand} but didn't get email confirmation to join workspace*
+=== *Q: Users signed up for {brand} but didn't get email confirmation to join workspace*
 
 This behavior is seen when the workspace has "admin-invite only" enabled and/or the admin has not approved the request to join the workspace.
 In many cases, when users click "Continue" in their email to verify their email address, nothing else is sent to them.

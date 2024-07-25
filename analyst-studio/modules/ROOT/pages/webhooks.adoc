@@ -8,7 +8,7 @@
 :versions: ["business"]
 :brand: Mode
 
-=== Overview
+== Overview
 
 link:https://en.wikipedia.org/wiki/Webhook[Webhooks] let other applications subscribe to be notified when certain events happen in your {brand} Workspace.
 You can use webhooks to do automate workflows and trigger other applications.
@@ -26,7 +26,7 @@ We'll periodically add support for new webhook events.
 If you have ideas for new events you'd like to see in {brand}, please xref:contact-us.adoc[let our success team know].
 You can learn more about what's possible by viewing sample code in our link:https://github.com/mode/webhooks-examples[webhooks example repo] and refer to {brand}'s link:https://mode.com/developer/api-reference/introduction/[API documentation].
 
-=== Create and subscribe to a webhook
+== Create and subscribe to a webhook
 
 . On the top left of {brand} home page, click on your account and select *Workspace Settings*.
 . Select *Webhooks* from the left navigation panel and then click *Add New Webhook*.
@@ -35,13 +35,13 @@ You can learn more about what's possible by viewing sample code in our link:http
 
 NOTE: Currently, only admins can enable webhooks. Non-admins will need to contact a workspace admin to initialize Webhooks. Once the webhooks are enabled, any user is able to construct logic that utilizes the data sent by these webhooks to trigger other functions.
 
-=== Event types and payload structures
+== Event types and payload structures
 
 Each subscription will send a simple `POST` message to the subscribed URL containing a JSON object with information about the event.
 The body of each `POST` message is succinct, but varies according to the event type.
 You can access the included URL to learn more about the included resource.
 
-==== A report starts running
+=== A report starts running
 
 [source,json]
 ----
@@ -51,7 +51,7 @@ You can access the included URL to learn more about the included resource.
 }
 ----
 
-==== A database is connected
+=== A database is connected
 
 [source,json]
 ----
@@ -61,7 +61,7 @@ You can access the included URL to learn more about the included resource.
 }
 ----
 
-==== A definition is created
+=== A definition is created
 
 [source,json]
 ----
@@ -71,7 +71,7 @@ You can access the included URL to learn more about the included resource.
 }
 ----
 
-==== A definition is updated
+=== A definition is updated
 
 [source,json]
 ----
@@ -81,7 +81,7 @@ You can access the included URL to learn more about the included resource.
 }
 ----
 
-==== Someone joins your Workspace
+=== Someone joins your Workspace
 
 [source,json]
 ----
@@ -91,7 +91,7 @@ You can access the included URL to learn more about the included resource.
 }
 ----
 
-==== Someone was removed from your Workspace
+=== Someone was removed from your Workspace
 
 [source,json]
 ----
@@ -101,7 +101,7 @@ You can access the included URL to learn more about the included resource.
 }
 ----
 
-==== A new report is created
+=== A new report is created
 
 [source,json]
 ----
@@ -111,7 +111,7 @@ You can access the included URL to learn more about the included resource.
 }
 ----
 
-==== A report finishes running
+=== A report finishes running
 
 [source,json]
 ----
@@ -121,7 +121,7 @@ You can access the included URL to learn more about the included resource.
 }
 ----
 
-==== A report is deleted
+=== A report is deleted
 
 [source,json]
 ----
@@ -133,10 +133,10 @@ You can access the included URL to learn more about the included resource.
 ----
 
 [#faqs]
-=== FAQs
+== FAQs
 
 [discrete]
-====== *Q: How to set up alerts with Webhooks?*
+=== *Q: How to set up alerts with Webhooks?*
 
 A convenient way to trigger alerts is by utilizing {brand}'s Webhooks feature.
 This allows you to set up a webhook that sends notifications when a report or query finishes running, as outlined in this guide.

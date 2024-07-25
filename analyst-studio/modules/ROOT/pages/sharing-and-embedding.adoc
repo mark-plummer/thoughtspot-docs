@@ -8,7 +8,7 @@
 :brand: Mode
 
 [#sharing]
-=== Sharing
+== Sharing
 
 Admins can control how members of their Workspace are able to share reports both internally and externally:
 
@@ -18,7 +18,7 @@ Admins can control how members of their Workspace are able to share reports both
 Adjust the toggles next to each of the following options and click *Save settings* when you are done to confirm:
 
 [discrete]
-===== Allow external sharing of reports
+==== Allow external sharing of reports
 //+++<flag-icon>++++++</flag-icon>+++
 
 Disabled by default.
@@ -33,13 +33,13 @@ If you are an admin of {brand}'s paid plan Workspace and you do not see the sett
 xref:contact-us.adoc[Contact our success team] to learn more.
 
 [discrete]
-===== Allow data previews, PDFs, and CSVs to be included in emails and Slack messages
+==== Allow data previews, PDFs, and CSVs to be included in emails and Slack messages
 
 Enabled by default.
 When disabled, report image previews will no longer appear the message bodies of Slack or email shares, and reports shared via email can no longer contain attached PDFs or CSVs.
 
 [discrete]
-===== Allow users to access and move reports into your Workspace's Community space
+==== Allow users to access and move reports into your Workspace's Community space
 
 Disabled by default.
 Enable to make the xref:spaces.adoc#community-space[community Collection] visible to all members of your Workspace and allow users to move reports into it.
@@ -48,15 +48,15 @@ Reports already in the community Collection will still exist and will be availab
 However, members will not be able to move any new reports into the community Collection.
 
 [discrete]
-===== Require transport encryption for emails
+==== Require transport encryption for emails
 
 Disabled by default.
 Enable this feature to prevent {brand} from being able to send emails related to your Workspace, such as when members share via email, to servers that don't have transport encryption enabled.
 
-=== Embedding
+== Embedding
 
 [#white-label-embed-signature-tokens]
-==== White-Label Embed signature tokens
+=== White-Label Embed signature tokens
 
 You must use a valid signature token for your {brand} Workspace to successfully generate a signature for a White-Label Embed URL.
 Signature tokens can only be created by a Workspace admin.
@@ -73,7 +73,7 @@ The new token's public *access key* and private *access secret* will appear.
 +
 WARNING: Remember to store the access secret securely. Do not expose the access secret on public sites, in client-side code, or in public code repositories.
 
-=== Slack integration
+== Slack integration
 
 NOTE: {brand} will be sunsetting the legacy Slack integration in September 2022. To upgrade your workspace to the latest Slack integration version, follow the instructions xref:slack.adoc[here].
 

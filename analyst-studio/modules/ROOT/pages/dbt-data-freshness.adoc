@@ -8,14 +8,14 @@
 :versions: ["business"]
 :brand: Mode
 
-=== Overview
+== Overview
 
 {brand}'s dbt integration allows users to view metadata about data freshness from dbt directly in {brand} reports.
 The integration allows {brand} users to present information about when source data was last refreshed for a report, by mapping the tables used in the report to dbt models.
 
-=== Connect {brand} to dbt
+== Connect {brand} to dbt
 
-==== dbt Cloud requirements
+=== dbt Cloud requirements
 
 * Be on a paid plan (Team or Enterprise) of dbt Cloud.
 * Have link:https://docs.getdbt.com/reference/resource-properties/freshness/[freshness] configured for relevant sources.
@@ -28,7 +28,7 @@ In order to set up dbt data freshness in {brand}, you will need to have:
 * The *Job ID* for the dbt Job that updates your production data.
 * A *Service Account Token* generated from dbt's metadata API.
 
-==== Get dbt job ID
+=== Get dbt job ID
 
 A job in dbt represents the deployment of a dbt project on a schedule.
 It is common for organizations to have multiple dbt Cloud jobs, so you should choose the job that serves as the primary mechanism for updating your production data.
@@ -39,7 +39,7 @@ NOTE: You will not be able to surface dbt data freshness in {brand} if freshness
 To get the Job ID, open up your dbt Cloud account and navigate to the Jobs tab.
 From there, you can copy the ID from the URL.
 
-===== Generate a Metadata-only Service Account Token
+==== Generate a Metadata-only Service Account Token
 
 {brand} uses dbt's Metadata API to pull data freshness information from dbt jobs into {brand} Reports.
 In order to authorize the API, you will need to generate a token in dbt.
@@ -53,7 +53,7 @@ Navigate to the Metadata page in Account Settings to enable access to the API.
 
 For more information on how to generate a Service Account Token, link:https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens#metadata-only-service-account-tokens[see the dbt Cloud documentation].
 
-===== Set up in {brand} connection settings
+==== Set up in {brand} connection settings
 
 Once you have a job ID and signature, go to your Workspace's *Settings* and navigate to the *Manage Connections* tab.
 Select the Connection you want to enable dbt for and navigate to the *dbt Integration* tab.
@@ -63,7 +63,7 @@ image::dbt2.png[dbt2]
 Only Admins or users with permission to manage the Connection will be able to enable the dbt integration.
 If you have multiple Connections, the integration must be set up for each Connection separately.
 
-=== Viewing dbt data freshness in {brand} Reports
+== Viewing dbt data freshness in {brand} Reports
 
 Freshness information from dbt is surfaced on Reports in two places:
 
@@ -73,7 +73,7 @@ Freshness information from dbt is surfaced on Reports in two places:
 From a Report, you can find when the source data from dbt was last refreshed by clicking on the info icon.
 In addition to seeing the *Source data last refreshed* time from dbt, you'll find additional information about the Report, such as when it was last successfully run and last edited.
 
-TIP: Compare the dbt **Source data last refreshed** time to the Report's **Last successful run** time to see if the Report you're viewing is up to date. If the source data was last refreshed more recently than the Report was run, you may see fresher data in the Report by clicking the **Run Now** button.
+TIP: Compare the dbt **Source data last refreshed** time to the Report's **Last successful run** time to see if the Report you're viewing is up-to-date. If the source data was last refreshed more recently than the Report was run, you may see fresher data in the Report by clicking the **Run Now** button.
 
 image::dbt3.png[dbt3]
 
@@ -87,36 +87,36 @@ If a Report's queries reference Connections that don't have dbt enabled, the tab
 image::dbt4.png[dbt4]
 
 [#faqs]
-=== FAQs
+== FAQs
 
 [discrete]
-====== *Q: If I have multiple dbt jobs, which job ID should I add to {brand}?*
+=== *Q: If I have multiple dbt jobs, which job ID should I add to {brand}?*
 
 A job in dbt represents the deployment of a dbt project on a schedule.
 It is common for organizations to have multiple dbt Cloud jobs, so they should choose the job that serves as the primary mechanism for updating production data.
 This job must also have freshness checks configured for relevant sources to surface data freshness in {brand}.
 
 [discrete]
-====== *Q: Where does "`source data last refreshed`" timestamp come from?*
+=== *Q: Where does "`source data last refreshed`" timestamp come from?*
 
 The timestamp considers all tables in the Report from a Connection that has dbt enabled.
 Those tables are mapped to dbt models, for which we get the time at which the oldest source model's last loaded.
 
 [discrete]
-====== *Q: What if I create a Report using one dbt-enabled Connection and another Connection that does not have dbt enabled?*
+=== *Q: What if I create a Report using one dbt-enabled Connection and another Connection that does not have dbt enabled?*
 
 The freshness timestamp will simply ignore the tables from that Connection.
 The tables from the Connection without dbt enabled will not be shown in Report Details.
 No errors will be displayed.
 
 [discrete]
-====== *Q: Why is the Source data last refreshed value slightly different in the Report header than in View Details?*
+=== *Q: Why is the Source data last refreshed value slightly different in the Report header than in View Details?*
 
 This sometimes happens if you have left a Report open.
 Refreshing the Report will surface the most up-to-date timestamp for data freshness from dbt.
 
 [#troubleshooting]
-==== Troubleshooting
+== Troubleshooting
 
 If {brand} is unable to connect to dbt or unable to map any tables in the Report to corresponding dbt models, an error will be shown.
 
@@ -124,7 +124,7 @@ If some tables do not have a freshness timestamp, they will be surfaced in Repor
 This may happen if the table contains only historical data and none of its sources has freshness checks configured, or if the table is not modeled in dbt (that is, raw data).
 
 [discrete]
-====== *1. What does "`no models found in dbt`" mean?*
+=== *1. What does "`no models found in dbt`" mean?*
 
 Timestamps may not be shown if we can't map a {brand} table back to a dbt model.
 This usually happens if the table is not modeled in dbt (that is, raw data).
@@ -133,7 +133,7 @@ The tables with "`data unavailable`" messaging will *_not_* be shown if the Conn
 Only tables from Connections that have dbt enabled will be shown in the list or count toward error messaging.
 
 [discrete]
-====== *2. What does "`Data unavailable`" mean?*
+=== *2. What does "`Data unavailable`" mean?*
 
 This error will only be shown if no timestamp can be shown in Report Activity.
 This may be due to:

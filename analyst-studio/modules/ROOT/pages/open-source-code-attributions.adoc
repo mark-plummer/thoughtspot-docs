@@ -7,7 +7,7 @@
 :path: /articles/open-source-code-attributions
 :brand: Mode
 
-=== Open-Source licenses
+== Open-Source licenses
 
 The following open source code is distributed by {brand}.
 The license it is distributed under and the source code attributions are listed below:

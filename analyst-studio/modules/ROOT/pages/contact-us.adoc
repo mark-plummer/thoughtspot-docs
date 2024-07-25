@@ -10,18 +10,18 @@
 Have a question that's not answered here, or looking for assistance with an analytics challenge?
 {brand}'s Customer Support team is available to help!
 
-=== Status page
+== Status page
 
 We continuously monitor the status of our site and all related services.
 In the event of a service interruption, an update will be posted on our link:https://status.modeanalytics.com/[status page].
 If you are experiencing problems and do not see a notice posted, please let us know via Live Chat or email us at link:mailto:support@mode.com[support@mode.com].
 
-=== Email
+== Email
 
 Contact our Customer Support team via email at link:mailto:support@mode.com[support@mode.com].
 We review all emails and will respond as soon as possible!
 
-=== Live chat
+== Live chat
 //+++<flag-icon>++++++</flag-icon>+++
 
 Users in {brand}'s paid plan Workspaces can chat directly with our team of Customer Support Engineers and Analysts at any time during {brand}'s business hours:

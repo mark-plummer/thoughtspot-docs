@@ -49,11 +49,11 @@ This option can be disabled by un-checking "`Show granularity controls`" in the 
 +
 IMPORTANT: For security purposes, when viewing an xref:white-label-embeds.adoc[embedded report], the **View Data** option is not available, and the **Explore** option is only available to logged-in {brand} users with access to the underlying report.
 
-=== Drill anywhere
+== Drill anywhere
 
 The drill anywhere feature enables the user to navigate through different levels of detail within a single chart.
 The drill path is built by the end user during the drill process by selecting specific fields from the underlying data source to explore further.
-To revert back to previous levels, the user can use the back button to "drill-up." This functionality is available only for Visual Explorer charts and Pivot Table Quick Charts.
+To revert to previous levels, the user can use the back button to "drill-up." This functionality is available only for Visual Explorer charts and Pivot Table Quick Charts.
 To make use of this feature effectively, the chart should include both a Measure and a Dimension.
 
 image::drill-anywhere.gif[Drill anywhere]
@@ -77,7 +77,7 @@ image::drill-anywhere-report-settings.gif[Enabling drill anywhere]
 NOTE: The drill anywhere actions are not saved in the Report View.
 
 [#filters-and-parameters]
-=== Filters and parameters
+== Filters and parameters
 
 Filters and xref:parameters.adoc[Parameters] let viewers customize a report's output without touching code or modifying its configuration.
 
@@ -88,7 +88,7 @@ Filters and xref:parameters.adoc[Parameters] let viewers customize a report's ou
 ////
 TIP: You can follow along with the examples in the {brand} University course: link:https://university.mode.com/getting-insights-from-mode-reports[Getting Insights from {brand} Reports].
 
-image::query-and-explore-data/parameters-filters.png[Parameters and Filters]
+image::parameters-filters.png[Parameters and Filters]
 
 . {blank}
 //+++<flag-icon>++++++</flag-icon>+++
@@ -96,10 +96,10 @@ xref:parameters.adoc[**Parameters:**]
 +
 Dynamically modify the SQL code of the report before it is executed against the database.
 When a report viewer changes a parameter's value, the report must be re-run to see any changes to the results.
-. *Filters:* Modify the data presented in a report's <<built-in-charts-and-tables,built-in charts and visualizations>>.
+. *Filters:* Modify the data presented in a report's xref:visualizations.adoc#built-in-charts-and-tables[built-in charts and visualizations].
 Filters are applied to the data visualized in the browser after all of the report's queries have finished running.
 
-==== How to add filters to a report
+=== How to add filters to a report
 
 . Open the report builder and select *Add Filter*.
 . A list of all columns from all queries in the report appears.
@@ -132,6 +132,6 @@ The filters can also be re-positioned using drag and drop.
 ** *Reset filter*: resets all selected options of the filter.
 ** *Delete*: deletes the filter from the report. +
 To configure a specific set of filter selections as the default for a report, add the necessary filter selections in the report builder and then select the *Set as Default* option. +
-This action will save the filter selections and they will be automatically applied each time the report is viewed.
+This action will save the filter selections, and they will be automatically applied each time the report is viewed.
 
 NOTE: The filter customization options control filter functionality when viewing a Report. The customization options can be updated only when editing a Report.

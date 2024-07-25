@@ -55,7 +55,7 @@ This example uses the formula:   `SUM(CASE [Status] WHEN 'CANCELLED' THEN 1 ELSE
 +
 This formula checks for whether the order status was cancelled.
 It will sum up the tally of cancelled orders and divide by the total number of rows to calculate the cancellation rate. +
-TIP: To see the full list of functions {brand} currently supports, open the panel on the righthand side.
+TIP: To see the full list of functions {brand} currently supports, open the panel on the right-hand side.
 +
 image:cal_fields_functions_list.png[]
 
@@ -310,7 +310,7 @@ Start is an optional argument to define from where to start the search.
 `LEFT([Address], 3)`
 
 | `LOWER(<string>)`
-| Returns string with all characters lowercased.
+| Returns string with all characters lower-cased.
 | `LOWER('Hello World!')` +
 `LOWER([status])`
 
@@ -351,7 +351,7 @@ If length is provided, the returned substring will include that number of charac
 `TRIM([status])`
 
 | `UPPER(<string>) `
-| Returns string with all characters uppercased.
+| Returns string with all characters upper-cased.
 | `UPPER('Hello World!')` +
 `UPPER([status])`
 |===
@@ -372,7 +372,7 @@ If length is provided, the returned substring will include that number of charac
   `<datetime1>,` +
   `<datetime2>)`
 a| Finds the difference between the two datetimes expressed in units of the given datepart. +
-+
+
 In the examples on the right, the first expression returns 0 because the two dates are in the same month.
 The second expression returns 1 because the second date is in a new month, even though the two dates are not 30 days apart.
 | `DATEDIFF('month', #2020-06-08#, #2020-06-25#) = 0` +
@@ -436,7 +436,7 @@ Please note that to specify the start of year, the start of week needs to be spe
 [discrete]
 ====== *Week Start Day customization*
 
-Week Start Day option in the context menu for date fields can be used to customize the week start day to be any day of the week.
+The Week Start Day option in the context menu for date fields can be used to customize the week start day to be any day of the week.
 The default is Sunday.
 This selection will also be reflected in the +/- granularity controls on the chart.
 

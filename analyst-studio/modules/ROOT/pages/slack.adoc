@@ -8,11 +8,11 @@
 :versions: ["business"]
 :brand: Mode
 
-=== Overview
+== Overview
 
 The link:https://slack.com/apps/A1KBFDRGR-mode[{brand} Slack app] enables members of your organization to link:https://mode.com/integrations/slack/[share reports via Slack] directly from {brand}.
 
-=== Installation requirements
+== Installation requirements
 
 * You must be an admin of your {brand} organization.
 * You must have an existing Slack workspace of which you are a member.
@@ -22,7 +22,7 @@ NOTE: Reports can only be shared from {brand} to any public channel and private 
 For example, if the {brand} slack bot is not in the private #sales-only channel, then no member of your {brand} organization can xref:report-scheduling-and-sharing.adoc#slack[share reports from {brand}] to the #sales-only channel.
 
 [#setting-up]
-=== Setting up or upgrading versions
+== Setting up or upgrading versions
 
 . Navigate to the link:https://app.mode.com/home/[{brand} home page] and click on your name in the upper left corner of the window.
 . Click *Workspace Settings*.
@@ -31,20 +31,20 @@ For example, if the {brand} slack bot is not in the private #sales-only channel,
 . The {brand} Slack app requires various permissions in order to function.
 Review these permissions and then click *Authorize* to complete the integration.
 . Optional (if private channels will not be report destinations): For private channels to receive reports, the `@Mode` bot must be included in the channel.
-Mention `@Mode` in the channel and then you'll be given the option to add the bot to that channel.
+Mention `@Mode` in the channel, and then you'll be given the option to add the bot to that channel.
 A private channel without the @Mode bot cannot receive shared reports.
 
 image::slackbot.png[New signature token]
 
 Now all members of your organization can xref:report-scheduling-and-sharing.adoc#slack[share reports to your Slack workspace] directly from the {brand} interface.
 
-=== Required permissions
+== Required permissions
 
 {brand}'s Slack app requires access to your team's Slack workspace in order to facilitate sharing to Slack by members of your {brand} organization.
 When you attempt to authorize {brand}'s Slack app using your Slack account, {brand} will request a number of permissions.
 Below is a list of these permissions, as well as some additional detail about what {brand}'s Slack app does with each permission:
 
-==== Updated installation permissions
+=== Updated installation permissions
 
 |===
 | Slack permission | oAuth scope(s) | Why the {brand} Slack App needs this scope
@@ -63,20 +63,20 @@ Below is a list of these permissions, as well as some additional detail about wh
 
 | Send public messages as {brand}
 | `chat:write:public`
-| Post Slack messages to your workspace's public channels when someone shares a report via Slack in {brand}.
+| Post Slack messages to your Workspace's public channels when someone shares a report via Slack in {brand}.
 
 | Send private messages as {brand}
 | `chat:write`
-| Post Slack messages to your workspace's private channels (where the @Mode bot has been added) when someone shares a report via Slack in {brand}.
+| Post Slack messages to your Workspace's private channels (where the @Mode bot has been added) when someone shares a report via Slack in {brand}.
 
-| Access your workspace's profile information
+| Access your Workspace's profile information
 | `users:read`
 | Get the name of the installer of the Slack App to display in the {brand} UI.
 |===
 
 More information about Slack's scopes can be found in Slack's link:https://api.slack.com/scopes[API documentation].
 
-=== Channel access
+== Channel access
 
 Users in your organization can share reports to the following Slack channels:
 
@@ -89,7 +89,7 @@ For organizations on link:https://slack.com/enterprise[Slack's Enterprise Grid],
 TIP: Users in workspaces using the legacy Slack integration should confirm that this admin is a member of the destination private channels prior to sharing a report.
 
 [discrete]
-===== Failed schedule delivery notifications
+==== Failed schedule delivery notifications
 
 When a report is unable to be delivered to a destination channel in Slack, the Schedule creator and {brand} Workspace administrator(s) will receive an email notification that contains the name of the channel that was unavailable, a link to the schedule, and a link to the report in the {brand} workspace.
 
@@ -97,12 +97,12 @@ Until the report schedule is updated to send to an available channel or the repo
 Only the first failed delivery attempt will result in a notification email.
 
 [#faqs]
-=== FAQs
+== FAQs
 
 [discrete]
-====== *Q: Is there a way to disable the generated image in Slack when creating schedules?*
+=== *Q: Is there a way to disable the generated image in Slack when creating schedules?*
 
-Allowing data previews, PDFs, and CSVs to be included in emails and slack messages is enabled by default.
+Allowing data previews, PDFs, and CSVs to be included in emails and Slack messages is enabled by default.
 When disabled, report image previews will no longer appear in the message bodies of Slack or email shares, and reports shared via email can no longer contain attached PDFs.
 Admins can control how members of their Workspace are able to share reports both internally and externally.
 
@@ -112,7 +112,7 @@ Admins can control how members of their Workspace are able to share reports both
 See the full documentation for sharing data in {brand} xref:sharing-and-embedding.adoc#sharing[here].
 
 [discrete]
-====== *Q: How long is the generated image in Slack available for?*
+=== *Q: How long is the generated image in Slack available for?*
 
 The report image preview is live for four days after posting in the Slack channel.
 After this time, the image will be replaced with a stock image stating that the report preview has expired.

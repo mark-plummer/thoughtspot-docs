@@ -7,7 +7,7 @@
 :path: /articles/faqs
 :brand: Mode
 
-=== Frequently Asked Questions and common errors
+== Frequently Asked Questions and common errors
 
 Welcome to our FAQ page, where you'll find answers to some of the most frequently asked questions regarding {brand}.
 To help you quickly find what you need, we've organized the FAQs by category.
@@ -19,122 +19,122 @@ We've included information on common errors, as well as tips to help you get the
 If you're unable to find the information you're looking for, please don't hesitate to reach out to our xref:contact-us.adoc[support team].
 We'll be happy to assist you further.
 
-==== Access control and permissions
+=== Access control and permissions
 
 * xref:permissions.adoc#faqs[FAQs]
 
-==== API reference
+=== API reference
 
 * xref:api-reference.adoc#faqs[FAQs]
 
-==== Authentication and SSO
+=== Authentication and SSO
 
 * xref:authentication-sso.adoc#faqs[FAQs]
 * xref:authentication-sso.adoc#troubleshooting[Common Errors]
 
-==== Calculated fields
+=== Calculated fields
 
 * xref:cal-fields.adoc#faqs[FAQs]
 * xref:cal-fields.adoc#troubleshooting[Common Errors]
 
-==== Collections
+=== Collections
 
 * xref:spaces.adoc#faqs[FAQs]
 
-==== Collaboration and discovery
+=== Collaboration and discovery
 
 * xref:collaboration-and-discovery.adoc#faqs[FAQs]
 
-==== Connecting to your database
+=== Connecting to your database
 
-===== *Direct Connect*
+==== *Direct Connect*
 
 * xref:connecting-mode-to-your-database.adoc#faqs[FAQs]
 * xref:connecting-mode-to-your-database.adoc#troubleshooting[Common Errors]
 
-===== *Bridge*
+==== *Bridge*
 
 * xref:connecting-mode-to-your-database.adoc#faqs-bridge[FAQs]
 * xref:connecting-mode-to-your-database.adoc#troubleshooting-bridge[Common Errors]
 
-==== Datasets
+=== Datasets
 
 * xref:datasets.adoc#faqs[FAQs]
 
-==== dbt data freshness
+=== dbt data freshness
 
 * xref:dbt-data-freshness.adoc#faqs[FAQs]
 * xref:dbt-data-freshness.adoc#troubleshooting[Common Errors]
 
-==== dbt and Looker Semantic Layer Integration
+=== dbt and Looker Semantic Layer Integration
 
 * xref:dbt-semantic-layer.adoc[FAQs]
 * xref:dbt-semantic-layer.adoc[Common Errors]
 
-==== Discovery database
+=== Discovery database
 
 * xref:discovery-database.adoc#faqs[FAQs]
 
-==== Explorations
+=== Explorations
 
 * xref:explorations.adoc#faqs[FAQs]
 
-==== Github
+=== Github
 
 * xref:github.adoc#faqs[FAQs]
 
-==== Internal embedded reports
+=== Internal embedded reports
 
 * xref:internal-embeds.adoc#troubleshooting[Common Errors]
 
-==== Notebook
+=== Notebook
 
 * xref:notebook.adoc#faqs[FAQs]
 
-==== Parameters
+=== Parameters
 
 * xref:parameters.adoc#faqs[FAQs]
 * xref:parameters.adoc#troubleshooting[Common Errors]
 
-==== Querying data
+=== Querying data
 
 * xref:querying-data.adoc#faqs[FAQs]
 * xref:querying-data.adoc#troubleshooting[Common Errors]
 
-==== Report scheduling and sharing
+=== Report scheduling and sharing
 
 * xref:report-scheduling-and-sharing.adoc#faqs[FAQs]
 * xref:report-scheduling-and-sharing.adoc#troubleshooting[Common Errors]
 
-==== Slack integration
+=== Slack integration
 
 * xref:slack.adoc#faqs[FAQs]
 
-==== Supported databases
+=== Supported databases
 
 * xref:supported-databases.adoc#faqs[FAQs]
 
-==== Visual Explorer
+=== Visual Explorer
 
 * xref:visual-explorer.adoc#faqs[FAQs]
 
-==== Visualization filters
+=== Visualization filters
 
 * xref:viz-filters.adoc#faqs[FAQs]
 
-==== Visualizations
+=== Visualizations
 
 * xref:visualizations.adoc#faqs[FAQs]
 
-==== Webhooks
+=== Webhooks
 
 * xref:webhooks.adoc#faqs[FAQs]
 
-==== White-label embedded reports
+=== White-label embedded reports
 
 * xref:white-label-embeds.adoc#faqs[FAQS]
 * xref:white-label-embeds.adoc#troubleshooting[Common Errors]
 
-==== Workspaces
+=== Workspaces
 
 * xref:organizations.adoc#faqs[FAQs]

@@ -7,7 +7,7 @@
 :path: /articles/supported-databases
 :brand: Mode
 
-=== Connectivity policy
+== Connectivity policy
 
 {brand} currently supports connectivity to customer data using Java Database Connectivity (JDBC) drivers.
 {brand} does not write JDBC drivers.
@@ -21,7 +21,7 @@ However, to give customers flexibility during their update process, we will enab
 {brand} will usually provide 6 months' notice to customers before driver removal, although we reserve the right to remove drivers with known security issues on less notice.
 
 [discrete]
-===== Driver deprecation
+=== Driver deprecation
 
 {brand} will mark for deprecation and set removal dates for older versions of drivers.
 We generally set removal dates for the oldest drivers 6 months out, when adding new versions of drivers.
@@ -40,7 +40,7 @@ For the listed database types below, {brand} aims to support all versions of the
 ==== Tier 1: Preferred
 
 These database and integration types are fully supported by {brand} and drivers are upgraded at least semi-annually.
-We are committed to improving the experience of users connecting {brand} to datasources of these types, and will fix issues based on severity and demand.
+We are committed to improving the experience of users connecting {brand} to data sources of these types, and will fix issues based on severity and demand.
 As part of our release process, {brand} runs exhaustive integration tests against all types in this tier to ensure quality.
 
 |===
@@ -110,7 +110,7 @@ a| <<looker-sql,Looker SQL>>
 ==== Tier 2: Supported
 
 These database types are fully supported by {brand} and drivers are upgraded annually.
-We are committed to improving the experience of users connecting {brand} to datasources of these types, and will fix issues based on severity and demand.
+We are committed to improving the experience of users connecting {brand} to data sources of these types, and will fix issues based on severity and demand.
 As part of our release process, {brand} runs integration tests against all types in this tier to ensure quality.
 
 |===
@@ -210,7 +210,7 @@ a| <<presto,PrestoDB>>
 [#databases]
 === Databases
 
-NOTE: If the database supports multiple Drivers, use the xref:managing-database-connections.adoc#update-preferred-jdbc-driver[Manage Connections] page to update to your prefered driver.
+NOTE: If the database supports multiple Drivers, use the xref:managing-database-connections.adoc#update-preferred-jdbc-driver[Manage Connections] page to update to your preferred driver.
 
 [#amazon-athena]
 ==== Amazon Athena
@@ -1455,7 +1455,7 @@ We'll start by determining if your database is accessible to us.
 image::rds-select-instance-201507.png[Amazon RDS Console]
 
 . Look under "Security and Network".
-Your instance is in a VPC if there's a entry labeled VPC.
+Your instance is in a VPC if there's an entry labeled VPC.
 It is typically found below _Availability Zone_ and above _Security Groups_.
 If you don't have an entry here, then your instance is not in a VPC, and you can jump to the "Security Groups" section below.
 +

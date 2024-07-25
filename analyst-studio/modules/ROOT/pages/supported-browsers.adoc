@@ -7,7 +7,7 @@
 :path: /articles/supported-browsers
 :brand: Mode
 
-=== Desktop support
+== Desktop support
 
 {brand} supports all of the latest major Desktop versions of Chrome, Firefox, Safari, and Microsoft Edge browsers as defined by the criteria below:
 
@@ -21,7 +21,7 @@
 
 '''
 
-=== Mobile/Tablet support
+== Mobile/Tablet support
 
 At this time, {brand} does not fully support mobile browsers.
 For that reason, portions of the application may not be optimized for viewing on a phone or tablet.

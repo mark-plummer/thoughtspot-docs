@@ -25,16 +25,16 @@ Once users are provisioned, they'll have familiar tools to perform analysis and 
 {brand}'s data analysis tools empower analysts and stakeholders to analyze the data and iterate on that process without requiring any additional code.
 Finally, the API will allow you to programmatically integrate {brand} into all of your team's processes.
 
-=== Data access and user roles
+== Data access and user roles
 
-==== Create a Workspace
+=== Create a Workspace
 
 After creating a {brand} account, you'll need to create a Workspace to connect your databases and invite other users.
 A Workspace is a group of users that share secure database connections and analysis with one another.
 Once that's set up, database connections can then be configured.
 {brand} connects to most popular SQL databases and does not require any data preparation prior to connection, further streamlining the implementation process.
 
-==== Connect to a database
+=== Connect to a database
 
 {brand} can directly connect to link:https://mode.com/data-sources/[many popular databases], all you have to do is simply enter the appropriate security credentials.
 A direct connection is easy to set up and does not require IT resources.
@@ -44,7 +44,7 @@ The bridge connector can run directly behind your organization's VPN or firewall
 image::integrations.png[Grid showing some available integrations]
 
 [discrete]
-====== Provision users
+===== Provision users
 
 After connecting a database, you can invite users and give them access to perform their analysis or administrative tasks.
 
@@ -75,7 +75,7 @@ In contrast, with {brand}, all users are empowered to share and create by defaul
 This feature is just one example of how {brand} enables the citizen data analyst to get data access and gain insight in under an hour.
 
 [discrete]
-====== Create Collections
+===== Create Collections
 
 With {brand}'s user and sharing models, all users have access to existing reporting assets through Collections.
 A user can use their personal Collection to keep track of their work.
@@ -83,7 +83,7 @@ When they are ready to share the analysis with another team, they can make the r
 
 Using shared private Collections, your team can keep reports organized, grouping them by project, department, quarter, or data source.
 
-=== Data and user checklists
+== Data and user checklists
 
 The following are some key user-related items to think about before implementing {brand}:
 
@@ -92,7 +92,7 @@ The following are some key user-related items to think about before implementing
 * Who will be the Admin users?
 * Which users will we invite?
 
-=== Analyzing data
+== Analyzing data
 
 Now that the databases are connected to your {brand} Workspace and users are set up, they can begin creating reports.
 
@@ -104,7 +104,7 @@ Check out our in-depth link:https://mode.com/sql-tutorial/[SQL] and https://mode
 Of course, the starting point for the analysis process is the SQL Editor, so let's start there.
 
 [discrete]
-====== SQL editor
+===== SQL editor
 
 The first step in creating a report is to query data using the query editor.
 {brand}'s SQL Editor provides flexibility without extra complexity.
@@ -124,27 +124,27 @@ The editor provides developer-friendly features including:
 * Context aware auto-complete
 * Query history
 
-=== Time-saving shortcuts for your queries
+== Time-saving shortcuts for your queries
 
-==== Definitions
+=== Definitions
 
 To save time, you can templatize your SQL queries with shared Definitions.
 These are custom SELECT statements that can be referenced in any SQL query.
 These definitions allow users to write business logic in one place and share it across multiple reports and users--simplifying complex queries, reducing repetitive tasks, and ensuring consistency.
 
-==== Liquid template language
+=== Liquid template language
 
 Liquid template language is available in all SQL queries and allows additional flexibility on top of existing SQL queries.
 With the template language, analysts can augment SQL with loops, if/then statements, and variables.
 These simple template constructs can simplify many tasks that are difficult to do within base SQL.
 
-==== Parameters
+=== Parameters
 
 Parameters let report developers make minor changes to their SQL syntax that give end users more flexibility when running their reports.
 Parameters allow report viewers to alter their reports without writing the underlying SQL code or asking report developers to modify the original query.
 Since parameters also use a Liquid template language, report developers can quickly use these template helpers.
 
-==== Helix data engine
+=== Helix data engine
 
 Behind the scenes, {brand}'s in-memory data engine, Helix, powers the data analysis process.
 Instead of doing last-mile aggregations and pivots in queries to fit the results in memory, Helix lets analysts do the calculations on the fly using Calculated Fields directly in the report - reducing work and saving time.
@@ -155,7 +155,7 @@ You will have this feature available upon implementation.
 {brand}'s SQL Editor is a powerful enabler for all users in your company.
 It is easy to use because it leverages basic SQL to get started but offers features that can accelerate the work of your entire team.
 
-=== Visualizations
+== Visualizations
 
 After an analyst creates a SQL query to retrieve data from the database, they have several options to further analyze and share the resulting dataset through visualizations.
 The simplest approaches are to display the data in a table, export to CSV, or copy to the clipboard.
@@ -163,14 +163,14 @@ These static export options are useful for quick analysis.
 {brand}, however, provides a much richer toolset for analyzing and sharing data with others through pivot tables and charting capabilities.
 
 [discrete]
-====== Tables
+===== Tables
 
 The simplest visualization is a table view of the data.
 In the table view, you can identify the dimensions and measures for your reports as well as the end-user filters.
 You can also control the format of your data so that, for example, the currency, date, and percentage columns are readable and understandable.
 
 [discrete]
-====== Chart visualizations
+===== Chart visualizations
 
 Chart visualization options include bar, line, scatter, area, and pie charts.
 These chart types let end-users increase or decrease the granularity of the report, and are simple to construct using the {brand} interface.
@@ -180,14 +180,15 @@ Users can also use parameters and filters to modify the underlying datasets with
 These features allow the end user to explore the data on their own without the traditional back and forth of updating and refining SQL queries.
 This lets citizen data analysts and business stakeholders explore the data and build insights in under an hour.
 
+[#advanced-visualizations]
 [discrete]
-====== Custom visualizations
+===== Custom visualizations
 
 With {brand}, you can create your own custom visualizations as well.
 One of the primary ways of doing so is by leveraging the R and Python visualization libraries through the notebook environments.
 We will discuss notebooks in the next section.
 
-=== Notebooks
+== Notebooks
 
 So far, we've covered the SQL Editor and visualization tools which are good for day-to-day analysis.
 Most companies, however, need an environment where users can execute their own Python or R scripts against the data in order to perform further visualizations.
@@ -196,7 +197,7 @@ Your users can use {brand}'s SQL Editor and visualization tools for day-to-day a
 {brand} uses industry standard Python and R in a notebook environment to enable rapid code iteration for data manipulation, statistical analysis, and advanced visualization.
 An analyst can perform analysis in a notebook that might be difficult (or impossible) to do in SQL.
 
-{brand}'s Notebook has specific advantages including its ease of setup, centralization of environments, and simplified administration due to the inclusion of a variety of pre-loaded Python and R libraries.
+{brand}'s Notebook has specific advantages including its ease of setup, centralization of environments, and simplified administration due to the inclusion of a variety of preloaded Python and R libraries.
 Since this environment is very similar to existing notebook environments, the learning curve should be minimal.
 
 image::screenshot-python-notebook.png[Python Notebook]
@@ -213,7 +214,7 @@ Out of the box, {brand} includes many of the most popular libraries for R and Py
 Combined, the SQL Editor, visualization features, and Notebook environments in {brand} enable users to create quick, flexible, and shareable analysis.
 Together, they provide a powerful but easy-to-learn workflow where code-first analysts and code-free end users can work together to turn raw data into real-time decision-making.
 
-=== Analyzing data checklist
+== Analyzing data checklist
 
 Here are some items to consider for analyzing your data:
 
@@ -223,7 +224,7 @@ Here are some items to consider for analyzing your data:
 * Do you have data sets that are currently too large or difficult to manage?
 * Are there existing notebook environments that you can consolidate and streamline with {brand}?
 
-=== Building and sharing a report
+== Building and sharing a report
 
 Now that we have gone through {brand}'s core concepts, we can walk through how to turn your analysis into a robust, meaningful report that can be shared across the company.
 
@@ -280,7 +281,7 @@ The WLE can also restrict the user's ability to see the underlying data - avoidi
 
 image::screenshot-wle.png[White label embed]
 
-=== Building and sharing report checklist
+== Building and sharing report checklist
 
 Items to consider when planning your company's reporting strategy:
 
@@ -290,7 +291,7 @@ Items to consider when planning your company's reporting strategy:
 * Will reports need to be embedded and shared with external partners?
 * What is the primary manner reports will be shared?
 
-=== Advanced topics
+== Advanced topics
 
 Building a data-driven culture means that data is a part of all your company's processes.
 {brand} provides several options for more deeply integrating data into the company's workflows.
@@ -302,8 +303,8 @@ Webhooks are frequently used for:
 * Enhanced logging of activity within {brand}.
 * Alerting administrators when users join or leave the Workspace.
 
-{brand} can also sync into a Github repository.
-The Github integration synchronizes common definitions, reports, or themes to all {brand} users in the Workspace.
+{brand} can also sync into a GitHub repository.
+The GitHub integration synchronizes common definitions, reports, or themes to all {brand} users in the Workspace.
 
 The activities discussed in previous sections are available to all {brand} users and accessed via the {brand} UI.
 In many cases, your company may also wish to access the {brand} functionality via an API.
@@ -317,16 +318,16 @@ A link:https://mode.com/developer/api-reference/introduction/[full discussion of
 * Exporting results via JSON, CSV, or PDF.
 * Managing report schedules and subscriptions.
 
-=== Advanced topic checklist
+== Advanced topic checklist
 
 Which of the following functionality will be used:
 
 * Are there any Webhooks to implement?
-* Will {brand} sync with Github?
+* Will {brand} sync with GitHub?
 * Which API options will the team use first?
 * Are there any playbook items that we want to adapt to our needs?
 
-=== Conclusion
+== Conclusion
 
 {brand} is a modern, powerful, and flexible data analytics platform that is easy to set up in a short time frame.
 It uses familiar SQL, Python, and R languages so analysts can get up and running quickly, often with an hour for time-to-decision.

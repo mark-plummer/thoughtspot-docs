@@ -7,13 +7,13 @@
 :path: /articles/organizing-reports
 :brand: Mode
 
-=== Create a new Report
+== Create a new Report
 
 . Navigate to the link:https://app.mode.com/home/[{brand} home page] and (if necessary) sign in to {brand}.
 . Click on the *New* image:modal-add.svg[new] button in the upper right corner of the window.
 . A new, empty Report will be created in your personal Collection.
 
-=== Star a Report
+== Star a Report
 
 Use stars to privately mark the reports you use the most so you can find them quickly.
 To star a Report:
@@ -26,7 +26,7 @@ an empty star will appear next to the Report name.
 To see a list of all the starred reports, regardless of where they live, click on *Starred* on the left side of your link:https://app.mode.com/home/[{brand} home page].
 To remove a star from a Report, repeat the above steps.
 
-=== Duplicate a Report
+== Duplicate a Report
 
 {brand} lets you copy an existing Report so that you can modify or build on it without making changes to the original.
 You can duplicate any Report that you created.
@@ -43,7 +43,7 @@ To duplicate a Report:
 
 You may now modify this duplicated Report without impacting the original Report in any way.
 
-=== Archive a Report
+== Archive a Report
 
 You can archive reports that you want to hide from view but are not yet ready to delete.
 To archive a Report:
@@ -57,7 +57,7 @@ Archived reports are still accessible to Workspace members via direct link or se
 You can see all of the archived reports in a Collection by navigating to that Collection and clicking on the *View All Reports* dropdown in the upper right, and clicking *Archive*.
 You can unarchive any of the reports in this view by hovering over the Report thumbnail, clicking on the overflow menu icon image:menu-dots-gray-press.svg[menu] button that appears in the upper right, and clicking *Unarchive*.
 
-=== Delete a Report
+== Delete a Report
 
 Deleting a Report removes it from your Workspace, including all of its code, results, run history, and visualizations.
 When you delete a Report, it will no longer be visible in {brand}, and links to that Report will no longer work.
@@ -71,7 +71,7 @@ When you delete a Report, it will no longer be accessible by anyone in your {bra
 To recover a deleted Report, contact customer support.
 
 [#move-a-report-to-another-collection]
-=== Move a Report to another Collection
+== Move a Report to another Collection
 
 . Navigate to the Collection containing the Report you want to move.
 . Click the overflow menu icon image:menu-dots-gray-press.svg[menu] in the upper right corner.

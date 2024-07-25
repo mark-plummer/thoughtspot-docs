@@ -6,7 +6,7 @@
 :ogdescription: Stay up-to-date with the latest updates
 :path: /articles/release-notes
 
-=== Release notes
+== Release notes
 
 You can access our release notes by following this link:https://updates.mode.com/[link].
 Additionally, you can locate all release notes by visiting the "Discover" page located on the left side of your dashboard.

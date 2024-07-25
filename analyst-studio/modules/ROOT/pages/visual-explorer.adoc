@@ -7,10 +7,10 @@
 :path: /articles/visual-explorer
 :brand: Mode
 
-=== Getting started
+== Getting started
 
 For those who want to explore their data visually, Visual Explorer is a more flexible and powerful alternative to our "`fixed view`" xref:visualizations.adoc#built-in-charts-and-tables[Quick Charts].
-Inspired by the layered link:https://towardsdatascience.com/a-comprehensive-guide-to-the-grammar-of-graphics-for-effective-visualization-of-multi-dimensional-1f92b4ed4149[Grammar of Graphics], Visual Explorer provides an environment where you can create and configure your visualizations based on a ruleset--a grammar, if you will.
+Inspired by the layered link:https://towardsdatascience.com/a-comprehensive-guide-to-the-grammar-of-graphics-for-effective-visualization-of-multi-dimensional-1f92b4ed4149[Grammar of Graphics], Visual Explorer provides an environment where you can create and configure your visualizations based on a rule set--a grammar, if you will.
 Just like how in English the word "`grammar`" has become synonymous with rules for the construction of readily interpretable sentences, Visual Explorer is built upon a framework that provides rules to construct readily interpretable graphics.
 
 image::vizexplorer.png[Visual Explorer menu]
@@ -29,12 +29,12 @@ As a general principle, you can think of *Columns* as what data you want to disp
 image::col-row-lay.png[Columns Rows and Layers]
 
 [#building-a-simple-visualizaton]
-==== Building a simple visualization
+=== Building a simple visualization
 
 [discrete]
-====== Adding dimensions and measures
+===== Adding dimensions and measures
 
-If you have a multi-dimensional dataset, adding a *Dimension* to your Columns or Rows is a powerful starting point to begin slicing your data.
+If you have a multidimensional dataset, adding a *Dimension* to your Columns or Rows is a powerful starting point to begin slicing your data.
 Doing so groups your visualization by categorical values, which helps you break down your data to better understand certain trends.
 
 image::simple-viz.jpeg[Simple visual]
@@ -50,7 +50,7 @@ This is useful for numeric data that's already meaningful without any aggregatio
 image::simple-viz2.jpeg[Simple visual]
 
 [discrete]
-====== Multiple measures
+===== Multiple measures
 
 From here, you can continue to add additional Measures to your visualization if you wish.
 By default, every measure is plotted in its own *pane* because each measure introduces a new layer.
@@ -61,7 +61,7 @@ Check out our link:https://mode.com/visual-explorer-guides/[Visual Explorer fiel
 There you can find possible visualizations you can build as starting points for your exploratory analysis.
 
 [#introduce-groupings-with-facets]
-==== Introduce groupings with facets
+=== Introduce groupings with facets
 
 Once you add multiple Dimensions to your Columns or Rows, your visualization will begin to *nest* and display *facets*.
 Nesting is a way to compare within a dimension's values (rather than against them) and helps break down metrics across dimensions within the same plot.
@@ -72,14 +72,14 @@ image::groupings-with-facets.jpeg[Groupings with facets]
 The new dimension divides the visualization into 10 panes, one for each combination of `YEAR(order_created_date)` and `region_name`.
 
 [#using-layers-to-add-depth]
-==== Using layers to add depth
+=== Using layers to add depth
 
 Layers are an integral part of visual analysis because they allow you to add further context and detail to your visualizations.
 You can change the Layer properties of an individual measure or all measures in your visualization.
 
 
 [#mark-types]
-===== *Mark types*
+==== *Mark types*
 
 By default, the *Mark type* of your visualization will be set to Automatic -- based on your configuration, Visual Explorer will try to figure out what is the optimal mark to display.
 The user can opt to set and change the mark type of each layer by clicking the dropdown menu to select how the measure should be plotted.
@@ -88,7 +88,7 @@ image::mark-types-overview.png[Mark Types]
 
 In this example, the mark type is being changed for the specific measure `AVG(price)`.
 
-===== *Mark settings*
+==== *Mark settings*
 
 The mark settings options are available in the gear icon next to the mark type.
 Settings options specific to each mark type are listed below.
@@ -155,7 +155,7 @@ image:mark-types-area-inter-step-before.png[Step before interpolation for Area M
   *** *Step After*: An area under a step line aligned with the end of a data point. +
 image:mark-types-area-inter-step-after.png[Step after interpolation for Area Mark Type]
 
-===== *Color*
+==== *Color*
 
 When there is no specific field to color the chart by, a single default color is applied to the chart.
 This default color can be modified by clicking the "Edit Colors" icon.
@@ -173,7 +173,7 @@ image::Demo-Dimension-on-Color.gif[Color by Dimensions]
 
 *Coloring by Measures*
 
-Measures can also be added to the Color channel by dragging and dropping or using the type ahead search.
+Measures can also be added to the Color channel by dragging and dropping or using the typeahead search.
 This will produce a color gradient with the minimum and maximum values of that Measure based on the grouping in your visualization.
 
 * *Color customization*: The default sequential color palette can be changed to another sequential or diverging palette.
@@ -196,7 +196,7 @@ image::range-customization-demo.gif[Color by Measures]
 Colors assigned to a specific value can be '`unassigned`'  if needed.
 When a value is unassigned, it will be colored using a neutral color (default is light grey).
 The unassigned values color can be customized by clicking on the color swatch.
-The user can unassign by right clicking on a value.
+The user can unassign by right-clicking on a value.
 Bulk unassigning values is possible by using shift + right-click.
 You can re-assign colors to a value by clicking on the color swatch next to the value.
 There is no option to bulk assign.
@@ -209,21 +209,21 @@ When a field added to the colors channel has high cardinality (> 250 values), we
 All values past the first 250 will be assigned a neutral color.
 The user has the option to unassign colors to values for which a palette color has been assigned or manually assign/re-assign colors by clicking on the color swatch next to a value.
 
-===== *Size*
+==== *Size*
 
-Adding a continuous numeric Measure to the *Size* channel by dragging and dropping or using the type ahead search will reflect the value of that measure in the width of every mark in that particular layer.
+Adding a continuous numeric Measure to the *Size* channel by dragging and dropping or using the typeahead search will reflect the value of that measure in the width of every mark in that particular layer.
 This is commonly used in bubble charts to provide additional information about data points relative to each other.
 
 image:size-viz.jpeg[Size]
 
-===== *Text*
+==== *Text*
 
-Adding a field to the *Text* channel by dragging and dropping or using the type ahead search will display text on your visualization.
+Adding a field to the *Text* channel by dragging and dropping or using the typeahead search will display text on your visualization.
 This will display a text data value for every mark in that particular layer.
 
 image:text-viz.jpeg[Text]
 
-===== *Detail*
+==== *Detail*
 
 Like Color, when you drop a dimension onto the *Detail* dropzone, the marks in your visualization will be separated according to the values within that dimension.
 But unlike dropping a dimension on Rows or Columns, adding fields to Detail is a way to show more data without changing the table structure.
@@ -234,7 +234,7 @@ image::detail-viz.jpeg[Detail]
 The grouping in Detail will also be factored into your calculations when you use window functions or Quick table calculations.
 
 
-===== *Baseline*
+==== *Baseline*
 
 The baseline channel is exclusively applicable to bar and area mark types.
 It determines the starting point of the bar or area mark.
@@ -243,7 +243,7 @@ This option is particularly useful for creating timeline and waterfall charts, a
 image:baseline1.png[Baseline] image:baseline2.png[Baseline] image:baseline3.png[Baseline] image:baseline4.png[Baseline]
 
 [#building-visualizations-with-multiple-measures]
-=== Building visualizations with multiple measures
+== Building visualizations with multiple measures
 
 `Measure Names` and `Measure Values` are always available in the fields list.
 Unlike the other fields, they do not directly come from your dataset but are rather provided by the Visual Explorer for you to define a group of measures in your visualization.
@@ -257,7 +257,7 @@ The combination of these two fields allow you to build certain types of views th
 As you'll begin to see in some of our link:https://mode.com/visual-explorer-guides/[example configurations], `Measure Names` and `Measure Values` are integral pieces to build certain visualizations.
 
 [discrete]
-===== *The Measure Values Shelf*
+==== *The Measure Values Shelf*
 
 Once you add `Measure Values` anywhere in your visualization configuration, a Measure Values shelf will show up for you to add your measures.
 
@@ -265,7 +265,7 @@ Unlike adding measures directly to Columns or Rows, this technique plots all mea
 
 image::measure-values.jpeg[Measure Values]
 
-==== Multiple measures in a view
+=== Multiple measures in a view
 
 There are several ways to graph multiple measures in one view:
 
@@ -273,7 +273,7 @@ There are several ways to graph multiple measures in one view:
 . Blend two measures to share on axis.
 . Set to measures on a dual axis.
 
-===== *One axis for each measure*
+==== *One axis for each measure*
 
 By default, each measure gets its own axis when you add measures directly to either Rows or Columns.
 
@@ -285,11 +285,11 @@ Compare that to the resulting visualization.
 
 image:measure-each-axis.jpeg[Measure for each Axis]
 
-===== *Blending axes*
+==== *Blending axes*
 
 If you want multiple measures to be in the same pane and axis, you'll want to leverage `Measure Values` and `Measure Names`.
 
-. Drag-and-drop or use the type ahead search to add `Measure Values` to either Rows or Columns--whichever axis you want your measures to be on.
+. Drag-and-drop or use the typeahead search to add `Measure Values` to either Rows or Columns--whichever axis you want your measures to be on.
 +
 image::blending-axes.jpeg[Blending Axes]
 
@@ -304,11 +304,11 @@ You can place it either on a Row or Column or in a layer channel like Color.
 image:blending-axes2.jpeg[Blending Axes]
 
 [#dual-axes]
-==== Dual axes
+=== Dual axes
 
 Lastly, you can compare two measures on the same pane but different axes by creating visualization with a dual axis.
 
-. Drag-and-drop or use the type ahead search to add at least two measures you want to graph on either Rows or Columns.
+. Drag-and-drop or use the typeahead search to add at least two measures you want to graph on either Rows or Columns.
 . Click on a field that you'd like to include in your dual axis.
 In the context menu, you should see an option to join this field and the field above on a dual axis.
 If it's the outermost field and there's no field above it, then you will not see the dual axis option.
@@ -319,9 +319,9 @@ image::dual-axes.jpeg[Dual Axes]
 +
 image:dual-axes1.jpeg[Dual Axes]
 
-==== Shared axis
+=== Shared axis
 
-===== *Introduction*
+==== *Introduction*
 
 Shared axis is a feature that allows you to create composite charts that assist with comparing data.
 As the name implies, fields with a shared axis are plotted together along a single axis with a common scale.
@@ -333,19 +333,19 @@ If you're simply looking to compare trends and patterns across measures in your 
 To learn about plotting data along more than one axis, see <<dual-axes,dual axes>>.
 
 
-====== *Creating a shared axis*
+===== *Creating a shared axis*
 
-To create a shared axis, add at least one continuous field to columns or rows by dragging and dropping or by using the type ahead search.
+To create a shared axis, add at least one continuous field to columns or rows by dragging and dropping or by using the typeahead search.
 From the pill context menu (accessed via the caret on the right side of the pill), you can select "`Shared axis`" (fig.
 1.1).
 When selected, a blue check will appear in the menu next to shared axis, and a new gray header and dropzone will appear around the pill (fig 1.2).
 
-image:shared-axis/1.1.png[Shared Axis 1.1, 1.2]
+image:1.1.png[Shared Axis 1.1, 1.2]
 
 At this stage, no updates to the visualization will occur, because you still need to add additional fields to the dropzone.
 Drag a second continuous pill with the same units into the new shared axis dropzone (fig 1.3).
 
-image:shared-axis/1.3.png[Shared Axis 1.3]
+image:1.3.png[Shared Axis 1.3]
 
 The visualization will update, and a single shared axis will be created that uses the minimum and maximum values from both sets of field data (fig 1.4).
 If your fields do not share the same units, the axis units will be converted to general numeric formatting.
@@ -363,10 +363,10 @@ Simply click the shared axis header and drag it to move between columns and rows
 
 image:1.6.png[Shared Axis 1.6]
 
-====== *Formatting a shared axis*
+===== *Formatting a shared axis*
 
 To update the axis title for the shared axis group, open the shared access context menu in the upper right of the shared axis header, and select "`format`" (fig 2.1).
-You can also click directly on the Format tab in the righthand panel of the visualization builder (fig 2.2a).
+You can also click directly on the Format tab in the right-hand panel of the visualization builder (fig 2.2a).
 If you click the Format tab directly, you must also select the name of your shared axis group from the fields list dropdown (fig.
 2.2b).
 
@@ -388,7 +388,7 @@ Additional helpful formatting features for shared axis visualizations are <<usin
 
 image:2.4.png[Shared Axis 2.4]
 
-====== *Removing a Shared Axis*
+===== *Removing a Shared Axis*
 
 There are multiple ways to remove a shared axis from your visualization.
 To remove the shared axis and all of the fields it contains from the visualization, simply drag the whole shared axis group out of the dropzone (fig. 3.1).
@@ -412,12 +412,12 @@ image::3.4.png[Shared Axis 3.4]
 
 image:3.5.png[Shared Axis 3.5]
 
-===== *Using shared axis to create combo charts*
+==== *Using shared axis to create combo charts*
 
 With Shared axis, you can create a wide array of visualizations from slope charts, bar chart and dot plots, to funnel charts and much more.
 Check out our link:https://modeanalytics.com/nascif_abousalh_neto/reports/d3eeb27acd63[Example Report] for inspiration, and duplicate it to your own Workspace to see how the visualizations are built.
 
-==== Data limits within Visual Explorer
+=== Data limits within Visual Explorer
 
 There are no limits to the amount of data you can pull into Visual Explorer; instead, that will be determined by your Helix tier.
 
@@ -428,7 +428,7 @@ Visual Explorer will plot up to:
 * 16000 facets in a pivot table or faceted chart.
 * 3000 series (lines or bars).
 
-==== Dealing with high cardinality
+=== Dealing with high cardinality
 
 If you are working with datasets/fields that surpass browser limitations, there are a couple of actions you can take to render your visualizations:
 
@@ -441,7 +441,7 @@ In manual update mode, a pop-up will appear where there are two options:
 
 image::manual-mode-update-changes-.gif[Manual Update Mode]
 
-=== Pivot table and chart facet pagination
+== Pivot table and chart facet pagination
 
 Pivot tables or charts with many rows or columns impact visualization load time.
 In order to ensure a faster loading experience and reduce errors, {brand} automatically paginates pivot tables and charts with high cardinality.
@@ -462,7 +462,7 @@ The back and forward buttons in your visualization toolbar do not work with the 
 Additionally, if you navigate away from the visualization and return to it, the pivot table will reset to page 1.
 
 [discrete]
-===== *Rendering errors*
+==== *Rendering errors*
 
 Even with pagination, some visualizations will be too large to render due to the number of facets or data points.
 In these cases, you will be presented with a modal prompting you to filter your data, aggregate it, or switch to manual chart updates.
@@ -470,41 +470,41 @@ Additionally, when switching between pages of facets, it is possible to hit syst
 This happens when the facet(s) on one page have many more rows or elements associated with them than the facet(s) on the previous page.
 
 [discrete]
-===== *Disabling pagination*
+==== *Disabling pagination*
 
 There is currently no way to disable pivot table and chart pagination.
 If you want to remove the pagination, you can filter your data to a smaller size, or remove fields with large amounts of data from the visualization.
 
 [#filters]
-=== Filters
+== Filters
 
 [discrete]
-===== Applying top/bottom N filters
+==== Applying top/bottom N filters
 
 image::TopNFilter.gif[Top N Filter]
 
 Top/bottom N filters enable you to see the highest or the lowest categorical levels ranked by aggregating a given measure.
 To apply a top or bottom N filter to your visualization:
 
-. Add your field (text, date, and numeric fields) to the filter section by dragging and dropping or by using the type ahead search.
+. Add your field (text, date, and numeric fields) to the filter section by dragging and dropping or by using the typeahead search.
 . Select the "`Top/Bottom N`" method in the filter modal and choose what you want to define along with the number of values.
 . Select the field you want to filter by.
 . Choose the aggregation type you want for your filter.
 . Apply the filter and close.
 
-NOTE:
+[NOTE]
 ====
 * Top/bottom N filters will always be applied first no matter the other filters that are added.
 * In order to create a top or bottom N filter with no aggregation, you will need to select the same field you created with the by-field filter (see image below for an example). +
 image:topbottom.png[Top N Filter]
-* Currently top/bottom N filters do not support ties.
+* Currently, top/bottom N filters do not support ties.
 ====
 
 [#sorting]
-=== Sorting
+== Sorting
 
 [discrete]
-===== Quick sort
+==== Quick sort
 
 In the xref:explorations.adoc#toolbar[Toolbar], you have the ability to leverage our Quick Sort feature to sort your innermost discrete, categorical data by the outermost measure in either descending or ascending order.
 
@@ -524,7 +524,7 @@ We currently support the following sorting methods:
 . By nested
 
 [discrete]
-===== Sorting by data values
+==== Sorting by data values
 
 This sorting method looks at the values within the field you're trying to sort by (for example, `Midwest`, `Northeast`, `Southeast`, `West` within the `region_name` field) and sorts them either in ascending or descending order.
 
@@ -535,7 +535,7 @@ This sorting method looks at the values within the field you're trying to sort b
 image::sort-vegif1.gif[Quick Sort Visual Explorer]
 
 [discrete]
-===== Sorting by field
+==== Sorting by field
 
 This sorting method allows you to sort a discrete field in your visualization--it could be in Columns, Rows, or one of your Layer channels--by another continuous, aggregated value.
 The latter field does not need to be in your chart configuration.
@@ -547,7 +547,7 @@ By-field is a non-nested sorting method that considers the total value across al
 image::sort-vestatic1.jpeg[Quick Sort Visual Explorer]
 
 [discrete]
-===== Manual sorting
+==== Manual sorting
 
 The manual sort feature gives users the ability to sort a domain of items in whichever order they choose by allowing them to create a specific order through dragging and dropping values into a customized order.
 Any items for the given field that have not been manually sorted with appear after the sorted items, in ascending order.
@@ -555,7 +555,7 @@ Any items for the given field that have not been manually sorted with appear aft
 image::manual-drag-and-drop.gif[Quick Sort Visual Explorer]
 
 [discrete]
-===== Nested sorting
+==== Nested sorting
 
 Nested sorting allows values to be sorted independently within each facet.
 To use nested sorting, the field you are sorting has to be under (or nested below) another field.
@@ -567,7 +567,7 @@ Independent sorting is applied to the elements on each of the innermost facets.
 image::nest-field-movie.gif[Quick Sort Visual Explorer]
 
 [discrete]
-===== Clearing your sort
+==== Clearing your sort
 
 You can tell when a sort has been applied to your visualization when you see this sort icon in the pills of any one of your #discrete# fields.
 At any point, you can opt to clear the sorts you've applied by either clicking on the field itself to open the context menu:
@@ -578,12 +578,12 @@ or by broadly clearing all sorts via the Toolbar:
 
 image::clearsort-ve1.jpeg[Sort Visual Explorer]
 
-=== Formatting your visualization
+== Formatting your visualization
 
 Before sharing your insights with a broader audience, you may want to format your visualization.
 The Visual Explorer gives you more granular control over your visualization than Quick Charts.
 
-==== Anatomy of a visualization
+=== Anatomy of a visualization
 
 To understand how Formatting works in Visual Explorer, we first need to explain how we think about the parts that make up a visualization.
 
@@ -599,7 +599,7 @@ image::anatomy-of-a-visualization.png[Anatomy of a Visualization]
 A visualization can be consisted of several panes.
 * *Legend*: Legends are keys of the chart's data series to help you understand the visual representation of your data series, usually via Color or Size.
 
-==== Formatting
+=== Formatting
 
 When you click into the `Format` tab, you'll notice that you'll first be asked what field you'd like to format.
 
@@ -607,7 +607,7 @@ image::formatting-viz.jpeg[Formatting]
 
 Depending on your selection, the relevant formatting configurations will then appear.
 
-==== Axes
+=== Axes
 
 If you select a field that's #continuous# or temporal, you'll see that you'll be able to format its corresponding axis.
 Note that whatever changes you make on the axes will not affect the contents in the pane.
@@ -625,7 +625,7 @@ This means that every pane will share the same axis range, to be determined base
 Note that this change will only be reflected in your axes.
 If you wish to change the numeric values within the pane, you'll have to do so separately in the Pane section.
 
-==== Headers
+=== Headers
 
 If you select a field that's #discrete#, you'll see that you'll be able to format its corresponding header.
 A field can only have either an axis or a header--it cannot have both.
@@ -637,7 +637,7 @@ However, please note that whatever changes you make on the axes will not affect 
 * *Show/Hide Values*: You can also toggle on/off the header values.
 * *Format*: Depending on the datatype of your discrete field (for example, date part vs. string), you'll see corresponding formatting options for your headers.
 
-==== Panes
+=== Panes
 
 Whether a visualization contains an Axis vs. a Header depends on whether the field is continuous vs. discrete, but all visualizations will have a pane if there is an intersection of at least two fields.
 Any formatting changes you want to be reflected on your Labels or Tooltips should be made in the Pane section, as these elements all exist within the Pane.
@@ -648,13 +648,13 @@ The Visual Explorer will always allow you to configure the Pane, even if the fie
 This is so that if you later reconfigure your visualization, your work will be saved.
 
 
-==== Legends
+=== Legends
 
 image::legends-viz.jpeg[Legends]
 
 For fields that are referenced in your visualization's legend, you will see a Legend section where you can opt to show/hide it, choose its positioning on your visualization, or rename it.
 
-===== *Separate legends*
+==== *Separate legends*
 
 Separate legends functionality lets you break out each series you've included in your visualization on the *<<building-visualizations-with-multiple-measures,Measure Values>>* shelf into distinct legends.
 You can additionally assign unique color ramps to those series, allowing you to easily compare values within and across measures.
@@ -662,7 +662,7 @@ To access split legends, add Measure Names onto either columns or rows, and Meas
 We recommend adding at least one additional discrete field onto columns or rows, and at least two continuous fields to the *Measure Values* shelf that has now appeared.
 This will allow you to see separate legends once enabled.
 
-====== *Combined legends*
+===== *Combined legends*
 
 The default setting for legends when using Measure Values is *Combined legends*, and results in all values from fields on the *Measure Values* shelf being represented by a single color ramp.
 The color ramp's minimum and maximum values correlate to the minimum and maximum values of all data from fields on the *Measure Values* shelf.
@@ -670,7 +670,7 @@ The color ramp's minimum and maximum values correlate to the minimum and maximum
 
 image::separate-combined-legend.gif[Separate/Combined legends demo video]
 
-==== Manually resize columns
+=== Manually resize columns
 
 You can manually resize the widths of your column headers or axes:
 
@@ -679,7 +679,7 @@ You can manually resize the widths of your column headers or axes:
 
 image::manually_resize.gif[Manually Resize]
 
-==== Make charts fit to screen
+=== Make charts fit to screen
 
 image::fit-to-screen-gif.gif[Fit charts to screen]
 
@@ -699,9 +699,9 @@ image::change-display-discrete-axis.png[change display]
 . Select "`Fit to screen`". +
 NOTE: The **"Change display of discrete axis"** button will be enabled when you have continuous values.
 
-==== Add customized text labels
+=== Add customized text labels
 
-===== *Intro*
+==== *Intro*
 
 Text settings enables you to quickly label important data points in your visualization, and provide at-a-glance insight for complex charts.
 Through a simple modal, you can customize the text labels shown for each series in your visualization, providing helpful context that is tied directly to the data.
@@ -709,7 +709,7 @@ Text settings are not available for tabular layouts, since text labels are displ
 
 Learn more about using the <<using-layers-to-add-depth,text layer>>.
 
-===== *Customizing text labels*
+==== *Customizing text labels*
 
 To access text settings, add a pill into the text dropzone on the layers card (fig 1.1a) for a non-table chart.
 A button outline will appear around the text icon, and you can click it to launch the Text Settings modal (fig 1.1b).
@@ -749,7 +749,7 @@ No underlying data is removed by enabling this setting, as it only applies to th
 
 image::text-settings-1-8.png[text labels 1.8]
 
-===== *Labeling all series*
+==== *Labeling all series*
 
 To apply the same text labels to all series in your visualization, simply drop the field you would like to use as a label onto the *Text* dropzone for *All Layers* (fig 2.1).
 When you open text settings from here and apply your changes, all series will inherit the customization.
@@ -760,7 +760,7 @@ If you are in *All Layers* in the layers dropzone, and see a non-interactive Mul
 
 image::text-settings-2-2.png[text labels 2.2]
 
-===== *Removing text labels*
+==== *Removing text labels*
 
 To remove text labels from your visualization, simply drag any pills out of the text channel dropzone for all series (fig 3.1).
 
@@ -768,9 +768,9 @@ image::text-settings-3-1.png[text labels 3.1]
 
 {blank}
 
-==== Chart descriptions
+=== Chart descriptions
 
-Text descriptions (with a 360 character limit) can be added to Quick Charts and Visual Explorer visualizations to set context or communicate insights.
+Text descriptions (with a 360-character limit) can be added to Quick Charts and Visual Explorer visualizations to set context or communicate insights.
 They can be added in the chart designer or in the Report Builder.
 
 Users have the flexibility to display the description above or below the chart.
@@ -779,9 +779,9 @@ The descriptions can also be hidden from view if needed.
 image:Chart-Descriptions.gif[Chart descriptions]
 
 [#quick-table-calculations]
-=== Quick table calculations
+== Quick table calculations
 
-==== Intro
+=== Intro
 
 Quick table calculations allow you to quickly apply an analytic calculation to the data in your visualization.
 In addition to choosing the *Quick table calculation type*, you can also specify the level and direction you want to calculate.
@@ -790,7 +790,7 @@ You can access quick table calculations by clicking on the pill context menu for
 
 image:overview-1.png[Quick table calculation] image:overview-2.png[Quick table calculation]
 
-==== Calculation types
+=== Calculation types
 
 There are three Quick calculation types we currently offer: *Percent difference*, *Difference*, and *Percent of total*.
 
@@ -809,7 +809,7 @@ image:calc-type-difference.png[Quick table calc difference]
 image:calc-type-percent-of-total.png[Quick table calc percent of total]
 
 [#quick-calculations]
-==== Customizing your quick calculation
+=== Customizing your quick calculation
 
 In addition to choosing the calculation type, you can also specify the direction (for example, across vs. down) and the level (for example, table vs. cell) you wish to calculate over.
 To customize the direction and level of a calculation, go to <<table-calculation-settings,Table calculation settings>> in the pill context menu.
@@ -851,13 +851,13 @@ image:pane-down-across.png[Direction pane down-across]
 image:cell.png[Direction cell]
 
 [#table-calculation-settings]
-==== Table calculation settings
+=== Table calculation settings
 
-===== *Intro*
+==== *Intro*
 
 Table calculation settings is an advanced feature that allows users to further customize the way an analytic formula is applied to their data in a visualization.
 
-===== *Accessing table calculation settings*
+==== *Accessing table calculation settings*
 
 After applying a <<quick-calculations,quick table calculation>> to a field, or dropping a calculated field into a dropzone, a field's context menu will display an additional option labeled *Table calculation settings* (fig 1.1).
 Clicking this option will open the Table calculation settings modal.
@@ -889,12 +889,12 @@ Each time you select a different *Calculate using* preset, the fields are either
 image:table-calc-settings-1-7.png[Table calc settings 1.7]
 
 The *Custom order* option in *Calculate using* lets you set the grouping and order of the addressing and partitioning fields.
-You can drag fields within and between the categories to control how the table calculation will be applies.
+You can drag fields within and between the categories to control how the table calculation will be applied.
 If you reorder the fields after selecting a preset option from *Calculate using*, the value will be changed to *Custom order*.
 
 image:table-calc-settings-1-8.png[Table calc settings 1.8]
 
-===== *Error states*
+==== *Error states*
 
 There are two main reasons errors appear in the table calculation settings modal.
 The first error state appears if a nested sort has been applied to a field that is now listed as a partitioning field.
@@ -910,7 +910,7 @@ To resolve this error, you can either re-add the missing field to your visualiza
 
 image:table-calc-settings-2-2.png[Table calc settings 2.2] image:table-calc-settings-2-3.png[Table calc settings 2.3]
 
-=== Binning
+== Binning
 
 In Visual Explorer, users can bin a measure or numeric dimension on various chart components such as the X or Y axis, size, detail, text, and/or color channel by using the bin option in the field context menu as shown in the demo below.
 The recommended bin size is determined by the minimum and maximum values of the field in the underlying data.
@@ -920,10 +920,10 @@ The bin label format can be updated to a continuous range using the axis labels 
 image::binning.gif[Binning]
 
 [#faqs]
-=== FAQs
+== FAQs
 
 [discrete]
-===== *Q: How do I customize tooltips?*
+=== *Q: How do I customize tooltips?*
 
 You can add a field to the <<introduce-groupings-with-facets,Detail>> layer channel.
 The field values will appear in the tooltip without affecting how the visualization looks.
@@ -932,7 +932,7 @@ image:customize-tooltip-ve.png[Custom tooltip]
 Adding a dimension will separate the marks in your visualization to the values within that dimension, while adding a measure will not because it will be pivoted along the same dimensions.
 
 [discrete]
-===== *Q: Can I convert a Quick Chart to the Visual Explorer environment?*
+=== *Q: Can I convert a Quick Chart to the Visual Explorer environment?*
 
 If you're unsure how to get started in the Visual Explorer, a great way is to begin your visualization using our Quick Charts and then convert your work over to Visual Explorer by opening the Environment Switch.
 
@@ -943,19 +943,19 @@ We do not support converting Visual Explorer visualizations back to Quick Charts
 image:convert-to-ve1.png[Convert to Visual Explorer Environment]
 
 [discrete]
-===== *Q: How do I assign a specific color to a specific value in my visualization?*
+=== *Q: How do I assign a specific color to a specific value in my visualization?*
 
 The Visual Explorer gives you more granular control over parts of your visualization than Quick Charts do.
 One of those controls is colors.
 
 [discrete]
-===== _No Field in Color Channel_
+=== _No Field in Color Channel_
 
 When you don't have any field in your Color channel and you click on the Color icon to edit your colors, choosing any color will directly apply to that series.
 image:color-no-field.gif[No Field in Color Channel]
 
 [discrete]
-===== _Discrete Field in Color Channel_
+=== _Discrete Field in Color Channel_
 
 When you have a #discrete# field in your Color channel and you click on the Color icon to edit your colors, you'll see your palette selection on the left-hand side and the data values within your discrete field on the right-hand side.
 
@@ -967,48 +967,48 @@ On the right, you can select individual data values and pick the specific color 
 image::color-discrete1.gif[Discrete Field in Color Channel]
 
 [discrete]
-===== _Continuous Field in Color Channel_
+=== _Continuous Field in Color Channel_
 
 When you have a #continuous# field in your Color channel and you click on the Color icon to edit your colors, you'll see the ability to select the anchor color that will generate a continuous palette.
 
 image::color-contnuous-field-in-color.png[Continuous Field in Color Channel]
 
 [discrete]
-===== *Q: How do I sort in Visual Explorer?*
+=== *Q: How do I sort in Visual Explorer?*
 
 In the xref:explorations.adoc#toolbar[Toolbar], you have the ability to leverage our Quick Sort feature to sort your innermost discrete, categorical data by the outermost measure in either descending or ascending order.
 
 image::sort-ve.gif[Sort in Visual Explorer]
 
 [discrete]
-===== *Q: Can I apply conditional formatting to my pivot table?*
+=== *Q: Can I apply conditional formatting to my pivot table?*
 
 You can add color to the text or background in your pivot table based on some specifications by leveraging the color channel.
 
 image::c_formattingPT.gif[Conditional formatting pivot table]
 
 [discrete]
-===== _Discrete Field in Color Channel_
+=== _Discrete Field in Color Channel_
 
 You can create a calculated field with an `IF` or `CASE` statement to form a categorical grouping that you can then apply to your pivot table.
 image:conditional-formatting-color.png[Conditional Formatting]
 
 [discrete]
-===== _Continuous Field in Color Channel_
+=== _Continuous Field in Color Channel_
 
 You can add a continuous, aggregated field to the Color channel.
-This will color the values in your pivot table based on the the cell's value according to that field.
+This will color the values in your pivot table based on the cell's value according to that field.
 The smaller the value, the lighter the color;
 the larger the value, the darker the color.
 image:conditional-formatting-color1.png[Conditional Formatting]
 
 [discrete]
-===== *Q: Can I have multiple fields in a Layer channel?*
+=== *Q: Can I have multiple fields in a Layer channel?*
 
 Visual Explorer currently only supports one field per channel in a given Layer.
 
 [discrete]
-===== *Q: Can I display Grand Totals in my chart?*
+=== *Q: Can I display Grand Totals in my chart?*
 
 You can toggle on and off either or both Column Grand Totals and Row Grand Totals using the Toolbar, like so:
 
