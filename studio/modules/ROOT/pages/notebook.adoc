@@ -84,7 +84,7 @@ Notes:
 
 * When you run your notebook, cells are executed in the order they are displayed, starting from the top cell.
 * To select or change a cell's type, go to the dropdown menu in the cell toolbar and choose _Code_ or _Markdown_.
-* To run a cell, select it and press `Shift` + `Return`.
+* To run a cell, select it and press kbd:[Shift+Return].
 Or click *Run Cell* in the cell or main toolbar.
 * The number next to the cell label will increment by one every time code in the cell is successfully run.
 * To see available methods for an object, type the name of the object followed by `.` and then press `tab`.

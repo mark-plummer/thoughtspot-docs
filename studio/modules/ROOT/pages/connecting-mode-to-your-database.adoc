@@ -243,8 +243,7 @@ You can also <<install-bridge-with-mode,install the Bridge connector>> on any co
  ** Fedora 27, 28, 29
  ** CentOS 6, 7
  ** Debian 8.0, 9.0
- ** {blank} xref:contact-us.adoc[Our support team] +
-can provide a generic tarball for many other 64-bit Linux systems.
+ ** {blank} xref:contact-us.adoc[Our support team] can provide a generic tarball for many other 64-bit Linux systems.
 
 TIP: When connecting to a database in AWS, most customers will run Bridge in an EC2 virtual machine. In these cases, you should set up a 64-bit EC2 instance running Linux that can both connect to your Redshift/RDS cluster and can connect to modeanalytics.com on ports 443 and 8444.
 

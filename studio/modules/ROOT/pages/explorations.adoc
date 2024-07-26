@@ -73,7 +73,8 @@ image::XMtoolbar.png[toolbar]
 * *Undo/Redo* - Allows you to navigate through changes.
 * *Clear* - Clears out an Exploration's chart configuration, or its sort and filter settings.
 * *Swap axes* - Switch between a horizontal and vertical chart type configuration.
-* *Quick sort* - Sorts your discrete, categorical data by a measure in either ascending or descending order. +
+* *Quick sort* - Sorts your discrete, categorical data by a measure in either ascending or descending order.
++
 NOTE: xref:visualizations.adoc#tables[Table Charts] contain additional options and formatting in the toolbar.
 
 [#formatting-your-exploration]

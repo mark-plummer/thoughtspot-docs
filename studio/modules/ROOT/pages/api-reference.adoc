@@ -65,7 +65,7 @@ Before returning a response, {brand} validates every API call against your permi
 === FAQs
 
 [discrete]
-===== *Q: {brand} API rate limiting*
+==== *Q: {brand} API rate limiting*
 
 As of today, our API rate limiting is approximately 40 requests every 10 seconds, or 4 requests per second per username.
 We currently publish two headers:
@@ -74,7 +74,7 @@ We currently publish two headers:
 * X-RateLimit-Remaining, which shows how many requests until you'll be throttled.
 
 [discrete]
-===== *Q: How to check which reports are scheduled and viewed*
+==== *Q: How to check which reports are scheduled and viewed*
 
 *API method*
 

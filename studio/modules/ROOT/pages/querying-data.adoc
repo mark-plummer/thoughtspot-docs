@@ -48,7 +48,7 @@ Select a historical query run and click *Open* to replace the code currently in 
 ** *Editor Settings:* Toggle on/off settings for the code editor.
 These options allow you to personalize the editor to fit your preferences.
 Choose between light and dark modes, side-by-side or stacked panels, Limit 100 on/off by default, and other helpful autocomplete settings.
-To turn autocomplete on or off, you can toggle the switch in the Autocomplete Settings or you can disable (and re-enable) it by hitting CMD + Option + a (Control + ALT + a on a PC) in the editor.
+To turn autocomplete on or off, you can toggle the switch in the Autocomplete Settings or you can disable (and re-enable) it by hitting kbd:[Command+Option+A] (kbd:[Control+ALT+A] on a PC) in the editor.
 . *Data view*: After you successfully execute a SQL query, the tabular results, fields, and syntax are displayed here, which you can drag to resize.
 
 ** Use the Data tab to consume your results, share the URL to that specific query, export the raw query data as a CSV, or copy the data to the clipboard.

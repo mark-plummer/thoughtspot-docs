@@ -22,7 +22,8 @@ In order to follow the steps in this guide, the following requirements must be m
 
 * You must have permissions in Salesforce to create VisualForce objects, change page layouts, and access the setup page.
 * The {brand} Workspace containing the target report must be on a link:https://mode.com/compare-plans/[paid plan,window=_blank].
-* Embed viewers must be logged in to {brand}, must be members of the {brand} Workspace containing the embedded report, and must have access to the embedded report. +
+* Embed viewers must be logged in to {brand}, must be members of the {brand} Workspace containing the embedded report, and must have access to the embedded report.
++
 NOTE: The exact steps outlined in this guide assume you are using the Salesforce Classic interface. You may embed a {brand} report using the Salesforce Lightning interface, but the steps below may vary.
 
 == Implementation steps

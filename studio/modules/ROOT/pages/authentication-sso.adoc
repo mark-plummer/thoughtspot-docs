@@ -18,7 +18,7 @@ Organization admins can set sign-in restrictions to control how members are able
 . Click *Workspace Settings* from the dropdown menu.
 . In the People section, click on *Member Authorization*.
 
-By default, users can log into your {brand} Workspace with all of the following methods of access.
+By default, users can log in to your {brand} Workspace with all of the following methods of access.
 Toggle off any methods that you do not want to allow users to authenticate with:
 
 * Username and password
@@ -26,7 +26,7 @@ Toggle off any methods that you do not want to allow users to authenticate with:
 * Office 365
 * SAML provider of your choice (if configured)
 
-WARNING: Do not disable all sign-in methods. If all methods are disabled, it will be impossible for anyone to sign-in to your Workspace, including admins, and you will need to xref:contact-us.adoc[contact our support team] for assistance.
+WARNING: Do not disable all sign-in methods. If all methods are disabled, it will be impossible for anyone to sign in to your Workspace, including Admins, and you will need to xref:contact-us.adoc[contact our support team] for assistance.
 
 [#custom-saml]
 === Custom SAML
@@ -149,7 +149,7 @@ image::assignmodegroups.png[SCIM]
 
 *Users and Groups*
 
-{brand} supports Group Push with Okta, which allows admins to push groups from Okta to {brand}, as well as manage groups that were created in {brand} through Okta.
+{brand} supports Group Push with Okta, which allows Admins to push groups from Okta to {brand}, as well as manage groups that were created in {brand} through Okta.
 
 NOTE: Users need to be assigned to the {brand} application before they will be included in pushes of Groups that contain them. You may need to unassign and re-assign users to the {brand} app before pushing Groups.
 
@@ -243,7 +243,7 @@ image:aad-mode-app.png[SCIM]
 image:aad-admins1.png[SCIM]
 . Open the *Mappings* popout and select the mappings for Azure Active Directory Users. +
 image:aad-admins3.png[SCIM]
-. At the bottom of the mappings page, check the *show advanced options* box and select *edit attribute list for [application name]*.
+. At the bottom of the mappings page, check the *Show advanced options* box and select *Edit attribute list for [application name]*.
 +
 image:aad-admins4.png[SCIM]
 
@@ -274,7 +274,7 @@ image:aad-admins7.png[SCIM]
 
 . Save the mapping.
 
-Once both of these major steps above have been completed, you will be able to assign the Admin role when assigning a user or group of users in the Users and Groups menu.
+Once both of these major steps above have been completed, you will be able to assign the Admin role when assigning a user or group of users in the *Users and Groups* menu.
 
 image::aad-admins9.png[SCIM]
 
@@ -291,38 +291,38 @@ You can update your {brand} workspace settings to disable manual inviting.
 === FAQs
 
 [discrete]
-====== *Q: Can I update user emails via SCIM?*
+==== *Q: Can I update user emails via SCIM?*
 
 Yes.
 To update user emails via SCIM, update the email in the identity provider (for example, Okta, AAD).
 You may need to re-push groups from Okta to ensure that the changes are applied in {brand}.
 
 [discrete]
-====== *Q: What is the default session expiration length for logged-in sessions?*
+==== *Q: What is the default session expiration length for logged-in sessions?*
 
 By default, logged-in sessions to {brand} expire after 30 days, at which point users must re-authenticate.
-If you are an admin and would like to adjust the session expiration length for your Workspace, please xref:contact-us.adoc[contact us].
+If you are an Admin and would like to adjust the session expiration length for your Workspace, please xref:contact-us.adoc[contact us].
 
 [discrete]
-====== *Q: How to support users connected to two Workspaces via SCIM*
+==== *Q: How to support users connected to two Workspaces via SCIM*
 
 We do not currently support users being connected to two workspaces using SCIM.
 If you have a second workspace for sensitive data, it is recommended to keep that data in the same workspace and use permissions to manage access.
 
 [discrete]
-====== *Q: Group names need to match between Okta and {brand}. Does this also apply to Group memberships?*
+==== *Q: Group names need to match between Okta and {brand}. Does this also apply to Group memberships?*
 
 Group memberships do not need to match between Okta and {brand}, but anything that is pushed will overwrite what is in {brand} and replace it with the Okta group members.
 So, if a member is missing from the Okta group being pushed, they will no longer appear in the {brand} group once synced, and that Group's contents will only be manageable via Okta.
 
 [discrete]
-====== *Q: Can we test the SCIM integration before enabling it for all members?*
+==== *Q: Can we test the SCIM integration before enabling it for all members?*
 
 It is not possible to create a second Okta integration within a {brand} workspace.
 We only allow one SCIM instance per workspace, and we recommend that you sync a few test users (not yourself) before syncing everyone.
 
 [#troubleshooting]
-==== Troubleshooting
+=== Troubleshooting
 
 Both Okta and Azure provide logs for provisioning.
 If a user or group is not provisioned or provisioned incorrectly, check the logs for errors.
@@ -337,7 +337,7 @@ a| Users assigned to the {brand} app within the identity provider before SCIM is
 Check the user is assigned to the {brand} app in AAD, check that the group is assigned to the {brand} app, then re-provision the group to {brand}.
 You can also stop and restart provisioning in AAD if you check the logs and find errors.
 If re-starting provisioning doesn't work, reach out to {brand} support. +
-+
+
 *Okta* +
 To ensure proper access to their account and groups, un-assign and re-assign the user to the {brand} app in Okta.
 Then, re-push the group to {brand}.
@@ -350,7 +350,6 @@ Then, re-push the group to {brand}.
 
 | Unable to manually invite users in {brand}.
 a| There is a {brand} workspace setting that disables manual invites and group creation to reduce the risk of mismatches between the identity provider and {brand}. +
-+
 Admins can disable this setting to allow manual invites and group management by going to menu:Workspace Settings[Member Authorization] and disabling the toggle for *Use only SCIM for provisioning*.
 
 | Received the following error: "Sorry, your organization has disabled that sign in method.

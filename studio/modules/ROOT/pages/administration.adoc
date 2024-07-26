@@ -7,7 +7,7 @@
 :brand: Mode
 
 ** xref:authentication-sso.adoc[Authentication and SSO] +
-Ensure your accounts settings and verify a user’s identity.
+Check your accounts settings and verify a user’s identity.
 ** xref:permissions.adoc[Access control and permissions] +
 How to manage Permissions in {brand}.
 ** xref:sharing-and-embedding.adoc[Sharing and embedding] +

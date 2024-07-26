@@ -823,11 +823,13 @@ Navigate to *Manage keys* under the *Actions* menu for the service account.
 +
 image::GBQ-Setup05.png[BigQuery]
 
-. Navigate to *ADD KEY* > *Create new key*. +
+. Navigate to *ADD KEY* > *Create new key*.
++
 image::GBQ-Setup06.png[BigQuery]
 
 . Click *CREATE* to create and download the JSON key file.
-Save the private key file to a secure place where you can easily retrieve it when setting up the connection in {brand}. +
+Save the private key file to a secure place where you can easily retrieve it when setting up the connection in {brand}.
++
 image::GBQ-Setup07.png[BigQuery]
 
 . Return to {brand}, and begin the process to xref:connecting-mode-to-your-database.adoc[connect a BigQuery database].
@@ -882,7 +884,7 @@ The URL should be structured like this: `+https://console.developers.google.com/
 You can use {brand} to query Google Sheets in BigQuery.
 The first step, enabling your Google Drive API, only needs to be done once.
 
-. Enable Google Drive API
+. Enable Google Drive API.
 +
 Navigate to the link:https://console.developers.google.com/[Google Developer Console,window=_blank] and select your project from the project dropdown menu.
 From the left menu, click on *Library*.
