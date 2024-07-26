@@ -48,7 +48,7 @@ This report may contain multiple queries, which can all be combined into a Datas
 * A Dataset with a more broad data view, such as a Dataset created to answer questions about product engagement.
 The Dataset would be the source of truth for asking ad-hoc questions on this topic.
 
-Check out our {brand} University learning path, link:https://university.mode.com/path/self-serve-infrastructure-datasets[Building Self-Serve Infrastructure with Datasets], to learn more about developing a Datasets strategy.
+Check out our {brand} University learning path, link:https://university.mode.com/path/self-serve-infrastructure-datasets[Building Self-Serve Infrastructure with Datasets,window=_blank], to learn more about developing a Datasets strategy.
 
 == Creating a Dataset
 
@@ -220,7 +220,7 @@ Dataset access for creation image:dataset-access-creation.png[Dataset access for
 
 Dataset access for usage image:dataset-access-usage.png[Dataset access for usage]
 
-You can learn more about creating a Dataset access and permissions strategy in this {brand} University course, link:https://university.mode.com/building-datasets-for-self-serve-analytics/1564645/scorm/18mar8c4v6a60[Dataset organization & permissions best practices].
+You can learn more about creating a Dataset access and permissions strategy in this {brand} University course, link:https://university.mode.com/building-datasets-for-self-serve-analytics/1564645/scorm/18mar8c4v6a60[Dataset organization & permissions best practices,window=_blank].
 
 == Using Datasets in Reports
 
@@ -476,7 +476,7 @@ Unlike Datasets, dbt metric logic is run directly through dbt's SQL proxy and se
 This requires each individual Metric chart to be run independently.
 However, we take advantage of Helix for all stylistic and formatting changes to avoid round trips to the database whenever possible.
 
-Learn more about dbt Semantic Layer Integration link:https://mode.com/get-dbt/[here].
+Learn more about dbt Semantic Layer Integration link:https://mode.com/get-dbt/[here,window=_blank].
 
 === Dataset usage
 
@@ -489,7 +489,7 @@ Only query data within a Report is accessible within the Notebooks.
 [discrete]
 ==== *Q: Can I add custom HTML to Reports that are using Datasets?*
 
-You can customize the styling of your Report's layout using the HTML editor, but link:https://mode.com/example-gallery/[example gallery] code that uses link:https://github.com/mode/alamode[alamode] is unsupported for Reports using Datasets.
+You can customize the styling of your Report's layout using the HTML editor, but link:https://mode.com/example-gallery/[example gallery,window=_blank] code that uses link:https://github.com/mode/alamode[alamode,window=_blank] is unsupported for Reports using Datasets.
 
 [discrete]
 ==== *Q: Can I explore a Dataset?*

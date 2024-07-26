@@ -29,7 +29,7 @@ In addition, you may style any report by <<html-editor,including custom CSS usin
 
 *Add a new custom theme*
 
-. Navigate to the https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen and click *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen and click *Workspace Settings* from the dropdown menu.
 . Under Features, select *Colors & Themes*.
 . Click on the *Report Themes* tab.
 . Click on the *New Theme* button.
@@ -47,7 +47,7 @@ Any member can use or create a custom theme, however, a custom theme can only be
 You cannot delete any of the built-in color themes.
 To manage:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . Under Features, select *Colors & Themes*.
 . Click on the *Report Themes* tab.
 . To modify a custom theme, locate it in the list and click on it.
@@ -65,16 +65,16 @@ Your Workspace includes a number of pre-defined color palettes which you may be 
 
 *Add a custom color palette*
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . Under Features, select *Colors & Themes*.
 . Click the *New Color Palette* button.
 . Enter a unique name and select categorical, sequential, or divergent palette type:
 
-** *Categorical*: Input between 2 and 20 different color link:http://htmlcolorcodes.com/[hex codes].
+** *Categorical*: Input between 2 and 20 different color link:http://htmlcolorcodes.com/[hex codes,window=_blank].
 After writing or pasting in a value (for example, #37B067), press *enter* to confirm.
 Use the X button to remove the value.
-** *Sequential*: Input a color link:http://htmlcolorcodes.com/[hex codes] for the start and end of the color gradient.
-** *Divergent*: Input a color link:http://htmlcolorcodes.com/[hex codes] for the start, middle, and end of the color gradient.
+** *Sequential*: Input a color link:http://htmlcolorcodes.com/[hex codes,window=_blank] for the start and end of the color gradient.
+** *Divergent*: Input a color link:http://htmlcolorcodes.com/[hex codes,window=_blank] for the start, middle, and end of the color gradient.
 . Click *Save*.
 
 *Manage custom color palettes*
@@ -83,7 +83,7 @@ Any member can use or create a custom color palette, however, a custom color pal
 You cannot delete any of the built-in color palettes.
 To manage:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . Under Features, select *Colors & Themes*.
 . To modify a custom color palette, locate it in the list and click on it.
 Make any changes and click *Save*.
@@ -159,7 +159,7 @@ image::html-panel.png[The HTML Editor]
 The report's HTML will automatically adjust as you rearrange and resize any of the elements using the drag-and-drop interface.
 However, for more fine-grained control over report layout and styling, or to add advanced visualizations using JavaScript, you must use the <<html-editor,HTML editor>>.
 
-link:https://app.mode.com/modeanalytics/reports/8f9f78bee527[This report] shows how you can combine various built-in and custom visualizations.
+link:https://app.mode.com/modeanalytics/reports/8f9f78bee527[This report,window=_blank] shows how you can combine various built-in and custom visualizations.
 Use the Details tab to view the HTML code and see how it works.
 
 [#layout-grid]
@@ -205,7 +205,9 @@ Note that adding custom HTML elements within the grid generated for you by {bran
 
 The report's <<name-and-description,name and description>> are automatically added to all reports inside a `<div>` with the class `mode-header`.
 Either can be removed from the layout by deleting them using the HTML editor.
-When a report is xref:white-label-embeds.adoc[embedded], the contents of this `<div>` (including the name and description), will not be rendered in the embed output unless the `embed-hidden` class is removed.
+When a report is embedded, the contents of this `<div>` (including the name and description), will not be rendered in the embed output unless the `embed-hidden` class is removed.
+
+//When a report is xref:white-label-embeds.adoc[embedded], the contents of this `<div>` (including the name and description), will not be rendered in the embed output unless the `embed-hidden` class is removed.
 
 [#external-assets]
 === External assets
@@ -215,13 +217,13 @@ You may include external assets (for example, JavaScript libraries, stylesheets,
 [NOTE]
 ====
 * Any external assets must be hosted on the internet ({brand} does not host custom assets) and loaded securely using HTTPS, _not_ HTTP.
-* link:http://d3js.org/[D3] (v3.5.17) and link:http://jquery.com/[JQuery] (v2.2.4), two JavaScript libraries commonly used for data visualization, are preloaded into all {brand} reports.
+* link:http://d3js.org/[D3,window=_blank] (v3.5.17) and link:http://jquery.com/[JQuery,window=_blank] (v2.2.4), two JavaScript libraries commonly used for data visualization, are preloaded into all {brand} reports.
 You do not need to add `<script>` tags to your report to use these libraries.
 ====
 
-For example, consider the following Population Map report, specifically the link:https://app.mode.com/benn/reports/31baa986cdfd/presentation[HTML code]:
+For example, consider the following Population Map report, specifically the link:https://app.mode.com/benn/reports/31baa986cdfd/presentation[HTML code,window=_blank]:
 
-* JavaScript libraries link:https://github.com/mbostock/topojson[TopoJSON] and link:https://underscorejs.org/[Underscore.js] are included at the beginning of the ``<body>``tag.
+* JavaScript libraries link:https://github.com/mbostock/topojson[TopoJSON,window=_blank] and link:https://underscorejs.org/[Underscore.js,window=_blank] are included at the beginning of the ``<body>``tag.
 * A hosted JSON file required to draw the U.S. map is loaded on line 257.
 
 === Loading state customization
@@ -342,11 +344,11 @@ Accessing `datasets[0]` would return the following JSON object containing all of
 
 {{< renderjson "/other/datasets-demo.json.svg" />
 
-You can see a live example of this dataset, and learn more about accessing and using the `datasets[]` JSON object, in link:https://app.mode.com/modeanalytics/reports/22bea18bd49e[this example report].
+You can see a live example of this dataset, and learn more about accessing and using the `datasets[]` JSON object, in link:https://app.mode.com/modeanalytics/reports/22bea18bd49e[this example report,window=_blank].
 
 === Accessing data by query name
 
-Use the JavaScript link:https://www.w3schools.com/jsref/jsref_filter.asp[`filter()` method] to search `datasets[]` and return the result set for that query.
+Use the JavaScript link:https://www.w3schools.com/jsref/jsref_filter.asp[`filter()` method,window=_blank] to search `datasets[]` and return the result set for that query.
 This example declares a new variable (`data`) and sets it equal to the results of a query called "My Query":
 
 [source,javascript]
@@ -400,7 +402,7 @@ TIP: Don't see the **Fullscreen** button in the report header? You may be in the
 === URL query string
 //+++<flag-icon>++++++</flag-icon>+++
 
-You may add one or more field-value pairs to a {brand} report's URL link:https://en.wikipedia.org/wiki/Query_string[query string] to control that report's behavior.
+You may add one or more field-value pairs to a {brand} report's URL link:https://en.wikipedia.org/wiki/Query_string[query string,window=_blank] to control that report's behavior.
 You may combine multiple field-value pairs in a report's URL query string, separated by `&`.
 
 TIP: All {brand} URLs, including query strings, are case-sensitive.
@@ -426,7 +428,7 @@ https://app.mode.com/benn/reports/31baa986cdfd?run=now
 Specifies the value that should be used for a given report xref:parameters.adoc[parameter] of `[PARAMETER_NAME]`.
 
 * Parameter names and values in report URLs are case-sensitive.
-* Remember to link:https://www.w3schools.com/tags/ref_urlencode.asp[URL-encode any special characters] used in your parameter names or values.
+* Remember to link:https://www.w3schools.com/tags/ref_urlencode.asp[URL-encode any special characters,window=_blank] used in your parameter names or values.
 * If no value or an invalid value is provided for a parameter in the URL query string, the value of the `default` property in the parameter definition will be used.
 * For xref:parameters.adoc#multiselect[multiselect] parameters, each distinct value must be provided as a separate field-value pair in the format `param_[PARAM_NAME][]=[PARAM_VALUE]`.
 +

@@ -252,7 +252,7 @@ However, the ability to reference Datasets that you've added to your Report as d
 [discrete]
 === *Q: Can I add custom HTML to Reports that are using Google Sheets Datasets?*
 
-You can customize the styling of your Report's layout using the HTML editor, but any custom JavaScript including link:https://mode.com/example-gallery/[example gallery code] that uses link:https://github.com/mode/alamode[alamode] is unsupported for Reports using Google Sheets Datasets.
+You can customize the styling of your Report's layout using the HTML editor, but any custom JavaScript including link:https://mode.com/example-gallery/[example gallery code,window=_blank] that uses link:https://github.com/mode/alamode[alamode,window=_blank] is unsupported for Reports using Google Sheets Datasets.
 
 [discrete]
 === *Q: How big can my Google Sheets Datasets be?*

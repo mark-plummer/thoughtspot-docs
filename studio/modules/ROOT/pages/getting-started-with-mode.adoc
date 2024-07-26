@@ -36,7 +36,7 @@ Once that's set up, database connections can then be configured.
 
 === Connect to a database
 
-{brand} can directly connect to link:https://mode.com/data-sources/[many popular databases], all you have to do is simply enter the appropriate security credentials.
+{brand} can directly connect to link:https://mode.com/data-sources/[many popular databases,window=_blank], all you have to do is simply enter the appropriate security credentials.
 A direct connection is easy to set up and does not require IT resources.
 If a database is behind a firewall or only accessed via VPN or VPCs, {brand} supports a bridge connector option that's easy to install, configure, and maintain.
 The bridge connector can run directly behind your organization's VPN or firewall and once it's installed, can be configured to securely connect to one or more of the databases within your company.
@@ -99,7 +99,7 @@ Now that the databases are connected to your {brand} Workspace and users are set
 In {brand}, all analysis and dashboards start as reports that you can build using familiar tools--SQL, Python, and R.
 {brand} also includes some improvements to these tools that enhance the overall experience of analyzing data and sharing reports.
 Onboarding users that are new to SQL, or just want to brush up on your SQL or Python skills?
-Check out our in-depth link:https://mode.com/sql-tutorial/[SQL] and https://mode.com/python-tutorial/[Python] Tutorials.
+Check out our in-depth link:https://mode.com/sql-tutorial/[SQL,window=_blank] and link:https://mode.com/python-tutorial/[Python,window=_blank] Tutorials.
 
 Of course, the starting point for the analysis process is the SQL Editor, so let's start there.
 
@@ -308,7 +308,7 @@ The GitHub integration synchronizes common definitions, reports, or themes to al
 
 The activities discussed in previous sections are available to all {brand} users and accessed via the {brand} UI.
 In many cases, your company may also wish to access the {brand} functionality via an API.
-A link:https://mode.com/developer/api-reference/introduction/[full discussion of the API] is outside of the scope of this document, but here are a list of some of the frequently accessed functions:
+A link:https://mode.com/developer/api-reference/introduction/[full discussion of the API,window=_blank] is outside of the scope of this document, but here are a list of some of the frequently accessed functions:
 
 * User and Collection membership, management, and Workspace.
 * Granting database permissions.

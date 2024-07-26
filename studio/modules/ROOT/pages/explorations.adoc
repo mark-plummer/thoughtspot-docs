@@ -11,9 +11,13 @@
 
 Create an Exploration to build one-off, personal analysis that doesn't show up in or change the original report.
 
-+++<vidcon>++++++<vid src="https://www.youtube.com/embed/oqrt-wWBdBc" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">++++++</vid>++++++</vidcon>+++
+video::oqrt-wWBdBc[youtube]
 
-TIP: You can follow along with the examples in this video in the {brand} University course: link:https://university.mode.com/getting-insights-from-mode-reports[Getting Insights from {brand} Reports].
+////
++++<vidcon>++++++<vid src="https://www.youtube.com/embed/oqrt-wWBdBc" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">++++++</vid>++++++</vidcon>+++
+////
+
+TIP: You can follow along with the examples in this video in the {brand} University course: link:https://university.mode.com/getting-insights-from-mode-reports[Getting Insights from {brand} Reports,window=_blank].
 
 === Create an Exploration
 
@@ -132,7 +136,7 @@ image:copy-paste-replace-from-explorations.gif[Copy Paste Replace from Explorati
 [#view-saved-explorations]
 == View saved Explorations
 
-To return to any Explorations you've made and or view all of your saved Explorations, go to the *My Explorations* tab on the left side of your link:https://app.mode.com/home/[{brand} home page].
+To return to any Explorations you've made and or view all of your saved Explorations, go to the *My Explorations* tab on the left side of your link:https://app.mode.com/home/[{brand} home page,window=_blank].
 From here you can search and filter your Explorations, or view, edit, or delete an existing Exploration.
 Your list of Explorations is private and browsable only to you.
 

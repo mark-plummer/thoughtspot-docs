@@ -19,7 +19,7 @@ Before you begin, you must meet the following requirements in order to set up th
 
 * Your {brand} Workspace must be on one of {brand}'s paid plans.
 * You must be an admin of your {brand} Workspace.
-* You must be authorized to install the link:https://github.com/apps/modeanalytics[{brand} GitHub app] in your GitHub organization.
+* You must be authorized to install the link:https://github.com/apps/modeanalytics[{brand} GitHub app,window=_blank] in your GitHub organization.
 * In GitHub, create a new repository or select an existing repository for {brand}.
 * The default branch cannot be protected and must be titled either "`main`" or "`master`". +
 NOTE: A branch must be created prior to starting the integration setup. {brand} will not automatically create a branch as part of this process.
@@ -49,7 +49,7 @@ Enter a commit message to describe the changes, and your updates will be pushed 
 
 To push all updates:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and click on your name in the upper left corner of the window.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and click on your name in the upper left corner of the window.
 . Click *Workspace Settings*.
 . Under the *Features* section, click *GitHub*.
 . Under the *Unresolved Differences* tab, click *Push All*.
@@ -101,7 +101,7 @@ If your branch causes any issues, you can revert to the previous version in GitH
 
 image::github_actions.png[Merge GitHub changes]
 
-Note that the owner of your GitHub organization will need to install the link:https://github.com/apps/modeanalytics[{brand} GitHub app] in order to use the {brand} Github sync.
+Note that the owner of your GitHub organization will need to install the link:https://github.com/apps/modeanalytics[{brand} GitHub app,window=_blank] in order to use the {brand} Github sync.
 
 === Repository structure
 
@@ -162,7 +162,7 @@ dbt, airflow, etc.) within this repository.
 . Create a GitHub organization if you don't already have one.
 +
 {brand}'s GitHub sync requires your repo to be part of a GitHub organization.
-Learn more about link:https://help.github.com/enterprise/2.12/admin/guides/user-management/creating-organizations/[creating a GitHub organization].
+Learn more about link:https://help.github.com/enterprise/2.12/admin/guides/user-management/creating-organizations/[creating a GitHub organization,window=_blank].
 
 . Create a new repository in GitHub for your {brand} assets.
 +
@@ -170,7 +170,7 @@ NOTE: While we suggest this repository be solely dedicated to syncing with {bran
 
 . Install the {brand} GitHub app.
 +
-Navigate to the link:https://github.com/apps/modeanalytics[installation page for {brand}'s GitHub app] and click *Configure*.
+Navigate to the link:https://github.com/apps/modeanalytics[installation page for {brand}'s GitHub app,window=_blank] and click *Configure*.
 Confirm the installation location and then select the repository you'd like to use.
 +
 image::github-mode-app.png[GitHub Mode app]

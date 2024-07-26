@@ -12,14 +12,14 @@
 == Overview
 
 For qualifying customers, {brand}'s Discovery Database provides access to your Workspace's usage data.
-This data is provided via link:https://docs.snowflake.com/en/user-guide/data-sharing-intro.html#what-is-a-share[Secure Data Sharing by Snowflake] which allows {brand} to securely share your usage data in a Snowflake database unique to your Workspace.
+This data is provided via link:https://docs.snowflake.com/en/user-guide/data-sharing-intro.html#what-is-a-share[Secure Data Sharing by Snowflake,window=_blank] which allows {brand} to securely share your usage data in a Snowflake database unique to your Workspace.
 
 Usage data is accessible in a Snowflake Database that can be connected directly to {brand}.
 You can use the Discovery Database to measure what's most important to your Workspace, whether that's understanding adoption, tracking your most popular reports, assessing database load, or auditing usage for compliance.
 
 In other words, with the Discovery Database, you can use {brand} to measure and manage how you use {brand}.
 
-See the full documentation for {brand}'s Discovery Database link:https://mode.com/developer/discovery-database/introduction/[here].
+See the full documentation for {brand}'s Discovery Database link:https://mode.com/developer/discovery-database/introduction/[here,window=_blank].
 
 [#faqs]
 == FAQs
@@ -30,14 +30,14 @@ See the full documentation for {brand}'s Discovery Database link:https://mode.co
 *API method*
 
 You can loop through every single report in the workspace (the ones in public/private collections, but not other members' personal collections), and check each individual report to see whether it's scheduled.
-The API documentation on how to get all the reports in your workspace is link:https://mode.com/developer/api-cookbook/management/get-all-reports/[here].
+The API documentation on how to get all the reports in your workspace is link:https://mode.com/developer/api-cookbook/management/get-all-reports/[here,window=_blank].
 
 From there you can see the `view_count` property which will allow you to see the view count for an individual report.
 
 *Discovery Database method*
 
 You can also use the Discovery Database to obtain the same information for their reporting.
-The documentation for the Discovery Database can be found link:https://mode.com/developer/discovery-database/introduction/[here].
+The documentation for the Discovery Database can be found link:https://mode.com/developer/discovery-database/introduction/[here,window=_blank].
 
 [discrete]
 === *Q: How often is data in the Discovery Database refreshed?*

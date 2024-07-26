@@ -8,8 +8,8 @@
 
 ** xref:internal-embeds.adoc[Internal embedded reports] +
 Adding internal-facing embedded {brand} reports to external sites.
-** xref:white-label-embeds.adoc[White-label embedded reports] +
-Adding external-facing embedded {brand} reports to external sites.
+//** xref:white-label-embeds.adoc[White-label embedded reports] +
+//Adding external-facing embedded {brand} reports to external sites.
 ** xref:embed-in-wordpress.adoc[Embedding a report in a Wordpress site] +
 How to embed a {brand} report in a Wordpress site.
 ** xref:embed-in-salesforce.adoc[Embedding a report in Salesforce] +

@@ -13,7 +13,7 @@
 == API tokens
 
 API tokens allow you to connect to {brand}'s API programmatically.
-Use an API token instead of your email address and account password whenever you programmatically authenticate to {brand} with link:https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication[basic authentication].
+Use an API token instead of your email address and account password whenever you programmatically authenticate to {brand} with link:https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication[basic authentication,window=_blank].
 
 To call the API, you must first create an API access token.
 Currently, {brand} supports two types of access tokens -- Workspace API tokens and personal API tokens.
@@ -24,7 +24,7 @@ however, we will be fully deprecating personal API tokens in August 2024.
 The Workspace API tokens are meant to be used for programmatic management, such as archiving inactive Reports or deleting schedules for stale Reports across your Workspace.
 These tokens mimic Admin access to the Workspace and only Admins will be able to create and manage them.
 
-See the full documentation for {brand}'s API link:https://mode.com/developer/api-reference/introduction/[here].
+See the full documentation for {brand}'s API link:https://mode.com/developer/api-reference/introduction/[here,window=_blank].
 
 [#generating-api-tokens]
 === Creating an API Access token
@@ -48,7 +48,7 @@ This is only shown once when creating the token and must be saved somewhere secu
 
 *Limitations*:
 
-* Workspace API tokens cannot be used for link:https://mode.com/developer/api-reference/management/invites/#createOrganizationInvite[creating new invites].
+* Workspace API tokens cannot be used for link:https://mode.com/developer/api-reference/management/invites/#createOrganizationInvite[creating new invites,window=_blank].
 * Granular permissions are not currently supported with the Workspace API tokens;
 they allow admin access to the Workspace for now.
 
@@ -79,11 +79,11 @@ We currently publish two headers:
 *API method*
 
 You can loop through every single report in the workspace (the ones in public/private collections, but not other members' personal collections), and check each individual report to see whether it's scheduled.
-See the API documentation on how to get all the reports in your workspace is link:https://mode.com/developer/api-cookbook/management/get-all-reports/[here].
+See the API documentation on how to get all the reports in your workspace is link:https://mode.com/developer/api-cookbook/management/get-all-reports/[here,window=_blank].
 
 From there, you can see the `view_count` property, which will allow you to see the view count for an individual report.
 
 *Discovery Database method*
 
 You can also use the Discovery Database to obtain the same information from their reporting.
-The documentation for the Discovery Database can be found link:https://mode.com/developer/discovery-database/introduction/[here].
+The documentation for the Discovery Database can be found link:https://mode.com/developer/discovery-database/introduction/[here,window=_blank].

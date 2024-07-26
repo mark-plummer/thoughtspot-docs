@@ -279,7 +279,7 @@ In addition, ensure that port 444 is open to outbound traffic.
 . Fill out your AWS region to be formatted like `us-west-2`.
 . Select *Authentication method: Access keys* in the {brand} connection form.
 . The AWS Access Key and Access Secret should be for the AWS user you want to connect through.
-When creating an Athena connection, we recommend link:https://docs.aws.amazon.com/athena/latest/ug/setting-up.html[creating a user in AWS] that only has access to the data you want to query through Athena.
+When creating an Athena connection, we recommend link:https://docs.aws.amazon.com/athena/latest/ug/setting-up.html[creating a user in AWS,window=_blank] that only has access to the data you want to query through Athena.
 For data you want to query, the AWS user only needs read access.
 . The S3 Results Directory should be a bucket where Athena can write query results.
 For this bucket, the AWS user specified above needs read and write access.
@@ -363,7 +363,7 @@ The Redshift team confirmed there is a feature request to restrict access, but c
 
 Depending on your Amazon settings, you may need to grant {brand} access to your Redshift security group:
 
-. Navigate to the link:https://console.aws.amazon.com/redshift/[Redshift Management Console].
+. Navigate to the link:https://console.aws.amazon.com/redshift/[Redshift Management Console,window=_blank].
 . Select *Clusters* from the left navigation bar.
 . Click on the cluster you want to connect.
 +
@@ -417,7 +417,7 @@ You'll land on a page that displays your database schema.
 
 Once you've activated the DataVault feature on your Tenjin account, you can access your DataVault credentials by logging in to the dashboard and navigating to Menu \-> DataVault Credentials.
 
-For additional questions about getting your DataVault credentials, please free to contact link:mailto:support@tenjin.io[support@tenjin.io].
+For additional questions about getting your DataVault credentials, please free to contact link:mailto:support@tenjin.io[support@tenjin.io,window=_blank].
 
 [#apache-druid]
 ==== Apache Druid
@@ -443,7 +443,7 @@ The following are known issues with the current supported drivers.
 | Avatica 1.17.0
 | Druid fetch size limited to 100
 | Druid JDBC driver only returns 100 rows per batch resulting in longer-than-expected query response times.
-There is a link:https://github.com/apache/druid/pull/10880[server-side fix] that can be applied.
+There is a link:https://github.com/apache/druid/pull/10880[server-side fix,window=_blank] that can be applied.
 
 | Avatica 1.17.0
 | Druid Basic Authentication is unsupported
@@ -451,16 +451,16 @@ There is a link:https://github.com/apache/druid/pull/10880[server-side fix] that
 
 | Avatica 1.17.0
 | Connection context properties are unsupported
-| {brand} currently does not support changing the Druid broker's link:https://druid.apache.org/docs/latest/querying/sql.html#connection-context[setting for the connection] via JDBC properties.
+| {brand} currently does not support changing the Druid broker's link:https://druid.apache.org/docs/latest/querying/sql.html#connection-context[setting for the connection,window=_blank] via JDBC properties.
 
 | Avatica 1.17.0
 | Only Druid SQL support
-| When connecting to Druid via JDBC, link:https://druid.apache.org/docs/0.20.1/querying/sql.html[only Druid SQL syntax is supported.] Native (json-type) query syntax will result in errors.
+| When connecting to Druid via JDBC, link:https://druid.apache.org/docs/0.20.1/querying/sql.html[only Druid SQL syntax is supported,window=_blank]. Native (json-type) query syntax will result in errors.
 
 | Avatica 1.17.0
 | Druid SQL limitations
 | Not all Druid features are supported via Druid SQL and JDBC connectivity.
-Please see the link:https://druid.apache.org/docs/0.20.1/querying/sql.html#unsupported-features[Druid docs.]
+Please see the link:https://druid.apache.org/docs/0.20.1/querying/sql.html#unsupported-features[Druid docs,window=_blank].
 
 | Avatica 1.17.0
 | Single Schema Support
@@ -479,15 +479,15 @@ When connecting Druid to {brand}, fill out the connection form as follows:
 
 . *Display name:* the name of the connection used in the Schema Browser.
 . *Description:* optional additional context viewable in Connection Management.
-. *Host:* the route of the Druid cluster link:https://druid.apache.org/docs/latest/design/broker.html[Broker], as specified in the link:https://druid.apache.org/docs/latest/configuration/index.html#broker[broker/runtime.properties] file.
-. *Port:* the port of the link:https://druid.apache.org/docs/latest/design/broker.html[Broker].
+. *Host:* the route of the Druid cluster link:https://druid.apache.org/docs/latest/design/broker.html[Broker,window=_blank], as specified in the link:https://druid.apache.org/docs/latest/configuration/index.html#broker[broker/runtime.properties,window=_blank] file.
+. *Port:* the port of the link:https://druid.apache.org/docs/latest/design/broker.html[Broker,window=_blank].
 The default port is 8082.
 If your cluster is secured by SSL, the default port is 8182.
 . *Preferred JDBC Driver:* the Avatica 1.17.0 driver is the only current driver.
 . *Disable transport encryption:* {brand} strongly recommends that transport encryption be enabled and that Druid be configured to use TLS v.1.2.
 If disabled, connections between the Bridge connector and your database will not be encrypted.
 
-*Please note the following link:https://druid.apache.org/docs/latest/querying/sql.html#connection-stickiness[limitation] of broker connection stickiness over JDBC:*
+*Please note the following link:https://druid.apache.org/docs/latest/querying/sql.html#connection-stickiness[limitation,window=_blank] of broker connection stickiness over JDBC:*
 
 "Druid's JDBC server does not share connection state between Brokers.
 This means that if you're using JDBC and have multiple Druid Brokers, you should either connect to a specific Broker, or use a load balancer with sticky sessions enabled.
@@ -596,7 +596,7 @@ we currently do not support querying in Spark SQL, though we may add support for
 ===== Automatic cluster termination
 
 Databricks "Standard" Spark clusters are configured by default to automatically terminate after 120 minutes of inactivity.
-The Hive JDBC driver cannot trigger the cluster to automatically restart, so you may want to adjust the timeout or disable automatic termination per Databricks' link:https://docs.databricks.com/user-guide/clusters/terminate.html#configuration[documentation].
+The Hive JDBC driver cannot trigger the cluster to automatically restart, so you may want to adjust the timeout or disable automatic termination per Databricks' link:https://docs.databricks.com/user-guide/clusters/terminate.html#configuration[documentation,window=_blank].
 If the driver attempts to connect to the server after it's been shut down, the connection attempt will fail until the cluster is restarted manually.
 
 ===== Unity Catalog
@@ -786,7 +786,7 @@ Google Big Query batch priority is described here: https://cloud.google.com/bigq
 | Necessary permissions
 a| To connect via this driver, the service account should have the roles BigQuery Data Viewer and BigQuery Job User. +
 In addition, the {brand} GBQ service account must have the `bigquery.jobs.list` permission.
-This permission can be added via several link:https://cloud.google.com/bigquery/docs/access-control[roles].
+This permission can be added via several link:https://cloud.google.com/bigquery/docs/access-control[roles,window=_blank].
 {brand} recommends either BigQuery Resource Viewer or BigQuery User, although broader access will also function. +
 The {brand} user would additionally need BigQuery Data Editor role if the queries users execute from {brand} are expected to be able to write to the database (for example, DROP, CREATE, UPDATE).
 Temporary functions use and temporary table creation and deletion do not require this permission.
@@ -796,7 +796,7 @@ Temporary functions use and temporary table creation and deletion do not require
 
 To connect {brand} to your BigQuery project, you will need to create a service account for {brand} to use.
 
-. Navigate to the link:https://console.developers.google.com[Google Developers Console].
+. Navigate to the link:https://console.developers.google.com[Google Developers Console,window=_blank].
 Before proceeding, click on the dropdown to the right of Google Cloud and select the project to which you want to connect.
 +
 image::GBQ-Setup01.png[BigQuery]
@@ -846,14 +846,14 @@ The URL should be structured like this: +
 
 ===== Standard vs. legacy SQL
 
-When connecting to BigQuery, you will choose either link:https://cloud.google.com/bigquery/docs/reference/legacy-sql/[legacy SQL] or link:https://cloud.google.com/bigquery/docs/introduction-sql[standard SQL] as the link:https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-legacy-sql[default SQL dialect] for that connection.
+When connecting to BigQuery, you will choose either link:https://cloud.google.com/bigquery/docs/reference/legacy-sql/[legacy SQL,window=_blank] or link:https://cloud.google.com/bigquery/docs/introduction-sql[standard SQL,window=_blank] as the link:https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-legacy-sql[default SQL dialect,window=_blank] for that connection.
 Most users choose standard SQL, which is similar to industry standard SQL dialects used by other databases.
 
 Regardless of your choice as the connection's default, users can specify which dialect they would like to use on a query-by-query basis by including either `#standardSQL` or `#legacySQL` in the Query Editor.
 
 A Workspace admin can change the default SQL preference a BigQuery connection at any time by following these steps:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page]
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank].
 . Click on your name in the upper left corner of the window.
 . Click *Workspace Settings*.
 . Under the Data section, click *Connections*.
@@ -861,7 +861,7 @@ A Workspace admin can change the default SQL preference a BigQuery connection at
 . In the upper right corner of the page, click on *Settings*
 . Toggle standard SQL on or off.
 . Before your settings are updated, you will need to re-upload your service account's P12 key.
-Learn more about link:https://cloud.google.com/storage/docs/authentication#service_accounts[BigQuery service accounts and P12 keys].
+Learn more about link:https://cloud.google.com/storage/docs/authentication#service_accounts[BigQuery service accounts and P12 keys,window=_blank].
 . Click *Save Changes*.
 +
 IMPORTANT: Take care when changing the default SQL dialect for an existing connection, as any queries written using that connection that are written in the previous default SQL dialect may no longer work.
@@ -884,13 +884,13 @@ The first step, enabling your Google Drive API, only needs to be done once.
 
 . Enable Google Drive API
 +
-Navigate to the link:https://console.developers.google.com/[Google Developer Console] and select your project from the project dropdown menu.
+Navigate to the link:https://console.developers.google.com/[Google Developer Console,window=_blank] and select your project from the project dropdown menu.
 From the left menu, click on *Library*.
 Under Google Apps API, click on Drive API to enable the API from that page.
 
 . Create a table in BigQuery from your Google Sheet.
 +
-Go to the link:https://bigquery.cloud.google.com/[BigQuery Web UI].
+Go to the link:https://bigquery.cloud.google.com/[BigQuery Web UI,window=_blank].
 In the navigation, hover over a schema name and click the down arrow icon next to the name.
 Choose *Create new table*.
 +
@@ -906,7 +906,7 @@ image::bigquery-google-sheets-2.png[GoogleSheets]
 . Enable Google Sheets for {brand} Use.
  ** For {brand} to query your new table, share your Google Sheet with the service account email address you used to connect {brand} to BigQuery.
 You can also share folders in your drive with this email address, which will allow {brand} to query every sheet in that folder.
- ** To get your service account email address, go to your link:https://console.cloud.google.com/[Google Cloud Console], switch to your Project, and click on Service Accounts.
+ ** To get your service account email address, go to your link:https://console.cloud.google.com/[Google Cloud Console,window=_blank], switch to your Project, and click on Service Accounts.
 Copy the service account email address you used to connect {brand} to BigQuery.
  ** To share a sheet or folder, click *Share* on the Google Sheet or in the folder, and paste the service account email address into the Share email field.
  ** Note that BigQuery schemas don't refresh automatically in {brand}.
@@ -989,7 +989,7 @@ In the {brand} UI, users will see "`Sorry, your query was successful, but we ran
 |
 |===
 
-For known limitations, see link:https://cloud.google.com/looker/docs/sql-interface#lookml_limitations[Looker's documentation].
+For known limitations, see link:https://cloud.google.com/looker/docs/sql-interface#lookml_limitations[Looker's documentation,window=_blank].
 
 ===== Connecting to {brand}
 
@@ -997,7 +997,7 @@ You will also need the following to set up the connection in {brand}:
 
 * Host: The url of your Looker instance (for example,
 test123.looker.com).
-* Username: The Client ID portion of the link:https://cloud.google.com/looker/docs/admin-panel-users-users#api_keys[Looker API key].
+* Username: The Client ID portion of the link:https://cloud.google.com/looker/docs/admin-panel-users-users#api_keys[Looker API key,window=_blank].
 * Password: The Client Secret portion of the Looker API key.
 
 Start by xref:connecting-mode-to-your-database.adoc[connecting a database].
@@ -1063,7 +1063,7 @@ There are no known issues for this driver.
 
 To connect your Microsoft Azure SQL instance, you must grant {brand} access to your database.
 
-. Log into your link:https://manage.windowsazure.com/[Azure account] and select *SQL Databases* from the left navigation.
+. Log into your link:https://manage.windowsazure.com/[Azure account,window=_blank] and select *SQL Databases* from the left navigation.
 . Select the SQL database you would like to connect. +
 image:azure-select-db.png[Azure SQL]
 . Click the Dashboard link at the top of the page and click *Manage Allowed IP Addresses*. +
@@ -1142,7 +1142,7 @@ a| Customers without a specified serverTimezone for their databases will see que
 Queries will fail with the following error: `java.sql.SQLException: The server time zone value 'PDT' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the 'serverTimezone' configuration property) to use a more specific time zone value if you want to utilize time zone support.` +
 *Note that the error is directly from the JDBC driver*.
 At this time {brand} does not support customers setting additional configuration properties (such as the suggested 'serverTimezone' property) via the JDBC driver. +
-More details in link:https://stackoverflow.com/questions/26515700/mysql-jdbc-driver-5-1-33-time-zone-issue[this StackOverflow thread].
+More details in link:https://stackoverflow.com/questions/26515700/mysql-jdbc-driver-5-1-33-time-zone-issue[this StackOverflow thread,window=_blank].
 |===
 
 [#oracle]
@@ -1174,7 +1174,7 @@ There are no known issues for these drivers.
 
 ====== Oracle Autonomous Database (Public Endpoint)
 
-. Navigate to your link:https://cloud.oracle.com/db/adb[Oracle Cloud Autonomous Databases page] and click on your instance. +
+. Navigate to your link:https://cloud.oracle.com/db/adb[Oracle Cloud Autonomous Databases page,window=_blank] and click on your instance. +
 image:oadb-main.png[Oracle Autonomous Main]
 . Click on *DB Connection*. +
 image:oadb-dbconnection.png[Oracle Autonomous DB Connection]
@@ -1189,9 +1189,9 @@ image:oadb-tnsname.png[Oracle Autonomous TNS Name]
 
 ====== Oracle Autonomous Database (Private Endpoint)
 
-NOTE: mTLS requirement must be relaxed link:https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/support-tls-mtls-authentication.html#GUID-6A34B30A-3692-4D1F-8458-FD8F32736199[to allow for TLS] (default for ADB is to require mTLS).
+NOTE: mTLS requirement must be relaxed link:https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/support-tls-mtls-authentication.html#GUID-6A34B30A-3692-4D1F-8458-FD8F32736199[to allow for TLS,window=_blank] (default for ADB is to require mTLS).
 
-. Navigate to your link:https://cloud.oracle.com/db/adb[Oracle Cloud Autonomous Databases page] and click on your instance. +
+. Navigate to your link:https://cloud.oracle.com/db/adb[Oracle Cloud Autonomous Databases page,window=_blank] and click on your instance. +
 image:oadb-main.png[Oracle Autonomous Main]
 . Click on *DB Connection*. +
 image:oadb-dbconnection.png[Oracle Autonomous DB Connection]
@@ -1236,7 +1236,7 @@ There are no known issues with this driver.
 ====== HeapSQL
 
 Once you've signed up for Heap and enabled Heap SQL, your Customer Success Manager will provide you with your Heap credentials for connecting to your database.
-If you need your Heap credentials, please email link:mailto:support@heapanalytics.com[support@heapanalytics.com] for help.
+If you need your Heap credentials, please email link:mailto:support@heapanalytics.com[support@heapanalytics.com,window=_blank] for help.
 
 Once you have your credentials, follow the steps below to connect {brand}:
 
@@ -1330,7 +1330,7 @@ Instead, convert all timestamps to one timezone for simplicity.
 
 ====== Connecting to {brand} via key pair authentication
 
-Please follow the link:https://docs.snowflake.com/en/user-guide/key-pair-auth#configuring-key-pair-authentication[Snowflake documentation] for configuring key pair authentication.
+Please follow the link:https://docs.snowflake.com/en/user-guide/key-pair-auth#configuring-key-pair-authentication[Snowflake documentation,window=_blank] for configuring key pair authentication.
 
 . Generate the private key.
 There is the option to generate encrypted or unencrypted private keys.
@@ -1408,9 +1408,9 @@ There are no known issues with this driver.
 
 ===== Database configuration instructions
 
-Please follow the steps outlined link:https://docs.treasuredata.com/display/public/INT/Mode+Analytics+Export+Integration[in the Treasure Data documentation] to connect Treasure Data to {brand}.
+Please follow the steps outlined link:https://docs.treasuredata.com/display/public/INT/Mode+Analytics+Export+Integration[in the Treasure Data documentation,window=_blank] to connect Treasure Data to {brand}.
 
-If you need help finding your database credentials, please contact your Treasure Data account manager at link:mailto:info@treasure-data.com[info@treasure-data.com].
+If you need help finding your database credentials, please contact your Treasure Data account manager at link:mailto:info@treasure-data.com[info@treasure-data.com,window=_blank].
 
 [#vertica]
 ==== Vertica
@@ -1449,7 +1449,7 @@ We'll start by determining if your database is accessible to us.
 
 ===== Accessibility
 
-. Navigate to your link:https://console.aws.amazon.com/rds/home#dbinstances:[RDS Instance Console].
+. Navigate to your link:https://console.aws.amazon.com/rds/home#dbinstances:[RDS Instance Console,window=_blank].
 . Click the arrow and then magnifying glass to view the details of the instance that you want to connect.
 +
 image::rds-select-instance-201507.png[Amazon RDS Console]

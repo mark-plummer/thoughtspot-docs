@@ -14,7 +14,7 @@ A {brand} report can be embedded into another website, such as a private wiki, b
 An embed will display the full contents of the underlying report including charts, tables, and other xref:getting-started-with-mode.adoc#advanced-visualizations[custom visualizations].
 Any report can be embedded as a <<white-label-embed,White-Label Embed>> (WLE).
 
-A link:https://mode.com/embedded-analytics/[White-Label Embed] (WLE) may be seen by viewers who are not logged in to {brand} or members of your Workspace who do not have access to the underlying report.
+A link:https://mode.com/embedded-analytics/[White-Label Embed,window=_blank] (WLE) may be seen by viewers who are not logged in to {brand} or members of your Workspace who do not have access to the underlying report.
 For a given embed, your host application securely controls who can see what using a signature process (and optionally, using xref:parameters.adoc[parameters]).
 
 [#white-label-embed]
@@ -33,7 +33,7 @@ You may, however, elect to expose the ability for viewers to <<csv-export,downlo
 To show a <<white-label-embed,White-Label Embed>> in action, we built a lightweight analytics portal for a fictional paper company named Parch & Posey.
 The analytics in the portal are provided by two parameterized and White-Label Embedded {brand} reports.
 
-Access the link:https://parch-posey-v3.herokuapp.com/[Parch & Posey example portal] using any of the following credentials:
+Access the link:https://parch-posey-v3.herokuapp.com/[Parch & Posey example portal,window=_blank] using any of the following credentials:
 
 |===
 | Username | Password
@@ -53,14 +53,14 @@ This means that the embeds will display data only for the logged-in customer.
 If a viewer attempts to change the embed URL in any way (including the parameter value) and then access the URL, the signature will no longer be valid, and the URL will return an error.
 
 The report shown on the *Overview* tab is built entirely with xref:visualizations.adoc#built-in-charts-and-tables[built-in visualizations].
-The report on the *All Orders* tab is built with a custom link:http://d3js.org/[D3] visualization.
+The report on the *All Orders* tab is built with a custom link:http://d3js.org/[D3,window=_blank] visualization.
 
 == Requirements
 
 To embed a report, the following requirements must be met:
 
-* The {brand} Workspace containing the target report must be on a link:https://mode.com/compare-plans/[paid plan].
-* If you plan to implement a link:https://mode.com/embedded-analytics/[White-Label Embed], White-Label Embeds must be included in your Workspace's paid plan.
+* The {brand} Workspace containing the target report must be on a link:https://mode.com/compare-plans/[paid plan,window=_blank].
+* If you plan to implement a link:https://mode.com/embedded-analytics/[White-Label Embed,window=_blank], White-Label Embeds must be included in your Workspace's paid plan.
 * The creator of the embedded report must be an active member of the same {brand} Workspace that contains the report.
 
 == Implementation steps
@@ -135,7 +135,7 @@ For example:
 
 *Important notes:*
 
-* Remember to link:https://www.w3schools.com/tags/ref_urlencode.asp[URL-encode] any special characters in the URL's query string, including parameter values and the `[]` in multiselect parameter keys.
+* Remember to link:https://www.w3schools.com/tags/ref_urlencode.asp[URL-encode,window=_blank] any special characters in the URL's query string, including parameter values and the `[]` in multiselect parameter keys.
 * Parameter keys and values are case-sensitive.
 * Parameter keys should be ordered alphabetically in the URL.
 
@@ -152,10 +152,10 @@ Ensure you have both the public access key and private access secret.
 <<create-an-embed-url,**Embed URL**>>: +
 Includes the full path and query string (from the first two steps of this guide).
 * *Dynamic parameter values*: +
-All parameter values, including dynamically generated ones from your application's database, (for example, customer ID, etc.) must be link:https://www.w3schools.com/tags/ref_urlencode.asp[URL encoded].
+All parameter values, including dynamically generated ones from your application's database, (for example, customer ID, etc.) must be link:https://www.w3schools.com/tags/ref_urlencode.asp[URL encoded,window=_blank].
 You'll need these values to build the request URL (outlined in step 2 below).
 * *Current timestamp*: +
-The current time, in seconds, in link:https://en.wikipedia.org/wiki/Unix_time[UNIX epoch time].
+The current time, in seconds, in link:https://en.wikipedia.org/wiki/Unix_time[UNIX epoch time,window=_blank].
 +
 IMPORTANT: Your host application **must** create the `signature` using a process that is not transparent to embed viewers. Exposing your signature token's access secret in front-end, client-side code will compromise the security of your {brand} account.
 
@@ -311,7 +311,7 @@ If the White-Label Embed fails to load for any reason, the embed will not post a
 
 === PDF Export
 
-Unlike CSV Export, where a click on the endpoint url itself would invoke a direct download, PDF Export requires a four-part process as described here in the link:https://mode.com/developer/api-cookbook/distribution/export-pdf/[{brand} API cookbook].
+Unlike CSV Export, where a click on the endpoint url itself would invoke a direct download, PDF Export requires a four-part process as described here in the link:https://mode.com/developer/api-cookbook/distribution/export-pdf/[{brand} API cookbook,window=_blank].
 
 * Get Report Latest Run
 * Get status of PDF Generation
@@ -430,7 +430,7 @@ Here below is a Javascript example code snippet on client side:
 
 === Filter panel toggle
 
-For White-Label Embeds, you can programmatically expose or hide the xref:interactivity.adoc#filters-and-parameters[filter] panel (if applicable) by posting a message to the embed iframe using JavaScript's link:https://mode.com/blog/custom-css-for-on-brand-dashboards/[`Window.postMessage()` function].
+For White-Label Embeds, you can programmatically expose or hide the xref:interactivity.adoc#filters-and-parameters[filter] panel (if applicable) by posting a message to the embed iframe using JavaScript's link:https://mode.com/blog/custom-css-for-on-brand-dashboards/[`Window.postMessage()` function,window=_blank].
 
 The following example toggles the panel (that is, it opens the panel if it is closed, and closes the panel if it is open):
 
@@ -467,7 +467,7 @@ You can set up a "Toggle Filters" button by adding the following code to your pa
 
 You can use a xref:organizations.adoc#colors-and-styling[custom theme] or xref:report-layout-and-presentation.adoc#external-assets[CSS] to style an embedded report so its look and feel matches that of its host application.
 
-Learn more about link:https://mode.com/blog/custom-css-for-on-brand-dashboards/[how to style reports using custom CSS].
+Learn more about link:https://mode.com/blog/custom-css-for-on-brand-dashboards/[how to style reports using custom CSS,window=_blank].
 
 === Hide a report element
 
@@ -566,9 +566,9 @@ image::wle-troubleshooting-2.png[Troubleshoot White-Label Embeds]
 A valid signed embed URL must include a value for each of a report's defined xref:parameters.adoc[parameters] in the URL's query string.
 Check your embed URL for the following:
 
-* Ensure the entire URL (including the query string with any parameter values) link:https://www.w3schools.com/tags/ref_urlencode.asp[is URL-encoded].
-* Ensure the signature was generated with an link:https://www.w3schools.com/tags/ref_urlencode.asp[encoded URL].
-* A link:https://www.w3schools.com/tags/ref_urlencode.asp[URL-encoded] value is included for every parameter defined in the report.
+* Ensure the entire URL (including the query string with any parameter values) link:https://www.w3schools.com/tags/ref_urlencode.asp[is URL-encoded,window=_blank].
+* Ensure the signature was generated with an link:https://www.w3schools.com/tags/ref_urlencode.asp[encoded URL,window=_blank].
+* A link:https://www.w3schools.com/tags/ref_urlencode.asp[URL-encoded,window=_blank] value is included for every parameter defined in the report.
 * Each parameter is included in the format `&param_[PARAM_NAME]=[PARAM_VALUE]`, where `[PARAM_NAME]` is the exact name used in the xref:parameters.adoc#defining-parameters[parameter definition].
 * Ensure the URL query string contains references only to parameters that are defined in the report.
 

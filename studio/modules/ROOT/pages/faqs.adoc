@@ -130,10 +130,12 @@ We'll be happy to assist you further.
 
 * xref:webhooks.adoc#faqs[FAQs]
 
+////
 === White-label embedded reports
 
 * xref:white-label-embeds.adoc#faqs[FAQS]
 * xref:white-label-embeds.adoc#troubleshooting[Common Errors]
+////
 
 === Workspaces
 

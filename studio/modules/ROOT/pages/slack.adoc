@@ -10,7 +10,7 @@
 
 == Overview
 
-The link:https://slack.com/apps/A1KBFDRGR-mode[{brand} Slack app] enables members of your organization to link:https://mode.com/integrations/slack/[share reports via Slack] directly from {brand}.
+The link:https://slack.com/apps/A1KBFDRGR-mode[{brand} Slack app,window=_blank] enables members of your organization to link:https://mode.com/integrations/slack/[share reports via Slack,window=_blank] directly from {brand}.
 
 == Installation requirements
 
@@ -24,7 +24,7 @@ For example, if the {brand} slack bot is not in the private #sales-only channel,
 [#setting-up]
 == Setting up or upgrading versions
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and click on your name in the upper left corner of the window.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and click on your name in the upper left corner of the window.
 . Click *Workspace Settings*.
 . Under the Features section, click *Slack Application*.
 . Click the *Add to Slack* button.
@@ -74,7 +74,7 @@ Below is a list of these permissions, as well as some additional detail about wh
 | Get the name of the installer of the Slack App to display in the {brand} UI.
 |===
 
-More information about Slack's scopes can be found in Slack's link:https://api.slack.com/scopes[API documentation].
+More information about Slack's scopes can be found in Slack's link:https://api.slack.com/scopes[API documentation,window=_blank].
 
 == Channel access
 
@@ -82,9 +82,9 @@ Users in your organization can share reports to the following Slack channels:
 
 * Public channels in your connected Slack workspace.
 * Any private channels in your connected Slack workspace where the {brand} slack bot has been added.
-* With link:https://slack.com/connect[Slack Connect], any shared channel created in the Slack workspace connected with {brand}.
+* With link:https://slack.com/connect[Slack Connect,window=_blank], any shared channel created in the Slack workspace connected with {brand}.
 
-For organizations on link:https://slack.com/enterprise[Slack's Enterprise Grid], public and private multi-workspace channels will work as above when made available to the workspace connected with {brand}.
+For organizations on link:https://slack.com/enterprise[Slack's Enterprise Grid,window=_blank], public and private multi-workspace channels will work as above when made available to the workspace connected with {brand}.
 
 TIP: Users in workspaces using the legacy Slack integration should confirm that this admin is a member of the destination private channels prior to sharing a report.
 
@@ -106,7 +106,7 @@ Allowing data previews, PDFs, and CSVs to be included in emails and Slack messag
 When disabled, report image previews will no longer appear in the message bodies of Slack or email shares, and reports shared via email can no longer contain attached PDFs.
 Admins can control how members of their Workspace are able to share reports both internally and externally.
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . Click on *Sharing & Embedding* under Features.
 
 See the full documentation for sharing data in {brand} xref:sharing-and-embedding.adoc#sharing[here].

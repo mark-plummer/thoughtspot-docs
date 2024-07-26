@@ -9,19 +9,23 @@
 
 == Overview
 
-The link:https://wordpress.org/plugins/mode-analytics/[{brand} Wordpress plugin] allows you to easily xref:white-label-embeds.adoc[White-Label Embed] a {brand} report into a WordPress site.
+The link:https://wordpress.org/plugins/mode-analytics/[{brand} Wordpress plugin,window=_blank] allows you to easily White-Label Embed a {brand} report into a WordPress site.
+
+//The link:https://wordpress.org/plugins/mode-analytics/[{brand} Wordpress plugin,window=_blank] allows you to easily xref:white-label-embeds.adoc[White-Label Embed] a {brand} report into a WordPress site.
 
 image::wordpress-embed.png[Embed Mode Reports in WordPress]
 
-TIP: This link:https://wordpress.org/plugins/user-switching/[User Switching plugin] can help you quickly swap between user accounts in WordPress. This is handy for seeing what your users are able to see on each page, or for admins to switch between multiple accounts to manage reports.
+TIP: This link:https://wordpress.org/plugins/user-switching/[User Switching plugin,window=_blank] can help you quickly swap between user accounts in WordPress. This is handy for seeing what your users are able to see on each page, or for admins to switch between multiple accounts to manage reports.
 
 == Requirements
 
-* The {brand} Workspace containing the target report must be on a link:https://mode.com/compare-plans/[paid plan] that includes xref:white-label-embeds.adoc[White-Label Embeds].
+* The {brand} Workspace containing the target report must be on a link:https://mode.com/compare-plans/[paid plan,window=_blank] that includes White-Label Embeds.
+
+//* The {brand} Workspace containing the target report must be on a link:https://mode.com/compare-plans/[paid plan,window=_blank] that includes xref:white-label-embeds.adoc[White-Label Embeds].
 * You must have a valid xref:sharing-and-embedding.adoc#white-label-embed-signature-tokens[**signature token**] for the Workspace that contains the target report.
 Ensure you have both the public access key and private access secret.
 * You must have administrative access to the WordPress site where you want to embed the report.
-* Your WordPress site must be part of a WordPress.com Business account or a link:http://wordpress.org/[WordPress.org] account.
+* Your WordPress site must be part of a WordPress.com Business account or a link:http://wordpress.org/[WordPress.org,window=_blank] account.
 
 == Implementation steps
 

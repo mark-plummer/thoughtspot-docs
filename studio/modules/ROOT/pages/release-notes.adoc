@@ -8,7 +8,7 @@
 
 == Release notes
 
-You can access our release notes by following this link:https://updates.mode.com/[link].
+You can access our release notes by following this link:https://updates.mode.com/[link,window=_blank].
 Additionally, you can locate all release notes by visiting the "Discover" page located on the left side of your dashboard.
 
 image::discover-page.png[Discover Page]
