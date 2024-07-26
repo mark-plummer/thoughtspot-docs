@@ -9,7 +9,7 @@
 
 == Getting ready to connect
 
-{brand} can connect to link:https://mode.com/data-sources/[most popular databases] that can be queried using SQL or a SQL-like language, including databases hosted on private networks or on private machines, databases hosted in VPCs and VPNs, and databases hosted in the cloud by third parties such as Amazon and Microsoft.
+{brand} can connect to link:https://mode.com/data-sources/[most popular databases,window=_blank] that can be queried using SQL or a SQL-like language, including databases hosted on private networks or on private machines, databases hosted in VPCs and VPNs, and databases hosted in the cloud by third parties such as Amazon and Microsoft.
 By default, each database you connect to your {brand} Workspace can be queried by all members of your Workspace.
 
 === Obtain database credentials and connection details
@@ -74,7 +74,7 @@ If your database or network environment does not meet the above requirements, co
 
 To add a new data connection to your Workspace using Direct Connect:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] for the Workspace to which you'd like to add the connection, and click on your name in the top left corner.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] for the Workspace to which you'd like to add the connection, and click on your name in the top left corner.
 . Click on *Connect a Database*.
 . Select your database from the list.
 . Follow the on-screen instructions to connect your database.
@@ -99,7 +99,7 @@ If the connection succeeds, your database is publicly accessible.
 If it fails, it likely isn't.
 
 In some instances, however, the connection can fail because your database doesn't allow connections from IP addresses that haven't been added to an allowlist.
-If this may be the case, link:http://askubuntu.com/questions/95910/command-for-determining-my-public-ip[find your computer's IP address] and add it to your database's IP address allowlist.
+If this may be the case, link:http://askubuntu.com/questions/95910/command-for-determining-my-public-ip[find your computer's IP address,window=_blank] and add it to your database's IP address allowlist.
 Try the command above again.
 If it succeeds, your database is publicly accessible and can connect to {brand} directly.
 Note that you may need to <<requirements,allowlist {brand}'s IP addresses>> in your database's configuration.
@@ -157,7 +157,7 @@ There are a couple of common causes for this error:
 * *Your Redshift security group or VPC security doesn't allow connections from {brand}'s IP addresses*: If your Redshift is in a security group, you must configure that security group to allow connections from {brand}'s IP addresses.
 Note that if your Redshift is in a VPC, the VPC may also be part of a security group that's distinct from the Redshift security group.
 This VPC security group must also allow connections from {brand}.
-See this <<requirements,article>> about which IP addresses to allowlist, this xref:supported-databases.adoc#amazon-redshift[article] for how to configure security groups in your Redshift instance, and this link:http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-security-groups.html[article] for more information on security settings for Redshift.
+See this <<requirements,article>> about which IP addresses to allowlist, this xref:supported-databases.adoc#amazon-redshift[article] for how to configure security groups in your Redshift instance, and this link:http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-security-groups.html[article,window=_blank] for more information on security settings for Redshift.
 * *Use a Redshift host name rather than the IP address*: Redshift host names are often formatted like this: `examplecluster.abc123xyz789.us-west-2.redshift.amazonaws.com`.
 Try using a host of this format rather than an IP address.
 This host can be found in the middle of the JDBC URL, which typically matches the following format: `jdbc:redshift://examplecluster.abc123xyz789.us-west-2.redshift.amazonaws.com:5439/dev`.
@@ -201,7 +201,7 @@ If the connection succeeds, your database is publicly accessible.
 If it fails, it likely isn't.
 
 In some instances, however, the connection can fail because your database doesn't allow connections from IP addresses that haven't been added to an allowlist.
-If this may be the case, link:http://askubuntu.com/questions/95910/command-for-determining-my-public-ip[find your computer's IP address] and add it to your database's IP address allowlist.
+If this may be the case, link:http://askubuntu.com/questions/95910/command-for-determining-my-public-ip[find your computer's IP address,window=_blank] and add it to your database's IP address allowlist.
 Try the command above again.
 If it succeeds, your database is publicly accessible and can connect to {brand} directly, provided that the <<requirements,appropriate IP addresses are allowlisted>>.
 
@@ -416,7 +416,7 @@ To install and configure Bridge, you must have sufficient (typically local admin
 
 | *Windows*
 | `C:\Program Files\Mode Analytics\Bridge Connector\`
-a| link:https://technet.microsoft.com/en-us/library/aa997769(v=exchg.65).aspx[Windows Event Viewer]
+a| link:https://technet.microsoft.com/en-us/library/aa997769(v=exchg.65).aspx[Windows Event Viewer,window=_blank]
 |===
 
 [#where-is-the-bridge-configuration-file-saved]
@@ -464,8 +464,8 @@ If you don't see commands listed for your system below, please xref:contact-us.a
 | `/etc/init.d/mode-bridge start`
 
 | *Windows*
-a| link:http://www.thewindowsclub.com/open-windows-services[Windows Services Manager]
-a| link:http://www.thewindowsclub.com/open-windows-services[Windows Services Manager]
+a| link:http://www.thewindowsclub.com/open-windows-services[Windows Services Manager,window=_blank]
+a| link:http://www.thewindowsclub.com/open-windows-services[Windows Services Manager,window=_blank]
 |===
 
 [#where-in-mode-can-i-view-the-password-token-secret-for-the-bridge-connector-that-i-created]
@@ -589,4 +589,4 @@ For additional auditing, {brand} tags each query with additional metadata which 
 * A link to that query in {brand}, which includes the time the query was run and the exact dataset returned.
 
 At {brand}, we take security very seriously.
-Learn more about link:https://mode.com/security/[{brand}'s approach to security].
+Learn more about link:https://mode.com/security/[{brand}'s approach to security,window=_blank].

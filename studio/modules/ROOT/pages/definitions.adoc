@@ -23,7 +23,7 @@ Use definitions to:
 Less SQL-savvy users can then do a simple `SELECT * FROM {{ @definition_name }}` to get results.
 * *Ensure consistency* - Commit important business logic to a definition so that users across your Workspace compute metrics consistently.
 
-Definitions are similar in concept to a link:https://www.w3schools.com/sql/sql_view.asp[database view].
+Definitions are similar in concept to a link:https://www.w3schools.com/sql/sql_view.asp[database view,window=_blank].
 However, Definitions are created and maintained in {brand} rather than your database.
 Paid plan Workspaces can create an unlimited number Definitions against any connected database.
 
@@ -33,7 +33,7 @@ You cannot run a Definition against any other database connection, unless you sw
 
 == Create a Definition
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and sign in to your Workspace.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in to your Workspace.
 . Under the Definitions section on the left side, click on the name of the connection against which you'd like to define the Definition.
 . Click the *New Definition* button in the upper right of the window.
 . Under Data Source, select the connection you want to create the Definition against.
@@ -54,7 +54,7 @@ Notes:
 
 == View existing Definitions
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and sign in to your Workspace.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in to your Workspace.
 . Under the Definitions section on the left side, click on the connection whose Definitions you want to see.
 . All of the Definitions for that connection will be listed on the right.
 Click on one to view or modify it.

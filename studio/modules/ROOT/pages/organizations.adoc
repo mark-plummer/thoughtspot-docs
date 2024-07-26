@@ -11,9 +11,9 @@
 
 Workspaces are groups of {brand} users that can securely share database connections and analyses with each other.
 You may be a member of any number of Workspaces.
-By default, any member of a Workspace can query any of the Workspace's private link:https://mode.com/data-sources/[database connections].
+By default, any member of a Workspace can query any of the Workspace's private link:https://mode.com/data-sources/[database connections,window=_blank].
 
-Anyone with a {brand} user account can link:https://app.mode.com/organizations/new[create a Workspace] for free.
+Anyone with a {brand} user account can link:https://app.mode.com/organizations/new[create a Workspace,window=_blank] for free.
 
 == Managing membership
 
@@ -22,7 +22,7 @@ Anyone with a {brand} user account can link:https://app.mode.com/organizations/n
 
 You can see all the current and former members of your Workspace, as well as their current role, from the Members page in Workspace Settings:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and click on your name in the upper left corner of the window.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and click on your name in the upper left corner of the window.
 . Click *Workspace Settings*
 . In the People section, click *Members*
 
@@ -58,7 +58,7 @@ By default, any member of your Workspace can invite new users to join.
 Invitees are required to verify their email address before being allowed to join the Workspace.
 Invitations expire after seven days.
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and click on your name in the upper left corner of the window.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and click on your name in the upper left corner of the window.
 . Select *Invite to {brand}* from the dropdown menu.
 . Enter the email address of the person you want to invite and add an invitation message.
 . Click *Invite*.
@@ -69,7 +69,7 @@ Invitations expire after seven days.
 
 You can see the invites you've already sent and resend invitations to users from Workspace Settings:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and click on your name in the upper left corner of the window.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and click on your name in the upper left corner of the window.
 . Click *Workspace Settings*
 . In the People section, click *Sent Invites*.
 . Click on the names of invitees who have signed up to see their profiles. To re-invite someone who hasn't signed up for {brand} yet, click the *Resend* button next to their name.
@@ -102,7 +102,7 @@ Groups allow Workspace admins to easily modify and control access to database co
 
 To create a new group or manage members of an existing group:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] for the Workspace where you would like to create the group.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] for the Workspace where you would like to create the group.
 . Click on your name in the upper left corner.
 . Click *Workspace Settings* from the dropdown menu.
 . In the People section, click *Groups*.
@@ -146,7 +146,7 @@ image::CollectionRestriction.png[Member Authorization Settings]
 
 Workspace admins can elect to receive emails from {brand} when new users sign up, Workspace membership changes, and more:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . Click *My Email Notifications*.
 . Toggle the notifications that you want to receive on or off.
 . Click *Save settings*.
@@ -156,7 +156,7 @@ Workspace admins can elect to receive emails from {brand} when new users sign up
 
 Admins in {brand}'s paid plans can control and restrict the onboarding of new members:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . In the People section, click on *Member Authorization*.
 . Click on the *Member Permissions* tab.
 . On this tab, you will see a number of options to help you control how new members can join your Workspace:
@@ -190,7 +190,7 @@ This is designed to create a streamlined onboarding process for new {brand} user
 
 To claim a domain, the following requirement must be met:
 
-* The {brand} Workspace must be on a link:https://mode.com/compare-plans/[paid plan].
+* The {brand} Workspace must be on a link:https://mode.com/compare-plans/[paid plan,window=_blank].
 
 ===== How claimed domains work
 
@@ -199,7 +199,7 @@ All employees at Octan Industries have an email address ending in @octan.com.
 
 Ann works for Octan industries and has the email address ann@octan.com.
 She verifies her email address and creates a new {brand} Workspace.
-Ann elects to purchase a link:https://mode.com/compare-plans/[paid {brand} plan] on behalf of her company.
+Ann elects to purchase a link:https://mode.com/compare-plans/[paid {brand} plan,window=_blank] on behalf of her company.
 Ann wants to ensure that every Octan industries user who signs up for a {brand} account on their own ends up in the workspace she is managing, instead of creating their own free workspace.
 Therefore, Ann reaches out to {brand}'s support team to claim the @octan.com domain.
 
@@ -217,7 +217,7 @@ IMPORTANT: Some domains are not available to be claimed. For example, they may b
 === Update your profile
 
 Your user profile allows you to customize your {brand} experience across all of the {brand} Workspaces where you are a member.
-To update your profile, start by navigating to the link:https://app.mode.com/home/[{brand} home page] and signing in if you aren't already:
+To update your profile, start by navigating to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and signing in if you aren't already:
 
 . Click on your name in the upper left corner of the window and click *My Account*.
 . Click on *Profile* under Account Settings.
@@ -228,7 +228,7 @@ Here you'll find a number of tabs containing settings for your profile that will
 * *Email* - Update your email address. _(Note: Remember to verify your email address after updating it.)_
 * *Password* - Update your {brand} password.
 * *Avatar* - Change the avatar associated with your user account.
-If you have a link:https://en.gravatar.com/[Gravatar] account, you can link it on this page to use your Gravatar as your {brand} avatar.
+If you have a link:https://en.gravatar.com/[Gravatar,window=_blank] account, you can link it on this page to use your Gravatar as your {brand} avatar.
 
 === Verify your email address
 
@@ -253,7 +253,7 @@ Reports created inside of any other Workspace will not be deleted--other members
 
 If you are the only admin of a Workspace, you cannot leave the Workspace until you <<change-the-role-of-a-member,make another member an admin>>.
 
-. Navigate to your link:https://app.mode.com/home/[{brand} homepage]
+. Navigate to your link:https://app.mode.com/home/[{brand} homepage,window=_blank].
 . Click on your name in the upper left corner.
 . Click *Workspace Settings* from the dropdown menu.
 . Click the *Details* tab under the Workspace header on the left side.
@@ -294,11 +294,11 @@ Any other report in your Workspace, including its code and query results, is *on
 
 {brand} is committed to meeting the requirements of the General Data Protection Regulation ('GDPR').
 The GDPR is a landmark EU data privacy law, effective May 2018, which affects both European and non-European businesses.
-link:https://mode.com/gdpr/[Learn more about {brand}'s GDPR readiness, security infrastructure, and subprocessors].
+link:https://mode.com/gdpr/[Learn more about {brand}'s GDPR readiness, security infrastructure, and subprocessors,window=_blank].
 
 {brand} offers a Data Processing Agreement (DPA) and EU Model Contract Clauses as a means of meeting the adequacy and security requirements of the European Parliament and Council of the European Union's Data Protection Directive and the GDPR.
 {brand}'s DPA is available to all Workspaces using {brand} and is automatically incorporated in the Terms of Service.
-The DPA can be found link:https://mode.com/legal/dpa/[here].
+The DPA can be found link:https://mode.com/legal/dpa/[here,window=_blank].
 
 [#managing-schedules]
 == Managing Schedules
@@ -335,7 +335,7 @@ Your Workspace includes a number of built-in xref:report-layout-and-presentation
 === Add a custom theme
 //+++<flag-icon>++++++</flag-icon>+++
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . Under Features, select *Colors & Themes*.
 . Click on the *Report Themes* tab.
 . Click on the *New Theme* button.
@@ -354,7 +354,7 @@ Any member can use or create a custom theme, however, a custom theme can only be
 You cannot delete any of the built-in color themes.
 To manage:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . Under Features, select *Colors & Themes*.
 . Click on the *Report Themes* tab.
 . To modify a custom theme, locate it in the list and click on it.
@@ -372,16 +372,16 @@ Your Workspace includes a number of pre-defined xref:report-layout-and-presentat
 === Add a custom color palette
 //+++<flag-icon>++++++</flag-icon>+++
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . Under Features, select *Colors & Themes*.
 . Click the *New Color Palette* button.
 . Enter a unique name and select either Categorical or Divergent palette type:
  ** *Categorical*: Used with most built-in charts (for example, line, pie, bar, etc.).
-Input between 2 and 20 different color link:http://htmlcolorcodes.com/[hex codes].
+Input between 2 and 20 different color link:http://htmlcolorcodes.com/[hex codes,window=_blank].
 After writing or pasting in a value (for example, #37B067), press *enter* to confirm.
 Use the X button to remove the value.
  ** *Divergent*: Used with Big Number visualizations.
-Input a color link:http://htmlcolorcodes.com/[hex codes] for each end of the color gradient.
+Input a color link:http://htmlcolorcodes.com/[hex codes,window=_blank] for each end of the color gradient.
 . Click *Save*.
 
 === Manage custom color palettes
@@ -391,7 +391,7 @@ Any member can use or create a custom color palette, however, a custom color pal
 You cannot delete any of the built-in color palettes.
 To manage:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . Under Features, select *Colors & Themes*.
 . To modify a custom color palette, locate it in the list and click on it.
 Make any changes and click *Save*.
@@ -406,7 +406,7 @@ Does not impact any existing reports.
 
 To manage billing communications and view billing history:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . In the Workspace section, click *Billing*.
 . Here you'll find of number of sections where you can view and modify your Workspace's billing details:
 
@@ -442,7 +442,7 @@ Let's say you add a coworker to your Workspace 10 days into your monthly billing
 Since the coworker was a member of your Workspace for 2/3 of the billing period, you will be billed 2/3 of $27 ($18) for their seat for the period.
 If you remove another team member the same day, you would be billed for 1/3 of $27 ($9) for that member's seat during the period.
 
-You can add additional seats to your annual agreement at the annual price at any time by contacting your CSM or link:mailto:customersuccess@mode.com[customersuccess@mode.com].
+You can add additional seats to your annual agreement at the annual price at any time by contacting your CSM or link:mailto:customersuccess@mode.com[customersuccess@mode.com,window=_blank].
 
 === Data compute flex rates
 
@@ -457,7 +457,7 @@ In month 2, you use 95GB of cumulative data compute.
 In month 3, you use 120GB of cumulative data compute.
 Your overall bill would be ((105 - 100)/100 * 1250) + ((120-100)/100 * 1250) = 62.5 + 250 = 312.50.
 
-You can add additional monthly data compute throughput to your annual agreement at the annual price at any time by contacting your CSM or link:mailto:customersuccess@mode.com[customersuccess@mode.com].
+You can add additional monthly data compute throughput to your annual agreement at the annual price at any time by contacting your CSM or link:mailto:customersuccess@mode.com[customersuccess@mode.com,window=_blank].
 
 === Tracking insights on seats and data compute usage
 
@@ -468,7 +468,7 @@ We provide a handful of resources.
 
 To review current trends and usage:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page].
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank].
 . Click on your name in the upper left corner of the screen.
 . Click *Workspace Settings* from the dropdown menu.
 . In the *Workspace* section, click *Stats*.
@@ -478,16 +478,16 @@ To review current trends and usage:
 
 The Discovery Database allows your team to analyze trends, monitor usage, and glean insights on how your teams are using {brand} by providing you with a data connection directly in your {brand} Workspace.
 
-NOTE: Included in Business and Enterprise Plans. link:https://mode.com/developer/discovery-database/introduction/[Additional Discovery Database Details and Developer Guides]
+NOTE: Included in Business and Enterprise Plans. link:https://mode.com/developer/discovery-database/introduction/[Additional Discovery Database Details and Developer Guides,window=_blank]
 
 ==== {brand}'s Discovery API
 
 The Discovery API provides API access to metadata that gives you insights on reports, usage, and access to help you understand your content and how your teams are using {brand}.
 
-NOTE: Included in Enterprise Plan link:https://mode.com/developer/discovery-api/introduction/[Additional Discovery API Details and Developer Guides]
+NOTE: Included in Enterprise Plan link:https://mode.com/developer/discovery-api/introduction/[Additional Discovery API Details and Developer Guides,window=_blank]
 
 Still have questions?
-Please reach out to your CSM or link:mailto:support@mode.com[support@mode.com] so we can get you answers!
+Please reach out to your CSM or link:mailto:support@mode.com[support@mode.com,window=_blank] so we can get you answers!
 
 == Delete a Workspace
 
@@ -496,7 +496,7 @@ WARNING: Deleting a Workspace will remove all associated data, including public 
 Only an admin can delete a Workspace.
 To delete a Workspace:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and click on your name in the upper left corner of the window.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and click on your name in the upper left corner of the window.
 . Click *Workspace Settings*.
 . Select the *Details* tab.
 . Click *Delete* in the lower right corner.
@@ -514,7 +514,7 @@ Yes.
 Since {brand} reports are owned by workspaces rather than individuals, all of the reports the user created should remain unchanged after they leave the workspace.
 Reports living in personal collections can still be accessed by workspace admins if they have the report URLs.
 
-Workspace admins can move reports from a user's personal collection into a public or private collection of their choice using the link:https://mode.com/developer/api-cookbook/management/move-report/[{brand} API].
+Workspace admins can move reports from a user's personal collection into a public or private collection of their choice using the link:https://mode.com/developer/api-cookbook/management/move-report/[{brand} API,window=_blank].
 Please note that the report tokens are required for this automation.
 If you need a list of the report tokens in the deactivated user's personal collection, please have a workspace admin contact Support.
 
@@ -549,7 +549,7 @@ As an admin, you have the ability to cancel an invite by following these steps:
 This behavior is seen when the workspace has "admin-invite only" enabled and/or the admin has not approved the request to join the workspace.
 In many cases, when users click "Continue" in their email to verify their email address, nothing else is sent to them.
 We recommend reaching out to the admin for next steps.
-If you are unsure who the admin users are in your workspace, or need confirmation that this is the case, you can contact support via Live Chat or email us at link:mailto:support@mode.com[support@mode.com].
+If you are unsure who the admin users are in your workspace, or need confirmation that this is the case, you can contact support via Live Chat or email us at link:mailto:support@mode.com[support@mode.com,window=_blank].
 
 This can also happen if you sign up using SAML and the workspace has "admin-invite only" enabled.
 If anyone is allowed to join the workspace using their SAML login, an Admin should disable this feature.

@@ -13,7 +13,7 @@
 
 Organization admins can set sign-in restrictions to control how members are able to authenticate when accessing their {brand} Workspace.
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page].
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank].
 . Click on your name in the upper left corner.
 . Click *Workspace Settings* from the dropdown menu.
 . In the People section, click on *Member Authorization*.
@@ -34,7 +34,7 @@ WARNING: Do not disable all sign-in methods. If all methods are disabled, it wil
 
 Admins may define one more custom SAML identity provider that your {brand} Workspace can use to authenticate users:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and click *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and click *Workspace Settings* from the dropdown menu.
 . In the People section, click on *Member Authorization*.
 . To add a new SAML provider, click *+ Add New Provider*.
 To edit or delete an existing provider, click the *gear* image:settings-mini-hover.svg[mini hover] next to its name in the list and click *Edit* or *Delete*.
@@ -84,7 +84,7 @@ If they are reactivated, they will need to have any groups reassigned to restore
 * *Push Profile Updates*: Updates made to the user's profile through OKTA will be pushed to the third party application.
 First Name and Last Name will be combined as the Full Name in {brand}.
 * *Group Push*: Groups and their members can be pushed to {brand}.
-You can find more information about using group push operations here: link:https://help.okta.com/en/prod/Content/Topics/users-groups-profiles/usgp-group-push-main.htm[Using Group Push].
+You can find more information about using group push operations here: link:https://help.okta.com/en/prod/Content/Topics/users-groups-profiles/usgp-group-push-main.htm[Using Group Push,window=_blank].
 * *Reactivate Users*: Reactivating the user through Okta will reactivate the user in {brand}.
 They will need to have any groups reassigned to restore associated resource entitlements.
 
@@ -153,7 +153,7 @@ image::assignmodegroups.png[SCIM]
 
 NOTE: Users need to be assigned to the {brand} application before they will be included in pushes of Groups that contain them. You may need to unassign and re-assign users to the {brand} app before pushing Groups.
 
-For more information on Group Push, see Okta's documentation on link:https://help.okta.com/en-us/content/topics/users-groups-profiles/usgp-about-group-push.htm[Using Group Push] and link:https://help.okta.com/oie/en-us/content/topics/directory/ad-agent-cofigure-group-push-ad-ous.htm[Enhanced Group Push].
+For more information on Group Push, see Okta's documentation on link:https://help.okta.com/en-us/content/topics/users-groups-profiles/usgp-about-group-push.htm[Using Group Push,window=_blank] and link:https://help.okta.com/oie/en-us/content/topics/directory/ad-agent-cofigure-group-push-ad-ous.htm[Enhanced Group Push,window=_blank].
 
 === Azure Active Directory
 
@@ -162,12 +162,12 @@ Organizations wishing to use SCIM are required to use SAML as their sole sign-in
 
 See <<custom-saml,here>> for more information on how to set up SAML in {brand}.
 
-See link:https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/add-application-portal-setup-sso[here] for AAD's setup documentation
+See link:https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/add-application-portal-setup-sso[here,window=_blank] for AAD's setup documentation
 
 [discrete]
 ===== Reference
 
-Microsoft AAD link:https://docs.microsoft.com/en-us/azure/active-directory/app-provisioning/how-provisioning-works[Documentation]
+Microsoft AAD link:https://docs.microsoft.com/en-us/azure/active-directory/app-provisioning/how-provisioning-works[Documentation,window=_blank]
 
 ==== Supported features
 
@@ -181,11 +181,11 @@ Microsoft AAD link:https://docs.microsoft.com/en-us/azure/active-directory/app-p
 . On the *Member Authorization* tab on the *Workspace Settings* page, turn on the switch labeled *Enabled SCIM*.
 Note that if this switch does not appear, you should contact your Customer Success Manager for further assistance.
 . Click *View Config Settings*. You will need to copy the Base URL and OAuth Bearer Token into your Azure AD App's Provisioning configuration:  image:newscimui.png[SCIM]
-. Log in to your link:http://portal.azure.com/[AAD] portal as an Administrator.
+. Log in to your link:http://portal.azure.com/[AAD,window=_blank] portal as an Administrator.
 . Select *Enterprise applications* from the left pane.
 A list of all configured apps is shown, including apps that were added from the gallery.
 Select *+ New application > + Create your own application*.
-Then, follow the steps link:https://docs.microsoft.com/en-us/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups#getting-started[here] to create the application.
+Then, follow the steps link:https://docs.microsoft.com/en-us/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups#getting-started[here,window=_blank] to create the application.
 . In the app management screen, select *Provisioning* in the left panel.
 In the *Provisioning {brand}* menu, select *Automatic*.
 image:aad-tenant-url.png[SCIM]
@@ -217,7 +217,7 @@ There are two major parts of setup before Admin assignment can happen:
 [discrete]
 ====== Creating the Admin user role
 
-(link:https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps[See Microsoft's documentation on adding roles])
+(link:https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps[See Microsoft's documentation on adding roles,window=_blank])
 
 . Find your app registrations within the Azure Active Directory dashboard. +
 image:appregistrations.png[SCIM]
@@ -233,7 +233,7 @@ image:aad-admins2.png[AAD]
 [discrete]
 ====== Creating the Admin role mapping
 
-(link:https://docs.microsoft.com/en-us/azure/active-directory/app-provisioning/customize-application-attributes#editing-user-attribute-mappings[Relevant official documentation on editing user attribute mappings])
+(link:https://docs.microsoft.com/en-us/azure/active-directory/app-provisioning/customize-application-attributes#editing-user-attribute-mappings[Relevant official documentation on editing user attribute mappings,window=_blank])
 
 . Find the {brand} application within the *Enterprise Applications* section of the main nav. +
 image:aadmodenavigation.png[SCIM]

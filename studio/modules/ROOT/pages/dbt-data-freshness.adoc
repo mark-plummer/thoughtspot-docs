@@ -18,10 +18,10 @@ The integration allows {brand} users to present information about when source da
 === dbt Cloud requirements
 
 * Be on a paid plan (Team or Enterprise) of dbt Cloud.
-* Have link:https://docs.getdbt.com/reference/resource-properties/freshness/[freshness] configured for relevant sources.
+* Have link:https://docs.getdbt.com/reference/resource-properties/freshness/[freshness,window=_blank] configured for relevant sources.
 * Add a `dbt source snapshot-freshness` step to the job you want to get metadata for in {brand}.
-link:https://docs.getdbt.com/docs/dbt-cloud/using-dbt-cloud/cloud-snapshotting-source-freshness/[See dbt documentation for more detail].
-* Update to at least link:https://docs.getdbt.com/docs/dbt-cloud/cloud-configuring-dbt-cloud/cloud-choosing-a-dbt-version/[v.0.18.1] of dbt Core.
+link:https://docs.getdbt.com/docs/dbt-cloud/using-dbt-cloud/cloud-snapshotting-source-freshness/[See dbt documentation for more detail,window=_blank].
+* Update to at least link:https://docs.getdbt.com/docs/dbt-cloud/cloud-configuring-dbt-cloud/cloud-choosing-a-dbt-version/[v.0.18.1,window=_blank] of dbt Core.
 
 In order to set up dbt data freshness in {brand}, you will need to have:
 
@@ -51,7 +51,7 @@ Create a new Metadata Only token and save.
 You will also need to enable the Metadata API to allow querying with the Metadata Only Token.
 Navigate to the Metadata page in Account Settings to enable access to the API.
 
-For more information on how to generate a Service Account Token, link:https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens#metadata-only-service-account-tokens[see the dbt Cloud documentation].
+For more information on how to generate a Service Account Token, link:https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/service-tokens#metadata-only-service-account-tokens[see the dbt Cloud documentation,window=_blank].
 
 ==== Set up in {brand} connection settings
 

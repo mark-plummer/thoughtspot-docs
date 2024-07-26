@@ -86,7 +86,7 @@ Filters and xref:parameters.adoc[Parameters] let viewers customize a report's ou
     <vid src="https://www.youtube.com/embed/7B6HEHxg6Iw" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></vid>
 </vidcon>
 ////
-TIP: You can follow along with the examples in the {brand} University course: link:https://university.mode.com/getting-insights-from-mode-reports[Getting Insights from {brand} Reports].
+TIP: You can follow along with the examples in the {brand} University course: link:https://university.mode.com/getting-insights-from-mode-reports[Getting Insights from {brand} Reports,window=_blank].
 
 image::parameters-filters.png[Parameters and Filters]
 

@@ -110,7 +110,7 @@ We can insert this code to run the SQL and use the results.
 
 Features of {brand} AI Assist security, powered by OpenAI:
 
-* {brand} leverages link:https://platform.openai.com/docs/api-reference/introduction[OpenAI's GPT API].
+* {brand} leverages link:https://platform.openai.com/docs/api-reference/introduction[OpenAI's GPT API,window=_blank].
 * OpenAI complies with SOC2 Type II for data security and privacy.
 * {brand} sends the query syntax along with the additional metadata of the currently selected warehouse name, table column names, and their data types as part of the GPT prompt in order to provide helpful, in-context responses.
 * OpenAI does not use this data or metadata to retrain the model.
@@ -168,7 +168,7 @@ a| `--! update code above to valid Postgres SQL` +
 ===== *Q: I don't see the AI Assist feature. How do I get access to it?*
 
 To ensure that we provide the best possible experience for our users, we are enabling AI Assist on an account-by-account basis, by request only.
-To determine if your organization is an ideal fit for this opportunity, we kindly link:https://mode.com/lp/ai-assist-signup-form[request that you fill out this form].
+To determine if your organization is an ideal fit for this opportunity, we kindly link:https://mode.com/lp/ai-assist-signup-form[request that you fill out this form,window=_blank].
 The information you provide will help us tailor our support, understand your specific needs, and ensure that you receive the most benefit from AI Assist.
 
 [discrete]

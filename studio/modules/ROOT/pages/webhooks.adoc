@@ -10,11 +10,11 @@
 
 == Overview
 
-link:https://en.wikipedia.org/wiki/Webhook[Webhooks] let other applications subscribe to be notified when certain events happen in your {brand} Workspace.
+link:https://en.wikipedia.org/wiki/Webhook[Webhooks,window=_blank] let other applications subscribe to be notified when certain events happen in your {brand} Workspace.
 You can use webhooks to do automate workflows and trigger other applications.
 For example:
 
-* Trigger a Zap in link:https://zapier.com/[Zapier].
+* Trigger a Zap in link:https://zapier.com/[Zapier,window=_blank].
 * Send a customized Slack alert when a {brand} report finishes running.
 * Log usage of your {brand} Workspace.
 
@@ -24,7 +24,7 @@ The message payload contains the name of the event and a link to the API endpoin
 
 We'll periodically add support for new webhook events.
 If you have ideas for new events you'd like to see in {brand}, please xref:contact-us.adoc[let our success team know].
-You can learn more about what's possible by viewing sample code in our link:https://github.com/mode/webhooks-examples[webhooks example repo] and refer to {brand}'s link:https://mode.com/developer/api-reference/introduction/[API documentation].
+You can learn more about what's possible by viewing sample code in our link:https://github.com/mode/webhooks-examples[webhooks example repo,window=_blank] and refer to {brand}'s link:https://mode.com/developer/api-reference/introduction/[API documentation,window=_blank].
 
 == Create and subscribe to a webhook
 
@@ -142,6 +142,6 @@ A convenient way to trigger alerts is by utilizing {brand}'s Webhooks feature.
 This allows you to set up a webhook that sends notifications when a report or query finishes running, as outlined in this guide.
 
 Additionally, you can review the data returned from the run, and if a specific value exceeds a set threshold, an alert can be sent to Slack.
-This link:https://github.com/mode/webhooks-examples/blob/master/examples/aws_lambda/post_to_slack.py[example Python script] demonstrates this process.
+This link:https://github.com/mode/webhooks-examples/blob/master/examples/aws_lambda/post_to_slack.py[example Python script,window=_blank] demonstrates this process.
 The logic is located within the `post_to_slack.py` file, specifically within the `report_run_completed_message` function.
 Feel free to modify the logic as necessary for your specific use case.

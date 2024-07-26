@@ -12,7 +12,7 @@
 
 Admins can control how members of their Workspace are able to share reports both internally and externally:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . Click on *Sharing & Embedding* under Features.
 
 Adjust the toggles next to each of the following options and click *Save settings* when you are done to confirm:
@@ -64,7 +64,7 @@ To create or modify a signature token:
 
 image::signature-token-settings.png[New signature token]
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . Click on *Sharing & Embedding* under Features.
 . Click on the *Embedding* tab.
 . To create a new signature token, enter a unique name and click *Create token*.
@@ -77,5 +77,5 @@ WARNING: Remember to store the access secret securely. Do not expose the access 
 
 NOTE: {brand} will be sunsetting the legacy Slack integration in September 2022. To upgrade your workspace to the latest Slack integration version, follow the instructions xref:slack.adoc[here].
 
-The link:https://slack.com/apps/A1KBFDRGR-mode[{brand} Slack app] enables members of your Workspace to link:https://mode.com/integrations/slack/[share reports via Slack] directly from {brand}.
+The link:https://slack.com/apps/A1KBFDRGR-mode[{brand} Slack app,window=_blank] enables members of your Workspace to link:https://mode.com/integrations/slack/[share reports via Slack,window=_blank] directly from {brand}.
 Set up your xref:slack.adoc#setting-up[Slack Integration] today and xref:report-scheduling-and-sharing.adoc#slack[start sharing].

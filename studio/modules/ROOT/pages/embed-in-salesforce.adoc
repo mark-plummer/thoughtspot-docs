@@ -21,7 +21,7 @@ image::salesforce-embed.png[Embed Mode Reports in Salesforce]
 In order to follow the steps in this guide, the following requirements must be met:
 
 * You must have permissions in Salesforce to create VisualForce objects, change page layouts, and access the setup page.
-* The {brand} Workspace containing the target report must be on a link:https://mode.com/compare-plans/[paid plan].
+* The {brand} Workspace containing the target report must be on a link:https://mode.com/compare-plans/[paid plan,window=_blank].
 * Embed viewers must be logged in to {brand}, must be members of the {brand} Workspace containing the embedded report, and must have access to the embedded report. +
 NOTE: The exact steps outlined in this guide assume you are using the Salesforce Classic interface. You may embed a {brand} report using the Salesforce Lightning interface, but the steps below may vary.
 
@@ -56,9 +56,9 @@ Now add a xref:report-layout-and-presentation.adoc#url-query-string[query string
 [Note]
 ====
 * A field-value pair must be provided for each report xref:parameters.adoc[parameter] (if any are defined) or the embed will not render.
-* For parameters with dynamic values based on the context in which the embed is viewed, use a link:https://trailhead.salesforce.com/en/modules/visualforce_fundamentals/units/visualforce_variables_expressions[Visualforce Expression] in the URL.
+* For parameters with dynamic values based on the context in which the embed is viewed, use a link:https://trailhead.salesforce.com/en/modules/visualforce_fundamentals/units/visualforce_variables_expressions[Visualforce Expression,window=_blank] in the URL.
 For example, `{!Account.OrganizationAccountID__c}` would return the value in the `OrganizationAccountID__c` custom field on the Account object.
-* Ensure you link:https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_restful_encodingUtil.htm[URL-encode] any parameter values with special characters (if necessary).
+* Ensure you link:https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_restful_encodingUtil.htm[URL-encode,window=_blank] any parameter values with special characters (if necessary).
 ====
 
 Finally, include `run=now` in the xref:report-layout-and-presentation.adoc#url-query-string[query string] to ensure the embedded report's data is refreshed whenever the embed is viewed in Salesforce.
@@ -101,7 +101,7 @@ Under Visualforce Markup, replace the template code with the following code, wit
 </apex:page>
 ----
 
-IMPORTANT: Depending on the security settings of users in your Salesforce organization, you may need to grant access to the Visualforce Page you just created to certain user profiles. Learn more about link:https://help.salesforce.com/articleView?id=pages_page_level_security.htm&type=5[Visualforce Page Security].
+IMPORTANT: Depending on the security settings of users in your Salesforce organization, you may need to grant access to the Visualforce Page you just created to certain user profiles. Learn more about link:https://help.salesforce.com/articleView?id=pages_page_level_security.htm&type=5[Visualforce Page Security,window=_blank].
 
 === Add the Visualforce Page to your desired object's page layout
 

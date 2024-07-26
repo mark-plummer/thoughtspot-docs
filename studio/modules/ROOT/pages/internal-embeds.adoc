@@ -45,8 +45,8 @@ image::internal_embed2023.png[Internal Embed modal]
 
 === Static iframe
 
-Embeds using a static link:https://www.w3schools.com/tags/tag_iframe.asp[HTML iframe] do not require the execution of any client-side JavaScript and therefore may be more suitable for use with certain blogs or content management systems.
-However, you must set the height of the link:https://www.w3schools.com/tags/tag_iframe.asp[iframe] manually using the `height` attribute of the `<iframe>` (default is 300px).
+Embeds using a static link:https://www.w3schools.com/tags/tag_iframe.asp[HTML iframe,window=_blank] do not require the execution of any client-side JavaScript and therefore may be more suitable for use with certain blogs or content management systems.
+However, you must set the height of the link:https://www.w3schools.com/tags/tag_iframe.asp[iframe,window=_blank] manually using the `height` attribute of the `<iframe>` (default is 300px).
 For example:
 
 [source,html]
@@ -58,7 +58,7 @@ For example:
 === JavaScript
 
 If your embed host application allows for client-side JavaScript, you can use the JavaScript embed method.
-The JavaScript snippet includes a link:https://app.mode.com/embed/embed.js[helper library] that automatically produces an iframe for the embed with the class `mode-embed`.
+The JavaScript snippet includes a link:https://app.mode.com/embed/embed.js[helper library,window=_blank] that automatically produces an iframe for the embed with the class `mode-embed`.
 For example:
 
 [source,html]
@@ -102,7 +102,7 @@ Internal Embeds feature a branded {brand} border, which includes a *Filters* but
 
 You can use a xref:organizations.adoc#colors-and-styling[custom theme] or xref:report-layout-and-presentation.adoc#external-assets[CSS] to style an embedded report so its look and feel match that of its host application.
 
-Learn more about link:https://mode.com/blog/custom-css-for-on-brand-dashboards/[how to style reports using custom CSS].
+Learn more about link:https://mode.com/blog/custom-css-for-on-brand-dashboards/[how to style reports using custom CSS,window=_blank].
 
 === Hide a report element
 

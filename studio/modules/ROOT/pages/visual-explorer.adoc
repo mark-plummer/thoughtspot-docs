@@ -10,7 +10,7 @@
 == Getting started
 
 For those who want to explore their data visually, Visual Explorer is a more flexible and powerful alternative to our "`fixed view`" xref:visualizations.adoc#built-in-charts-and-tables[Quick Charts].
-Inspired by the layered link:https://towardsdatascience.com/a-comprehensive-guide-to-the-grammar-of-graphics-for-effective-visualization-of-multi-dimensional-1f92b4ed4149[Grammar of Graphics], Visual Explorer provides an environment where you can create and configure your visualizations based on a rule set--a grammar, if you will.
+Inspired by the layered link:https://towardsdatascience.com/a-comprehensive-guide-to-the-grammar-of-graphics-for-effective-visualization-of-multi-dimensional-1f92b4ed4149[Grammar of Graphics,window=_blank], Visual Explorer provides an environment where you can create and configure your visualizations based on a rule set--a grammar, if you will.
 Just like how in English the word "`grammar`" has become synonymous with rules for the construction of readily interpretable sentences, Visual Explorer is built upon a framework that provides rules to construct readily interpretable graphics.
 
 image::vizexplorer.png[Visual Explorer menu]
@@ -57,7 +57,7 @@ By default, every measure is plotted in its own *pane* because each measure intr
 
 image::multi-measures.jpeg[Multiple Measures]
 
-Check out our link:https://mode.com/visual-explorer-guides/[Visual Explorer field guide] for a walkthrough on how to create visualizations in the Visual Explorer.
+Check out our link:https://mode.com/visual-explorer-guides/[Visual Explorer field guide,window=_blank] for a walkthrough on how to create visualizations in the Visual Explorer.
 There you can find possible visualizations you can build as starting points for your exploratory analysis.
 
 [#introduce-groupings-with-facets]
@@ -254,7 +254,7 @@ Unlike the other fields, they do not directly come from your dataset but are rat
 By default, `Measure Names` and `Measure Values` will be empty variables for you to fill.
 
 The combination of these two fields allow you to build certain types of views that involve *multiple measures*.
-As you'll begin to see in some of our link:https://mode.com/visual-explorer-guides/[example configurations], `Measure Names` and `Measure Values` are integral pieces to build certain visualizations.
+As you'll begin to see in some of our link:https://mode.com/visual-explorer-guides/[example configurations,window=_blank], `Measure Names` and `Measure Values` are integral pieces to build certain visualizations.
 
 [discrete]
 ==== *The Measure Values Shelf*
@@ -415,7 +415,7 @@ image:3.5.png[Shared Axis 3.5]
 ==== *Using shared axis to create combo charts*
 
 With Shared axis, you can create a wide array of visualizations from slope charts, bar chart and dot plots, to funnel charts and much more.
-Check out our link:https://modeanalytics.com/nascif_abousalh_neto/reports/d3eeb27acd63[Example Report] for inspiration, and duplicate it to your own Workspace to see how the visualizations are built.
+Check out our link:https://modeanalytics.com/nascif_abousalh_neto/reports/d3eeb27acd63[Example Report,window=_blank] for inspiration, and duplicate it to your own Workspace to see how the visualizations are built.
 
 === Data limits within Visual Explorer
 

@@ -10,7 +10,7 @@
 == Overview
 
 After using SQL to gather, structure, and analyze all of the necessary data for your analysis, you can build visualizations on top of that data.
-{brand} offers a number of options for building visualizations, including the ability to take your analysis even further using Python / R or using any type of custom visualization using JavaScript (for example, link:https://d3js.org/[D3]).
+{brand} offers a number of options for building visualizations, including the ability to take your analysis even further using Python / R or using any type of custom visualization using JavaScript (for example, link:https://d3js.org/[D3,window=_blank]).
 
 [#built-in-charts-and-tables]
 == Quick charts
@@ -385,7 +385,7 @@ image::data-profile-in-flat-tables.gif[data profiling]
 
 === Pivot table
 
-A link:https://en.wikipedia.org/wiki/Pivot_table[pivot table] aggregates and summarizes (for example, using sum, average, count, etc.) query results and presents them in a data table.
+A link:https://en.wikipedia.org/wiki/Pivot_table[pivot table,window=_blank] aggregates and summarizes (for example, using sum, average, count, etc.) query results and presents them in a data table.
 To add a pivot table to a report:
 
 . On the left side of the report editor, find the query with the data you want to display and click the *New* image:modal-add.svg[new] button under it.
@@ -544,9 +544,9 @@ These visualizations will update whenever the Notebook is run and the output cha
 {brand} supports the ability to customize {brand}'s native visualizations or add custom D3 visualizations to a {brand} report.
 When editing a Report, in the Report Builder's top toolbar, click the icon *</>* to customize the Report's HTML.
 The HTML editor lets you use valid HTML, JavaScript, or CSS in the layout of your report, allowing you to add interactivity, custom visualizations, and more.
-To help you get started, {brand}'s community maintains the link:https://github.com/mode/alamode[Alamode] JavaScript library that makes creating link:https://d3js.org/[D3-powered] visualizations a snap.
+To help you get started, {brand}'s community maintains the link:https://github.com/mode/alamode[Alamode,window=_blank] JavaScript library that makes creating link:https://d3js.org/[D3-powered,window=_blank] visualizations a snap.
 
-Check out link:https://mode.com/example-gallery/[{brand}'s Gallery] for inspiration, sample reports, and more information about how to create advanced visualizations in {brand}.
+Check out link:https://mode.com/example-gallery/[{brand}'s Gallery,window=_blank] for inspiration, sample reports, and more information about how to create advanced visualizations in {brand}.
 
 [#copy-visualizations-across-reports]
 == Copy visualizations across Reports

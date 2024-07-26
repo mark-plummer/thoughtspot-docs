@@ -10,7 +10,7 @@
 == Overview
 
 You can connect as many private databases to your {brand} Workspace as you like.
-{brand} supports connecting to most popular types of https://mode.com/data-sources/[relational databases].
+{brand} supports connecting to most popular types of link:https://mode.com/data-sources/[relational databases,window=_blank].
 When you connect a database to your {brand} Workspace, by default all members of your Workspace will be able to run queries against that data connection.
 
 All Workspaces are also automatically connected to the <<mode-public-warehouse,{brand} Public Warehouse>>.
@@ -21,7 +21,7 @@ All Workspaces are also automatically connected to the <<mode-public-warehouse,{
 
 To connect your database to your {brand} xref:organizations.adoc[organization]:
 
-. Navigate to your link:https://app.mode.com/home/[{brand} homepage] and sign in.
+. Navigate to your link:https://app.mode.com/home/[{brand} homepage,window=_blank] and sign in.
 . Click on your name in the upper left corner of the screen.
 . Click *Connect a Database*.
 . Follow the instructions to connect your database.
@@ -34,7 +34,7 @@ IMPORTANT: Any active member of a {brand} Workspace can create a new database co
 
 You can only delete or modify the settings and credentials for a database connection if you're an admin or if you were the member who connected it to the Workspace.
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and sign in.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in.
 . Click on your name in the upper left, and click *Workspace Settings*
 . In the Data section, click *Connections*.
 . All the database connections for your Workspace are listed on the right.
@@ -138,7 +138,7 @@ image::Access-Menu.png[Access Menu Illustration]
 
 To set up permissions to a connected database in {brand}:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and sign in.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in.
 . Click on your name in the upper left, and click *Workspace Settings*
 . In the Data section, click *Manage Connections*.
 . Click on the data connection you want to limit.
@@ -198,7 +198,7 @@ IMPORTANT: Headers are injected only once per {brand} SQL query, even if that qu
 
 You must be the creator of a data connection or a Workspace admin to modify its query header.
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and sign in.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in.
 . Click on your name in the upper left, and click *Workspace Settings*
 . In the Data section, click *Connections*.
 . Click on the data connection you would like to modify.
@@ -211,7 +211,7 @@ You must be the creator of a data connection or a Workspace admin to modify its 
 Each time a query is executed, {brand} automatically defines a number of Liquid variables containing useful audit information.
 You can reference these variables in your custom query headers to add audit information that will appear in your database's logs.
 Both SQL and Liquid parameters are supported.
-See link:https://mode.com/blog/query-headers[our Blog]:
+See link:https://mode.com/blog/query-headers[our Blog,window=_blank]:
 
 |===
 | Variable | Output
@@ -366,7 +366,7 @@ SELECT 2
 {brand} hosts a public PostgreSQL data warehouse so you can share data and analysis with the entire {brand} community.
 The {brand} Public Warehouse is a great tool that you can use to:
 
-* Learn SQL by completing {brand}'s link:https://mode.com/sql-tutorial[SQL school].
+* Learn SQL by completing {brand}'s link:https://mode.com/sql-tutorial[SQL school,window=_blank].
 * Share analysis with or learn from anyone in the {brand} community.
 * Experiment with all of {brand}'s features.
 
@@ -377,8 +377,8 @@ Anyone with a {brand} account has access to the {brand} Public Warehouse and can
 
 IMPORTANT: **All data uploaded into the {brand} Public Warehouse is publicly accessible by anyone on the internet, so take care not to upload anything sensitive or confidential.**
 
-. link:https://app.mode.com/signin[Sign in to {brand}].
-If you don't have an account yet, link:https://app.mode.com/signup?src=help_site[create a free {brand} user account here].
+. link:https://app.mode.com/signin[Sign in to {brand},window=_blank].
+If you don't have an account yet, link:https://app.mode.com/signup?src=help_site[create a free {brand} user account here,window=_blank].
 . Locate your name in the upper left corner of the window and ensure it says *{brand} Community* above your name.
 (If not, click on your name, click *Switch*, scroll to the bottom of the pop-up, and click the *Switch* button under {brand} Community).
 . Click on your name in the upper left corner of the window and then click *Contribute Public Data*.
@@ -399,7 +399,7 @@ Table names in the {brand} Public Warehouse must:
 
 Next, you'll set the column names and types.
 Columns follow the same naming rules as tables.
-If you are unsure about the data type for any particular column or would like a general overview of data types, check out the link:https://mode.com/sql-tutorial/sql-data-types[SQL School lesson on data types].
+If you are unsure about the data type for any particular column or would like a general overview of data types, check out the link:https://mode.com/sql-tutorial/sql-data-types[SQL School lesson on data types,window=_blank].
 
 When you are finished, *check the box* next to "I understand this table will be public to all {brand} users", and then click *Finish Import* at the bottom of the Customize Columns screen.
 You can now query this data in {brand} by selecting {brand} Public Warehouse as the database.
@@ -408,7 +408,7 @@ You can now query this data in {brand} by selecting {brand} Public Warehouse as 
 
 To remove a table you've uploaded to {brand}'s Public Warehouse:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and sign in.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in.
 . Click on your name in the upper left, and click *My Account*.
 . In the Account Setting section, click *Public Data*.
 . Navigate to your public {brand} community page by clicking on the link provided (for example, `+https://app.mode.com/{{mode_username}}+`).

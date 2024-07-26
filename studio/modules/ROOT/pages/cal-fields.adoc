@@ -814,7 +814,7 @@ However, there are limitations to what calculated fields you can use in *functio
 ====== *Q: How do you get the running percentage total of a field?*
 
 We do have some ways of utilizing analytic functions within our calculated fields to calculate percent over total.
-Check out this link:https://mode.com/blog/analytic-functions-in-calculated-fields/[blog on Analytic Functions] and how to use them in {brand}.
+Check out this link:https://mode.com/blog/analytic-functions-in-calculated-fields/[blog on Analytic Functions,window=_blank] and how to use them in {brand}.
 
 [discrete]
 ====== *Q: How to do a CASE statement where the condition is a comparison (e.g. \<=)?*

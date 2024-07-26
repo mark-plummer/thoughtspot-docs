@@ -9,12 +9,12 @@
 
 == My Work
 
-Click *My Work* image:nav-my-work.svg[my work] on the left side of your link:https://app.mode.com/home/[{brand} home page] to show all of the reports you have created in this Workspace, regardless of where (that is, in which Collection) those reports currently live.
+Click *My Work* image:nav-my-work.svg[my work] on the left side of your link:https://app.mode.com/home/[{brand} home page,window=_blank] to show all of the reports you have created in this Workspace, regardless of where (that is, in which Collection) those reports currently live.
 
 == Recently viewed
 //+++<flag-icon>++++++</flag-icon>+++
 
-Click *Recently Viewed*  on the left side of your link:https://app.mode.com/home/[{brand} home page] to view an ordered list of all the reports you recently viewed, starting from the most recent, no matter where those reports currently live or who created them.
+Click *Recently Viewed*  on the left side of your link:https://app.mode.com/home/[{brand} home page,window=_blank] to view an ordered list of all the reports you recently viewed, starting from the most recent, no matter where those reports currently live or who created them.
 
 == Pin a report
 //+++<flag-icon>++++++</flag-icon>+++

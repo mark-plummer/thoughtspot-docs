@@ -14,7 +14,7 @@
 
 Use parameters to make reports more scalable, re-usable, and interactive by allowing viewers to modify the data returned by a report without modifying its code.
 
-Parameters are defined and configured using the link:http://liquidmarkup.org/[Liquid template language], and a single report can accept input from multiple parameters at once.
+Parameters are defined and configured using the link:http://liquidmarkup.org/[Liquid template language,window=_blank], and a single report can accept input from multiple parameters at once.
 {brand} reports offer four different kinds of parameters:
 
 * {blank}<<select,**Select**>>
@@ -39,11 +39,11 @@ For readability, we suggest you place this code below your SQL code.
 At run time, {brand} replaces each object reference in your SQL code with the corresponding parameter's input value before sending the code to your database for execution.
 
 Let's walk through a simple example.
-link:https://app.mode.com/tutorial/reports/f14811830f89?param_acquired_year=2013[This report] takes input from one parameter and displays companies in the link:https://www.crunchbase.com/[Crunchbase] database that were acquired that year:
+link:https://app.mode.com/tutorial/reports/f14811830f89?param_acquired_year=2013[This report,window=_blank] takes input from one parameter and displays companies in the link:https://www.crunchbase.com/[Crunchbase,window=_blank] database that were acquired that year:
 
 image::parameter-example.png[Parameter Example]
 
-If you link:https://app.mode.com/tutorial/reports/f14811830f89/queries/250a3e4fd4cd[open the report details] and check the box next to *Show parameter template code*, you'll see the following:
+If you link:https://app.mode.com/tutorial/reports/f14811830f89/queries/250a3e4fd4cd[open the report details,window=_blank] and check the box next to *Show parameter template code*, you'll see the following:
 
 [source,sql]
 ----
@@ -85,7 +85,7 @@ When defining parameters in a report's code, keep the following in mind:
 * You can reference a parameter as many times as you want across all of the report's queries.
 * Define each parameter only once and ensure each parameter in the report has a unique name.
 
-Parameter definition syntax is similar to a link:http://ansible-docs.readthedocs.io/zh/stable-2.0/rst/YAMLSyntax.html[YAML dictionary] and therefore requires specific formatting.
+Parameter definition syntax is similar to a link:http://ansible-docs.readthedocs.io/zh/stable-2.0/rst/YAMLSyntax.html[YAML dictionary,window=_blank] and therefore requires specific formatting.
 Parameter names must not have leading spaces, and properties must be indented by two spaces.
 The general format for a parameter definition is:
 
@@ -103,14 +103,14 @@ parameter_name:
 
 The parameter's name is defined on the first line and its properties are defined on subsequent lines with two spaces of indentation.
 
-Throughout this section, we'll use a more in-depth example link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93[report].
+Throughout this section, we'll use a more in-depth example link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93[report,window=_blank].
 It contains a stacked bar chart that changes depending on the configuration of a number of parameters.
 
 [#select]
 === Select
 
 A Select parameter allows the viewer to choose exactly one option from a pre-defined drop-down list.
-The link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93/queries/3dec3e1954b1[example report] (check *Show parameter template code*) defines a parameter named `shipment_status` with two options ("delivered" and "failure") that the user must choose between.
+The link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93/queries/3dec3e1954b1[example report,window=_blank] (check *Show parameter template code*) defines a parameter named `shipment_status` with two options ("delivered" and "failure") that the user must choose between.
 By default, "delivered" is selected.
 
 [source,sql]
@@ -132,7 +132,7 @@ The exact value selected will be substituted into the report's SQL code wherever
 === Multiselect
 
 A Multiselect parameter allows the viewer to choose zero, one, or many options among a pre-defined list.
-The link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93/queries/3dec3e1954b1[example report] (check *Show parameter template code*) defines a parameter named `sales_region` with four possible options ("Northeast", "Midwest", "West", and "Southeast") that the user can choose from.
+The link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93/queries/3dec3e1954b1[example report,window=_blank] (check *Show parameter template code*) defines a parameter named `sales_region` with four possible options ("Northeast", "Midwest", "West", and "Southeast") that the user can choose from.
 By default, "Northeast" and "West" are selected.
 
 [source,sql]
@@ -165,7 +165,7 @@ For example:
 |===
 
 A Multiselect parameter may contain a maximum of 1000 options.
-Because Multiselect parameters can return zero, one, or many values, you'll want to evaluate them using the link:https://www.w3schools.com/sql/sql_in.asp[IN operator] or equivalent syntax.
+Because Multiselect parameters can return zero, one, or many values, you'll want to evaluate them using the link:https://www.w3schools.com/sql/sql_in.asp[IN operator,window=_blank] or equivalent syntax.
 
 [discrete]
 ===== The optional `input_type` property
@@ -230,7 +230,7 @@ NOTE: We currently support up to 1 MB of data within a single multiselect dropdo
 === Text
 
 A text parameter presents the report viewer with a free-form text box that accepts any combination of characters as an input.
-The link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93/queries/3dec3e1954b1[example report] (check *Show parameter template code*) defines a parameter named `order_min` with a default value of "0":
+The link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93/queries/3dec3e1954b1[example report,window=_blank] (check *Show parameter template code*) defines a parameter named `order_min` with a default value of "0":
 
 [source,sql]
 ----
@@ -276,7 +276,7 @@ SELECT * FROM demo.orders WHERE occurred_at >= 0
 === Date
 
 A Date parameter presents the report viewer with a date picker which they can use to choose one date.
-The link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93/queries/3dec3e1954b1[example report] (check *Show parameter template code*) defines a parameter named order_start_date.
+The link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93/queries/3dec3e1954b1[example report,window=_blank] (check *Show parameter template code*) defines a parameter named order_start_date.
 
 [source,sql]
 ----
@@ -308,7 +308,7 @@ IMPORTANT: If you do not include the `default` property when defining a Date par
 === Optional properties
 
 You can define the following optional properties for any of the above parameter types to customize the user experience.
-Each optional property is used in the link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93[example report] we have been referencing, so you can see each one in action.
+Each optional property is used in the link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93[example report,window=_blank] we have been referencing, so you can see each one in action.
 
 [discrete]
 ===== `default`
@@ -324,7 +324,7 @@ NOTE: A parameter value provided via the report's xref:report-layout-and-present
 ===== `label`
 
 `label` allows you to customize the label placed above the parameter in the report view that users will see.
-If you do not define the `label` property for a parameter, {brand} will automatically link:https://apidock.com/rails/String/humanize[humanize] the parameter's name and display that in the report view.
+If you do not define the `label` property for a parameter, {brand} will automatically link:https://apidock.com/rails/String/humanize[humanize,window=_blank] the parameter's name and display that in the report view.
 
 [discrete]
 ===== `description`
@@ -385,7 +385,7 @@ Instead of setting the `options` property in the parameter definition equal to a
 * `labels`: The name of a column in the SQL query containing the values that will be shown to the report viewer in the dropdown list.
 * `values`: The name of a column in the SQL query containing the values that will be substituted into your SQL code when the parameter choice(s) are selected.
 
-In the link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93[example report], the `sales_rep` parameter is referenced in the WHERE clause of the Main Query, but its definition and the SQL that populates its options are defined in a separate query called Sales Reps Param:
+In the link:https://app.mode.com/modeanalytics/reports/a9e1fe690f93[example report,window=_blank], the `sales_rep` parameter is referenced in the WHERE clause of the Main Query, but its definition and the SQL that populates its options are defined in a separate query called Sales Reps Param:
 
 [source,sql]
 ----
@@ -416,7 +416,7 @@ IMPORTANT: All columns within a Snowflake database are returned in uppercase. Fo
 
 === Ignore empty input
 
-link:https://app.mode.com/benn/reports/0b5d041171fb/queries/5cf7ae4150b0[This query] (check *Show parameter template code*) shows how to modify the WHERE clause of a SQL query to handle an empty Text parameter input by effectively ignoring it.
+link:https://app.mode.com/benn/reports/0b5d041171fb/queries/5cf7ae4150b0[This query,window=_blank] (check *Show parameter template code*) shows how to modify the WHERE clause of a SQL query to handle an empty Text parameter input by effectively ignoring it.
 
 Start by setting the parameter default to `''`:
 
@@ -443,8 +443,8 @@ Because the OR operator is used and both statements are wrapped in parentheses, 
 [#default-to-a-calculated-date]
 === Default to a calculated date
 
-Use link:https://shopify.github.io/liquid/filters/date/[Liquid date filters] to define an object that returns the date you want in the format 'YYYY-MM-DD' to create a calculated default date.
-Use link:http://strftime.net[STRFTIME] syntax to control the output of Liquid's date filter.
+Use link:https://shopify.github.io/liquid/filters/date/[Liquid date filters,window=_blank] to define an object that returns the date you want in the format 'YYYY-MM-DD' to create a calculated default date.
+Use link:http://strftime.net[STRFTIME,window=_blank] syntax to control the output of Liquid's date filter.
 Some examples:
 
 *Default to today's date:*
@@ -475,7 +475,7 @@ date_param:
 {% endform %}
 ----
 
-This method takes the current UTC date and time (`'now'`), converts it to link:https://en.wikipedia.org/wiki/Unix_time[UNIX epoch time] (`date: '%s'`), adds the number of seconds in seven days to that time (`plus: 604800`), and converts that to a string formatted as YYYY-MM-DD (`date: '%Y-%m-%d'`).
+This method takes the current UTC date and time (`'now'`), converts it to link:https://en.wikipedia.org/wiki/Unix_time[UNIX epoch time,window=_blank] (`date: '%s'`), adds the number of seconds in seven days to that time (`plus: 604800`), and converts that to a string formatted as YYYY-MM-DD (`date: '%Y-%m-%d'`).
 
 *Default to the date one year ago:*
 
@@ -501,14 +501,14 @@ This method takes the current UTC date and time (`'now'`), removes everything ex
 You may want to add a parameter to a report that updates based on the value of another parameter.
 For example, a *regions* dropdown that has an option of "northeast" and that leads to a nested dropdown of maine, vermont, etc.
 
-We have an link:https://app.mode.com/modeanalytics/reports/01a832c66385[example report] that shows how to create a dynamic parameter defined by another dynamic parameter.
+We have an link:https://app.mode.com/modeanalytics/reports/01a832c66385[example report,window=_blank] that shows how to create a dynamic parameter defined by another dynamic parameter.
 It does come with a drawback however - with the current infrastructure of how parameters work, it's not possible to have the second dropdown update dynamically after just pressing the run button once.
 You will need to update the first dropdown, hit run, and then update the second dropdown and hit run.
 This is a workaround, so there are limitations.
 
 Alternatively, you can combine parameters and report filters.
 In this way, the report filters act as the second set of dynamic parameters.
-You can view this link:https://app.mode.com/modeanalytics/reports/74dff9646164[example report] that shows how running the parameter value, the filter adjusts accordingly and allows the user to filter the data as desired
+You can view this link:https://app.mode.com/modeanalytics/reports/74dff9646164[example report,window=_blank] that shows how running the parameter value, the filter adjusts accordingly and allows the user to filter the data as desired
 
 [discrete]
 === *Q: How to pass parameters into the notebook?*
@@ -524,7 +524,7 @@ FROM
  benn.nfl_touchdowns
 ----
 
-This is an link:https://app.mode.com/modeanalytics/reports/9387faf8a122/details/queries/61b65545abb9[example report]  (check *Show Parameter Code*) showing how this can be done.
+This is an link:https://app.mode.com/modeanalytics/reports/9387faf8a122/details/queries/61b65545abb9[example report,window=_blank]  (check *Show Parameter Code*) showing how this can be done.
 You can view the Python code by clicking Notebook on the left side panel.
 
 [discrete]
@@ -580,7 +580,7 @@ previous_week:
 {% endform %}
 ----
 
-You can see a live version of this link:https://app.mode.com/benn/reports/bace82532e68[report here].
+You can see a live version of this link:https://app.mode.com/benn/reports/bace82532e68[report here,window=_blank].
 
 You could do this with a single parameter as well.
 For instance, instead of using the `previous_week` parameter in the `if` statement, you could use the `start_date` parameter:

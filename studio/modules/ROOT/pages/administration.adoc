@@ -1,10 +1,10 @@
-_= Administration
+= Administration
 :author: Naomi
 :last_updated: 7/25/24
 :experimental:
 :linkattrs:
 :description: Administration.
-:brand: Mode_
+:brand: Mode
 
 ** xref:authentication-sso.adoc[Authentication and SSO] +
 Ensure your accounts settings and verify a user’s identity.

@@ -10,7 +10,7 @@
 == Overview
 
 The report is where analysis happens in {brand}.
-Navigate to the link:https://app.mode.com/home/[{brand} home page] and click the *New* image:modal-add.svg[new] button in the upper right corner of the window to create a new report and get started.
+Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and click the *New* image:modal-add.svg[new] button in the upper right corner of the window to create a new report and get started.
 All new reports are automatically added to your xref:spaces.adoc#personal-space[Personal Collection].
 
 After creating a Report, you will be taken to the editor to write your first query.
@@ -132,24 +132,24 @@ SELECT * FROM temp1;
 
 === Overview
 
-You can extend the power of your SQL queries in many interesting ways by using the open source link:http://liquidmarkup.org/[Liquid template language].
+You can extend the power of your SQL queries in many interesting ways by using the open source link:http://liquidmarkup.org/[Liquid template language,window=_blank].
 Using Liquid, the SQL behind your {brand} reports can be manipulated at report run time using loops, if/then statements, and other advanced structures that might be difficult or impossible to do in SQL alone.
 Several examples of these methods are shown below.
 
 Whenever a query is executed in a {brand} report, Liquid code (if present) is evaluated first before the code is sent to your database for execution as SQL.
 Liquid code is composed of:
 
-*link:https://help.shopify.com/themes/liquid/objects[Objects]* which contain attributes that are used to render dynamic content into your SQL query at run time.
+*link:https://help.shopify.com/themes/liquid/objects[Objects,window=_blank]* which contain attributes that are used to render dynamic content into your SQL query at run time.
 Objects are wrapped in double curly brackets `+{{...}}+`.
 
-*link:https://help.shopify.com/themes/liquid/filters[Filters]* which are simple methods that modify the output of numbers, strings, variables and objects.
+*link:https://help.shopify.com/themes/liquid/filters[Filters,window=_blank]* which are simple methods that modify the output of numbers, strings, variables and objects.
 They are placed inside Object tags `{{ }}` and denoted with a `|` character.
 
-*link:https://help.shopify.com/themes/liquid/tags[Tags]* which make up the programming logic (for example, if/else, for, etc.) that tells your code what to do.
+*link:https://help.shopify.com/themes/liquid/tags[Tags,window=_blank]* which make up the programming logic (for example, if/else, for, etc.) that tells your code what to do.
 They are wrapped in a single curly bracket and a percent sign `+{%...%}+`.
 Tags don't themselves produce output that gets rendered into your query, but they may instruct {brand} to render, ignore, repeat, or otherwise modify specific lines of SQL code.
 
-Full documentation on what's possible with Liquid is available on the link:https://help.shopify.com/themes/liquid[Shopify help site] and link:https://shopify.github.io/liquid/[documentation for the Liquid GitHub repo].
+Full documentation on what's possible with Liquid is available on the link:https://help.shopify.com/themes/liquid[Shopify help site,window=_blank] and link:https://shopify.github.io/liquid/[documentation for the Liquid GitHub repo,window=_blank].
 
 === Common techniques
 
@@ -157,7 +157,7 @@ Full documentation on what's possible with Liquid is available on the link:https
 ==== Variables
 
 Use variables in Liquid to make your code more extensible and maintainable.
-Declare a variable using the link:https://help.shopify.com/themes/liquid/tags/variable-tags#assign[`assign`] method.
+Declare a variable using the link:https://help.shopify.com/themes/liquid/tags/variable-tags#assign[`assign`,window=_blank] method.
 For example:
 
 [source,sql]
@@ -178,7 +178,7 @@ NOTE: Variables are scoped only to the query in which they are declared using `a
 
 ==== If/else
 
-Use if/else statements and other link:https://help.shopify.com/themes/liquid/tags/control-flow-tags[control flow tags] to change your SQL code dynamically in response to inputs from things like <<variables,variables>> or xref:parameters.adoc[parameters].
+Use if/else statements and other link:https://help.shopify.com/themes/liquid/tags/control-flow-tags[control flow tags,window=_blank] to change your SQL code dynamically in response to inputs from things like <<variables,variables>> or xref:parameters.adoc[parameters].
 In the following example, the query that is executed against the database will be different depending on the value of the `car_type` variable:
 
 [source,sql]
@@ -209,7 +209,7 @@ SELECT * FROM car_table
 
 ==== Loops
 
-Loops and other Liquid link:https://help.shopify.com/themes/liquid/tags/iteration-tags[iteration tags] can be used to programmatically generate lists of variables, join statements, columns to select, unions, and other things.
+Loops and other Liquid link:https://help.shopify.com/themes/liquid/tags/iteration-tags[iteration tags,window=_blank] can be used to programmatically generate lists of variables, join statements, columns to select, unions, and other things.
 The query below shows a simple example of a For loop:
 
 [source,sql]
@@ -257,12 +257,12 @@ WHERE name IN (
 For every iteration of the loop except the last one, `forloop.last` returns false.
 Therefore, the value in the `unless` statement--a comma--gets added to your query after every name except the last one.
 
-This link:https://app.mode.com/benn/reports/a1a90160334c/runs/f98a3c7657cf/query[query] contains two examples of a loop.
-This link:https://app.mode.com/benn/reports/24f312e9c69a/runs/7e110a436792/query[query], which uses the `assign` method below, shows one example.
+This link:https://app.mode.com/benn/reports/a1a90160334c/runs/f98a3c7657cf/query[query,window=_blank] contains two examples of a loop.
+This link:https://app.mode.com/benn/reports/24f312e9c69a/runs/7e110a436792/query[query,window=_blank], which uses the `assign` method below, shows one example.
 
 ==== Array variables
 
-Typically, `for` loops cycle through collections of values, such as link:https://docs.python.org/3/glossary.html#term-iterable[iterable objects] in Python or vectors in R.
+Typically, `for` loops cycle through collections of values, such as link:https://docs.python.org/3/glossary.html#term-iterable[iterable objects,window=_blank] in Python or vectors in R.
 Liquid doesn't allow you to create arrays of values the same way you would in most languages (for example, `list = ['candy','beans']`).
 To create an array that you can iterate over in a `for` loop, you have to use the `split` filter on a delimited string and assign the result to a variable.
 For example:
@@ -299,7 +299,7 @@ A custom query header is prepended to every query run against that data source a
 [#sql-keyboard-shortcuts]
 == SQL keyboard shortcuts
 
-{brand}'s SQL Editor runs using the Ace Editor library, and we have enabled most of the link:https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts[default keyboard shortcuts] for things like commenting or indenting blocks of text.
+{brand}'s SQL Editor runs using the Ace Editor library, and we have enabled most of the link:https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts[default keyboard shortcuts,window=_blank] for things like commenting or indenting blocks of text.
 We've also added some {brand}-specific keyboard shortcuts:
 
 === General

@@ -33,7 +33,7 @@ Key elements of the {brand} Notebook:
 * {blank}<<toolbar,**Toolbar**>>
 ** Where you can manipulate and run your Notebook, restart the session, export, and more.
 * {blank}<<working-with-cells,**Cells**>>
-** Compose code and view results in a *Code* cell, or contextualize your work with a link:https://en.wikipedia.org/wiki/Markdown[Markdown] cell.
+** Compose code and view results in a *Code* cell, or contextualize your work with a link:https://en.wikipedia.org/wiki/Markdown[Markdown,window=_blank] cell.
 * *Resources Panel*
 ** The right-side panel provides resources to help you, including keyboard shortcuts, external documentation, and supported libraries/packages.
 * {blank}<<notebook-status,**Status Indicator**>>
@@ -74,7 +74,7 @@ image::celltoolbar.png[Cell Toolbar]
 
 There are two types of cells in the Notebook:
 
-*Markdown* - link:https://en.wikipedia.org/wiki/Markdown[Markdown] cells allow you to add context to your analysis.
+*Markdown* - link:https://en.wikipedia.org/wiki/Markdown[Markdown,window=_blank] cells allow you to add context to your analysis.
 Markdown cells contains text formatted using Markdown and display their output in-place when it's run.
 
 *Code* - Input Python or R code into the IN section of the cell.
@@ -113,9 +113,9 @@ However, the way you access those results differs depending on the language you'
 In each case, all query results are delivered to the Notebook as a custom object called `datasets`.
 `datasets` contains objects of the following type:
 
-*Python:* link:https://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe[pandas DataFrame]
+*Python:* link:https://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe[pandas DataFrame,window=_blank]
 
-*R:* link:https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/data.frame[Data Frame]
+*R:* link:https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/data.frame[Data Frame,window=_blank]
 
 In your Notebook code, reference query result sets in the `datasets` list by query name, position, or token.
 For example:
@@ -278,7 +278,7 @@ WARNING: Some libraries require authentication with credentials (for example, Tw
 
 === Python
 
-First, enter the following command into a Notebook cell for each public package that you want to install into the Python Notebook, as demonstrated below with the link:https://pypi.org/project/bloom-filter/[bloom-filter] package (replace `bloom-filter` with the name of the package you want to install):
+First, enter the following command into a Notebook cell for each public package that you want to install into the Python Notebook, as demonstrated below with the link:https://pypi.org/project/bloom-filter/[bloom-filter,window=_blank] package (replace `bloom-filter` with the name of the package you want to install):
 
 [source,python]
 ----
@@ -308,7 +308,7 @@ You may now use any of the methods or functionality included in the library in s
 
 === R
 
-First, enter the following command into a Notebook cell for each public package that you want to install into the R Notebook, as demonstrated below with the link:https://cran.r-project.org/web/packages/random/index.html[random] package (replace `random` with the name of the package you want to install):
+First, enter the following command into a Notebook cell for each public package that you want to install into the R Notebook, as demonstrated below with the link:https://cran.r-project.org/web/packages/random/index.html[random,window=_blank] package (replace `random` with the name of the package you want to install):
 
 [source,r]
 ----
@@ -417,7 +417,7 @@ Each Notebook session has the following resources available, depending on the ve
 | 30 minutes
 | No
 
-| link:https://mode.com/compare-plans/[*Mode Paid Plans*]
+| link:https://mode.com/compare-plans/[*Mode Paid Plans*,window=_blank]
 | 16 GB
 | 16 Cores
 | 12 hours
@@ -448,7 +448,7 @@ FROM
  benn.nfl_touchdowns
 ----
 
-This is an link:https://app.mode.com/modeanalytics/reports/9387faf8a122/details/queries/61b65545abb9[example report] (check *Show Parameter Code*) showing how this can be done.
+This is an link:https://app.mode.com/modeanalytics/reports/9387faf8a122/details/queries/61b65545abb9[example report,window=_blank] (check *Show Parameter Code*) showing how this can be done.
 You can view the Python code by clicking Notebook on the left side panel.
 
 [discrete]
@@ -506,6 +506,6 @@ This tutorial is designed for users with little or no experience with Python, an
 If you're interested in learning how to use Python for business analysis, this tutorial is a great place to start.
 It includes step-by-step instructions and hands-on exercises to help you apply what you learn to real-world scenarios.
 
-To access the tutorial, please visit the link:https://mode.com/python-tutorial/[page here].
-If you're interested in learning SQL as well, you can access this link:https://mode.com/sql-tutorial/[page here].
+To access the tutorial, please visit the link:https://mode.com/python-tutorial/[page here,window=_blank].
+If you're interested in learning SQL as well, you can access this link:https://mode.com/sql-tutorial/[page here,window=_blank].
 We hope you find it helpful, and we look forward to hearing your feedback.

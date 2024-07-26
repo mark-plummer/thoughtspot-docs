@@ -9,7 +9,7 @@
 
 == Create a new Report
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and (if necessary) sign in to {brand}.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and (if necessary) sign in to {brand}.
 . Click on the *New* image:modal-add.svg[new] button in the upper right corner of the window.
 . A new, empty Report will be created in your personal Collection.
 
@@ -23,7 +23,7 @@ To star a Report:
 an empty star will appear next to the Report name.
 . Click on the *Star* image:inline-star-default.svg[star].
 
-To see a list of all the starred reports, regardless of where they live, click on *Starred* on the left side of your link:https://app.mode.com/home/[{brand} home page].
+To see a list of all the starred reports, regardless of where they live, click on *Starred* on the left side of your link:https://app.mode.com/home/[{brand} home page,window=_blank].
 To remove a star from a Report, repeat the above steps.
 
 == Duplicate a Report

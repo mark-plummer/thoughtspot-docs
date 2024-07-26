@@ -12,7 +12,7 @@
 A Collection is a place for {brand} users to organize reports and Datasets around a team, project, or common theme.
 All {brand} reports and Datasets live in exactly one Collection, but a report or Dataset can be easily xref:organizing-reports.adoc#move-a-report-to-another-collection[moved] to a different Collection within the same {brand} Workspace.
 
-Collections that you belong to are listed on the left side of your link:https://app.mode.com/home/[{brand} home page] under the *Collections* section.
+Collections that you belong to are listed on the left side of your link:https://app.mode.com/home/[{brand} home page,window=_blank] under the *Collections* section.
 Click on a Collection to see a list of all of the reports and Datasets in that Collection.
 At the top of your screen, you can toggle to get different views of the available content in the Collection.
 You can also sort reports and Datasets by name or by when they were last edited.
@@ -65,7 +65,7 @@ This is true even if the most recent run of the report only queries the {brand} 
 
 Any member of a Workspace can create a new Collection:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and sign in if you aren't already.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in if you aren't already.
 . Click on *Collections* in the navigation panel to access all of your Collections.
 . All Collections in the Workspace will now be listed on the right.
 Click on *Create Collection* in the upper right.
@@ -85,7 +85,7 @@ Before you delete a Collection, you must first remove all reports from that Coll
 You can either move the reports to another Collection or delete the reports.
 To delete a Collection once it contains no reports:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and sign in if you aren't already.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in if you aren't already.
 . Open the Collection you'd like to delete, either by clicking on its name in the Collections section (if you are a member) or by clicking on *Collections* in the navigation panel, finding it in the list, and clicking on the Collection.
 . At the top of the window, click on the *gear* image:settings-mini-hover.svg[gear] next to the Collection's name.
 . Click *Delete Collection*.
@@ -98,7 +98,7 @@ NOTE: You cannot delete your personal Collection. While you cannot delete the co
 
 Only users with Editor access to a Collection can change the name or description.
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and sign in if you aren't already.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in if you aren't already.
 . Open the Collection you'd like to rename, either by clicking on its name in the Collections section (if you are a member) or by clicking on *Collections* in the navigation panel.
 . At the top of the window, click on the *gear* image:settings-mini-hover.svg[gear] next to the Collection's name.
 . Click *Rename Collection*.
@@ -126,7 +126,7 @@ For more information on how to manage access, check out xref:permissions.adoc#se
 Only users with *Editor* access can add new members to a Collection.
 Here's how:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page] and sign in if you aren't already.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in if you aren't already.
 . Open the Collection that you want to add members to, either by clicking on its name in the Collections section (if you are a member), or by clicking on *Collections* in the navigation panel, finding it in the list, and clicking on the Collection.
 . At the top of the window, click on the *gear* image:settings-mini-hover.svg[gear] next to the Collection's name.
 . Click *Add Members*.
