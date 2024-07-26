@@ -23,8 +23,6 @@ ui:
     snapshot: true
 asciidoc:
   attributes:
-    #software: true
-    #cloud: false
     page-company: ThoughtSpot
     tabs: tabs
     product: Analyst Studio
