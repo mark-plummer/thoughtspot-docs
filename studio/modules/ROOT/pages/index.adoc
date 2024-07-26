@@ -1,5 +1,5 @@
 = ThoughtSpot {product} Documentation
-:page-layout: home-branch-cloud
+:page-layout: home-branch-blank
 
 ++++
 <style>
