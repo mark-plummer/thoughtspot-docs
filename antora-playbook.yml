@@ -1,7 +1,6 @@
 site:
   title: ThoughtSpot Cloud
   url: https://analyst-studio-preview.netlify.app
-  start_page: analyst-studio::index.adoc
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
