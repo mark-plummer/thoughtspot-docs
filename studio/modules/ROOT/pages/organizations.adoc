@@ -525,7 +525,8 @@ Please note that if a user is deactivated, the following may experience technica
 
 *White-Label Embeds:*  Any White-Label Embed created by the user will experience technical issues.
 In order to resolve this issue, you can create a duplicate of the report and use the URL for the duplicated report as the embed URL instead, as you are the creator of the duplicated report.
-For further assistance, please refer to error #4 in our xref:white-label-embeds.adoc#troubleshooting[troubleshooting guide].
+
+//For further assistance, please refer to error #4 in our xref:white-label-embeds.adoc#troubleshooting[troubleshooting guide].
 
 *Managing Private and Personal Collection Reports:* Please be aware that since {brand} reports are owned by workspaces rather than individuals, all reports created by the user should remain unchanged after they leave the workspace.
 Reports located in personal collections can still be accessed by workspace admins if they have the report URLs.

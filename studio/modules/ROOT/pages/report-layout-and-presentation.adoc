@@ -205,7 +205,9 @@ Note that adding custom HTML elements within the grid generated for you by {bran
 
 The report's <<name-and-description,name and description>> are automatically added to all reports inside a `<div>` with the class `mode-header`.
 Either can be removed from the layout by deleting them using the HTML editor.
-When a report is xref:white-label-embeds.adoc[embedded], the contents of this `<div>` (including the name and description), will not be rendered in the embed output unless the `embed-hidden` class is removed.
+When a report is embedded, the contents of this `<div>` (including the name and description), will not be rendered in the embed output unless the `embed-hidden` class is removed.
+
+//When a report is xref:white-label-embeds.adoc[embedded], the contents of this `<div>` (including the name and description), will not be rendered in the embed output unless the `embed-hidden` class is removed.
 
 [#external-assets]
 === External assets

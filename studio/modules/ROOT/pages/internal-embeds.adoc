@@ -16,7 +16,9 @@ Here's an example of what an Internal Embed looks like:+++<iframe src="https://a
 
 Click the green *Powered by {brand}* link at the bottom of the embed to open the underlying report in {brand}.
 
-NOTE: Generally, you must be logged in to {brand} and have access to the underlying report in order to view an Internal Embed. However, the above embedded report is built on xref:managing-database-connections.adoc#mode-public-warehouse[{brand}'s Public Warehouse] and is therefore viewable by anyone on the internet. Learn more about xref:white-label-embeds.adoc#embedding-reports-built-using-the-mode-public-warehouse[embedding reports built on {brand}'s Public Warehouse].
+NOTE: Generally, you must be logged in to {brand} and have access to the underlying report in order to view an Internal Embed. However, the above embedded report is built on xref:managing-database-connections.adoc#mode-public-warehouse[{brand}'s Public Warehouse] and is therefore viewable by anyone on the internet.
+
+//Learn more about xref:white-label-embeds.adoc#embedding-reports-built-using-the-mode-public-warehouse[embedding reports built on {brand}'s Public Warehouse].
 
 == Create an internal embed URL
 

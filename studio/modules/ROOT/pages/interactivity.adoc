@@ -47,7 +47,9 @@ This option is also available in the chart designer and Explorations.
 * *Granularity controls*: Available when the chart's X-axis is a time-series, and more granular data is available in the underlying data.
 This option can be disabled by un-checking "`Show granularity controls`" in the chart settings gear icon in the chart designer.
 +
-IMPORTANT: For security purposes, when viewing an xref:white-label-embeds.adoc[embedded report], the **View Data** option is not available, and the **Explore** option is only available to logged-in {brand} users with access to the underlying report.
+IMPORTANT: For security purposes, when viewing an embedded report, the **View Data** option is not available, and the **Explore** option is only available to logged-in {brand} users with access to the underlying report.
+
+//IMPORTANT: For security purposes, when viewing an xref:white-label-embeds.adoc[embedded report], the **View Data** option is not available, and the **Explore** option is only available to logged-in {brand} users with access to the underlying report.
 
 == Drill anywhere
 
