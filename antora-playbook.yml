@@ -5,10 +5,6 @@ site:
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
-  - url: ./
-    branches: HEAD
-    start_paths:
-      - analyst-studio/
   - url: git@github.com:thoughtspot/thoughtspot-docs.git
     # Cloud docs branches
     branches: [ 'mode-a-studio']
