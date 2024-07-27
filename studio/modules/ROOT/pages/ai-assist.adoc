@@ -18,12 +18,12 @@ image::AI-assist-example.gif[AI Assist pane]
 === How it works:
 
 * Write and run your SQL in the editor on the left as you would normally.
-* Incorporate natural language into your edits by adding a special AI comment type via the `--!`symbol combination.
-* When you're ready, generate new SQL on the right by clicking the Generate button (Shift + Opt/Alt + N).
+* Incorporate natural language into your edits by adding a special AI comment type via the `--!` symbol combination.
+* When you're ready, generate new SQL on the right by clicking the Generate button (kbd:[Shift+Opt/Alt+N]).
 
 NOTE: When you generate SQL, {brand} pulls the currently selected warehouse's name, column names, and data types for all tables explicitly referenced in your SQL, and sends them and your SQL edits to OpenAI for context. {brand} does **not** share any sample column values.
 
-* Once the generated code returns, you can compare it with your original code, insert the SQL in place of your original edits (Shift + Opt/Alt + I), or copy and paste manually as needed.
+* Once the generated code returns, you can compare it with your original code, insert the SQL in place of your original edits (kbd:[Shift+Opt/Alt+I]), or copy and paste manually as needed.
 Alternatively, you can revise your edits on the left and regenerate.
 
 === Integrating natural language into your edits
@@ -45,7 +45,7 @@ total sales by manager
 Notice we aren't specifying how to calculate total sales, or referring to a column name explicitly.
 These are aspects AI Assist will fill in on our behalf.
 
-Next, we'll add a FROM statement to provide some context about the data.
+Next, we'll add a `FROM` statement to provide some context about the data.
 
 [source]
 ----
@@ -65,7 +65,7 @@ FROM mode.dunder_mifflin_paper_sales ps
 JOIN novaksam.dm_employees e ON --! account manager
 ----
 
-Finally, let's add an ORDER BY and update the SELECT statement to describe a few of the columns we'd like to add from the second, joined table.
+Finally, let's add an `ORDER BY` and update the `SELECT` statement to describe a few of the columns we'd like to add from the second, joined table.
 Then, we'll click the generate button to initiate new, AI-generated SQL.
 
 [source]
@@ -103,7 +103,7 @@ ORDER BY
     total_sales DESC;
 ----
 
-Notice that the explicit column names, join, and sales calculation have all been completed, and that a GROUP BY clause has been added.
+Notice that the explicit column names, join, and sales calculation have all been completed, and that a `GROUP BY` clause has been added.
 We can insert this code to run the SQL and use the results.
 
 === {brand} AI Assist security
@@ -138,7 +138,7 @@ a| `JOIN dim.users` +
 `ON --! account rep`
 
 | Refine data scope
-| Describe how you want to limit your data, have AI define the WHERE clause.
+| Describe how you want to limit your data, have AI define the `WHERE` clause.
 a| `--! exclude returns` +
 `WHERE --! email address contains mode`
 

@@ -29,7 +29,7 @@ To add a new query, click on the plus button to the right of the Data header.
  ** Each visualization that you build using a query's data.
 Use the overflow menu to add or remove your Chart from the Report Builder, duplicate, xref:explorations.adoc#view-saved-explorations[explore], and more.
 Or, click the plus button below your chart to add a new one.
-
++
 TIP: To tell which charts you've added to the Report Builder, look for a blue checkmark symbol within each chart's icon.
 
 . *Code editor*: Compose your SQL code here.
@@ -48,7 +48,7 @@ Select a historical query run and click *Open* to replace the code currently in 
 ** *Editor Settings:* Toggle on/off settings for the code editor.
 These options allow you to personalize the editor to fit your preferences.
 Choose between light and dark modes, side-by-side or stacked panels, Limit 100 on/off by default, and other helpful autocomplete settings.
-To turn autocomplete on or off, you can toggle the switch in the Autocomplete Settings or you can disable (and re-enable) it by hitting CMD + Option + a (Control + ALT + a on a PC) in the editor.
+To turn autocomplete on or off, you can toggle the switch in the Autocomplete Settings or you can disable (and re-enable) it by hitting kbd:[Command+Option+A] (kbd:[Control+ALT+A] on a PC) in the editor.
 . *Data view*: After you successfully execute a SQL query, the tabular results, fields, and syntax are displayed here, which you can drag to resize.
 
 ** Use the Data tab to consume your results, share the URL to that specific query, export the raw query data as a CSV, or copy the data to the clipboard.
@@ -107,7 +107,7 @@ Given the right database permissions, you aren't limited to `SELECT` statements;
 you can do anything your database lets you do, including:
 
 * Creating, dropping, and altering tables and views.
-* INSERT, DELETE and UPDATE operations.
+* `INSERT`, `DELETE`, and `UPDATE` operations.
 * Creating, modifying, or employing user-defined functions.
 
 {brand} will execute code containing multiple SQL statements, separated by semicolons.
@@ -308,80 +308,80 @@ We've also added some {brand}-specific keyboard shortcuts:
 | Action | Mac | PC
 
 | Run query
-| `⌘` `Return`
-| `Ctrl` `Enter`
+| kbd:[`⌘`+`Return`]
+| kbd:[`Ctrl`+`Enter`]
 
 | Save query
-| `⌘` `S`
-| `Ctrl` `S`
+| kbd:[`⌘`+`S`]
+| kbd:[`Ctrl`+`S`]
 
 | Switch to Report Builder
-| `Ctrl` `I`
-| `Alt` `I`
+| kbd:[`Ctrl`+`I`]
+| kbd:[`Alt`+`I`]
 
 | Indent
-| `Tab`
-| `Tab`
+| kbd:[`Tab`]
+| kbd:[`Tab`]
 
 | Outdent
-| `Shift` `Tab`
-| `Shift` `Tab`
+| kbd:[`Shift`+`Tab`]
+| kbd:[`Shift`+`Tab`]
 
 | Add multi-cursor above
-| `Ctrl` `Option` `↑`
-| `Ctrl` `Alt` `↑`
+| kbd:[`Ctrl`+`Option`+`↑`]
+| kbd:[`Ctrl`+`Alt`+`↑`]
 
 | Add multi-cursor below
-| `Ctrl` `Option` `↓`
-| `Ctrl` `Alt` `↓`
+| kbd:[`Ctrl`+`Option`+`↓`]
+| kbd:[`Ctrl`+`Alt`+`↓`]
 
 | Undo
-| `⌘` `Z`
-| `Ctrl` `Z`
+| kbd:[`⌘`+`Z`]
+| kbd:[`Ctrl`+`Z`]
 
 | Redo
-| `⌘` `Y`
-| `Ctrl` `Y`
+| kbd:[`⌘`+`Y`]
+| kbd:[`Ctrl`+`Y`]
 
 | Toggle comment
-| `⌘` `/`
-| `Ctrl` `/`
+| kbd:[`⌘`+`/`]
+| kbd:[`Ctrl`+`/`]
 
 | Change to lower case
-| `Ctrl` `Shift` `U`
-| `Ctrl` `Shift` `U`
+| kbd:[`Ctrl`+`Shift`+`U`]
+| kbd:[`Ctrl`+`Shift`+`U`]
 
 | Change to upper case
-| `Ctrl` `U`
-| `Ctrl` `U`
+| kbd:[`Ctrl`+`U`]
+| kbd:[`Ctrl`+`U`]
 
 | Fold selection
-| `⌘` `F1`
-| `Ctrl` `F1`
+| kbd:[`⌘`+`F1`]
+| kbd:[`Ctrl`+`F1`]
 
 | Unfold
-| `⌘` `Shift` `F1`
-| `Ctrl` `Shift` `F1`
+| kbd:[`⌘`+`Shift`+`F1`]
+| kbd:[`Ctrl`+`Shift`+`F1`]
 
 | Find
-| `⌘` `F`
-| `Ctrl` `F`
+| kbd:[`⌘`+`F`]
+| kbd:[`Ctrl`+`F`]
 
 | Replace
-| `⌘` `Option` `F`
-| `Ctrl` `H`
+| kbd:[`⌘`+`Option`+`F`]
+| kbd:[`Ctrl`+`H`]
 
 | Find next
-| `⌘` `G`
-| `Ctrl` `K`
+| kbd:[`⌘`+`G`]
+| kbd:[`Ctrl`+`K`]
 
 | Find previous
-| `⌘ Shift G`
-| `Ctrl` `Shift` `K`
+| kbd:[`⌘+Shift+G`]
+| kbd:[`Ctrl`+`Shift`+`K`]
 
 | Open autocomplete
-| `Ctrl` `Space`
-| `Ctrl` `Space`
+| kbd:[`Ctrl`+`Space`]
+| kbd:[`Ctrl`+`Space`]
 |===
 
 === Selection
@@ -390,44 +390,44 @@ We've also added some {brand}-specific keyboard shortcuts:
 | Action | Mac | PC
 
 | Select All
-| `⌘` `A`
-| `Ctrl` `A`
+| kbd:[`⌘`+`A`]
+| kbd:[`Ctrl`+`A`]
 
 | Select left
-| `Shift` `←`
-| `Shift` `←`
+| kbd:[`Shift`+`←`]
+| kbd:[`Shift`+`←`]
 
 | Select right
-| `Shift` `→`
-| `Shift` `→`
+| kbd:[`Shift`+`→`]
+| kbd:[`Shift`+`→`]
 
 | Select word left
-| `Option` `Shift` `←`
-| `Ctrl` `Shift` `←`
+| kbd:[`Option`+`Shift`+`←`]
+| kbd:[`Ctrl`+`Shift`+`←`]
 
 | Select word right
-| `Option` `Shift` `→`
-| `Ctrl` `Shift` `→`
+| kbd:[`Option`+`Shift`+`→`]
+| kbd:[`Ctrl`+`Shift`+`→`]
 
 | Select to line start
-| `⌘` `Shift` `←`
-| `Alt` `Shift` `←`
+| kbd:[`⌘`+`Shift`+`←`]
+| kbd:[`Alt`+`Shift`+`←`]
 
 | Select to line end
-| `⌘` `Shift` `→`
-| `Alt` `Shift` `→`
+| kbd:[`⌘`+`Shift`+`→`]
+| kbd:[`Alt`+`Shift`+`→`]
 
 | Select up
-| `Shift` `↑`
-| `Shift` `↑`
+| kbd:[`Shift`+`↑`]
+| kbd:[`Shift`+`↑`]
 
 | Select down
-| `Shift` `↓`
-| `Shift` `↓`
+| kbd:[`Shift`+`↓`]
+| kbd:[`Shift`+`↓`]
 
 | Duplicate selection
-| `⌘` `Shift` `D`
-| `Ctrl` `Shift` `D`
+| kbd:[`⌘`+`Shift`+`D`]
+| kbd:[`Ctrl`+`Shift`+`D`]
 |===
 
 === Go to
@@ -436,36 +436,36 @@ We've also added some {brand}-specific keyboard shortcuts:
 | Action | Mac | PC
 
 | Go to word left
-| `Option` `←`
-| `Ctrl` `←`
+| kbd:[`Option`+`←`]
+| kbd:[`Ctrl`+`←`]
 
 | Go to word right
-| `Option` `→`
-| `Ctrl` `→`
+| kbd:[`Option`+`→`]
+| kbd:[`Ctrl`+`→`]
 
 | Go line up
-| `Ctrl` `P`
-| `↑`
+| kbd:[`Ctrl`+`P`]
+| kbd:[↑]
 
 | Go line down
-| `Ctrl` `N`
-| `↓`
+| kbd:[`Ctrl`+`N`]
+| kbd:[↓]
 
 | Go to line start
-| `⌘` `←`
-| `Alt` `←`
+| kbd:[`⌘`+`←`]
+| kbd:[`Alt`+`←`]
 
 | Go to line end
-| `⌘` `Shift` `←`
-| `Alt` `→`
+| kbd:[`⌘`+`Shift`+`←`]
+| kbd:[`Alt`+`→`]
 
 | Go to start
-| `⌘` `↑`
-| `Ctrl` `Home`
+| kbd:[`⌘`+`↑`]
+| kbd:[`Ctrl`+`Home`]
 
 | Go to end
-| `⌘` `↓`
-| `Ctrl` `End`
+| kbd:[`⌘`+`↓`]
+| kbd:[`Ctrl`+`End`]
 |===
 
 === Line operations
@@ -474,40 +474,40 @@ We've also added some {brand}-specific keyboard shortcuts:
 | Action | Mac | PC
 
 | Remove line
-| `⌘` `D`
-| `Ctrl` `D`
+| kbd:[`⌘`+`D`]
+| kbd:[`Ctrl`+`D`]
 
 | Copy lines down
-| `Option` `Shift` `↓`
-| `Alt` `Shift` `↓`
+| kbd:[`Option`+`Shift`+`↓`]
+| kbd:[`Alt`+`Shift`+`↓`]
 
 | Copy lines up
-| `Option` `Shift` `↑`
-| `Alt` `Shift` `↑`
+| kbd:[`Option`+`Shift`+`↑`]
+| kbd:[`Alt`+`Shift`+`↑`]
 
 | Move lines down
-| `Option` `↓`
-| `Alt` `↓`
+| kbd:[`Option`+`↓`]
+| kbd:[`Alt`+`↓`]
 
 | Move lines up
-| `Option` `↑`
-| `Alt` `↑`
+| kbd:[`Option`+`↑`]
+| kbd:[`Alt`+`↑`]
 
 | Remove to line end
-| `Ctrl` `K`
+| kbd:[`Ctrl`+`K`]
 |
 
 | Remove to line start
-| `⌘` `Backspace`
-| `Alt` `Backspace`
+| kbd:[`⌘`+`Backspace`]
+| kbd:[`Alt`+`Backspace`]
 
 | Remove word left
-| `Option` `Backspace`
-| `Ctrl` `Backspace`
+| kbd:[`Option`+`Backspace`]
+| kbd:[`Ctrl`+`Backspace`]
 
 | Remove word right
-| `Option` `Delete`
-| `Ctrl` `Delete`
+| kbd:[`Option`+`Delete`]
+| kbd:[`Ctrl`+`Delete`]
 |===
 
 [#faqs]
@@ -605,7 +605,7 @@ Yes, currently the limit is 160 queries per report.
 For {brand} Business and Enterprise customers, we offer different plans that support increased capacity up to 10 GB.
 
 [discrete]
-=== *2. Query result is too large. Please try adding a LIMIT clause.*
+=== *2. Query result is too large. Please try adding a `LIMIT` clause.*
 
 Query results over 10 GB cannot be returned to {brand} from a database.
 If your results exceed this limit, add a LIMIT statement to your query to return a smaller set of results.

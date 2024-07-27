@@ -9,7 +9,7 @@
 
 == Overview
 
-Create an Exploration to build one-off, personal analysis that doesn't show up in or change the original report.
+Create an Exploration to build one-off, personal analysis that doesn't show up in or change the original Report.
 
 video::oqrt-wWBdBc[youtube]
 
@@ -63,7 +63,7 @@ image::saved-edit-exploration.png[exploring saved Exploration]
 . *Gear icon* image:settings-mini-hover.svg[gear icon] - Access Exploration settings or delete the Exploration while in edit mode.
 . *View* - When editing your Exploration, click this to open the view mode.
 . {blank} <<formatting-your-exploration,**Fields and Format panels**>>
- ** Access the list of available fields in the dataset and choose from formatting options.
+ ** Access the list of available fields in the Dataset and choose from formatting options.
 
 [#toolbar]
 === Toolbar
@@ -73,7 +73,8 @@ image::XMtoolbar.png[toolbar]
 * *Undo/Redo* - Allows you to navigate through changes.
 * *Clear* - Clears out an Exploration's chart configuration, or its sort and filter settings.
 * *Swap axes* - Switch between a horizontal and vertical chart type configuration.
-* *Quick sort* - Sorts your discrete, categorical data by a measure in either ascending or descending order. +
+* *Quick sort* - Sorts your discrete, categorical data by a measure in either ascending or descending order.
++
 NOTE: xref:visualizations.adoc#tables[Table Charts] contain additional options and formatting in the toolbar.
 
 [#formatting-your-exploration]

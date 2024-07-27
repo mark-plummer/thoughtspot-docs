@@ -81,7 +81,7 @@ ORDER BY 3 DESC LIMIT 5;
 
 NOTE: Use backticks around schema, table, and column identifiers. Wrap any LookML measures in the special function AGGREGATE() whether it is in a SELECT clause, a HAVING clause, or an ORDER BY clause. You cannot use LookML measures in a GROUP BY clause.
 
-link:https://cloud.google.com/looker/docs/sql-interface[For more information on how to query using Looker's Open SQL interface, see Looker's documentation,window=_blank].
+link:https://cloud.google.com/looker/docs/sql-interface[More information on how to query using Looker's Open SQL interface, see Looker's documentation,window=_blank]
 
 == Share Semantic Layer Datasets
 

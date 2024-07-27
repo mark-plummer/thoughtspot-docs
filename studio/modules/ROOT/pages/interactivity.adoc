@@ -94,9 +94,7 @@ image::parameters-filters.png[Parameters and Filters]
 
 . {blank}
 //+++<flag-icon>++++++</flag-icon>+++
-xref:parameters.adoc[**Parameters:**]
-+
-Dynamically modify the SQL code of the report before it is executed against the database.
+xref:parameters.adoc[**Parameters:**] Dynamically modify the SQL code of the report before it is executed against the database.
 When a report viewer changes a parameter's value, the report must be re-run to see any changes to the results.
 . *Filters:* Modify the data presented in a report's xref:visualizations.adoc#built-in-charts-and-tables[built-in charts and visualizations].
 Filters are applied to the data visualized in the browser after all of the report's queries have finished running.

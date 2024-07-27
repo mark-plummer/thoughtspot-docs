@@ -129,7 +129,7 @@ The editor provides developer-friendly features including:
 === Definitions
 
 To save time, you can templatize your SQL queries with shared Definitions.
-These are custom SELECT statements that can be referenced in any SQL query.
+These are custom `SELECT` statements that can be referenced in any SQL query.
 These definitions allow users to write business logic in one place and share it across multiple reports and users--simplifying complex queries, reducing repetitive tasks, and ensuring consistency.
 
 === Liquid template language

@@ -25,7 +25,8 @@ image::1-admin-enable.png[admin enable]
 * Avoid using merged cells, and ensure each cell only contains data (graphs and images won't be uploaded).
 * Add headers to the first row, as column names will be auto-generated from the first row.
 * Consider using a dedicated worksheet tab to prep and narrow down the scope of your data.
-When you upload a Google Sheet into {brand}, the entire range is used (including any hidden and filtered cells). +
+When you upload a Google Sheet into {brand}, the entire range is used (including any hidden and filtered cells).
++
 TIP: Use Google Sheet functions to copy data from one tab to another more quickly.
 For example: +
 `='Worksheet 1'!A1` - copies the contents of cell A1 in Worksheet 1.
@@ -132,7 +133,7 @@ To add a new calculated field, first select the *New field* button.
 image::add_calc_fields.png[Adding calculated fields to the dataset]
 
 Then enter the formula for your calculated field, along with adding a name.
-To save the calculated field, select the *Apply & Close* button.
+To save the calculated field, select the *Apply and Close* button.
 
 image::add_calc_fields2.png[Adding calculated fields to the dataset]
 

@@ -9,8 +9,8 @@
 
 == Overview
 
-A {brand} report can be embedded into a Salesforce page layout as a VisualForce page.
-The embed can be configured so that the underlying {brand} report refreshes whenever the page layout is loaded in Salesforce. The report can be run with parameters that are derived from Salesforce objects (for example, a customer ID).
+A {brand} Report can be embedded into a Salesforce page layout as a VisualForce page.
+The embed can be configured so that the underlying {brand} Report refreshes whenever the page layout is loaded in Salesforce. The Report can be run with parameters that are derived from Salesforce objects (for example, a customer ID).
 
 For example:
 
@@ -22,21 +22,22 @@ In order to follow the steps in this guide, the following requirements must be m
 
 * You must have permissions in Salesforce to create VisualForce objects, change page layouts, and access the setup page.
 * The {brand} Workspace containing the target report must be on a link:https://mode.com/compare-plans/[paid plan,window=_blank].
-* Embed viewers must be logged in to {brand}, must be members of the {brand} Workspace containing the embedded report, and must have access to the embedded report. +
-NOTE: The exact steps outlined in this guide assume you are using the Salesforce Classic interface. You may embed a {brand} report using the Salesforce Lightning interface, but the steps below may vary.
+* Embed viewers must be logged in to {brand}, must be members of the {brand} Workspace containing the embedded Report, and must have access to the embedded Report.
++
+NOTE: The exact steps outlined in this guide assume you are using the Salesforce Classic interface. You may embed a {brand} Report using the Salesforce Lightning interface, but the steps below may vary.
 
 == Implementation steps
 
-=== Prepare the report
+=== Prepare the Report
 
-Begin by creating a report in {brand} that displays the data you want to embed inside of Salesforce.
+Begin by creating a Report in {brand} that displays the data you want to embed inside of Salesforce.
 
-If you want the report to display different output depending on the context in which the embed is viewed in Salesforce, xref:parameters.adoc[add parameters].
+If you want the Report to display different output depending on the context in which the embed is viewed in Salesforce, xref:parameters.adoc[add parameters].
 In the example below, we use a parameter called `organization_id`, which represents the unique id of a customer as stored in our internal database.
 The `organization_id` corresponding to each customer is stored in Salesforce on the Account object in the custom field `OrganizationAccountID__c`.
 
 Whenever the page layout containing the embed loads, Salesforce will provide the embed with the value of `OrganizationAccountID__c` for the corresponding Account.
-Then the underlying report will run with that value and the embed will render the results for that Account.
+Then the underlying Report will run with that value and the embed will render the results for that Account.
 
 === Construct an embed URL
 
@@ -49,19 +50,19 @@ https://app.mode.com/[ORG_NAME]/reports/[REPORT_TOKEN]/embed
                                                            ^^^^^^
 ----
 
-TIP: In most cases, you will want to use a standard report link and *not* a static run link when embedding a report in Salesforce. xref:report-scheduling-and-sharing.adoc#link[Learn more about the difference between a report link and static run link].
+TIP: In most cases, you will want to use a standard report link and *not* a static run link when embedding a Report in Salesforce. xref:report-scheduling-and-sharing.adoc#link[Learn more about the difference between a report link and static run link].
 
 Now add a xref:report-layout-and-presentation.adoc#url-query-string[query string] to the report URL to control any parameters defined in the report.
 
-[Note]
+[NOTE]
 ====
-* A field-value pair must be provided for each report xref:parameters.adoc[parameter] (if any are defined) or the embed will not render.
+* A field-value pair must be provided for each Report xref:parameters.adoc[parameter] (if any are defined) or the embed will not render.
 * For parameters with dynamic values based on the context in which the embed is viewed, use a link:https://trailhead.salesforce.com/en/modules/visualforce_fundamentals/units/visualforce_variables_expressions[Visualforce Expression,window=_blank] in the URL.
-For example, `{!Account.OrganizationAccountID__c}` would return the value in the `OrganizationAccountID__c` custom field on the Account object.
+For example, `{!Account.OrganizationAccountID\__c}` would return the value in the `OrganizationAccountID__c` custom field on the Account object.
 * Ensure you link:https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_restful_encodingUtil.htm[URL-encode,window=_blank] any parameter values with special characters (if necessary).
 ====
 
-Finally, include `run=now` in the xref:report-layout-and-presentation.adoc#url-query-string[query string] to ensure the embedded report's data is refreshed whenever the embed is viewed in Salesforce.
+Finally, include `run=now` in the xref:report-layout-and-presentation.adoc#url-query-string[query string] to ensure the embedded Report's data is refreshed whenever the embed is viewed in Salesforce.
 Your embed URL should look like the following:
 
 [source,html]
@@ -76,12 +77,12 @@ https://app.mode.com/octan/reports/2277bhs889d5/embed?run=now&param_organization
 === Define the Visualforce Page
 
 . Click *Setup* next to your name in the upper right corner.
-On the left side under Build \-> Develop, click *Visualforce Pages*.
+On the left side under *Build* \-> *Develop*, click *Visualforce Pages*.
 . All Visualforce Pages currently defined in your Salesforce instance will be listed.
 Click the *New* button at the top of the list.
 . In the Label field, enter a unique name for your Visualforce Page.
 Under Visualforce Markup, replace the template code with the following code, with the embed URL you created in the previous step and the `standardController` property of the `<apex:page>` set to the name of the relevant Salesforce object:
-
++
 [source,html]
 ----
 <!-- Visualforce Markup - General Format -->
@@ -105,7 +106,7 @@ IMPORTANT: Depending on the security settings of users in your Salesforce organi
 
 === Add the Visualforce Page to your desired object's page layout
 
-. Within setup, find and edit the page layout where you want the embed to show (for example, Build \-> Customize \-> Accounts \-> Page Layouts).
+. Within setup, find and edit the page layout where you want the embed to show (for example, *Build \-> Customize \-> Accounts \-> Page Layouts*).
 . At the top of the page layout editor, there is a box on the left with a bunch of options for things you can add to your page layout.
 Select *Visualforce Pages*.
 . Create a new section on the page layout by dragging the `Section` item onto the layout where you want the embed to appear.

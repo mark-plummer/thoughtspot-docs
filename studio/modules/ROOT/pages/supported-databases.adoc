@@ -305,11 +305,11 @@ image:athena-existing-iam-role.png[Athena]
 . Copy and paste the trust relationship from the {brand} connection form into your AWS IAM Role.
 +
 image:mode-athena-iam-role-form.png[Athena]
-. Add in the necessary IAM permissions to access your Athena resource (must include `athena:ListDatabases` and `athena:ListDataCatalogs`)
+. Add in the necessary IAM permissions to access your Athena resource (must include `athena:ListDatabases` and `athena:ListDataCatalogs`).
 . Click *Create Role* in AWS and paste the IAM Role ARN into the {brand} connection form.
 . The S3 Results Directory should be a bucket where Athena can write query results.
 For this bucket, the AWS user specified above needs read and write access.
-The bucket should be a full S3 url (for example, `s3://acme/my/athena/bucket`)
+The bucket should be a full S3 url (for example, `s3://acme/my/athena/bucket`).
 . Click *Connect*.
 You will land on a page that displays your database schema.
 
@@ -823,18 +823,21 @@ Navigate to *Manage keys* under the *Actions* menu for the service account.
 +
 image::GBQ-Setup05.png[BigQuery]
 
-. Navigate to *ADD KEY* > *Create new key*. +
+. Navigate to *ADD KEY* > *Create new key*.
++
 image::GBQ-Setup06.png[BigQuery]
 
 . Click *CREATE* to create and download the JSON key file.
-Save the private key file to a secure place where you can easily retrieve it when setting up the connection in {brand}. +
+Save the private key file to a secure place where you can easily retrieve it when setting up the connection in {brand}.
++
 image::GBQ-Setup07.png[BigQuery]
 
 . Return to {brand}, and begin the process to xref:connecting-mode-to-your-database.adoc[connect a BigQuery database].
 When you see the form to enter your BigQuery credentials, first enter a name (internal to {brand}) for the new database connection.
 . In the Project ID field, enter the BigQuery project ID.
 It can be found in the URL of your Google Developers Console.
-The URL should be structured like this: +
+The URL should be structured like this:
++
 [source]
 ----
  https://console.developers.google.com/apis/library?project=MY_PROJECT_ID
@@ -882,7 +885,7 @@ The URL should be structured like this: `+https://console.developers.google.com/
 You can use {brand} to query Google Sheets in BigQuery.
 The first step, enabling your Google Drive API, only needs to be done once.
 
-. Enable Google Drive API
+. Enable Google Drive API.
 +
 Navigate to the link:https://console.developers.google.com/[Google Developer Console,window=_blank] and select your project from the project dropdown menu.
 From the left menu, click on *Library*.

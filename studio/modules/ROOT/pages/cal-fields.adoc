@@ -43,18 +43,19 @@ Some common scenarios for when you'd want to use calculated fields include:
 (It can be as simple as `SELECT * FROM table`.)
 . Create a new chart.
 . Click the *New field* button to open the calculated field formula editor:
-
++
 image::create_cal_field_dataview.png[Create calculated field in dataview]
 
 . From the chart builder, click the *New field* icon to open the calculated field formula editor:
-
++
 image::create_cal_field_chart_builder.png[Create calculated field in chart builder]
 
 . Type in a name and formula for your calculated field.
 This example uses the formula:   `SUM(CASE [Status] WHEN 'CANCELLED' THEN 1 ELSE 0 END)/SUM(1)`
 +
 This formula checks for whether the order status was cancelled.
-It will sum up the tally of cancelled orders and divide by the total number of rows to calculate the cancellation rate. +
+It will sum up the tally of cancelled orders and divide by the total number of rows to calculate the cancellation rate.
++
 TIP: To see the full list of functions {brand} currently supports, open the panel on the right-hand side.
 +
 image:cal_fields_functions_list.png[]
@@ -88,7 +89,7 @@ These are the four basic components that make up any calculated field:
 * *Operators* - symbols that denote a certain operation, like `+` and `-` .
 * *Functions* - transforms the given input to an expected output, like `COUNT()` and `SUM()`.
 * *Literal expressions* - constant values that are represented as is.
-This includes numbers (`1`), strings (`"This is a string"`), dates (`#2020-06-01#`), booleans (`true`), and `null`.
+This includes numbers (`1`), strings (`"This is a string"`), dates (`\#2020-06-01#`), booleans (`true`), and `null`.
 
 Additionally, calculated fields can also contain:
 
@@ -110,12 +111,12 @@ Comments in calculated fields are always marked by a prepended `//`.
 | image:cal-fields-measure.png[measures]
 
 | *Discrete*
-| Values in the dataset are distinct and separate.
+| Values in the Dataset are distinct and separate.
 These fields are indicated in {brand} with blue icons.
 | image:cal-fields-discrete.png[dimensions]
 
 | *Continuous*
-| Values in the dataset can take on any value within a finite or infinite range.
+| Values in the Dataset can take on any value within a finite or infinite range.
 These fields are indicated in {brand} with green icons.
 | image:cal-fields-continuous.png[measures]
 |===
@@ -183,7 +184,7 @@ These fields are indicated in {brand} with green icons.
 | \<=
 | Less than or equal to
 | Compares two numbers, dates, or strings, and returns either TRUE, FALSE, or NULL.
-| `+4 <= 5 = TRUE +`
+| `4 \<= 5 = TRUE`
 
 | 5
 | <>
@@ -232,7 +233,7 @@ a| `ABS(-4) = 4` +
 
 | `EXP(<number>)`
 | Returns e raised to the power of the given number, where e is the Euler's constant 2.718...
-| `+EXP(2) = e^2 +` +
+| `+EXP(2) = e^2+` +
 `EXP([Order Quantity])`
 
 | `FLOOR(<number>)`
@@ -331,7 +332,8 @@ Start is an optional argument to define from where to start the search.
 
 | `RIGHT(<string>, <count>)`
 | Extract the right-most count characters
-| `RIGHT('hello', 2)` + `RIGHT([Address], 3)`
+| `RIGHT('hello', 2)` +
+`RIGHT([Address], 3)`
 
 | `RTRIM(<string>) `
 | Removes any spaces from the right side of the string.
@@ -365,7 +367,7 @@ If length is provided, the returned substring will include that number of charac
   `<interval>,` +
   `<datetime>)`
 | Adds the specified datepart to the given datetime, where
-| `DATEADD('week', 4, TODAY()) = #2020-06-29#` +
+| `DATEADD('week', 4, TODAY()) = \#2020-06-29#` +
 `DATEADD('quarter', -1, [Date])`
 
 | `DATEDIFF(<datepart>,` +
@@ -375,8 +377,8 @@ a| Finds the difference between the two datetimes expressed in units of the give
 
 In the examples on the right, the first expression returns 0 because the two dates are in the same month.
 The second expression returns 1 because the second date is in a new month, even though the two dates are not 30 days apart.
-| `DATEDIFF('month', #2020-06-08#, #2020-06-25#) = 0` +
-`DATEDIFF('month', #2020-06-29#, #2020-07-03#) = 1`
+| `DATEDIFF('month', \#2020-06-08#, \#2020-06-25#) = 0` +
+`DATEDIFF('month', \#2020-06-29#, \#2020-07-03#) = 1`
 
 | `DATEPART(<datepart>,` +
 `<datetime>)`
@@ -385,15 +387,15 @@ The returned number may change based on the day specified as start of the week o
 If not specified, the default for start of week is Sunday and the default start of year is January. +
 Start of year option only applies to quarter and year.
 Please note that to specify the start of year, the start of week needs to be specified too.
-| `DATEPART('day', #2020-06-01#) = 1` +
-`DATEPART('month', #2020-06-01#) = 6` +
-`DATEPART('year', #2020-06-01#) = 2020` +
-`DATEPART('WEEK', #2023-12-31#, 'MONDAY') = 52` +
+| `DATEPART('day', \#2020-06-01#) = 1` +
+`DATEPART('month', \#2020-06-01#) = 6` +
+`DATEPART('year', \#2020-06-01#) = 2020` +
+`DATEPART('WEEK', \#2023-12-31#, 'MONDAY') = 52` +
 `/*Default is SUNDAY*/` +
-`DATEPART('WEEK', #2023-12-31#) = 1` +
-`DATEPART('quarter', #2023-12-31#, 'SUNDAY',’AUGUST’) = 2` +
+`DATEPART('WEEK', \#2023-12-31#) = 1` +
+`DATEPART('quarter', \#2023-12-31#, 'SUNDAY',’AUGUST’) = 2` +
 `/*Default is JANUARY*/` +
-`DATEPART('quarter', #2023-12-31#) = 4`
+`DATEPART('quarter', \#2023-12-31#) = 4`
 
 | `DATETRUNC(<datepart>,` +
 `<datetime>)`
@@ -402,22 +404,22 @@ The returned date value may change based on the day specified as start of the we
 If not specified, the default for start of week is Sunday and the default start of year is January. +
 Start of year option only applies to quarter and year.
 Please note that to specify the start of year, the start of week needs to be specified too.
-| `DATETRUNC('month', #2020-06-29#) = #2020-06-01#` +
+| `DATETRUNC('month', \#2020-06-29#) = \#2020-06-01#` +
 `DATETRUNC('quarter', [Order Date])` +
-`DATETRUNC('WEEK', #2023-12-31#, 'MONDAY') = #2023-12-25#` +
+`DATETRUNC('WEEK', \#2023-12-31#, 'MONDAY') = \#2023-12-25#` +
 `/*Default is SUNDAY*/` +
-`DATETRUNC('WEEK', #2023-12-31#) = #2023-12-31#` +
-`DATETRUNC(('quarter', #2023-12-31#, 'SUNDAY',’AUGUST’) = 2023-11-01` +
+`DATETRUNC('WEEK', \#2023-12-31#) = \#2023-12-31#` +
+`DATETRUNC(('quarter', \#2023-12-31#, 'SUNDAY',’AUGUST’) = 2023-11-01` +
 `/*Default is JANUARY*/` +
-`DATETRUNC('quarter', #2023-12-31#) = 2023-10-01`
+`DATETRUNC('quarter', \#2023-12-31#) = 2023-10-01`
 
 | `NOW()`
 | Returns the current datetime.
-| `NOW() = #2020-06-01 9:00:00 AM#`
+| `NOW() = \#2020-06-01 9:00:00 AM#`
 
 | `TODAY()`
 | Returns the current date.
-| `TODAY() = #2020-06-01#`
+| `TODAY() = \#2020-06-01#`
 |===
 
 *Possible `<datepart>` values include:*
@@ -466,16 +468,16 @@ image::start-of-the-year.gif[Year start customization in Quick Charts and Visual
 | `DATE(<expression>)`
 | Convert expression to YYYY-MM-DD date format.
 Returns `NULL` if expression cannot be converted to datetime.
-| `DATE(1672542245050) // #2023-01-01#` +
-`DATE("2023-02-01T05:30:15.050Z") // #2023-02-01#` +
-`DATE(#2023-02-01T05:30:15.050Z#) // #2023-02-01#`
+| `DATE(1672542245050) // \#2023-01-01#` +
+`DATE("2023-02-01T05:30:15.050Z") // \#2023-02-01#` +
+`DATE(\#2023-02-01T05:30:15.050Z#) // \#2023-02-01#`
 
 | `DATETIME(<expression>)`
 | Convert expression to YYYY-MM-DD HH:MM:SS format.
 Returns `NULL` if expression cannot be converted to datetime.
-| `DATETIME(1672542245050) // #2023-01-01 03:04:05#` +
-`DATETIME("2023-02-01T05:30:15.050Z") // #2023-02-01 05:30:15#` +
-`DATETIME(#2023-02-01#) // #2023-02-01 00:00:00#`
+| `DATETIME(1672542245050) // \#2023-01-01 03:04:05#` +
+`DATETIME("2023-02-01T05:30:15.050Z") // \#2023-02-01 05:30:15#` +
+`DATETIME(\#2023-02-01#) // \#2023-02-01 00:00:00#`
 
 | `INT(<expression>)`
 | Convert the given expression to an integer.
@@ -484,14 +486,14 @@ The results are rounded towards zero.
 `INT("10.5") //10` +
 `INT("-10.5") //-10` +
 `INT(true) //1` +
-`INT(#2023-02-01T05:30:15.050Z#) //1675229415050`
+`INT(\#2023-02-01T05:30:15.050Z#) //1675229415050`
 
 | `FLOAT(<expression>)`
 | Convert the given expression to a floating point number.
 | `FLOAT(10.5) //10.5` +
 `FLOAT("10.5") //10.5` +
 `FLOAT(true) //1` +
-`FLOAT(#2023-02-01T05:30:15.050Z#) //1675229415050`
+`FLOAT(\#2023-02-01T05:30:15.050Z#) //1675229415050`
 |===
 
 ==== Logical

@@ -192,8 +192,8 @@ image::big_values_image.png[Present_Big_Values]
 Click on the little arrow to the right of the column name to choose the aggregate type.
 * _Trend By_: The field that you would like to group the dataset by to determine the aggregate values.
 After you've dropped a field in here, the _Value_ we display is the last one in your grouped dataset.
-Note that the default sort order is ascending by the field you have in the *Trend by.
-*If you would like to alter the sorting, you can do so by clicking on the sort ascending and sort descending buttons in the toolbar above.
+Note that the default sort order is ascending by the field you have in the *Trend by*.
+* If you would like to alter the sorting, you can do so by clicking on the sort ascending and sort descending buttons in the toolbar above.
 * _Indicator_: Chooses how the inputted value compares to another value.
 Click on the little arrow to the right of the field name to choose the aggregate type, calculation format, and the value for comparing to the _Big Value_. +
 NOTE: If you want to mirror the functionality of the {brand}'s old Big Numbers, add the same field that you have in the _Value_ dropzone to the _Indicator_ dropzone.
@@ -574,7 +574,7 @@ The paste and replace action is also available in the kebab menu for each visual
 The replace action can be undone using the back button on the chart toolbar.
 The fields that are required for the copied charts but are missing from the target data source will be displayed as red pills.
 The user can switch out the red pills with relevant fields from the target data source.
-+
+
 
 *3. Replace fields in the pasted chart*
 

@@ -7,8 +7,8 @@
 :brand: Mode
 
 ** xref:connecting-mode-to-your-database.adoc[Connecting Mode to your database] +
-Learn how {brand} connects
+Learn how {brand} connects.
 ** xref:supported-databases.adoc[Supported databases] +
-Connect {brand} to your data
+Connect {brand} to your data.
 ** xref:managing-database-connections.adoc[Managing database connections] +
-Administer {brand} connectivity
+Administer {brand} connectivity.

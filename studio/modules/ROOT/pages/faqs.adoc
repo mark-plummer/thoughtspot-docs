@@ -12,7 +12,7 @@
 Welcome to our FAQ page, where you'll find answers to some of the most frequently asked questions regarding {brand}.
 To help you quickly find what you need, we've organized the FAQs by category.
 
-On this page, you'll find links to the FAQ sections for each of our product area.
+On this page, you'll find links to the FAQ sections for each of our product areas.
 Whether you're looking for assistance with connecting your database, troubleshooting, or general usage, our FAQs have you covered.
 We've included information on common errors, as well as tips to help you get the most out of {brand}.
 

@@ -32,7 +32,7 @@ Key benefits of Datasets:
 * *Manage data stack complexities*: Datasets introduces a new way data moves through {brand}, creating a middle governance later that can centralize logic and make scaling easier.
 * *Improve efficiency and performance*: With data cached in Helix, this provides incremental performance gains for each report refresh that doesn't have to hit the data warehouse.
 * *Cost savings*: Datasets are positioned between reports and warehouses for more efficient data usage and controlled warehouse hits.
-* *Confident self-service access*: Datasets can be an approved source for teams within an organization to confidently build reports without writing any code, knowing the dataset has been published by the data team.
+* *Confident self-service access*: Datasets can be an approved source for teams within an organization to confidently build reports without writing any code, knowing the Dataset has been published by the data team.
 * *Data accessibility*: Datasets can be organized in collections and browsed when creating reports.
 Datasets are subject to permissions just like reports.
 
@@ -71,7 +71,7 @@ This shows you the columns that were generated from the SQL query.
 
 image::data_view.png[data view]
 
-You can see a list of all of the available fields in the dataset from the Fields tab.
+You can see a list of all of the available fields in the Dataset from the Fields tab.
 
 image::fields_tab_dataset.png[Datasets from the Fields tab]
 
@@ -130,7 +130,7 @@ To add a new calculated field, first select the *New field* button.
 image::add_calc_fields.png[Adding calculated fields to the dataset]
 
 Then enter the formula for your calculated field, along with adding a name.
-To save the calculated field, select the *Apply & Close* button.
+To save the calculated field, select the *Apply and Close* button.
 
 image::add_calc_fields2.png[Adding calculated fields to the dataset]
 
@@ -152,15 +152,15 @@ Then select *Save*.
 
 image::rename_dataset.png[Adding name and description]
 
-We recommend using consistent naming conventions and adding detailed descriptions to your datasets.
+We recommend using consistent naming conventions and adding detailed descriptions to your Datasets.
 Doing so will help other team members find and understand how to use the Dataset.
 
 === Scheduling a Dataset
 
 You can set a schedule for your Dataset to refresh.
-When a dataset refreshes, all associated reports built using that dataset will receive a prompt to pull in the fresh data.
+When a Dataset refreshes, all associated reports built using that Dataset will receive a prompt to pull in the fresh data.
 
-To create a new schedule, select the caret next to the dataset name and choose *Schedule*.
+To create a new schedule, select the caret next to the Dataset name and choose *Schedule*.
 
 image::schedule_ds.png[Schedule a dataset]
 
@@ -171,24 +171,24 @@ image::create_new_schedule.png[Schedule a dataset]
 
 === Moving a Dataset to a Collection
 
-The final step to create a dataset is to move the dataset into a Collection.
-You can think of this action as publishing the dataset, as it makes the dataset available for other team members to access and use it.
+The final step to create a Dataset is to move the Dataset into a Collection.
+You can think of this action as publishing the Dataset, as it makes the Dataset available for other team members to access and use it.
 
-To move the dataset to a Collection, select the *Move to a Collection* button in the top right corner of the screen.
+To move the Dataset to a Collection, select the *Move to a Collection* button in the top right corner of the screen.
 
 This will open a modal displaying all of the available Collections.
 
 image::move_to.png[Moving a dataset]
 
-Select the Collection you want to add the dataset to, then select *Move*.
+Select the Collection you want to add the Dataset to, then select *Move*.
 
 === Viewing a created Dataset
 
-To view a dataset you've just created, select the *View* button in the top right corner of the screen.
+To view a Dataset you've just created, select the *View* button in the top right corner of the screen.
 
 image::view_dataset.png[View a dataset]
 
-You will be able to view the Data, Fields and Source tabs, Dataset details, as well as export or copy the data from this view.
+You will be able to view the Data, Fields, and Source tabs, and Dataset details. You can also export or copy the data from this view.
 
 image::viewing_a_dataset.png[View a dataset]
 
@@ -199,16 +199,16 @@ image::dataset-used-in.gif[Details pane]
 
 NOTE: Reports you don't have access to will still appear in the count, but will be obfuscated/un-viewable.
 
-You can share the dataset with others on your team by selecting the *Share* button.
+You can share the Dataset with others on your team by selecting the *Share* button.
 
 image::share_ds.png[Share a dataset]
 
-Or, if you're ready to create a new report using this dataset, select the *Use in new Report button*.
+Or, if you're ready to create a new Report using this Dataset, select the *Use in new Report button*.
 
 image::newReport_ds.png[Share a dataset]
 
-This will create a new report with a flat table visualization added by default.
-You can filter and sort the data on the table visualization or create additional visualizations using the data in the dataset.
+This will create a new Report with a flat table visualization added by default.
+You can filter and sort the data on the table visualization or create additional visualizations using the data in the Dataset.
 
 image::viewing_a_dataset1.png[Share a dataset]
 
@@ -220,7 +220,7 @@ Dataset access for creation image:dataset-access-creation.png[Dataset access for
 
 Dataset access for usage image:dataset-access-usage.png[Dataset access for usage]
 
-You can learn more about creating a Dataset access and permissions strategy in this {brand} University course, link:https://university.mode.com/building-datasets-for-self-serve-analytics/1564645/scorm/18mar8c4v6a60[Dataset organization & permissions best practices,window=_blank].
+You can learn more about creating a Dataset access and permissions strategy in this {brand} University course, link:https://university.mode.com/building-datasets-for-self-serve-analytics/1564645/scorm/18mar8c4v6a60[Dataset organization and permissions best practices,window=_blank].
 
 == Using Datasets in Reports
 
@@ -251,9 +251,9 @@ image::use_ds1.png[Using a dataset in reports]
 You can create a Report from a Dataset in one of two ways.
 
 . <<create-button,*Creating a new Report using the Create button in the top header or the shortcut tile in My Work*>> +
-This workflow is great when you know what data you want to analyze, and want to pull in the most relevant Dataset to use in your Report.
+Use this workflow when you know what data you want to analyze, and want to pull in the most relevant Dataset to use in your Report.
 . <<dataset-view,*Creating a new Report from the Dataset*>> +
-This workflow is great when you've found a Dataset that you'd like to explore and analyze further.
+Use this workflow when you've found a Dataset that you'd like to explore and analyze further.
 
 [#create-button]
 === Creating a Report from the Create button or shortcut tile
@@ -303,7 +303,7 @@ To add a function, navigate to the Fields tab and click the *New Field* button.
 image::4-new-field.png[Add a function to a dataset]
 
 Enter the function for your calculated field, and give it a name.
-To save the field, select the *Apply & Close* button.
+To save the field, select the *Apply and Close* button.
 The field will be saved locally to your Report, allowing you to personalize your view of the data without impacting the original Dataset.
 
 image::5-save-local-formula.png[Save a function for a dataset]
@@ -352,9 +352,9 @@ The typeahead search in the dropzones can also be used to add the new fields.
 
 _Move a chart created off a query to a Report with the Dataset_  image:copy-paste-from-chart-designer.gif[Copy Paste from Chart editor]
 
-=== Adding charts to the report builder
+=== Adding charts to the Report Builder
 
-To add your charts to the report builder, select the chart's context menu from either the top menu or left-side menu.
+To add your charts to the Report Builder, select the chart's context menu from either the top menu or left-side menu.
 Then choose *Add to Report Builder*.
 
 image::12-add-to-builder.png[Add chart]
@@ -367,26 +367,26 @@ image::13-report-builder.png[Add chart]
 You can add filters to your Report to allow viewers to slice the data in different views.
 You can learn more about using Report filters in this xref:interactivity.adoc#filters-and-parameters[article].
 
-You can learn more about using the report builder in this xref:report-layout-and-presentation.adoc#report-builder[article].
+You can learn more about using the Report Builder in this xref:report-layout-and-presentation.adoc#report-builder[article].
 
 To give your Report a name, hover over the Report title in the navigation panel and click on the pencil icon.
 This will open a modal where you can give the Report a name and description.
 
 image::14-rename-report.png[Add chart]
 
-By default, the report will live in your personal collection.
-To move it to a different collection, select the dropdown menu next to Report, then choose *Move to*.
+By default, the Report will live in your personal Collection.
+To move it to a different Collection, select the dropdown menu next to Report, then choose *Move to*.
 
-A window will appear displaying an option to create a new collection, or to select from any collections you have access to.
+A window will appear displaying an option to create a new Collection, or to select from any Collections you have access to.
 
 image::move_to.png[Add chart]
 
-Once you choose where to move the report to, you will be able to find the report in that collection.
-Anyone else with access to the collection will also be able to see and find the report.
+Once you choose where to move the Report to, you will be able to find the Report in that Collection.
+Anyone else with access to the Collection will also be able to see and find the Report.
 
-Learn more about organizing and managing reports in collections in this xref:spaces.adoc[article].
+Learn more about organizing and managing Reports in collections in this xref:spaces.adoc[article].
 
-Learn more about sharing reports in this xref:report-scheduling-and-sharing.adoc[article].
+Learn more about sharing Reports in this xref:report-scheduling-and-sharing.adoc[article].
 
 === Refreshing data in a Dataset-based Report
 
@@ -417,14 +417,14 @@ To confirm, select *Delete*.
 
 image::delete-dataset-confirmation.png[Delete Dataset confirmation]
 
-NOTE: If a Dataset is deleted, it will be permanently removed from your Workspace, and any dependent Reports, Charts, or Calculated Fields will break.
+NOTE: If a Dataset is deleted, it will be permanently removed from your Workspace, and any dependent Reports, Charts, or calculated fields will break.
 
 image::4-delete-dataset.png[Delete Dataset confirmation]
 
 [#faqs]
 == FAQs
 
-=== Dataset creation & management
+=== Dataset creation and management
 
 [discrete]
 ==== *Q: Can I use Parameters in my Dataset?*
@@ -445,7 +445,7 @@ NOTE: Even if a query run is successful, changing field names or removing fields
 [discrete]
 ==== *Q: What happens if I delete a Dataset?*
 
-The Dataset will be permanently removed from your Workspace, and any dependent Reports, Charts, or Calculated Fields will break.
+The Dataset will be permanently removed from your Workspace, and any dependent Reports, Charts, or calculated fields will break.
 
 image::4-delete-dataset.png[deleted dataset]
 
@@ -509,4 +509,4 @@ However, our Product team is considering multiple enhancements to aid in the fac
 
 No.
 It's not possible to reference Dataset results in SQL queries today.
-That means there isn't a way to leverage an existing dataset within a new Dataset, or join the results of multiple Datasets together.
+That means there isn't a way to leverage an existing Dataset within a new Dataset, or join the results of multiple Datasets together.

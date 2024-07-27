@@ -28,6 +28,7 @@ To pin a report:
 . Click *Pin in this Collection* and the report will jump to the top of the list.
 
 To unpin a report in a Collection, repeat the above steps and click *Unpin from this space* in Step 3.
+
 NOTE: Pinning is not supported for xref:spaces.adoc#personal-space[personal collections].
 
 [#report-shortcut]
@@ -42,7 +43,8 @@ To create a shortcut to a report:
 . Hover over the report thumbnail, and then click on the *More* image:menu-dots-gray-press.svg[more menu] button in the upper right corner.
 . Click *Create shortcut...* in the dropdown.
 . In the pop-up, find the Collection from which you want to create the shortcut and click on it.
-. Click *Create*. +
+. Click *Create*.
++
 NOTE: Shortcuts cannot be created in private Collections, and shortcuts cannot be created to Reports in private Collections.
 
 Deleting a report shortcut does not affect the original report.
@@ -54,15 +56,15 @@ To delete a report shortcut:
 
 == Search
 
-To easily navigate to Reports, Datasets, and Collections in {brand}, click the magnifying glass icon in the top right to use the search bar, or use the keyboard shortcut (Cmd/Ctrl + K).
+To easily navigate to Reports, Datasets, and Collections in {brand}, click the magnifying glass icon in the top right to use the search bar, or use the keyboard shortcut (kbd:[Cmd/Ctrl+K]).
 Search by title, description or query keywords like column names to find the content you need.
 
 === Keyboard shortcuts
 
-* *Cmd/Ctrl + K*:  Opens search window
+* *kbd:[Cmd/Ctrl+K]*:  Opens search window
 * Use up/down arrow keys to navigate through search results
-* **Cmd/Ctrl + Enter**: Opens result in a new tab
-* *Enter*: Opens result in current tab
+* **kbd:[Cmd/Ctrl+Enter]**: Opens result in a new tab
+* *kbd:[Enter]*: Opens result in current tab
 
 === Filtering search results
 

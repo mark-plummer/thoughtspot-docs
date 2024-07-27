@@ -121,10 +121,10 @@ Each historical run has a unique static report run URL so that specific run can 
 IMPORTANT: {brand} only stores query results for historical runs, not the underlying data from your database. When a report is deleted, historical report run results are retained on {brand}'s servers for 30 days. After 30 days, historical run results are automatically deleted from {brand}'s servers. After an additional 30 days, historical run results are automatically deleted from {brand}'s backups and cannot be recovered by {brand}.
 
 [#report-builder]
-== Report builder
+== Report Builder
 
-The report builder is a drag-and-drop interface for laying out and adding context to the components of your report.
-When editing a report, access the report builder by clicking on *Report Builder* on the left side of the window.
+The Report Builder is a drag-and-drop interface for laying out and adding context to the components of your report.
+When editing a Report, access the Report Builder by clicking on *Report Builder* on the left side of the window.
 
 Common <<report-builder-keyboard-shortcuts,keyboard shortcuts>> are available while editing.
 You can re-arrange or re-size your text elements the same way you would any other report element.
@@ -150,7 +150,7 @@ You can also embed an image.
 [#html-editor]
 == HTML editor
 
-To modify the HTML of a report, click *Edit HTML* at the top of the <<report-builder,report builder>>.
+To modify the HTML of a report, click *Edit HTML* at the top of the <<report-builder,Report Builder>>.
 After modifying code in the HTML editor, click *Update* to preview your changes.
 Any valid HTML can be added to a report using the HTML editor, including JavaScript inside `<script>` tags and CSS inside `<style>` tags.
 
@@ -195,7 +195,7 @@ The structure of the HTML is shown below:
 </div>
 ----
 
-The HTML for the layout grid will update automatically as you modify elements in the drag-and-drop interface of the <<report-builder,report builder>>.
+The HTML for the layout grid will update automatically as you modify elements in the drag-and-drop interface of the <<report-builder,Report Builder>>.
 However, please note:
 
 * Deleting a reference to a chart or table from the report's HTML will remove it from the layout, but will not delete the underlying chart or table from the report editor.
@@ -203,7 +203,7 @@ However, please note:
 Note that adding custom HTML elements within the grid generated for you by {brand} (that is, inside the `div` tags with class `mode-grid container`) will result in unexpected behavior, and as such is not recommended at this time.
 * We recommend positioning and sizing built-in visualizations with the drag-and-drop interface before modifying the HTML directly, because custom HTML content cannot be modified using the drag-and-drop interface.
 
-The report's <<name-and-description,name and description>> are automatically added to all reports inside a `<div>` with the class `mode-header`.
+The Report's <<name-and-description,name and description>> are automatically added to all Reports inside a `<div>` with the class `mode-header`.
 Either can be removed from the layout by deleting them using the HTML editor.
 When a report is embedded, the contents of this `<div>` (including the name and description), will not be rendered in the embed output unless the `embed-hidden` class is removed.
 
@@ -450,36 +450,36 @@ https://app.mode.com/modeanalytics/reports/a9e1fe690f93?param_sales_region[]=Mid
 | Action | Mac | PC
 
 | Bold
-| `⌘` `B`
-| `Ctrl` `B`
+| kbd:[`⌘`+`B`]
+| kbd:[`Ctrl`+`B`]
 
 | Italic
-| `⌘` `I`
-| `Ctrl` `I`
+| kbd:[`⌘`+`I`]
+| kbd:[`Ctrl`+`I`]
 
 | Underline
-| `⌘` `U`
-| `Ctrl` `U`
+| kbd:[`⌘`+`U`]
+| kbd:[`Ctrl`+`U`]
 
 | Link
-| `⌘` `K`
-| `Ctrl` `K`
+| kbd:[`⌘`+`K`]
+| kbd:[`Ctrl`+`K`]
 
 | Indent
-| `Tab`
-| `Tab`
+| kbd:[`Tab`]
+| kbd:[`Tab`]
 
 | Outdent
-| `Shift` `Tab`
-| `Shift` `Tab`
+| kbd:[`Shift`+`Tab`]
+| kbd:[`Shift`+`Tab`]
 
 | Top of container
-| `⌘` `↑`
-| `Ctrl` `↑`
+| kbd:[`⌘`+`↑`]
+| kbd:[`Ctrl`+`↑`]
 
 | Bottom of container
-| `⌘` `↓`
-| `Ctrl` `↓`
+| kbd:[`⌘`+`↓`]
+| kbd:[`Ctrl`+`↓`]
 |===
 
 === HTML editor
@@ -488,36 +488,36 @@ https://app.mode.com/modeanalytics/reports/a9e1fe690f93?param_sales_region[]=Mid
 | Action | Mac | PC
 
 | Save / update layout
-| `⌘` `Enter`
-| `Ctrl` `Enter`
+| kbd:[`⌘`+`Enter`]
+| kbd:[`Ctrl`+`Enter`]
 
 | Comment line / selection
-| `⌘` `/`
-| `Ctrl` `/`
+| kbd:[`⌘`+`/`]
+| kbd:[`Ctrl`+`/`]
 
 | Indent
-| `Tab`
-| `Tab`
+| kbd:[`Tab`]
+| kbd:[`Tab`]
 
 | Outdent
-| `Shift` `Tab`
-| `Shift` `Tab`
+| kbd:[`Shift`+`Tab`]
+| kbd:[`Shift`+`Tab`]
 
 | Move lines down
-| `Option` `↓`
-| `Alt` `↓`
+| kbd:[`Option`+`↓`]
+| kbd:[`Alt`+`↓`]
 
 | Move lines up
-| `Option` `↑`
-| `Alt` `↑`
+| kbd:[`Option`+`↑`]
+| kbd:[`Alt`+`↑`]
 
 | Copy lines down
-| `Option` `Shift` `→`
-| `Alt` `Shift` `↓`
+| kbd:[`Option`+`Shift`+`→`]
+| kbd:[`Alt`+`Shift`+`↓`]
 
 | Copy lines up
-| `Option` `Shift` `←`
-| `Alt` `Shift` `↑`
+| kbd:[`Option`+`Shift`+`←`]
+| kbd:[`Alt`+`Shift`+`↑`]
 |===
 
 == FAQs

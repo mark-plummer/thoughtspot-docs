@@ -21,7 +21,8 @@ Before you begin, you must meet the following requirements in order to set up th
 * You must be an admin of your {brand} Workspace.
 * You must be authorized to install the link:https://github.com/apps/modeanalytics[{brand} GitHub app,window=_blank] in your GitHub organization.
 * In GitHub, create a new repository or select an existing repository for {brand}.
-* The default branch cannot be protected and must be titled either "`main`" or "`master`". +
+* The default branch cannot be protected and must be titled either "`main`" or "`master`".
++
 NOTE: A branch must be created prior to starting the integration setup. {brand} will not automatically create a branch as part of this process.
 
 == How it works
@@ -86,7 +87,7 @@ For example, say you have three reports in {brand}:
 * Report `C` has been updated in a branch on GitHub (`C*`) but that branch has not yet been merged with the default branch.
 Therefore, `C*` (the changes to report `C`) will not be visible in {brand}.
 
-When the branch containing `C*` is merged with the default branch, Report C in {brand} will be updated to `C*`.
+When the branch containing `C*` is merged with the default branch, Report `C` in {brand} will be updated to `C*`.
 However, `B*` will not be overwritten by `B`.
 
 === Pull requests

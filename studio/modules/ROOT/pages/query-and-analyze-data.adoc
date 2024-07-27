@@ -7,16 +7,16 @@
 :brand: Mode
 
 ** xref:querying-data.adoc[Querying data] +
-How to query data in {brand}
+How to query data in {brand}.
 ** xref:ai-assist.adoc[AI Assist] +
-Generate SQL using AI assistance
+Generate SQL using AI assistance.
 ** xref:datasets.adoc[Datasets] +
-Curate tables of data that can be reused across multiple reports
+Curate tables of data that can be reused across multiple reports.
 ** xref:notebook.adoc[The Notebook] +
-Getting started with the Python and R Notebook
+Getting started with the Python and R Notebook.
 ** xref:parameters.adoc[Parameters] +
-How to add parameters to Mode reports using Liquid
+How to add parameters to Mode reports using Liquid.
 ** xref:viz-filters.adoc[Visualization filters] +
-How to add filters to a visual in the Chart Builder
+How to add filters to a visual in the Chart Builder.
 ** xref:definitions.adoc[Definitions] +
-Develop and reuse saved `SELECT` statements
+Develop and reuse saved `SELECT` statements.
