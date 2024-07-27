@@ -59,13 +59,13 @@ In order to use Direct Connect, your database must:
 Your database may require you to allowlist {brand}'s IP addresses before it will accept an incoming connection from our servers.
 All connections from {brand} will come from one of these eight IP addresses:
 
-`54.68.30.98/32`
-`54.68.45.3/32`
-`34.209.23.118/32`
-`54.188.241.100/32`
-`52.43.195.103/32`
-`3.224.146.111/32`
-`54.221.238.89/32`
+`54.68.30.98/32` +
+`54.68.45.3/32` +
+`34.209.23.118/32` +
+`54.188.241.100/32` +
+`52.43.195.103/32` +
+`3.224.146.111/32` +
+`54.221.238.89/32` +
 `52.20.173.236/32`
 
 If your database or network environment does not meet the above requirements, consider connecting with {brand}'s <<bridge,Bridge connector>> instead.
@@ -255,32 +255,32 @@ These instructions assume that you meet <<requirements,the Requirements>> and wo
 Our system packages will install Bridge and configure the system to run Bridge via the system's service manager.
 Bridge's <<where-is-the-bridge-configuration-file-saved,configuration file>> 'bridge.json' contains a credential and should be kept secret when incorporating it into configuration management systems.
 
-* In the upper left corner of your Workspace's {brand} home page, expand the menu under your name, and select Connect a Database from the dropdown.
-
+. In the upper left corner of your Workspace's {brand} home page, expand the menu under your name, and select *Connect a Database* from the dropdown.
++
 image::connect-a-database-2021.png[Settings Dropdown]
 
-* Click on the type of database you want to connect to {brand}.
-
+. Click on the type of database you want to connect to {brand}.
++
 image::select-db.png[Select a Database]
 
-* Click on the 'Bridge connector' link above the connections details form.
-
+. Click on the 'Bridge connector' link above the connections details form.
++
 image::bridge-enter-creds.png[Enter Credentials]
 
-* To install Bridge for the first time, click on the *'connect a new bridge'* link.
-
+. To install Bridge for the first time, click on the *'connect a new bridge'* link.
++
 image::connect-a-new-bridge.png[Connect a New Bridge]
 
-* Select the operating system of your host computer and follow the onscreen prompts to copy and execute statements in the command line.
-
+. Select the operating system of your host computer and follow the onscreen prompts to copy and execute statements in the command line.
++
 image::select-os.png[Choose your OS]
 
-* Once Bridge is installed and running, click *Next*.
-* You will be returned to the database credentials page, where you should see that the database will be connecting through your newly-installed Bridge connector.
-
+. Once Bridge is installed and running, click *Next*.
+. You will be returned to the database credentials page, where you should see that the database will be connecting through your newly-installed Bridge connector.
++
 image::bridge-back-to-DB-creds.png[Back to Credentials]
 
-* Fill out your database credentials and click '*Connect*.'
+. Fill out your database credentials and click '*Connect*.'
 
 [#run-bridge-as-a-docker-container]
 === Run Bridge in a Docker container
@@ -290,32 +290,32 @@ These instructions assume you meet <<requirements,the requirements>> and would l
 [discrete]
 ==== Generate Bridge credentials
 
-* In the upper left corner of your Workspace's {brand} home page, expand the menu under your name, and select *Workspace Settings* from the dropdown.
-
+. In the upper left corner of your Workspace's {brand} home page, expand the menu under your name, and select *Workspace Settings* from the dropdown.
++
 image::workspace-settings.png[Organization Settings]
 
-* In the left navigation, under Data, select *Bridge Connectors*.
-
+. In the left navigation, under *Data*, select *Bridge Connectors*.
++
 image::data-bridge-connectors.png[Under Bridge Connectors]
 
-* Enter a descriptive name for your Bridge connector and press *Create bridge*.
+. Enter a descriptive name for your Bridge connector and press *Create bridge*.
 You will be able to edit this in the future.
-
++
 image::name-bridge.png[Create New Bridge]
 
-* A panel will display a confirmation that the named Bridge was created and the credentials for that Bridge are displayed.
-
+. A panel will display a confirmation that the named Bridge was created and the credentials for that Bridge are displayed.
++
 image::configuration-with-ENV-variables.png[Bridge Display Panel]
 
-* <<where-in-mode-can-i-view-the-password-token-secret-for-the-bridge-connector-that-i-created,Copy the configuration with ENV variables>>. Save these to create a new configuration file for the Bridge connector.
+. <<where-in-mode-can-i-view-the-password-token-secret-for-the-bridge-connector-that-i-created,Copy the configuration with ENV variables>>. Save these to create a new configuration file for the Bridge connector.
 We recommend naming the file `/etc/mode-bridge.env` on the host where you want to install Bridge.
 
 [discrete]
 ==== Run Bridge in Docker
 
-* Pull the https://hub.docker.com/r/modeanalytics/bridge-client[latest Docker image] from DockerHub using the command `docker pull modeanalytics/bridge-client` from a terminal.
-* Run the following command to download, create, and start your Bridge connector: `docker run --env-file /etc/mode-bridge.env --name mode-bridge modeanalytics/bridge-client:[Dockerfile Version]`.
-* Verify that your Bridge connector has been configured correctly.
+. Pull the https://hub.docker.com/r/modeanalytics/bridge-client[latest Docker image] from DockerHub using the command `docker pull modeanalytics/bridge-client` from a terminal.
+. Run the following command to download, create, and start your Bridge connector: `docker run --env-file /etc/mode-bridge.env --name mode-bridge modeanalytics/bridge-client:[Dockerfile Version]`.
+. Verify that your Bridge connector has been configured correctly. +
 Inspect the logs for any error messages by running the following command: `docker logs --tail 30 mode-bridge`. If you discover you need to make any corrections to your configuration file, edit the file and then restart your container to apply the changes by running the following command: `docker restart mode-bridge`
 
 [discrete]
@@ -541,7 +541,7 @@ First, check if Bridge is running with the command listed below.
 * *Linux or OSX:* `ps aux | grep mode-bridge`
 * *Windows:* Look in Service Manager to see if Bridge is running.
 
-If Bridge is not running,<<how-do-i-stop-or-start-the-bridge-connector,restart the Bridge application>>.
+If Bridge is not running, <<how-do-i-stop-or-start-the-bridge-connector,restart the Bridge application>>.
 
 If Bridge is running, {brand} may not be able to reach Bridge because the ports that Bridge connects over are closed.
 Bridge connects to {brand} over outbound port 8444.
@@ -585,7 +585,7 @@ This type of security, which encrypts data while it's in transit, is commonly re
 For additional auditing, {brand} tags each query with additional metadata which will appear in the database system logs:
 
 * The {brand} username and email address of the user running the query.
-* A link to that query in {brand}, which includes the time the query was run and the exact dataset returned.
+* A link to that query in {brand}, which includes the time the query was run and the exact Dataset returned.
 
 At {brand}, we take security very seriously.
 Learn more about link:https://mode.com/security/[{brand}'s approach to security,window=_blank].

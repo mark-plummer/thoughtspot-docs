@@ -111,12 +111,12 @@ Comments in calculated fields are always marked by a prepended `//`.
 | image:cal-fields-measure.png[measures]
 
 | *Discrete*
-| Values in the dataset are distinct and separate.
+| Values in the Dataset are distinct and separate.
 These fields are indicated in {brand} with blue icons.
 | image:cal-fields-discrete.png[dimensions]
 
 | *Continuous*
-| Values in the dataset can take on any value within a finite or infinite range.
+| Values in the Dataset can take on any value within a finite or infinite range.
 These fields are indicated in {brand} with green icons.
 | image:cal-fields-continuous.png[measures]
 |===

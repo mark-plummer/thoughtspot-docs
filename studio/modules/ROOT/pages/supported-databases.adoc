@@ -305,11 +305,11 @@ image:athena-existing-iam-role.png[Athena]
 . Copy and paste the trust relationship from the {brand} connection form into your AWS IAM Role.
 +
 image:mode-athena-iam-role-form.png[Athena]
-. Add in the necessary IAM permissions to access your Athena resource (must include `athena:ListDatabases` and `athena:ListDataCatalogs`)
+. Add in the necessary IAM permissions to access your Athena resource (must include `athena:ListDatabases` and `athena:ListDataCatalogs`).
 . Click *Create Role* in AWS and paste the IAM Role ARN into the {brand} connection form.
 . The S3 Results Directory should be a bucket where Athena can write query results.
 For this bucket, the AWS user specified above needs read and write access.
-The bucket should be a full S3 url (for example, `s3://acme/my/athena/bucket`)
+The bucket should be a full S3 url (for example, `s3://acme/my/athena/bucket`).
 . Click *Connect*.
 You will land on a page that displays your database schema.
 
@@ -836,7 +836,8 @@ image::GBQ-Setup07.png[BigQuery]
 When you see the form to enter your BigQuery credentials, first enter a name (internal to {brand}) for the new database connection.
 . In the Project ID field, enter the BigQuery project ID.
 It can be found in the URL of your Google Developers Console.
-The URL should be structured like this: +
+The URL should be structured like this:
++
 [source]
 ----
  https://console.developers.google.com/apis/library?project=MY_PROJECT_ID

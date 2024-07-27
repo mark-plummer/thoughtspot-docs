@@ -18,7 +18,7 @@ Admins can control how members of their Workspace are able to share reports both
 Adjust the toggles next to each of the following options and click *Save settings* when you are done to confirm:
 
 [discrete]
-==== Allow external sharing of reports
+=== Allow external sharing of reports
 //+++<flag-icon>++++++</flag-icon>+++
 
 Disabled by default.
@@ -39,7 +39,7 @@ Enabled by default.
 When disabled, report image previews will no longer appear the message bodies of Slack or email shares, and reports shared via email can no longer contain attached PDFs or CSVs.
 
 [discrete]
-==== Allow users to access and move reports into your Workspace's Community space
+=== Allow users to access and move reports into your Workspace's Community space
 
 Disabled by default.
 Enable to make the xref:spaces.adoc#community-space[community Collection] visible to all members of your Workspace and allow users to move reports into it.
@@ -48,7 +48,7 @@ Reports already in the community Collection will still exist and will be availab
 However, members will not be able to move any new reports into the community Collection.
 
 [discrete]
-==== Require transport encryption for emails
+=== Require transport encryption for emails
 
 Disabled by default.
 Enable this feature to prevent {brand} from being able to send emails related to your Workspace, such as when members share via email, to servers that don't have transport encryption enabled.

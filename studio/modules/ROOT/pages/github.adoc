@@ -87,7 +87,7 @@ For example, say you have three reports in {brand}:
 * Report `C` has been updated in a branch on GitHub (`C*`) but that branch has not yet been merged with the default branch.
 Therefore, `C*` (the changes to report `C`) will not be visible in {brand}.
 
-When the branch containing `C*` is merged with the default branch, Report C in {brand} will be updated to `C*`.
+When the branch containing `C*` is merged with the default branch, Report `C` in {brand} will be updated to `C*`.
 However, `B*` will not be overwritten by `B`.
 
 === Pull requests

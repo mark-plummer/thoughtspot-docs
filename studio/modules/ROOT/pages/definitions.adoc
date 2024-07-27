@@ -16,7 +16,7 @@ image::raw_definition.png[Definitions - saved SELECT SQL statements]
 A Definition is a saved `SELECT` statement that can be referenced in other SQL queries.
 Definitions allow you to write business logic in one place and reference that logic in multiple {brand} reports.
 This ensures that members of your Workspace continue to pull the right data when business logic changes.
-Use definitions to:
+Use Definitions to:
 
 * *Reduce repetitive tasks* - Convert frequently referenced pieces of code into Definitions and then reference them in many reports instead of copying and pasting the code.
 * *Simplify complex queries* - Integrate complex query logic into a definition.
@@ -36,7 +36,7 @@ You cannot run a Definition against any other database connection, unless you sw
 . Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in to your Workspace.
 . Under the Definitions section on the left side, click on the name of the connection against which you'd like to define the Definition.
 . Click the *New Definition* button in the upper right of the window.
-. Under Data Source, select the connection you want to create the Definition against.
+. Under *Data Source*, select the connection you want to create the Definition against.
 . Enter a name for your Definition.
 Only alphanumeric characters and underscores are permitted in Definition names.
 . Add a description (optional).
@@ -45,18 +45,19 @@ Only alphanumeric characters and underscores are permitted in Definition names.
 . Click *Run* to test and save your Definition.
 If the run succeeds, you or anyone else in your Workspace with access to the underlying connection can reference the Definition in their reports.
 
-Notes:
-
+[NOTE]
+====
 * You can reference a Definition within a Definition in exactly the same way you would nest a query within a query.
 {brand} supports up to 10 layers of nested Definitions.
-* Remember to remove the check next to *Limit 100* once you finish writing your definition or the Definition will only ever return 100 rows when you use it!
+* Remember to remove the check next to *Limit 100* once you finish writing your Definition, or the Definition will only ever return 100 rows when you use it.
 * Definitions must be comprised of a single `SELECT` statement.
+====
 
 == View existing Definitions
 
 . Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in to your Workspace.
-. Under the Definitions section on the left side, click on the connection whose Definitions you want to see.
-. All of the Definitions for that connection will be listed on the right.
+. Under the Definitions section on the left side, click on the Connection whose Definitions you want to see.
+. All of the Definitions for that Connection will be listed on the right.
 Click on one to view or modify it.
 
 NOTE: At this time, we do not support renaming Definitions. If you'd like to rename an existing Definition, we recommend creating a new Definition with a new name.

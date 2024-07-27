@@ -41,7 +41,7 @@ They can only view the Report if you share the link with them.
 
 Update the default access to *Restricted* if you don't want users in your Workspace to view or edit your Personal content.
 
-You can also specifically grant individuals and groups access to view and edit Personal content you share with them.
+You can also specifically grant individuals and groups access to view and edit personal content you share with them.
 
 image::personal_manage_access.png[Reports in Personal collection]
 
@@ -161,4 +161,4 @@ Users must both have permission for the Connections used in a Report and the Col
 For example, if a user has view permission for all Connections used in a Report but is not a member of the private Collection containing the Report, they will be unable to view the Report.
 They must have access to both.
 
-Learn more about xref:permissions.adoc[Access Control & Permissions].
+Learn more about xref:permissions.adoc[Access Control and Permissions].

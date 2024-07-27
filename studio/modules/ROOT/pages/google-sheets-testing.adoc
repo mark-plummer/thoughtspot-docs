@@ -133,7 +133,7 @@ To add a new calculated field, first select the *New field* button.
 image::add_calc_fields.png[Adding calculated fields to the dataset]
 
 Then enter the formula for your calculated field, along with adding a name.
-To save the calculated field, select the *Apply & Close* button.
+To save the calculated field, select the *Apply and Close* button.
 
 image::add_calc_fields2.png[Adding calculated fields to the dataset]
 

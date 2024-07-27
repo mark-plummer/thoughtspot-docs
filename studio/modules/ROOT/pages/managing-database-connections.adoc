@@ -21,7 +21,7 @@ All Workspaces are also automatically connected to the <<mode-public-warehouse,{
 
 To connect your database to your {brand} xref:organizations.adoc[organization]:
 
-. Navigate to your link:https://app.mode.com/home/[{brand} homepage,window=_blank] and sign in.
+. Navigate to your link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in.
 . Click on your name in the upper left corner of the screen.
 . Click *Connect a Database*.
 . Follow the instructions to connect your database.

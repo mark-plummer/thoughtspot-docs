@@ -138,4 +138,5 @@ Only tables from Connections that have dbt enabled will be shown in the list or 
 This error will only be shown if no timestamp can be shown in Report Activity.
 This may be due to:
 
-An issue connecting with dbt's API (that is, bad credentials) Tables not having corresponding dbt models.
+* An issue connecting with dbt's API (that is, bad credentials).
+* Tables not having corresponding dbt models.

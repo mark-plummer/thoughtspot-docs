@@ -28,6 +28,7 @@ To pin a report:
 . Click *Pin in this Collection* and the report will jump to the top of the list.
 
 To unpin a report in a Collection, repeat the above steps and click *Unpin from this space* in Step 3.
+
 NOTE: Pinning is not supported for xref:spaces.adoc#personal-space[personal collections].
 
 [#report-shortcut]

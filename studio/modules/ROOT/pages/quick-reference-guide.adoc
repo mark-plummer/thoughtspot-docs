@@ -44,7 +44,7 @@ image::workflow.png[Workflow Basics]
 
 When creating an analysis, the first step is gathering and structuring all necessary data from one or more databases using SQL.
 To do this, you'll need to write and execute SQL code against one or more xref:connecting-mode-to-your-database.adoc[connected databases].
-In {brand}, this is done within a xref:organizing-reports.adoc[report].
+In {brand}, this is done within a xref:organizing-reports.adoc[Report].
 
 To create a new report, click the *new report* image:modal-add.svg[modal add] button in the upper right-hand corner of the link:https://app.mode.com/home/[{brand} home page,window=_blank], which will take you the Query Editor, where you can compose SQL code.
 
