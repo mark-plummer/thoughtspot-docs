@@ -84,7 +84,7 @@ Notes:
 
 * When you run your notebook, cells are executed in the order they are displayed, starting from the top cell.
 * To select or change a cell's type, go to the dropdown menu in the cell toolbar and choose _Code_ or _Markdown_.
-* To run a cell, select it and press kbd:[Shift+Return].
+* To run a cell, select it and press `Shift + Return`.
 Or click *Run Cell* in the cell or main toolbar.
 * The number next to the cell label will increment by one every time code in the cell is successfully run.
 * To see available methods for an object, type the name of the object followed by `.` and then press `tab`.
@@ -337,36 +337,36 @@ You may now use any of the methods or functionality included in the library in s
 | Action | Mac | PC
 
 | Edit selected cell
-| kbd:[`Return`]
-| kbd:[`Enter`]
+| `Return`
+| `Enter`
 
 | Run cell
-| kbd:[`Shift`+`Return`]
-| kbd:[`Shift`+`Enter`]
+| `Shift`+`Return`
+| `Shift`+`Enter`
 
 | Select cell above
-| kbd:[`K`] or kbd:[`↑`]
-| kbd:[`K`] or kbd:[`↑`]
+| `K` or `↑`
+| `K` or `↑`
 
 | Select cell below
-| kbd:[`J`] or kbd:[`↓`]
-| kbd:[`J`] or kbd:[`↓`]
+| `J` or `↓`
+| `J` or `↓`
 
 | Insert cell above
-| kbd:[`A`]
-| kbd:[`A`]
+| `A`
+| `A`
 
 | Insert cell below
-| kbd:[`B`]
-| kbd:[`B`]
+| `B`
+| `B`
 
 | Move cell above
-| kbd:[`Shift`+`Option`+`↑`]
-| kbd:[`Shift`+`Alt`+`↑`]
+| `Shift` + `Option` + `↑`
+| `Shift` + `Alt` + `↑`
 
 | Move cell below
-| kbd:[`Shift`+`Option`+`↓`]
-| kbd:[`Shift`+`Alt`+`↓`]
+| `Shift` + `Option` + `↓`
+| `Shift` + `Alt` + `↓`
 |===
 
 === Code editor
@@ -375,28 +375,28 @@ You may now use any of the methods or functionality included in the library in s
 | Action | Mac | PC
 
 | Code complete or indent
-| kbd:[`Return`]
-| kbd:[`Enter`]
+| `Return`
+| `Enter`
 
 | Select all
-| kbd:[`⌘`+`A`]
-| kbd:[`Ctrl`+`A`]
+| `⌘` + `A`
+| `Ctrl` + `A`
 
 | Undo
-| kbd:[`⌘`+`Z`]
-| kbd:[`Ctrl`+`Z`]
+|  `⌘` + `Z`
+|  `Ctrl` + `Z`
 
 | Redo
-| kbd:[`⌘`+`Y`]
-| kbd:[`Ctrl`+`Y`]
+|  `⌘` + `Y`
+|  `Ctrl` + `Y`
 
 | Run cell
-| kbd:[`⌘`+`Enter`]
-| kbd:[`Ctrl`+`Enter`]
+|  `⌘` + `Enter`
+|  `Ctrl` + `Enter`
 
 | Insert cell below
-| kbd:[`Option`+`Enter`]
-| kbd:[`Alt`+`Enter`]
+|  `Option` + `Enter`
+|  `Alt` + `Enter`
 |===
 
 [#faqs]

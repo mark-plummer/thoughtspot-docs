@@ -56,15 +56,15 @@ To delete a report shortcut:
 
 == Search
 
-To easily navigate to Reports, Datasets, and Collections in {brand}, click the magnifying glass icon in the top right to use the search bar, or use the keyboard shortcut (kbd:[Cmd/Ctrl+K]).
+To easily navigate to Reports, Datasets, and Collections in {brand}, click the magnifying glass icon in the top right to use the search bar, or use the keyboard shortcut (`Cmd/Ctrl+K`).
 Search by title, description or query keywords like column names to find the content you need.
 
 === Keyboard shortcuts
 
-* *kbd:[Cmd/Ctrl+K]*:  Opens search window
+* *Cmd/Ctrl + K*:  Opens search window
 * Use up/down arrow keys to navigate through search results
-* **kbd:[Cmd/Ctrl+Enter]**: Opens result in a new tab
-* *kbd:[Enter]*: Opens result in current tab
+* **Cmd/Ctrl + Enter**: Opens result in a new tab
+* *Enter*: Opens result in current tab
 
 === Filtering search results
 
