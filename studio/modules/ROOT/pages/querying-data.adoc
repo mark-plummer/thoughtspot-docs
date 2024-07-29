@@ -48,7 +48,7 @@ Select a historical query run and click *Open* to replace the code currently in 
 ** *Editor Settings:* Toggle on/off settings for the code editor.
 These options allow you to personalize the editor to fit your preferences.
 Choose between light and dark modes, side-by-side or stacked panels, Limit 100 on/off by default, and other helpful autocomplete settings.
-To turn autocomplete on or off, you can toggle the switch in the Autocomplete Settings or you can disable (and re-enable) it by hitting kbd:[Command+Option+A] (kbd:[Control+ALT+A] on a PC) in the editor.
+To turn autocomplete on or off, you can toggle the switch in the Autocomplete Settings or you can disable (and re-enable) it by hitting  `Command + Option + A` ( `Control + ALT + A` on a PC) in the editor.
 . *Data view*: After you successfully execute a SQL query, the tabular results, fields, and syntax are displayed here, which you can drag to resize.
 
 ** Use the Data tab to consume your results, share the URL to that specific query, export the raw query data as a CSV, or copy the data to the clipboard.
@@ -308,80 +308,80 @@ We've also added some {brand}-specific keyboard shortcuts:
 | Action | Mac | PC
 
 | Run query
-| kbd:[`⌘`+`Return`]
-| kbd:[`Ctrl`+`Enter`]
+|  `⌘` + `Return`
+|  `Ctrl` + `Enter`
 
 | Save query
-| kbd:[`⌘`+`S`]
-| kbd:[`Ctrl`+`S`]
+|  `⌘` + `S`
+|  `Ctrl` + `S`
 
 | Switch to Report Builder
-| kbd:[`Ctrl`+`I`]
-| kbd:[`Alt`+`I`]
+|  `Ctrl` + `I`
+|  `Alt` + `I`
 
 | Indent
-| kbd:[`Tab`]
-| kbd:[`Tab`]
+|  `Tab`
+|  `Tab`
 
 | Outdent
-| kbd:[`Shift`+`Tab`]
-| kbd:[`Shift`+`Tab`]
+|  `Shift` + `Tab`
+|  `Shift` + `Tab`
 
 | Add multi-cursor above
-| kbd:[`Ctrl`+`Option`+`↑`]
-| kbd:[`Ctrl`+`Alt`+`↑`]
+|  `Ctrl` + `Option` + `↑`
+|  `Ctrl` + `Alt` + `↑`
 
 | Add multi-cursor below
-| kbd:[`Ctrl`+`Option`+`↓`]
-| kbd:[`Ctrl`+`Alt`+`↓`]
+|  `Ctrl` + `Option` + `↓`
+|  `Ctrl` + `Alt` + `↓`
 
 | Undo
-| kbd:[`⌘`+`Z`]
-| kbd:[`Ctrl`+`Z`]
+|  `⌘` + `Z`
+|  `Ctrl` + `Z`
 
 | Redo
-| kbd:[`⌘`+`Y`]
-| kbd:[`Ctrl`+`Y`]
+|  `⌘` + `Y`
+|  `Ctrl` + `Y`
 
 | Toggle comment
-| kbd:[`⌘`+`/`]
-| kbd:[`Ctrl`+`/`]
+|  `⌘` + `/`
+|  `Ctrl` + `/`
 
 | Change to lower case
-| kbd:[`Ctrl`+`Shift`+`U`]
-| kbd:[`Ctrl`+`Shift`+`U`]
+|  `Ctrl` + `Shift` + `U`
+|  `Ctrl` + `Shift` + `U`
 
 | Change to upper case
-| kbd:[`Ctrl`+`U`]
-| kbd:[`Ctrl`+`U`]
+|  `Ctrl` + `U`
+|  `Ctrl` + `U`
 
 | Fold selection
-| kbd:[`⌘`+`F1`]
-| kbd:[`Ctrl`+`F1`]
+|  `⌘` + `F1`
+|  `Ctrl` + `F1`
 
 | Unfold
-| kbd:[`⌘`+`Shift`+`F1`]
-| kbd:[`Ctrl`+`Shift`+`F1`]
+|  `⌘` + `Shift` + `F1`
+|  `Ctrl` + `Shift` + `F1`
 
 | Find
-| kbd:[`⌘`+`F`]
-| kbd:[`Ctrl`+`F`]
+|  `⌘` + `F`
+|  `Ctrl` + `F`
 
 | Replace
-| kbd:[`⌘`+`Option`+`F`]
-| kbd:[`Ctrl`+`H`]
+|  `⌘` + `Option` + `F`
+|  `Ctrl` + `H`
 
 | Find next
-| kbd:[`⌘`+`G`]
-| kbd:[`Ctrl`+`K`]
+|  `⌘` + `G`
+|  `Ctrl` + `K`
 
 | Find previous
-| kbd:[`⌘+Shift+G`]
-| kbd:[`Ctrl`+`Shift`+`K`]
+|  `⌘ + Shift + G`
+|  `Ctrl` + `Shift` + `K`
 
 | Open autocomplete
-| kbd:[`Ctrl`+`Space`]
-| kbd:[`Ctrl`+`Space`]
+|  `Ctrl` + `Space`
+|  `Ctrl` + `Space`
 |===
 
 === Selection
@@ -390,44 +390,44 @@ We've also added some {brand}-specific keyboard shortcuts:
 | Action | Mac | PC
 
 | Select All
-| kbd:[`⌘`+`A`]
-| kbd:[`Ctrl`+`A`]
+|  `⌘` + `A`
+|  `Ctrl` + `A`
 
 | Select left
-| kbd:[`Shift`+`←`]
-| kbd:[`Shift`+`←`]
+|  `Shift` + `←`
+|  `Shift` + `←`
 
 | Select right
-| kbd:[`Shift`+`→`]
-| kbd:[`Shift`+`→`]
+|  `Shift` + `→`
+|  `Shift` + `→`
 
 | Select word left
-| kbd:[`Option`+`Shift`+`←`]
-| kbd:[`Ctrl`+`Shift`+`←`]
+|  `Option` + `Shift` + `←`
+|  `Ctrl` + `Shift` + `←`
 
 | Select word right
-| kbd:[`Option`+`Shift`+`→`]
-| kbd:[`Ctrl`+`Shift`+`→`]
+|  `Option` + `Shift` + `→`
+|  `Ctrl` + `Shift` + `→`
 
 | Select to line start
-| kbd:[`⌘`+`Shift`+`←`]
-| kbd:[`Alt`+`Shift`+`←`]
+|  `⌘` + `Shift` + `←`
+|  `Alt` + `Shift` + `←`
 
 | Select to line end
-| kbd:[`⌘`+`Shift`+`→`]
-| kbd:[`Alt`+`Shift`+`→`]
+|  `⌘` + `Shift` + `→`
+|  `Alt` + `Shift` + `→`
 
 | Select up
-| kbd:[`Shift`+`↑`]
-| kbd:[`Shift`+`↑`]
+|  `Shift` + `↑`
+|  `Shift` + `↑`
 
 | Select down
-| kbd:[`Shift`+`↓`]
-| kbd:[`Shift`+`↓`]
+|  `Shift` + `↓`
+|  `Shift` + `↓`
 
 | Duplicate selection
-| kbd:[`⌘`+`Shift`+`D`]
-| kbd:[`Ctrl`+`Shift`+`D`]
+|  `⌘` + `Shift` + `D`
+|  `Ctrl` + `Shift` + `D`
 |===
 
 === Go to
@@ -436,36 +436,36 @@ We've also added some {brand}-specific keyboard shortcuts:
 | Action | Mac | PC
 
 | Go to word left
-| kbd:[`Option`+`←`]
-| kbd:[`Ctrl`+`←`]
+|  `Option` + `←`
+|  `Ctrl` + `←`
 
 | Go to word right
-| kbd:[`Option`+`→`]
-| kbd:[`Ctrl`+`→`]
+|  `Option` + `→`
+|  `Ctrl` + `→`
 
 | Go line up
-| kbd:[`Ctrl`+`P`]
-| kbd:[↑]
+|  `Ctrl` + `P`
+|  `↑`
 
 | Go line down
-| kbd:[`Ctrl`+`N`]
-| kbd:[↓]
+|  `Ctrl` + `N`
+|  `↓`
 
 | Go to line start
-| kbd:[`⌘`+`←`]
-| kbd:[`Alt`+`←`]
+|  `⌘` + `←`
+|  `Alt` + `←`
 
 | Go to line end
-| kbd:[`⌘`+`Shift`+`←`]
-| kbd:[`Alt`+`→`]
+|  `⌘` + `Shift` + `←`
+|  `Alt` + `→`
 
 | Go to start
-| kbd:[`⌘`+`↑`]
-| kbd:[`Ctrl`+`Home`]
+|  `⌘` + `↑`
+|  `Ctrl` + `Home`
 
 | Go to end
-| kbd:[`⌘`+`↓`]
-| kbd:[`Ctrl`+`End`]
+|  `⌘` + `↓`
+|  `Ctrl` + `End`
 |===
 
 === Line operations
@@ -474,40 +474,40 @@ We've also added some {brand}-specific keyboard shortcuts:
 | Action | Mac | PC
 
 | Remove line
-| kbd:[`⌘`+`D`]
-| kbd:[`Ctrl`+`D`]
+|  `⌘` + `D`
+|  `Ctrl` + `D`
 
 | Copy lines down
-| kbd:[`Option`+`Shift`+`↓`]
-| kbd:[`Alt`+`Shift`+`↓`]
+|  `Option` + `Shift` + `↓`
+|  `Alt` + `Shift` + `↓`
 
 | Copy lines up
-| kbd:[`Option`+`Shift`+`↑`]
-| kbd:[`Alt`+`Shift`+`↑`]
+|  `Option` + `Shift` + `↑`
+|  `Alt` + `Shift` + `↑`
 
 | Move lines down
-| kbd:[`Option`+`↓`]
-| kbd:[`Alt`+`↓`]
+|  `Option` + `↓`
+|  `Alt` + `↓`
 
 | Move lines up
-| kbd:[`Option`+`↑`]
-| kbd:[`Alt`+`↑`]
+|  `Option` + `↑`
+|  `Alt` + `↑`
 
 | Remove to line end
-| kbd:[`Ctrl`+`K`]
+|  `Ctrl` + `K`
 |
 
 | Remove to line start
-| kbd:[`⌘`+`Backspace`]
-| kbd:[`Alt`+`Backspace`]
+|  `⌘` + `Backspace`
+|  `Alt` + `Backspace`
 
 | Remove word left
-| kbd:[`Option`+`Backspace`]
-| kbd:[`Ctrl`+`Backspace`]
+|  `Option` + `Backspace`
+|  `Ctrl` + `Backspace`
 
 | Remove word right
-| kbd:[`Option`+`Delete`]
-| kbd:[`Ctrl`+`Delete`]
+|  `Option` + `Delete`
+|  `Ctrl` + `Delete`
 |===
 
 [#faqs]

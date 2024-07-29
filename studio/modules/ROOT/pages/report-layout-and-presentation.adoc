@@ -450,36 +450,36 @@ https://app.mode.com/modeanalytics/reports/a9e1fe690f93?param_sales_region[]=Mid
 | Action | Mac | PC
 
 | Bold
-| kbd:[`⌘`+`B`]
-| kbd:[`Ctrl`+`B`]
+|  `⌘` + `B`
+|  `Ctrl` + `B`
 
 | Italic
-| kbd:[`⌘`+`I`]
-| kbd:[`Ctrl`+`I`]
+|  `⌘` + `I`
+|  `Ctrl` + `I`
 
 | Underline
-| kbd:[`⌘`+`U`]
-| kbd:[`Ctrl`+`U`]
+|  `⌘` + `U`
+|  `Ctrl` + `U`
 
 | Link
-| kbd:[`⌘`+`K`]
-| kbd:[`Ctrl`+`K`]
+|  `⌘` + `K`
+|  `Ctrl` + `K`
 
 | Indent
-| kbd:[`Tab`]
-| kbd:[`Tab`]
+|  `Tab`
+|  `Tab`
 
 | Outdent
-| kbd:[`Shift`+`Tab`]
-| kbd:[`Shift`+`Tab`]
+|  `Shift` + `Tab`
+|  `Shift` + `Tab`
 
 | Top of container
-| kbd:[`⌘`+`↑`]
-| kbd:[`Ctrl`+`↑`]
+|  `⌘` + `↑`
+|  `Ctrl` + `↑`
 
 | Bottom of container
-| kbd:[`⌘`+`↓`]
-| kbd:[`Ctrl`+`↓`]
+|  `⌘` + `↓`
+|  `Ctrl` + `↓`
 |===
 
 === HTML editor
@@ -488,36 +488,36 @@ https://app.mode.com/modeanalytics/reports/a9e1fe690f93?param_sales_region[]=Mid
 | Action | Mac | PC
 
 | Save / update layout
-| kbd:[`⌘`+`Enter`]
-| kbd:[`Ctrl`+`Enter`]
+|  `⌘` + `Enter`
+|  `Ctrl` + `Enter`
 
 | Comment line / selection
-| kbd:[`⌘`+`/`]
-| kbd:[`Ctrl`+`/`]
+|  `⌘` + `/`
+|  `Ctrl` + `/`
 
 | Indent
-| kbd:[`Tab`]
-| kbd:[`Tab`]
+|  `Tab`
+|  `Tab`
 
 | Outdent
-| kbd:[`Shift`+`Tab`]
-| kbd:[`Shift`+`Tab`]
+|  `Shift` + `Tab`
+|  `Shift` + `Tab`
 
 | Move lines down
-| kbd:[`Option`+`↓`]
-| kbd:[`Alt`+`↓`]
+|  `Option` + `↓`
+|  `Alt` + `↓`
 
 | Move lines up
-| kbd:[`Option`+`↑`]
-| kbd:[`Alt`+`↑`]
+|  `Option` + `↑`
+|  `Alt` + `↑`
 
 | Copy lines down
-| kbd:[`Option`+`Shift`+`→`]
-| kbd:[`Alt`+`Shift`+`↓`]
+|  `Option` + `Shift` + `→`
+|  `Alt` + `Shift` + `↓`
 
 | Copy lines up
-| kbd:[`Option`+`Shift`+`←`]
-| kbd:[`Alt`+`Shift`+`↑`]
+|  `Option` + `Shift` + `←`
+|  `Alt` + `Shift` + `↑`
 |===
 
 == FAQs
