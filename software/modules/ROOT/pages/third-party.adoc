@@ -1,5 +1,5 @@
 = Third-party software
-:last_updated: 09/013/2021
+:last_updated: 09/13/2021
 :linkattrs:
 :experimental:
 
@@ -14,7 +14,7 @@ Click to download the full list in CSV format:
 * link:{attachmentsdir}/third-party.csv[7.2]
 * link:{attachmentsdir}/third-party-721.csv[7.2.1]
 
-[tabset]
+[tabs]
 ====
 7.2;;
 +
