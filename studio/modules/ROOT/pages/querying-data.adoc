@@ -9,9 +9,9 @@
 
 == Overview
 
-The report is where analysis happens in {brand}.
-Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and click the *New* image:modal-add.svg[new] button in the upper right corner of the window to create a new report and get started.
-All new reports are automatically added to your xref:spaces.adoc#personal-space[Personal Collection].
+The Report is where analysis happens in {brand}.
+Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and click the *New* image:modal-add.svg[new] button in the upper right corner of the window to create a new Report and get started.
+All new Reports are automatically added to your xref:spaces.adoc#personal-space[Personal Collection].
 
 After creating a Report, you will be taken to the editor to write your first query.
 
@@ -54,7 +54,7 @@ To turn autocomplete on or off, you can toggle the switch in the Autocomplete Se
 ** Use the Data tab to consume your results, share the URL to that specific query, export the raw query data as a CSV, or copy the data to the clipboard.
 +
 image::dataview-data.png[Data tab]
-** Use the Fields tab to view metadata about your fields, add new Calculated fields, and edit, rename, or remove existing Calculated fields.
+** Use the Fields tab to view metadata about your fields, add new calculated fields, and edit, rename, or remove existing calculated fields.
 +
 image::dataview-fields.png[Field tab]
 ** Use the Source tab to toggle between the raw and rendered SQL that was executed at the time of the run, and copy the syntax to the clipboard.
@@ -93,8 +93,8 @@ NOTE: The **play** button is not available for certain database types, including
 
 == Querying multiple data sources
 
-{brand} reports can contain multiple queries, and each individual query can retrieve data from any one connected database.
-Different visualizations, each with data from different databases, can exist side-by-side within the same report.
+{brand} Reports can contain multiple queries, and each individual query can retrieve data from any one connected database.
+Different visualizations, each with data from different databases, can exist side-by-side within the same Report.
 
 You cannot `JOIN` data sets between different connections in a single query.
 However, you can combine result sets from multiple databases and visualize the combined data using xref:notebook.adoc#accessing-query-results[Python or R in the Notebook], or using xref:report-layout-and-presentation.adoc#html-editor[JavaScript in the HTML editor].
@@ -133,10 +133,10 @@ SELECT * FROM temp1;
 === Overview
 
 You can extend the power of your SQL queries in many interesting ways by using the open source link:http://liquidmarkup.org/[Liquid template language,window=_blank].
-Using Liquid, the SQL behind your {brand} reports can be manipulated at report run time using loops, if/then statements, and other advanced structures that might be difficult or impossible to do in SQL alone.
+Using Liquid, the SQL behind your {brand} Reports can be manipulated at Report run time using loops, if/then statements, and other advanced structures that might be difficult or impossible to do in SQL alone.
 Several examples of these methods are shown below.
 
-Whenever a query is executed in a {brand} report, Liquid code (if present) is evaluated first before the code is sent to your database for execution as SQL.
+Whenever a query is executed in a {brand} Report, Liquid code (if present) is evaluated first before the code is sent to your database for execution as SQL.
 Liquid code is composed of:
 
 *link:https://help.shopify.com/themes/liquid/objects[Objects,window=_blank]* which contain attributes that are used to render dynamic content into your SQL query at run time.
@@ -174,7 +174,7 @@ The above code would render into the following code for execution against the da
 SELECT * FROM employee_table WHERE favorite_food = 'peaches'
 ----
 
-NOTE: Variables are scoped only to the query in which they are declared using `assign`. They cannot be referenced across reports or across queries within the same report.
+NOTE: Variables are scoped only to the query in which they are declared using `assign`. They cannot be referenced across Reports or across queries within the same Report.
 
 ==== If/else
 
@@ -287,8 +287,8 @@ Use `{% comment %}` and `{% endcomment %}` tags to instruct {brand} to ignore wh
 ==== Parameters
 //+++<flag-icon>++++++</flag-icon>+++
 
-xref:parameters.adoc[Parameters] allow you to define forms that are configurable by viewers of your report and which return Liquid objects in your report's code.
-Parameters are a great way to make reports more extensible, maintainable, and scalable.
+xref:parameters.adoc[Parameters] allow you to define forms that are configurable by viewers of your Report and which return Liquid objects in your Report's code.
+Parameters are a great way to make Reports more extensible, maintainable, and scalable.
 
 ==== Query headers
 //+++<flag-icon>++++++</flag-icon>+++
@@ -539,9 +539,9 @@ These configurations are defined by the database and typically managed by databa
 These permissions cannot be changed directly in {brand}.
 
 [discrete]
-=== *Q: Does {brand} time-out long-running queries or reports?*
+=== *Q: Does {brand} time-out long-running queries or Reports?*
 
-{brand} will cancel any incomplete queries or report runs after a certain period of time to prevent long-running queries from degrading the performance of {brand} or your database.
+{brand} will cancel any incomplete queries or Report runs after a certain period of time to prevent long-running queries from degrading the performance of {brand} or your database.
 Note that your database may be configured to time-out queries sooner than the times listed below:
 
 |===
@@ -574,11 +574,11 @@ By starting queries simultaneously, we can maximize the use of your database res
 === *Q: Does {brand} support real-time data?*
 
 At this time, {brand} does not maintain active connections to client databases for security and data cost purposes, and does not support real-time data.
-All reports, whether scheduled or ad hoc, create new connections on demand.
+All Reports, whether scheduled or ad hoc, create new connections on demand.
 
-Please see our documentation on how to xref:report-scheduling-and-sharing.adoc#scheduled-runs[schedule a report].
+Please see our documentation on how to xref:report-scheduling-and-sharing.adoc#scheduled-runs[schedule a Report].
 We also suggest taking a look at our xref:datasets.adoc#overview[Datasets] documentation.
-This allows multiple reports to be created off of an initial query, which can be set to refresh on a schedule as well.
+This allows multiple Reports to be created off of an initial query, which can be set to refresh on a schedule as well.
 
 [discrete]
 === *Q: What type and version of SQL does {brand} use for the Public Warehouse?*
@@ -589,9 +589,9 @@ Instead, we support any version of SQL that your connected database supports, al
 This allows you to use the most up-to-date SQL features and ensures that your queries are optimized for your specific database environment.
 
 [discrete]
-=== *Q: Is there a query limit for reports?*
+=== *Q: Is there a query limit for Reports?*
 
-Yes, currently the limit is 160 queries per report.
+Yes, currently the limit is 160 queries per Report.
 
 [#troubleshooting]
 == Troubleshooting
