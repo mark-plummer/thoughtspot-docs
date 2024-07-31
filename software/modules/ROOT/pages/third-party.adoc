@@ -11,7 +11,7 @@ Click to download the full list in CSV format:
 * link:{attachmentsdir}/third-party-711.csv[7.1.1]
 * link:{attachmentsdir}/third-party-711cu1.csv[7.1.1.CU1]
 
-[tabset]
+[tabs]
 ====
 7.1;;
 +
