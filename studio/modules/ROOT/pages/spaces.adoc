@@ -9,13 +9,13 @@
 
 == Overview
 
-A Collection is a place for {brand} users to organize reports and Datasets around a team, project, or common theme.
-All {brand} reports and Datasets live in exactly one Collection, but a report or Dataset can be easily xref:organizing-reports.adoc#move-a-report-to-another-collection[moved] to a different Collection within the same {brand} Workspace.
+A Collection is a place for {brand} users to organize Reports and Datasets around a team, project, or common theme.
+All {brand} Reports and Datasets live in exactly one Collection, but a Report or Dataset can be easily xref:organizing-reports.adoc#move-a-report-to-another-collection[moved] to a different Collection within the same {brand} Workspace.
 
 Collections that you belong to are listed on the left side of your link:https://app.mode.com/home/[{brand} home page,window=_blank] under the *Collections* section.
-Click on a Collection to see a list of all of the reports and Datasets in that Collection.
+Click on a Collection to see a list of all of the Reports and Datasets in that Collection.
 At the top of your screen, you can toggle to get different views of the available content in the Collection.
-You can also sort reports and Datasets by name or by when they were last edited.
+You can also sort Reports and Datasets by name or by when they were last edited.
 The availability of different types of Collections depends on your {brand} Workspace's version:
 
 {brand} Studio Workspaces have one Collection that is created when the Workspace is created and cannot be deleted.
@@ -32,7 +32,7 @@ Users can see all Collections they have access to in the Collections list when t
 You have a personal Collection in each {brand} Workspace in which you are a member.
 Your personal Collection is created for you when you join a Workspace, and it cannot be renamed or deleted.
 
-When you create a new report, it will live your personal Collection until you xref:organizing-reports.adoc#move-a-report-to-another-collection[move it] to another Collection.
+When you create a new Report, it will live in your personal Collection until you xref:organizing-reports.adoc#move-a-report-to-another-collection[move it] to another Collection.
 Manage access to your Personal content by navigating to *Personal* in the navigation, clicking the gear button, and selecting *Manage Access*.
 
 _(Recommended)_ Keep the default access set to *Viewer* if you want users in your Workspace to be able to view Personal content you share with them.
@@ -41,7 +41,7 @@ They can only view the Report if you share the link with them.
 
 Update the default access to *Restricted* if you don't want users in your Workspace to view or edit your Personal content.
 
-You can also specifically grant individuals and groups access to view and edit personal content you share with them.
+You can also specifically grant individuals and groups access to view and edit Personal content you share with them.
 
 image::personal_manage_access.png[Reports in Personal collection]
 
@@ -51,12 +51,12 @@ image::personal_manage_access.png[Reports in Personal collection]
 Reports in the community Collection are public and can be viewed, shared, run, or duplicated by anyone on the internet.
 Building reports based on data in the xref:managing-database-connections.adoc#mode-public-warehouse[{brand} Public Warehouse] and saving them in the community Collection is a great way to demonstrate and share your analytics and visualization skills with the entire {brand} community and beyond.
 
-Each Workspace's community Collection is hidden by default, but it can be easily xref:sharing-and-embedding.adoc#sharing[enabled] by a Workspace admin.
+Each Workspace's community Collection is hidden by default, but it can be easily xref:sharing-and-embedding.adoc#sharing[enabled] by a Workspace Admin.
 When enabled, every member of the Workspace can contribute to the community Collection, and they will see it listed on the left side of their home page in the Collections section.
 
-The community Collection can only include reports with queries that run against the {brand} Public Warehouse.
-If a report has ever queried a database other than the {brand} Public Warehouse, such as any of your Workspace's private connected databases, the report can no longer be moved into the community Collection.
-This is true even if the most recent run of the report only queries the {brand} Public Warehouse.
+The community Collection can only include Reports with queries that run against the {brand} Public Warehouse.
+If a Report has ever queried a database other than the {brand} Public Warehouse, such as any of your Workspace's private connected databases, the Report can no longer be moved into the community Collection.
+This is true even if the most recent run of the Report only queries the {brand} Public Warehouse.
 
 == Managing Collections
 //+++<flag-icon>++++++</flag-icon>+++
@@ -65,7 +65,7 @@ This is true even if the most recent run of the report only queries the {brand} 
 
 Any member of a Workspace can create a new Collection:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in if you aren't already.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in.
 . Click on *Collections* in the navigation panel to access all of your Collections.
 . All Collections in the Workspace will now be listed on the right.
 Click on *Create Collection* in the upper right.
@@ -81,11 +81,11 @@ Click *Add* next to any members or member groups that you want to become a membe
 
 === Delete a Collection
 
-Before you delete a Collection, you must first remove all reports from that Collection, including any archived reports.
-You can either move the reports to another Collection or delete the reports.
-To delete a Collection once it contains no reports:
+Before you delete a Collection, you must first remove all Reports from that Collection, including any archived Reports.
+You can either move the Reports to another Collection or delete the Reports.
+To delete a Collection once it contains no Reports:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in if you aren't already.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in.
 . Open the Collection you'd like to delete, either by clicking on its name in the Collections section (if you are a member) or by clicking on *Collections* in the navigation panel, finding it in the list, and clicking on the Collection.
 . At the top of the window, click on the *gear* image:settings-mini-hover.svg[gear] next to the Collection's name.
 . Click *Delete Collection*.
@@ -98,7 +98,7 @@ NOTE: You cannot delete your personal Collection. While you cannot delete the co
 
 Only users with Editor access to a Collection can change the name or description.
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in if you aren't already.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in.
 . Open the Collection you'd like to rename, either by clicking on its name in the Collections section (if you are a member) or by clicking on *Collections* in the navigation panel.
 . At the top of the window, click on the *gear* image:settings-mini-hover.svg[gear] next to the Collection's name.
 . Click *Rename Collection*.
@@ -113,20 +113,20 @@ All Collections you have access to and have been added to your navigation will b
 Any new Collections you've been added to will also show up in your navigation automatically.
 If you do not want the Collection to show up in the Collections section, you may go to the Collection and remove it from your navigation.
 
-If you want to add a Collection to your navigation, go to "My Collections," select the Collection you wish to add, and click the icon next to the Collection name.
+If you want to add a Collection to your navigation, go to *My Collections*, select the Collection you wish to add, and click the icon next to the Collection name.
 
 TIP: Adding Members and Groups to a Collection will automatically add that Collection to the recently-added users' side-navigation. To ensure that new Workspace Members see relevant Collections, add the new Members to Groups with access to the Collections, and they will see their side-navigation populated with the relevant Collections.
 
 image::add-to-nav.png[Add collection to navigation]
 
-For more information on how to manage access, check out xref:permissions.adoc#set-up-collection-permissions[Collection permissions].
+For more information on how to manage access, see xref:permissions.adoc#set-up-collection-permissions[Collection permissions].
 
 === Add other members to a Collection
 
 Only users with *Editor* access can add new members to a Collection.
 Here's how:
 
-. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in if you aren't already.
+. Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in.
 . Open the Collection that you want to add members to, either by clicking on its name in the Collections section (if you are a member), or by clicking on *Collections* in the navigation panel, finding it in the list, and clicking on the Collection.
 . At the top of the window, click on the *gear* image:settings-mini-hover.svg[gear] next to the Collection's name.
 . Click *Add Members*.
@@ -149,9 +149,9 @@ To remove members or groups from a Collection:
 == FAQs
 
 [discrete]
-=== *Q: Are restricted collections synced to GitHub?*
+=== *Q: Are restricted Collections synced to GitHub?*
 
-Both restricted and public collections are synced to GitHub.
+Both restricted and public Collections are synced to GitHub.
 Reports in users' personal Collections or the community Collection will not be synced.
 
 [discrete]
@@ -161,4 +161,4 @@ Users must both have permission for the Connections used in a Report and the Col
 For example, if a user has view permission for all Connections used in a Report but is not a member of the private Collection containing the Report, they will be unable to view the Report.
 They must have access to both.
 
-Learn more about xref:permissions.adoc[Access Control and Permissions].
+Learn more about xref:permissions.adoc[access control and permissions].
