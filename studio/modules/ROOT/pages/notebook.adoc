@@ -9,11 +9,11 @@
 
 == Overview
 
-Every {brand} report contains an integrated notebook-style environment where analysts can extend their analysis using either Python or R.
+Every {brand} Report contains an integrated notebook-style environment where analysts can extend their analysis using either Python or R.
 
 The Notebook's movable code blocks and markdown cells enable exploratory data analysis, visualization, and collaboration.
 Notebook environments have a variety of supported <<python,Python libraries>> and <<r,R packages>> installed.
-You can add the results of output cells to reports, or share a link to the Notebook directly.
+You can add the results of output cells to Reports, or share a link to the Notebook directly.
 When Notebook output is included in the Report, that Report's schedule will re-run the Notebook so all of the data stays in sync.
 
 [#using-the-notebook]
@@ -21,7 +21,7 @@ When Notebook output is included in the Report, that Report's schedule will re-r
 
 To get started using the Notebook:
 
-. Open an existing report or create a new report and run one or more SQL queries from the SQL Editor.
+. Open an existing Report or create a new Report and run one or more SQL queries from the SQL Editor.
 . Click *New Notebook*.
 Your query results will automatically be loaded into a `datasets` object.
 . On the right-side panel, click the *dropdown* to select the environment you want to launch a Notebook from, usually either *Python 3*, *R*, or *Python 3 Edge*.
@@ -52,7 +52,7 @@ Restarts the session, thus clearing all the variables, libraries imported, etc.,
 . *Run Cell and Advance* - Runs code in the selected cell and advances to the next cell.
 . *Add New Cell* - Adds new input cell above or below the current cell.
 . *Add to Report*  - Adds the output of the selected cell to the Report Builder.
-. *More → Hide All Output* - Hide all output in the notebook. Refreshing the notebook will show the output that was previously hidden.
+. *More → Hide All Output* - Hide all output in the notebook. Refreshing the Notebook will show the output that was previously hidden.
 . *More → Export* - Exports all input cells as a .py or .r file.
 
 ==== *Cell Toolbar*
@@ -82,7 +82,7 @@ When this cell runs, any corresponding output (including visualizations) will be
 
 Notes:
 
-* When you run your notebook, cells are executed in the order they are displayed, starting from the top cell.
+* When you run your Notebook, cells are executed in the order they are displayed, starting from the top cell.
 * To select or change a cell's type, go to the dropdown menu in the cell toolbar and choose _Code_ or _Markdown_.
 * To run a cell, select it and press `Shift + Return`.
 Or click *Run Cell* in the cell or main toolbar.
@@ -144,8 +144,8 @@ Notes:
 
 * The `datasets` object won't update in the Notebook until after all queries in the report have run successfully.
 * R is 1-indexed and Python is 0-indexed.
-* If you refer to query results by the query name, remember to update your code if you rename the query in your report.
-* The order of the results in the `datasets` object is based on when the query was added to the report.
+* If you refer to query results by the query name, remember to update your code if you rename the query in your Report.
+* The order of the results in the `datasets` object is based on when the query was added to the Report.
 Renaming a query may change the order it's displayed in the report editor, but will not affect its position in the `datasets` object.
 
 [discrete]
@@ -168,7 +168,7 @@ To effectively manage memory usage in the {brand} Notebooks, consider (1) data l
 ===== *Data load of query result sets*
 
 Query result sets are loaded into the notebook when the user explicitly references the query.
-Users can consistently load up to 2GB per raw query result as a pandas dataframes in the notebook.
+Users can consistently load up to 2GB per raw query result as a pandas dataframes in the Notebook.
 
 [discrete]
 ===== *Incremental library installation*
@@ -178,7 +178,7 @@ For {brand} Business and Enterprise paid plans, the Notebook environment has up 
 [discrete]
 ===== *Memory utilization in session*
 
-Memory usage in the python notebook can be checked by running the following command:
+Memory usage in the python Notebook can be checked by running the following command:
 
 [source,python]
 ----
@@ -190,7 +190,7 @@ tracker.print_diff()
 == Output
 
 [#adding-cell-output-to-your-report]
-=== Adding cell output to your report
+=== Adding cell output to your Report
 
 image::notebook-add-to-report-2023.png[Notebook Toolbar]
 
@@ -224,13 +224,13 @@ IMPORTANT: Notebooks in the {brand} Studio plan are unable to properly utilize t
 
 Each environment comes preloaded with the following libraries:+++<supported-libraries-table type="Python">++++++</supported-libraries-table>+++
 
-IMPORTANT: We strongly discourage using either the `requests` or `pygsheets` libraries to access APIs that require authentication using personally identifiable credentials and information, as they will be visible to viewers of your report.
+IMPORTANT: We strongly discourage using either the `requests` or `pygsheets` libraries to access APIs that require authentication using personally identifiable credentials and information, as they will be visible to viewers of your Report.
 
 === Edge
 //+++<flag-icon>++++++</flag-icon>+++
 
 {brand} provides access to an additional Python 3 environment called Python 3 Edge where pending library upgrades are staged.
-Analysts should use Edge as an alternative environment where they can test out the updated versions of supported Python libraries without fear of jeopardizing scheduled reports.
+Analysts should use Edge as an alternative environment where they can test out the updated versions of supported Python libraries without fear of jeopardizing scheduled Reports.
 
 {brand} will announce periodic scheduled promotion events via emails to {brand} account administrators.
 Users will have at least 30 days from that time for testing and validation before the library updates will be made in the broader Python 3 environment.
@@ -255,7 +255,7 @@ IMPORTANT: Notebooks in the {brand} Studio plan are unable to properly utilize t
 
 The Notebook supports R version 4.2.0 and comes preloaded with the following R packages:+++<supported-libraries-table json="https://mode.github.io/runtimes/r.json" type="R">++++++</supported-libraries-table>+++
 
-IMPORTANT: We strongly discourage using the `httr` library to access APIs that require authentication using personally identifiable credentials and information, as they will be visible to viewers of your report.
+IMPORTANT: We strongly discourage using the `httr` library to access APIs that require authentication using personally identifiable credentials and information, as they will be visible to viewers of your Report.
 
 [#install-additional-libraries]
 == Install additional libraries
@@ -425,13 +425,13 @@ Each Notebook session has the following resources available, depending on the ve
 | Yes
 |===
 
-When suspended, the Notebook environment can be resumed at any time by running a cell, running the entire Notebook, or running the report.
+When suspended, the Notebook environment can be resumed at any time by running a cell, running the entire Notebook, or running the Report.
 
 [discrete]
 === *Q: Can you visualize a notebook-generated visualization with {brand}'s native chart editor?*
 
 At this time, it is not possible to use our visualization tools, such as Quick Charts and Visual Explorer, to manipulate Python/R dataframes.
-To visualize data from a notebook, you will need to use a visualization library to create a visualization.
+To visualize data from a Notebook, you will need to use a visualization library to create a visualization.
 If you would like to see this functionality added in the future, please contact our Support team, and they will be happy to add a request on your behalf for future consideration.
 
 [discrete]
@@ -448,7 +448,7 @@ FROM
  benn.nfl_touchdowns
 ----
 
-This is an link:https://app.mode.com/modeanalytics/reports/9387faf8a122/details/queries/61b65545abb9[example report,window=_blank] (check *Show Parameter Code*) showing how this can be done.
+This is an link:https://app.mode.com/modeanalytics/reports/9387faf8a122/details/queries/61b65545abb9[example Report,window=_blank] (check *Show Parameter Code*) showing how this can be done.
 You can view the Python code by clicking Notebook on the left side panel.
 
 [discrete]
@@ -463,7 +463,7 @@ This includes text, links, images and more to add context to your report.
 === *Q: Can I use dbt Metrics in Notebooks?*
 
 Yes.
-Since metrics charts are SQL Queries under the hood, their results are made available to the Notebook and appear as data frames alongside all other Query results in a given Report
+Since metrics charts are SQL Queries under the hood, their results are made available to the Notebook and appear as data frames alongside all other Query results in a given Report.
 
 [discrete]
 === *Q: Can you apply report filters to notebook generated visuals?*

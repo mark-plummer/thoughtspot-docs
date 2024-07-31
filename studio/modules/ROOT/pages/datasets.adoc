@@ -11,30 +11,30 @@
 [#overview]
 == Overview
 
-Datasets are curated tables of data that can be reused across multiple reports.
+Datasets are curated tables of data that can be reused across multiple Reports.
 They are created by writing a SQL query and transforming the results of that query into a reusable asset.
 Datasets can then be shared across your organization.
-This allows multiple reports to be created off of the initial query, which can be set to refresh on a schedule.
+This allows multiple Reports to be created off of the initial query, which can be set to refresh on a schedule.
 Reports created from Datasets will be able to consume the fresh data when available to ensure accuracy of the reporting over time.
 
-The data in a Dataset is cached in Helix, which enables more efficient data usage and improved performance for reports created from Datasets.
-Rather than each individual report hitting the warehouse, only the single Dataset hits the warehouse when it refreshes.
-That data then cascades to all associated reports.
+The data in a Dataset is cached in Helix, which enables more efficient data usage and improved performance for Reports created from Datasets.
+Rather than each individual Report hitting the warehouse, only the single Dataset hits the warehouse when it refreshes.
+That data then cascades to all associated Reports.
 
 === What are the benefits of using Datasets?
 
 Datasets can help make maintaining and scaling access to data efficient and cost-effective.
-They create a new layer between your data warehouse and reports in {brand}, which in practice allows for more control over governance, centralized logic, and data usage.
+They create a new layer between your data warehouse and Reports in {brand}, which in practice allows for more control over governance, centralized logic, and data usage.
 
 Key benefits of Datasets:
 
 * *Centralize logic and data quality*: Datasets can power multiple reports, allowing analysts to write or update one query that cascades down across multiple reports.
 * *Manage data stack complexities*: Datasets introduces a new way data moves through {brand}, creating a middle governance later that can centralize logic and make scaling easier.
-* *Improve efficiency and performance*: With data cached in Helix, this provides incremental performance gains for each report refresh that doesn't have to hit the data warehouse.
-* *Cost savings*: Datasets are positioned between reports and warehouses for more efficient data usage and controlled warehouse hits.
-* *Confident self-service access*: Datasets can be an approved source for teams within an organization to confidently build reports without writing any code, knowing the Dataset has been published by the data team.
-* *Data accessibility*: Datasets can be organized in collections and browsed when creating reports.
-Datasets are subject to permissions just like reports.
+* *Improve efficiency and performance*: With data cached in Helix, this provides incremental performance gains for each Report refresh that doesn't have to hit the data warehouse.
+* *Cost savings*: Datasets are positioned between Reports and warehouses for more efficient data usage and controlled warehouse hits.
+* *Confident self-service access*: Datasets can be an approved source for teams within an organization to confidently build Reports without writing any code, knowing the Dataset has been published by the data team.
+* *Data accessibility*: Datasets can be organized in collections and browsed when creating Reports.
+Datasets are subject to permissions just like Reports.
 
 === When should you use Datasets?
 
@@ -42,9 +42,9 @@ Datasets are a great option for creating data assets that are reusable in nature
 There are a couple of ways to think about reusability:
 
 * Creating Datasets with a single query on a specific topic.
-End users can explore the data in a report, as well as add additional datasets to the report to create a more cohesive story of the data.
-* A report that will be referenced regularly, such as a finance report, for example.
-This report may contain multiple queries, which can all be combined into a Dataset with a single refresh schedule.
+End users can explore the data in a Report, as well as add additional datasets to the Report to create a more cohesive story of the data.
+* A Report that will be referenced regularly, such as a finance Report, for example.
+This Report may contain multiple queries, which can all be combined into a Dataset with a single refresh schedule.
 * A Dataset with a more broad data view, such as a Dataset created to answer questions about product engagement.
 The Dataset would be the source of truth for asking ad-hoc questions on this topic.
 
@@ -158,7 +158,7 @@ Doing so will help other team members find and understand how to use the Dataset
 === Scheduling a Dataset
 
 You can set a schedule for your Dataset to refresh.
-When a Dataset refreshes, all associated reports built using that Dataset will receive a prompt to pull in the fresh data.
+When a Dataset refreshes, all associated Reports built using that Dataset will receive a prompt to pull in the fresh data.
 
 To create a new schedule, select the caret next to the Dataset name and choose *Schedule*.
 
@@ -225,7 +225,7 @@ You can learn more about creating a Dataset access and permissions strategy in t
 == Using Datasets in Reports
 
 You can add a Dataset to any Report for which you have edit access.
-This is true whether the report was initially started with a SQL query, or another Dataset.
+This is true whether the Report was initially started with a SQL query, or another Dataset.
 To do so, open any Report in Edit mode and select the *Add Data* button from the left-side menu.
 
 image::add_ds_to_a_report.png[Using a dataset in reports]
@@ -417,7 +417,7 @@ To confirm, select *Delete*.
 
 image::delete-dataset-confirmation.png[Delete Dataset confirmation]
 
-NOTE: If a Dataset is deleted, it will be permanently removed from your Workspace, and any dependent Reports, Charts, or calculated fields will break.
+NOTE: If a Dataset is deleted, it will be permanently removed from your Workspace, and any dependent Reports, charts, or calculated fields will break.
 
 image::4-delete-dataset.png[Delete Dataset confirmation]
 
@@ -432,7 +432,7 @@ image::4-delete-dataset.png[Delete Dataset confirmation]
 No.
 Parameters are not supported within Datasets.
 You can use liquid templating in your SQL query code, but we don't recommend it.
-There is no affordance for interacting with Parameter inputs when viewing or scheduling a Dataset or when using its data within Reports
+There is no affordance for interacting with Parameter inputs when viewing or scheduling a Dataset or when using its data within Reports.
 
 [discrete]
 ==== *Q: What happens if my Dataset fails and it's being used in Reports?*
@@ -445,7 +445,7 @@ NOTE: Even if a query run is successful, changing field names or removing fields
 [discrete]
 ==== *Q: What happens if I delete a Dataset?*
 
-The Dataset will be permanently removed from your Workspace, and any dependent Reports, Charts, or calculated fields will break.
+The Dataset will be permanently removed from your Workspace, and any dependent Reports, charts, or calculated fields will break.
 
 image::4-delete-dataset.png[deleted dataset]
 

@@ -87,7 +87,7 @@ To add a new data connection to your Workspace using Direct Connect:
 ==== *Q: How do I know if my database is publicly accessible?*
 
 A database is "publicly accessible" if the server it is hosted on can be reached via any internet connection.
-Users aren't required to be logged into a VPN or on a private network to access the database.
+Users aren't required to be logged in to a VPN or on a private network to access the database.
 
 To check if your database is publicly accessible, run the following command on a computer that's not logged in to your VPN or private network.
 Replace `your_db_host` and `your_db_port` with the host and port of your database:
@@ -126,7 +126,7 @@ You can check if your database is  publicly accessible by following the steps in
 If your database isn't publicly accessible, you should <<bridge,connect using Bridge>>.
 
 [discrete]
-====== *2. When connecting to MySQL, there's a communications link failure.*
+==== *2. When connecting to MySQL, there's a communications link failure.*
 
 [source,plaintext]
 ----
@@ -187,9 +187,9 @@ image::transport_off.jpg[Transport encryption]
 
 "Publicly accessible" databases aren't databases that can be queried by anyone in the general public--nearly all "publicly accessible" databases still require passwords and encrypted connections.
 Instead, "publicly accessible" means that the database can be reached via any internet connection.
-Users aren't required to be logged into a VPN or on a private network to access the database.
+Users aren't required to be logged in to a VPN or on a private network to access the database.
 
-The easiest way to check if your databases is publicly accessible is to run the following command on a computer that's not logged into your VPN or private network.
+The easiest way to check if your databases is publicly accessible is to run the following command on a computer that's not logged in to your VPN or private network.
 Replace `host` and `port` with the host and port of your database:
 
 [source,bash]
@@ -316,7 +316,7 @@ We recommend naming the file `/etc/mode-bridge.env` on the host where you want t
 . Pull the https://hub.docker.com/r/modeanalytics/bridge-client[latest Docker image] from DockerHub using the command `docker pull modeanalytics/bridge-client` from a terminal.
 . Run the following command to download, create, and start your Bridge connector: `docker run --env-file /etc/mode-bridge.env --name mode-bridge modeanalytics/bridge-client:[Dockerfile Version]`.
 . Verify that your Bridge connector has been configured correctly. +
-Inspect the logs for any error messages by running the following command: `docker logs --tail 30 mode-bridge`. If you discover you need to make any corrections to your configuration file, edit the file and then restart your container to apply the changes by running the following command: `docker restart mode-bridge`
+Inspect the logs for any error messages by running the following command: `docker logs --tail 30 mode-bridge`. If you discover you need to make any corrections to your configuration file, edit the file and then restart your container to apply the changes by running the following command: `docker restart mode-bridge`.
 
 [discrete]
 ==== Connect your database via Bridge
@@ -382,7 +382,7 @@ Next, add the new database.
 
 . Click on your avatar in the upper left.
 . Select *Connect a database* from the dropdown.
-. Click on the Database on a Private Network tab.
+. Click on the *Database on a Private Network* tab.
 . Select the appropriate database type.
 
 The next page should prompt you to install Bridge.
@@ -545,7 +545,7 @@ If Bridge is not running, <<how-do-i-stop-or-start-the-bridge-connector,restart 
 
 If Bridge is running, {brand} may not be able to reach Bridge because the ports that Bridge connects over are closed.
 Bridge connects to {brand} over outbound port 8444.
-You can confirm that the port is open for Bridge by running these commands on the computer running Bridge
+You can confirm that the port is open for Bridge by running these commands on the computer running Bridge.
 
 * *For Linux or OSX*:
 +
@@ -564,7 +564,7 @@ You can confirm that the port is open for Bridge by running these commands on th
 If these commands fail, you must open the outbound port on your network and on the computer running Bridge.
 
 If the port is open and you still see this error, your Bridge config file may not match what Bridge is looking for.
-If you have made manual changes to the config file, either revert your custom changes and try connecting again, or contact {brand} support for additional help.
+If you have made manual changes to the config file, either revert your custom changes and try connecting again, or contact Support for additional help.
 
 [discrete]
 ==== *3. When installing Bridge on Windows, Bridge is unable to write to `config.json`.*

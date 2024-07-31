@@ -9,46 +9,46 @@
 
 == My Work
 
-Click *My Work* image:nav-my-work.svg[my work] on the left side of your link:https://app.mode.com/home/[{brand} home page,window=_blank] to show all of the reports you have created in this Workspace, regardless of where (that is, in which Collection) those reports currently live.
+Click *My Work* image:nav-my-work.svg[my work] on the left side of your link:https://app.mode.com/home/[{brand} home page,window=_blank] to show all of the Reports you have created in this Workspace, regardless of where (that is, in which Collection) those Reports currently live.
 
 == Recently viewed
 //+++<flag-icon>++++++</flag-icon>+++
 
-Click *Recently Viewed*  on the left side of your link:https://app.mode.com/home/[{brand} home page,window=_blank] to view an ordered list of all the reports you recently viewed, starting from the most recent, no matter where those reports currently live or who created them.
+Click *Recently Viewed*  on the left side of your link:https://app.mode.com/home/[{brand} home page,window=_blank] to view an ordered list of all the Reports you recently viewed, starting from the most recent, no matter where those Reports currently live or who created them.
 
-== Pin a report
+== Pin a Report
 //+++<flag-icon>++++++</flag-icon>+++
 
-Help your teammates find the analysis they need by pinning essential reports to the top of a Collection.
-Ensuring that anyone viewing that Collection will see the report at the top of the list.
-To pin a report:
+Help your teammates find the analysis they need by pinning essential Reports to the top of a Collection,
+ensuring that anyone viewing that Collection will see the Report at the top of the list.
+To pin a Report:
 
-. Navigate to the Collection where the report you want to pin is located.
-. Hover over the report thumbnail, and then click on the *More* image:menu-dots-gray-press.svg[more menu] button in the upper right corner.
-. Click *Pin in this Collection* and the report will jump to the top of the list.
+. Navigate to the Collection where the Report you want to pin is located.
+. Hover over the Report thumbnail, and then click on the *More* image:menu-dots-gray-press.svg[more menu] button in the upper right corner.
+. Click *Pin in this Collection* and the Report will jump to the top of the list.
 
-To unpin a report in a Collection, repeat the above steps and click *Unpin from this space* in Step 3.
+To unpin a Report in a Collection, repeat the above steps and click *Unpin from this space* in Step 3.
 
-NOTE: Pinning is not supported for xref:spaces.adoc#personal-space[personal collections].
+NOTE: Pinning is not supported for xref:spaces.adoc#personal-space[personal Collections].
 
 [#report-shortcut]
 == Report shortcut
 //+++<flag-icon>++++++</flag-icon>+++
 
-You can use shortcuts to make a report accessible from multiple open Collections.
-While a report can only ever live in one Collection at a time, you create shortcuts to a report from as many public Collections as you want.
-To create a shortcut to a report:
+You can use shortcuts to make a Report accessible from multiple open Collections.
+While a Report can only ever live in one Collection at a time, you can create shortcuts to a Report from as many public Collections as you want.
+To create a shortcut to a Report:
 
-. Navigate to the Collection where the report is located.
-. Hover over the report thumbnail, and then click on the *More* image:menu-dots-gray-press.svg[more menu] button in the upper right corner.
+. Navigate to the Collection where the Report is located.
+. Hover over the Report thumbnail, and then click on the *More* image:menu-dots-gray-press.svg[more menu] button in the upper right corner.
 . Click *Create shortcut...* in the dropdown.
 . In the pop-up, find the Collection from which you want to create the shortcut and click on it.
 . Click *Create*.
 +
 NOTE: Shortcuts cannot be created in private Collections, and shortcuts cannot be created to Reports in private Collections.
 
-Deleting a report shortcut does not affect the original report.
-To delete a report shortcut:
+Deleting a Report shortcut does not affect the original Report.
+To delete a Report shortcut:
 
 . Navigate to the Collection where the shortcut is located.
 . Hover over the shortcut thumbnail, and then click on the *More* image:menu-dots-gray-press.svg[more menu] button in the upper right corner.
@@ -57,7 +57,7 @@ To delete a report shortcut:
 == Search
 
 To easily navigate to Reports, Datasets, and Collections in {brand}, click the magnifying glass icon in the top right to use the search bar, or use the keyboard shortcut (`Cmd/Ctrl+K`).
-Search by title, description or query keywords like column names to find the content you need.
+Search by title, description, or query keywords like column names to find the content you need.
 
 === Keyboard shortcuts
 
@@ -70,10 +70,10 @@ Search by title, description or query keywords like column names to find the con
 
 Use filters to narrow down your search results:
 
-* Filter by type - Reports, Datasets, Collections
+* Filter by type - Reports, Datasets, Collections.
 * Specify what you want your search to match on.
 Collections can only match on name and description.
-* Filter to content created by you
+* Filter to content created by you.
 
 image::search-filters2.png[Search Filters]
 
@@ -81,9 +81,9 @@ image::search-filters2.png[Search Filters]
 == FAQs
 
 [discrete]
-=== *Q: Is there a way I can track who edits a report or query?*
+=== *Q: Is there a way I can track who edits a Report or query?*
 
-We currently don't log the edit history, however, you should be able to see the query run history of a report under *View Details > Details*, and scroll to the bottom.
+We currently don't log the edit history, however, you should be able to see the query run history of a Report under *View Details > Details*, and scroll to the bottom.
 
 image::runHistory.png[Query History]
 
@@ -95,5 +95,5 @@ That will then bring up the following screen:
 
 image::QueryHistory.png[View History]
 
-Another option we would suggest is using GitHub Sync to track all changes made to a report, so you can go on the GitHub repo to track exactly what changes are made at what time, and who made the changes.
+Another option we would suggest is using GitHub Sync to track all changes made to a Report, so you can go on the GitHub repo to track exactly what changes are made at what time, and who made the changes.
 You can learn more about GitHub Sync xref:github.adoc#mode-github[here].

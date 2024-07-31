@@ -32,10 +32,10 @@ IMPORTANT: Any active member of a {brand} Workspace can create a new database co
 
 === Modify or disconnect a connected database
 
-You can only delete or modify the settings and credentials for a database connection if you're an admin or if you were the member who connected it to the Workspace.
+You can only delete or modify the settings and credentials for a database connection if you're an Admin or if you were the member who connected it to the Workspace.
 
 . Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in.
-. Click on your name in the upper left, and click *Workspace Settings*
+. Click on your name in the upper left, and click *Workspace Settings*.
 . In the Data section, click *Connections*.
 . All the database connections for your Workspace are listed on the right.
 . Click on the connection and then go to the *Connection Properties tab* to adjust the database credentials and configuration.
@@ -48,10 +48,10 @@ IMPORTANT: Deleting a database connection from {brand} will prevent all reports 
 
 To update the driver {brand} uses to connect to one of your data sources, you must have the Manage Data Source permission or higher.
 
-. Open the menu beneath your name in the upper left corner and select Workspace Settings.
+. Open the menu beneath your name in the upper left corner and select *Workspace Settings*.
 +
 image:organization_settings.jpeg.png[Organization Settings]
-. Scroll down to the Data section and select Manage Connections.
+. Scroll down to the *Data* section and select *Manage Connections*.
 In the main panel, select the connection you'd like to update from the list.
 +
 image:manage_connections.png[Manage Connections]
@@ -139,7 +139,7 @@ image::Access-Menu.png[Access Menu Illustration]
 To set up permissions to a connected database in {brand}:
 
 . Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in.
-. Click on your name in the upper left, and click *Workspace Settings*
+. Click on your name in the upper left, and click *Workspace Settings*.
 . In the Data section, click *Manage Connections*.
 . Click on the data connection you want to limit.
 . Click the *Permissions* tab.
@@ -199,10 +199,10 @@ IMPORTANT: Headers are injected only once per {brand} SQL query, even if that qu
 You must be the creator of a data connection or a Workspace admin to modify its query header.
 
 . Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank] and sign in.
-. Click on your name in the upper left, and click *Workspace Settings*
+. Click on your name in the upper left, and click *Workspace Settings*.
 . In the Data section, click *Connections*.
 . Click on the data connection you would like to modify.
-. Go to the *Query Header tab*.
+. Go to the *Query Header* tab.
 . In the space provided, add or modify any valid SQL code (including comments and valid Liquid code) that you want {brand} to prepend to all queries run against this connection.
 . When you are finished, click *Save*.
 
@@ -387,7 +387,7 @@ If you don't have an account yet, link:https://app.mode.com/signup?src=help_site
 . After the data uploads, you will have the opportunity to customize the name of the table and how the columns are stored.
 When querying the table, you will be required to type the namespace first.
 In the example below, the user's account name is "tutorial", so the uploaded table name will include the "tutorial" prefix:
-
++
 image::public-data-customize-columns.png[Adding Public Data]
 
 Table names in the {brand} Public Warehouse must:

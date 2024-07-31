@@ -35,7 +35,7 @@ This may cause connectivity issues.
 
 === Support levels
 
-For the listed database types below, {brand} aims to support all versions of the database actively supported by the database vendor or appropriate open source community.
+For the listed database types below, {brand} aims to support all versions of the database actively supported by the database vendor or appropriate open-source community.
 
 ==== Tier 1: Preferred
 
@@ -283,7 +283,7 @@ When creating an Athena connection, we recommend link:https://docs.aws.amazon.co
 For data you want to query, the AWS user only needs read access.
 . The S3 Results Directory should be a bucket where Athena can write query results.
 For this bucket, the AWS user specified above needs read and write access.
-The bucket should be a full S3 url (for example, `s3://acme/my/athena/bucket`)
+The bucket should be a full S3 url (for example, `s3://acme/my/athena/bucket`).
 . Click *Connect*.
 You will land on a page that displays your database schema.
 
@@ -381,12 +381,12 @@ Please click on your VPC Security Group name and follow <<amazon-web-services,th
 image::redshift-security-group.png[Redshift]
 
 . You'll see a list of authorized connections.
-Click the blue "Add Connection Type" button in the upper left.
-. Select "CIDR/IP" from the "Connection Type" dropdown, and paste the address `54.68.30.98/32` in the "CIDR/IP to Authorize" field.
+Click the blue *Add Connection Type* button in the upper left.
+. Select *CIDR/IP* from the *Connection Type* dropdown, and paste the address `54.68.30.98/32` in the *CIDR/IP to Authorize* field.
 +
 image::redshift-connection.png[Redshift]
 
-. Click the blue "Authorize" button
+. Click the blue *Authorize* button.
 . Repeat steps 5 through 7 for each of the addresses listed below:
  ** `54.68.45.3/32`
  ** `34.209.23.118/32`
@@ -411,11 +411,11 @@ Once you have your credentials, follow the steps below to connect {brand}:
 . Select *mParticle Redshift* from the list of databases.
 . Enter your mParticle credentials and click *Connect*.
 You'll land on a page that displays your database schema.
-. Click "`New Query`" in the top navigation to start writing queries!
+. Click *New Query* in the top navigation to start writing queries.
 
 ====== Tenjin Redshift
 
-Once you've activated the DataVault feature on your Tenjin account, you can access your DataVault credentials by logging in to the dashboard and navigating to Menu \-> DataVault Credentials.
+Once you've activated the DataVault feature on your Tenjin account, you can access your DataVault credentials by logging in to the dashboard and navigating to *Menu \-> DataVault Credentials*.
 
 For additional questions about getting your DataVault credentials, please free to contact link:mailto:support@tenjin.io[support@tenjin.io,window=_blank].
 
@@ -585,7 +585,7 @@ Connecting to Databricks requires a running Spark cluster configured with SSL en
 . Follow these steps to xref:connecting-mode-to-your-database.adoc[connect a Databricks database].
 Change the display name to something that helps you recognize the database behind the connection.
 . Fill in the `host`, `token`, and `HTTP path` fields with the information you gathered above.
-. Click "Connect" to save the new connection.
+. Click *Connect* to save the new connection.
 
 ===== Supported SQL dialect
 
@@ -621,9 +621,9 @@ The catalog and schema are now concatenated at the top level in the Schema Brows
 
 You will also need the following to set up the connection in {brand}:
 
-* dbt Cloud Hostname: The hostname for the instance of dbt cloud.
-* Environment Id: The unique identifier for a dbt environment in the dbt Cloud URL, when you navigate to that environment under Deployments.
-* Service Token: Service Tokens for dbt Cloud can be created in dbt account settings, and must have at least "Semantic Layer Only" permissions.
+* *dbt Cloud Hostname*: The hostname for the instance of dbt cloud.
+* *Environment Id*: The unique identifier for a dbt environment in the dbt Cloud URL, when you navigate to that environment under Deployments.
+* *Service Token*: Service Tokens for dbt Cloud can be created in dbt account settings, and must have at least "Semantic Layer Only" permissions.
 
 Start by xref:connecting-mode-to-your-database.adoc[connecting a database.]
 
@@ -662,7 +662,7 @@ select * from {{
 |
 |===
 
-_Important: do not use this driver to connect to a Virtual DataPort server with an update previous to 20210209._
+_Important: do not use this driver to connect to a Virtual DataPort server with an update previous to 2021/02/09._
 
 [#google-alloydb]
 ==== Google AlloyDB
@@ -697,9 +697,9 @@ There are no known issues with this driver.
 . Select *Google AlloyDB* from the list of databases.
 . You can utilize xref:connecting-mode-to-your-database.adoc#bridge[Bridge connector] if you have a private IP address.
 . Enter your Google AlloyDB credentials and click *connect*. +
-.. Host / Port: Host name or IP address and Port of the server hosting AlloyDB
-.. Database name: The database to connect to for AlloyDB
-.. Username / Password: The username and password to authenticate with AlloyDB
+.. Host / Port: Host name or IP address and Port of the server hosting AlloyDB.
+.. Database name: The database to connect to for AlloyDB.
+.. Username / Password: The username and password to authenticate with AlloyDB.
 
 [#google-bigquery]
 ==== Google BigQuery
@@ -861,7 +861,7 @@ A Workspace admin can change the default SQL preference a BigQuery connection at
 . Click *Workspace Settings*.
 . Under the Data section, click *Connections*.
 . Click on the BigQuery connection you want to update.
-. In the upper right corner of the page, click on *Settings*
+. In the upper right corner of the page, click on *Settings*.
 . Toggle standard SQL on or off.
 . Before your settings are updated, you will need to re-upload your service account's P12 key.
 Learn more about link:https://cloud.google.com/storage/docs/authentication#service_accounts[BigQuery service accounts and P12 keys,window=_blank].
@@ -875,7 +875,7 @@ IMPORTANT: Take care when changing the default SQL dialect for an existing conne
 When you see the form to enter your BigQuery credentials, first enter a name for the new database connection.
 . In the *Project ID* field, enter the BigQuery project ID.
 It can be found in the URL of your Google Developers Console.
-The URL should be structured like this: `+https://console.developers.google.com/apis/library?project=MY_PROJECT_ID+`
+The URL should be structured like this: `+https://console.developers.google.com/apis/library?project=MY_PROJECT_ID+`.
 . In the *Service Account Email Address* field, add your service account's email address that you noted in step 4.
 . Under the *Key* field, click *Choose File* and select the private key file you downloaded in step 3.
 . Click *Connect* to complete the connection.
@@ -1014,8 +1014,8 @@ To write a new Looker SQL query, *navigate to the SQL editor* and select your Lo
 By default, this connection will surface all available schemas (LookML Models) and tables (Explores). *To reference a field within your query, use the following syntax:*
 
 Note to use backticks around schema, table, and column identifiers.
-Wrap any LookML measures in the special function AGGREGATE() whether it is in a SELECT clause, a HAVING clause, or an ORDER BY clause.
-You cannot use LookML measures in a GROUP BY clause.
+Wrap any LookML measures in the special function `AGGREGATE()`, whether it is in a `SELECT` clause, a `HAVING` clause, or an `ORDER BY` clause.
+You cannot use LookML measures in a `GROUP BY` clause.
 
 [source]
 ----
@@ -1140,8 +1140,7 @@ The following are known issues with the current supported drivers.
 
 | MySQL Connector/J 8.0.20
 | Server Timezone Specification is Required
-a| Customers without a specified serverTimezone for their databases will see queries fail if any of the time zones (application/database servers) are not in the format `UTC+xx` or `GMT+xx`.
-+
+a| Customers without a specified serverTimezone for their databases will see queries fail if any of the time zones (application/database servers) are not in the format `UTC+xx` or `GMT+xx`. +
 Queries will fail with the following error: `java.sql.SQLException: The server time zone value 'PDT' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the 'serverTimezone' configuration property) to use a more specific time zone value if you want to utilize time zone support.` +
 *Note that the error is directly from the JDBC driver*.
 At this time {brand} does not support customers setting additional configuration properties (such as the suggested 'serverTimezone' property) via the JDBC driver. +
@@ -1247,7 +1246,7 @@ Once you have your credentials, follow the steps below to connect {brand}:
 . Select Heap from the list of databases.
 . Enter your Heap credentials and click *Connect*.
 You'll land on a page that displays your database schema.
-. Click "`New Query`" in the top navigation to start writing queries.
+. Click *New Query* in the top navigation to start writing queries.
 
 [#presto]
 ==== Presto
@@ -1326,7 +1325,7 @@ Workaround is to use a function to convert the date to string.
 
 | Snowflake v 3.13.1
 | Timestamps with timezone are not supported
-| {brand} does not display timestamp values with the timezone.
+a| {brand} does not display timestamp values with the timezone.
 Instead, convert all timestamps to one timezone for simplicity.
 +++<pre>+++SELECT current_timestamp()  AS Date, + cast(convert_timezone('US/Eastern', Date) AS datetime) EST_date;+++</pre>+++
 |===
@@ -1457,17 +1456,17 @@ We'll start by determining if your database is accessible to us.
 +
 image::rds-select-instance-201507.png[Amazon RDS Console]
 
-. Look under "Security and Network".
+. Look under *Security and Network*.
 Your instance is in a VPC if there's an entry labeled VPC.
 It is typically found below _Availability Zone_ and above _Security Groups_.
-If you don't have an entry here, then your instance is not in a VPC, and you can jump to the "Security Groups" section below.
+If you don't have an entry here, then your instance is not in a VPC, and you can jump to the *Security Groups* section below.
 +
 image::rds-with-a-vpc-201507.png[RDS with a VPC]
 
 . Instances in VPCs can be public or private.
-We can find out by looking under "Security and Network" again.
+We can find out by looking under *Security and Network* again.
 This time for an entry labeled _Publicly Accessible_.
-If it is followed by a _Yes_, then you can jump to the "Security Groups" section below.
+If it is followed by a _Yes_, then you can jump to the *Security Groups* section below.
 +
 image::rds-with-a-public-vpc-201507.png[RDS on a public VPC]
 
@@ -1492,42 +1491,41 @@ RDS instances outside of a VPC have a different process.
 
 ===== VPC
 
-. Under "Security and Network", click the security group name.
+. Under *Security and Network*, click the security group name.
 +
 image::rds-vpc-security-group-201507.png[Amazon RDS]
 
 . A new tab will be opened.
-Click on the "Inbound" tab and then "Edit".
+Click on the *Inbound* tab and then *Edit*.
 +
 image::rds-vpc-security-group-edit-201507.png[Amazon RDS]
 
-. Find the RDS type that matches your instance (for example,
-PostgreSQL), enter each of our addresses, and then click "Save".
+. Find the RDS type that matches your instance (for example, PostgreSQL), enter each of our addresses, and then click *Save*.
 +
 image::rds-vpc-security-group-addresses-201507.png[Amazon RDS]
 
 ===== No VPC
 
-. Under "Security and Network", click the security group to which that database belongs.
+. Under *Security and Network*, click the security group to which that database belongs.
 +
 image::rds-security-group.png[Amazon RDS]
 
-. At the bottom of the page, highlight the "Connection Type" selector and choose "CIDR/IP".
+. At the bottom of the page, highlight the *Connection Type* selector and choose *CIDR/IP*.
 +
 image::rds-connection-type.png[Amazon RDS]
 
-. In the "CIDR/IP to Authorize" field, paste address: `54.68.30.98/32`.
+. In the *CIDR/IP to Authorize* field, paste address: `54.68.30.98/32`.
 +
 image::rds-cidr-ip.png[Amazon RDS]
 
-. Click the blue "Authorize" button.
+. Click the blue *Authorize* button.
 . Repeat steps 1-4 for each of the addresses listed above.
 
 [#faqs]
 === FAQs
 
 [discrete]
-====== *Q: How to import {brand} results into a Google Sheet*
+==== *Q: How to import {brand} results into a Google Sheet*
 
 While we currently do not support the ability to natively export or import data to and from a Google Sheet, we do have a step-by-step <<google-bigquery,guide on how to query Google Sheets using BigQuery in {brand}>>.
 You can also follow the instructions below for a custom way to import data from a {brand} report to a Google Sheet programmatically.
