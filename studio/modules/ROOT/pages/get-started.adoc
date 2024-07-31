@@ -15,4 +15,4 @@ A list of Open Source Code Attributions that {brand} supports.
 ** xref:supported-browsers.adoc[Supported browsers] +
 A list of the browsers that {brand} supports.
 ** xref:release-notes.adoc[Release notes] +
-Stay up-to-date with the latest updates.
+Stay up to date with the latest updates.
