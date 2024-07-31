@@ -15,7 +15,7 @@ Click to download the full list of third-part packages in every software deploym
 
 * link:{attachmentsdir}/third-party.csv[9.0.1.sw third-party packages]
 
-[tabset]
+[tabs]
 ====
 9.0.1.sw::
 +
