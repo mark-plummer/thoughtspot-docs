@@ -92,6 +92,7 @@ td {
 ++++
 
 ++++
+<!-- first row -->
 <div class="box-button-columns">
     <div class="box-button"><a href="https://docs.thoughtspot.com/cloud/latest" class="panel-2">
       <span>
@@ -120,7 +121,35 @@ td {
     </span>
     </a></div>
  </div>
-
+<!-- second row -->
+<div class="box-button-columns">
+    <div class="box-button"><a href="https://docs.thoughtspot.com/cloud/latest" class="panel-2">
+      <span>
+    <h2>
+      Visualize and present data
+    </h2>
+    </span>
+    </a></div>
+    <div class="box-button"><a href = "https://docs.thoughtspot.com/software/latest" class = "panel-2">
+    <h2>
+      Explore and share data
+    </h2>
+    </a></div>
+  <div class="box-button"><a href="https://developers.thoughtspot.com/docs/" class="panel-2">
+      <span>
+    <h2>
+      Embedding
+    </h2>
+   </span>
+    </a></div>
+  <div class="box-button"><a href="https://mode.com/help/" class="panel-2">
+      <span>
+    <h2>
+      Integrations
+    </h2>
+    </span>
+    </a></div>
+ </div>
 
 ++++
 
