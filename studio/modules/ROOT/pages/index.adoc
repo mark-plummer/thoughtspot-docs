@@ -88,8 +88,11 @@ td {
     </h2>
    </span>
     </a></div>
-  Query and analyze data
+  <div class="box-button"><a href="https://mode.com/help/" class="panel-2">
       <span>
+    <h2>
+      Query and analyze data
+    </h2>
     </span>
     </a></div>
  </div>
