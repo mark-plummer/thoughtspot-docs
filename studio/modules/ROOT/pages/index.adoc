@@ -94,26 +94,26 @@ td {
 ++++
 <!-- first row -->
 <div class="box-button-columns">
-    <div class="box-button"><a href="https://docs.thoughtspot.com/cloud/latest" class="panel-2">
+    <div class="box-button"><a href="https://analyst-studio-preview.netlify.app/studio/latest/get-started" class="panel-2">
       <span>
     <h2>
       Get Started
     </h2>
     </span>
     </a></div>
-    <div class="box-button"><a href = "https://docs.thoughtspot.com/software/latest" class = "panel-2">
+    <div class="box-button"><a href="https://analyst-studio-preview.netlify.app/studio/latest/navigate-and-organize-content" class = "panel-2">
     <h2>
       Navigate and organize content
     </h2>
     </a></div>
-  <div class="box-button"><a href="https://developers.thoughtspot.com/docs/" class="panel-2">
+  <div class="box-button"><a href="https://analyst-studio-preview.netlify.app/studio/latest/connect-your-database" class="panel-2">
       <span>
     <h2>
       Connect your database
     </h2>
    </span>
     </a></div>
-  <div class="box-button"><a href="https://mode.com/help/" class="panel-2">
+  <div class="box-button"><a href="https://analyst-studio-preview.netlify.app/studio/latest/query-and-analyze-data" class="panel-2">
       <span>
     <h2>
       Query and analyze data
@@ -123,26 +123,26 @@ td {
  </div>
 <!-- second row -->
 <div class="box-button-columns">
-    <div class="box-button"><a href="https://docs.thoughtspot.com/cloud/latest" class="panel-2">
+    <div class="box-button"><a href="https://analyst-studio-preview.netlify.app/studio/latest/visualize-and-present-data" class="panel-2">
       <span>
     <h2>
       Visualize and present data
     </h2>
     </span>
     </a></div>
-    <div class="box-button"><a href = "https://docs.thoughtspot.com/software/latest" class = "panel-2">
+    <div class="box-button"><a href="https://analyst-studio-preview.netlify.app/studio/latest/explore-and-share-data" class = "panel-2">
     <h2>
       Explore and share data
     </h2>
     </a></div>
-  <div class="box-button"><a href="https://developers.thoughtspot.com/docs/" class="panel-2">
+  <div class="box-button"><a href="https://analyst-studio-preview.netlify.app/studio/latest/embedding" class="panel-2">
       <span>
     <h2>
       Embedding
     </h2>
    </span>
     </a></div>
-  <div class="box-button"><a href="https://mode.com/help/" class="panel-2">
+  <div class="box-button"><a href="https://analyst-studio-preview.netlify.app/studio/latest/integrations" class="panel-2">
       <span>
     <h2>
       Integrations
@@ -150,6 +150,34 @@ td {
     </span>
     </a></div>
  </div>
-
+<!-- third row -->
+<div class="box-button-columns">
+    <div class="box-button"><a href="https://analyst-studio-preview.netlify.app/studio/latest/administration" class="panel-2">
+      <span>
+    <h2>
+      Administration
+    </h2>
+    </span>
+    </a></div>
+    <div class="box-button"><a href = "https://analyst-studio-preview.netlify.app/studio/latest/api" class = "panel-2">
+    <h2>
+      API
+    </h2>
+    </a></div>
+  <div class="box-button"><a href="https://analyst-studio-preview.netlify.app/studio/latest/faqs" class="panel-2">
+      <span>
+    <h2>
+      FAQs
+    </h2>
+   </span>
+    </a></div>
+  <div class="box-button"><a href="https://analyst-studio-preview.netlify.app/studio/latest/contact-us" class="panel-2">
+      <span>
+    <h2>
+      Contact us
+    </h2>
+    </span>
+    </a></div>
+ </div>
 ++++
 
