@@ -77,22 +77,20 @@ td {
     </span>
     </a></div>
     <div class="box-button"><a href = "https://docs.thoughtspot.com/software/latest" class = "panel-2">
-    <img src="https://docs.thoughtspot.com/home/_images/software.png" id="software-icon">
     <h2>
-      Software
+      Navigate and organize content
     </h2>
-    <p>Deploy and manage ThoughtSpot in your own private cloud.</p>
     </a></div>
   <div class="box-button"><a href="https://developers.thoughtspot.com/docs/" class="panel-2">
-      <span><img src="https://docs.thoughtspot.com/home/_images/developer.png" id="developer-icon">
+      <span>
     <h2>
-      Developer
+      Connect your database
     </h2>
-    <p>Build interactive data apps with a low-code developer-friendly platform.</p></span>
+   </span>
     </a></div>
-  <div class="box-button"><a href="https://mode.com/help/" class="panel-2">
-      <span><img class="mode-image" src="https://docs.thoughtspot.com/home/_images/mode.png" id="mode-icon">
-    <p>Perform complex, ad hoc analysis and empower simple self-service reporting, all on the same platform.</p></span>
+  Query and analyze data
+      <span>
+    </span>
     </a></div>
  </div>
 
