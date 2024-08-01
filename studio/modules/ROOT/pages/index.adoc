@@ -67,8 +67,6 @@ td {
 </style>
 ++++
 
-[.conceal-title]
-== {empty}
 ++++
 <div class="box-button-columns">
     <div class="box-button"><a href="https://docs.thoughtspot.com/cloud/latest" class="panel-2">
