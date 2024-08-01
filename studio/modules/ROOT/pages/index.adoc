@@ -94,13 +94,6 @@ td {
       <span><img class="mode-image" src="https://docs.thoughtspot.com/home/_images/mode.png" id="mode-icon">
     <p>Perform complex, ad hoc analysis and empower simple self-service reporting, all on the same platform.</p></span>
     </a></div>
-    <div class="box-button"><a href="https://docs.thoughtspot.com/seekwell/latest" class="panel-2">
-          <span><img src="https://docs.thoughtspot.com/home/_images/just-logo-black-40px.png" id="seekwell-icon">
-        <h2>
-          SeekWell
-        </h2>
-        <p>Sync your data warehouse with all your favorite business apps and automate your customer data workflows faster than ever.</p></span>
-        </a></div>
  </div>
 
 
