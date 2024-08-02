@@ -243,7 +243,7 @@ You can also <<install-bridge-with-mode,install the Bridge connector>> on any co
  ** Fedora 27, 28, 29
  ** CentOS 6, 7
  ** Debian 8.0, 9.0
- ** {blank} xref:contact-us.adoc[Our support team] can provide a generic tarball for many other 64-bit Linux systems.
+ ** {blank} {support-url} can provide a generic tarball for many other 64-bit Linux systems.
 
 TIP: When connecting to a database in AWS, most customers will run Bridge in an EC2 virtual machine. In these cases, you should set up a 64-bit EC2 instance running Linux that can both connect to your Redshift/RDS cluster and can connect to modeanalytics.com on ports 443 and 8444.
 
@@ -521,7 +521,7 @@ You can test if the machine running Bridge has access to the database by running
 * *Windows*: `telnet your_db_host  your_db_port`
 
 If the command succeeds, the computer has access to the database.
-You can contact {brand} support for further assistance.
+You can contact {support-url} for further assistance.
 
 If the command fails, the computer running Bridge doesn't have access to the database.
 To fix this, you should either install Bridge on a machine that has access or adjust your network settings so that the machine running Bridge has access to your database.
@@ -564,7 +564,7 @@ You can confirm that the port is open for Bridge by running these commands on th
 If these commands fail, you must open the outbound port on your network and on the computer running Bridge.
 
 If the port is open and you still see this error, your Bridge config file may not match what Bridge is looking for.
-If you have made manual changes to the config file, either revert your custom changes and try connecting again, or contact Support for additional help.
+If you have made manual changes to the config file, either revert your custom changes and try connecting again, or contact {support-url} for additional help.
 
 [discrete]
 ==== *3. When installing Bridge on Windows, Bridge is unable to write to `config.json`.*

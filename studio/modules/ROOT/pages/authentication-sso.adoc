@@ -26,7 +26,7 @@ Toggle off any methods that you do not want to allow users to authenticate with:
 * Office 365
 * SAML provider of your choice (if configured)
 
-WARNING: Do not disable all sign-in methods. If all methods are disabled, it will be impossible for anyone to sign in to your Workspace, including Admins, and you will need to xref:contact-us.adoc[contact our support team] for assistance.
+WARNING: Do not disable all sign-in methods. If all methods are disabled, it will be impossible for anyone to sign in to your Workspace, including Admins, and you will need to contact {support-url} for assistance.
 
 [#custom-saml]
 === Custom SAML
@@ -326,7 +326,7 @@ We only allow one SCIM instance per workspace, and we recommend that you sync a 
 
 Both Okta and Azure provide logs for provisioning.
 If a user or group is not provisioned or provisioned incorrectly, check the logs for errors.
-If the error cannot be resolved easily, write in to {brand} support.
+If the error cannot be resolved easily, write in to {support-url}.
 
 |===
 | Issue | What to do
@@ -337,7 +337,7 @@ a| Users assigned to the {brand} app within the identity provider before SCIM is
 *AAD* +
 Check the user is assigned to the {brand} app in AAD, check that the group is assigned to the {brand} app, then re-provision the group to {brand}.
 You can also stop and restart provisioning in AAD if you check the logs and find errors.
-If re-starting provisioning doesn't work, reach out to {brand} support. +
+If re-starting provisioning doesn't work, reach out to {support-url}. +
 
 *Okta* +
 To ensure proper access to their account and groups, un-assign and re-assign the user to the {brand} app in Okta.

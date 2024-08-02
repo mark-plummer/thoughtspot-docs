@@ -206,7 +206,7 @@ Therefore, Ann reaches out to {brand}'s support team to claim the @octan.com dom
 Later, when bill@octan.com signs up for {brand} and verifies his email address, he will be automatically added to the Octan Workspace and can collaborate with Ann in {brand}.
 
 When SSO is enabled, users will be able to sign up with their email and will immediately have access to the Workspace if they are already logged into the SSO provider (that is, Google).
-This is a very seamless experience for users to access {brand}. xref:contact-us.adoc[Contact our support team] to claim a domain.
+This is a very seamless experience for users to access {brand}. Contact {support-url} to claim a domain.
 
 IMPORTANT: Some domains are not available to be claimed. For example, they may belong to a large institution and require additional authorization, or they may be shared email domains used by many Workspaces. In such cases, we encourage customers to use email invites or a third-party identity provider to set up user accounts in {brand}.
 
@@ -442,7 +442,7 @@ Let's say you add a coworker to your Workspace 10 days into your monthly billing
 Since the coworker was a member of your Workspace for 2/3 of the billing period, you will be billed 2/3 of $27 ($18) for their seat for the period.
 If you remove another team member the same day, you would be billed for 1/3 of $27 ($9) for that member's seat during the period.
 
-You can add additional seats to your annual agreement at the annual price at any time by contacting your CSM or link:mailto:customersuccess@mode.com[customersuccess@mode.com,window=_blank].
+You can add additional seats to your annual agreement at the annual price at any time by contacting your CSM or {support-url}.
 
 === Data compute flex rates
 
@@ -457,7 +457,7 @@ In month 2, you use 95GB of cumulative data compute.
 In month 3, you use 120GB of cumulative data compute.
 Your overall bill would be ((105 - 100)/100 * 1250) + ((120-100)/100 * 1250) = 62.5 + 250 = 312.50.
 
-You can add additional monthly data compute throughput to your annual agreement at the annual price at any time by contacting your CSM or link:mailto:customersuccess@mode.com[customersuccess@mode.com,window=_blank].
+You can add additional monthly data compute throughput to your annual agreement at the annual price at any time by contacting your CSM or {support-url}.
 
 === Tracking insights on seats and data compute usage
 
@@ -487,7 +487,7 @@ The Discovery API provides API access to metadata that gives you insights on Rep
 NOTE: Included in Enterprise Plan link:https://mode.com/developer/discovery-api/introduction/[Additional Discovery API Details and Developer Guides,window=_blank]
 
 Still have questions?
-Please reach out to your CSM or link:mailto:support@mode.com[support@mode.com,window=_blank] so we can get you answers!
+Please reach out to your CSM or {support-url} so we can get you answers.
 
 == Delete a Workspace
 
@@ -516,7 +516,7 @@ Reports living in personal collections can still be accessed by workspace admins
 
 Workspace admins can move Reports from a user's personal collection into a public or private collection of their choice using the link:https://mode.com/developer/api-cookbook/management/move-report/[{brand} API,window=_blank].
 Please note that the Report tokens are required for this automation.
-If you need a list of the Report tokens in the deactivated user's personal collection, please have a workspace admin contact Support.
+If you need a list of the Report tokens in the deactivated user's personal collection, please have a workspace admin contact {support-url}.
 
 [discrete]
 === *Q: What are the potential impacts when a user is deactivated?*
@@ -550,7 +550,7 @@ As an admin, you have the ability to cancel an invite by following these steps:
 This behavior is seen when the workspace has "admin-invite only" enabled and/or the admin has not approved the request to join the workspace.
 In many cases, when users click "Continue" in their email to verify their email address, nothing else is sent to them.
 We recommend reaching out to the admin for next steps.
-If you are unsure who the admin users are in your workspace, or need confirmation that this is the case, you can contact support via Live Chat or email us at link:mailto:support@mode.com[support@mode.com,window=_blank].
+If you are unsure who the admin users are in your workspace, or need confirmation that this is the case, you can contact support via Live Chat or email us at {support-url}.
 
 This can also happen if you sign up using SAML and the workspace has "admin-invite only" enabled.
 If anyone is allowed to join the workspace using their SAML login, an Admin should disable this feature.

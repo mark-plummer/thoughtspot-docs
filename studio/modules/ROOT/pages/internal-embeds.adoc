@@ -1,4 +1,4 @@
-= Internal embedded reports
+= Internal embedded Reports
 :categories: ["Embedding"]
 :categories_weight: 10
 :date: 2022-07-28
@@ -148,5 +148,4 @@ If the report is visible in {brand} and not within the embed, likely the URL is 
 * If a user is unable to see the embed in the application, have them make sure to sign into {brand} in another tab.
 Only users that are signed in to {brand} are able to view internal embeds.
 * {blank}
-xref:contact-us.adoc[Contact our Support Team]
-if issues persist after verifying the above details for assistance.
+Contact {support-url} if issues persist after verifying the above details for assistance.

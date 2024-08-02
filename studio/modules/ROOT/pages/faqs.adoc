@@ -16,7 +16,7 @@ On this page, you'll find links to the FAQ sections for each of our product area
 Whether you're looking for assistance with connecting your database, troubleshooting, or general usage, our FAQs have you covered.
 We've included information on common errors, as well as tips to help you get the most out of {brand}.
 
-If you're unable to find the information you're looking for, please don't hesitate to reach out to our xref:contact-us.adoc[support team].
+If you're unable to find the information you're looking for, please don't hesitate to reach out to {support-url}.
 We'll be happy to assist you further.
 
 === Access control and permissions

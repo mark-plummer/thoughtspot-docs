@@ -432,7 +432,7 @@ When suspended, the Notebook environment can be resumed at any time by running a
 
 At this time, it is not possible to use our visualization tools, such as Quick Charts and Visual Explorer, to manipulate Python/R dataframes.
 To visualize data from a Notebook, you will need to use a visualization library to create a visualization.
-If you would like to see this functionality added in the future, please contact our Support team, and they will be happy to add a request on your behalf for future consideration.
+If you would like to see this functionality added in the future, please contact {support-url}, and they will be happy to add a request on your behalf for future consideration.
 
 [discrete]
 === *Q: How to pass parameters into the notebook?*
@@ -495,7 +495,7 @@ The ability to manually install additional libraries or upgrade to newer version
 However, we cannot guarantee that these libraries will function properly if they are not included in our list of <<supported-libraries,supported libraries>>.
 
 If you do not see a library listed as supported, it is considered a feature request.
-Please contact our support team to confirm and request the library.
+Please contact {support-url} to confirm and request the library.
 
 [discrete]
 === *Q: Do you have a tutorial where I can learn Python for business analysis using real-world data?*
