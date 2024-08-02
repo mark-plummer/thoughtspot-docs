@@ -10,7 +10,7 @@
 
 == Overview
 
-{brand}'s dbt integration allows users to view metadata about data freshness from dbt directly in {brand} reports.
+{brand}'s dbt integration allows users to view metadata about data freshness from dbt directly in {brand} Reports.
 The integration allows {brand} users to present information about when source data was last refreshed for a report, by mapping the tables used in the report to dbt models.
 
 == Connect {brand} to dbt

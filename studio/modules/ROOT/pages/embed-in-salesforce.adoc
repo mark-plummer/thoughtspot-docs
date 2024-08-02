@@ -1,4 +1,4 @@
-= Embedding a report in Salesforce
+= Embedding a Report in Salesforce
 :categories: ["Embedding"]
 :categories_weight: 40
 :date: 2018-05-17
@@ -10,7 +10,7 @@
 == Overview
 
 A {brand} Report can be embedded into a Salesforce page layout as a VisualForce page.
-The embed can be configured so that the underlying {brand} Report refreshes whenever the page layout is loaded in Salesforce. The Report can be run with parameters that are derived from Salesforce objects (for example, a customer ID).
+The embed can be configured so that the underlying {brand} Report refreshes whenever the page layout is loaded in Salesforce. The Report can be run with Parameters that are derived from Salesforce objects (for example, a customer ID).
 
 For example:
 
@@ -32,8 +32,8 @@ NOTE: The exact steps outlined in this guide assume you are using the Salesforce
 
 Begin by creating a Report in {brand} that displays the data you want to embed inside of Salesforce.
 
-If you want the Report to display different output depending on the context in which the embed is viewed in Salesforce, xref:parameters.adoc[add parameters].
-In the example below, we use a parameter called `organization_id`, which represents the unique id of a customer as stored in our internal database.
+If you want the Report to display different output depending on the context in which the embed is viewed in Salesforce, xref:parameters.adoc[add Parameters].
+In the example below, we use a Parameter called `organization_id`, which represents the unique id of a customer as stored in our internal database.
 The `organization_id` corresponding to each customer is stored in Salesforce on the Account object in the custom field `OrganizationAccountID__c`.
 
 Whenever the page layout containing the embed loads, Salesforce will provide the embed with the value of `OrganizationAccountID__c` for the corresponding Account.
@@ -41,7 +41,7 @@ Then the underlying Report will run with that value and the embed will render th
 
 === Construct an embed URL
 
-Take the URL of the report and add `/embed` to the end of the URL path, for example:
+Take the URL of the Report and add `/embed` to the end of the URL path, for example:
 
 [source,http]
 ----
@@ -52,14 +52,14 @@ https://app.mode.com/[ORG_NAME]/reports/[REPORT_TOKEN]/embed
 
 TIP: In most cases, you will want to use a standard report link and *not* a static run link when embedding a Report in Salesforce. xref:report-scheduling-and-sharing.adoc#link[Learn more about the difference between a report link and static run link].
 
-Now add a xref:report-layout-and-presentation.adoc#url-query-string[query string] to the report URL to control any parameters defined in the report.
+Now add a xref:report-layout-and-presentation.adoc#url-query-string[query string] to the Report URL to control any Parameters defined in the Report.
 
 [NOTE]
 ====
-* A field-value pair must be provided for each Report xref:parameters.adoc[parameter] (if any are defined) or the embed will not render.
-* For parameters with dynamic values based on the context in which the embed is viewed, use a link:https://trailhead.salesforce.com/en/modules/visualforce_fundamentals/units/visualforce_variables_expressions[Visualforce Expression,window=_blank] in the URL.
+* A field-value pair must be provided for each Report xref:parameters.adoc[Parameter] (if any are defined) or the embed will not render.
+* For Parameters with dynamic values based on the context in which the embed is viewed, use a link:https://trailhead.salesforce.com/en/modules/visualforce_fundamentals/units/visualforce_variables_expressions[Visualforce Expression,window=_blank] in the URL.
 For example, `{!Account.OrganizationAccountID\__c}` would return the value in the `OrganizationAccountID__c` custom field on the Account object.
-* Ensure you link:https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_restful_encodingUtil.htm[URL-encode,window=_blank] any parameter values with special characters (if necessary).
+* Ensure you link:https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_restful_encodingUtil.htm[URL-encode,window=_blank] any Parameter values with special characters (if necessary).
 ====
 
 Finally, include `run=now` in the xref:report-layout-and-presentation.adoc#url-query-string[query string] to ensure the embedded Report's data is refreshed whenever the embed is viewed in Salesforce.

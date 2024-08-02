@@ -10,7 +10,7 @@
 [#sharing]
 == Sharing
 
-Admins can control how members of their Workspace are able to share reports both internally and externally:
+Admins can control how members of their Workspace are able to share Reports both internally and externally:
 
 . Navigate to the link:https://app.mode.com/home/[{brand} home page,window=_blank], click on your name in the upper left corner of the screen, and select *Workspace Settings* from the dropdown menu.
 . Click on *Sharing & Embedding* under Features.
@@ -22,12 +22,12 @@ Adjust the toggles next to each of the following options and click *Save setting
 //+++<flag-icon>++++++</flag-icon>+++
 
 Disabled by default.
-External sharing must be enabled in Workspace Settings before anyone can share reports outside of your Workspace.
-Enabling external sharing in Workspace Settings will *not* cause any reports or data to be shared;
-external sharing must be enabled for each individual report.
+External sharing must be enabled in Workspace Settings before anyone can share Reports outside of your Workspace.
+Enabling external sharing in Workspace Settings will *not* cause any Reports or data to be shared;
+external sharing must be enabled for each individual Report.
 
-Disabling this setting will immediately cause all xref:report-scheduling-and-sharing.adoc#link[external links] to all reports in your Workspace to stop functioning and return a `404 - Not Found` error.
-Any reports which previously had external sharing enabled will therefore become inaccessible to viewers who are not logged-in members of your Workspace.
+Disabling this setting will immediately cause all xref:report-scheduling-and-sharing.adoc#link[external links] to all Reports in your Workspace to stop functioning and return a `404 - Not Found` error.
+Any Reports which previously had external sharing enabled will therefore become inaccessible to viewers who are not logged-in members of your Workspace.
 
 If you are an admin of {brand}'s paid plan Workspace and you do not see the setting to enable External Sharing, it may not be included as part of your paid agreement.
 xref:contact-us.adoc[Contact our success team] to learn more.
@@ -36,16 +36,16 @@ xref:contact-us.adoc[Contact our success team] to learn more.
 ==== Allow data previews, PDFs, and CSVs to be included in emails and Slack messages
 
 Enabled by default.
-When disabled, report image previews will no longer appear the message bodies of Slack or email shares, and reports shared via email can no longer contain attached PDFs or CSVs.
+When disabled, Report image previews will no longer appear the message bodies of Slack or email shares, and Reports shared via email can no longer contain attached PDFs or CSVs.
 
 [discrete]
 === Allow users to access and move reports into your Workspace's Community space
 
 Disabled by default.
-Enable to make the xref:spaces.adoc#community-space[community Collection] visible to all members of your Workspace and allow users to move reports into it.
-Hiding the community Collection will not delete reports already inside it.
+Enable to make the xref:spaces.adoc#community-space[community Collection] visible to all members of your Workspace and allow users to move Reports into it.
+Hiding the community Collection will not delete Reports already inside it.
 Reports already in the community Collection will still exist and will be available via URL or discoverable through {brand} search.
-However, members will not be able to move any new reports into the community Collection.
+However, members will not be able to move any new Reports into the community Collection.
 
 [discrete]
 === Require transport encryption for emails

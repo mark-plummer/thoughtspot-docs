@@ -7,7 +7,7 @@
 :brand: Mode
 
 ** xref:dbt-data-freshness.adoc[dbt data freshness] +
-{brand}'s dbt integration allows users to view metadata about data freshness from dbt directly in {brand} reports.
+{brand}'s dbt integration allows users to view metadata about data freshness from dbt directly in {brand} Reports.
 ** xref:github.adoc[GitHub sync] +
 An overview of {brand}'s GitHub sync.
 ** xref:dbt-semantic-layer.adoc[Semantic layer integrations] +

@@ -332,7 +332,8 @@ If the error cannot be resolved easily, write in to {brand} support.
 | Issue | What to do
 
 | Users not added to {brand} groups when provisioned from identity provider.
-a| Users assigned to the {brand} app within the identity provider before SCIM is configured will not be created or linked to their {brand} account. +
+a| Users assigned to the {brand} app within the identity provider before SCIM is configured will not be created or linked to their {brand} account.
+
 *AAD* +
 Check the user is assigned to the {brand} app in AAD, check that the group is assigned to the {brand} app, then re-provision the group to {brand}.
 You can also stop and restart provisioning in AAD if you check the logs and find errors.

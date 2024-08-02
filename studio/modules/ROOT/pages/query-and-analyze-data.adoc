@@ -15,7 +15,7 @@ Curate tables of data that can be reused across multiple Reports.
 ** xref:notebook.adoc[The Notebook] +
 Getting started with the Python and R Notebook.
 ** xref:parameters.adoc[Parameters] +
-How to add Parameters to Mode reports using Liquid.
+How to add Parameters to Mode Reports using Liquid.
 ** xref:viz-filters.adoc[Visualization filters] +
 How to add filters to a visual in the Chart Builder.
 ** xref:definitions.adoc[Definitions] +

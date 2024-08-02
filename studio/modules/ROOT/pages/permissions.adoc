@@ -1,4 +1,4 @@
-= Access Control and Permissions
+= Access control and permissions
 :categories: ["Administration"]
 :categories_weight: 2
 :date: 2021-12-17
@@ -23,9 +23,9 @@ image::datasource-default-access1.png[Report Access]
 
 These are the permissions that Workspace members need in order to access a Report:
 
-* To edit a Report, Workspace members must have Query permission to all database Connections used in the Report and Edit permission to the Report's Collection
-* To view a Report, Workspace members must have View permission to all database Connections used in the Report and View permission to the Report's Collection
-* To duplicate a Report, Workspace members must have Query permission to all database Connections used in the Report and at least View permission to the Report's Collection
+* To edit a Report, Workspace members must have Query permission to all database Connections used in the Report and Edit permission to the Report's Collection.
+* To view a Report, Workspace members must have View permission to all database Connections used in the Report and View permission to the Report's Collection.
+* To duplicate a Report, Workspace members must have Query permission to all database Connections used in the Report and at least View permission to the Report's Collection.
 
 [#create-groups]
 == Create Groups
@@ -115,7 +115,7 @@ For Reports, this means viewers can also create Explorations based on those Repo
 
 *Editor* grants all Workspace members the ability to edit the Reports or Datasets (and their underlying SQL queries) contained in that Collection.
 
-The chart below shows what actions Viewers & Editors can take.
+The chart below shows what actions Viewers and Editors can take.
 
 image:actions-viewers-editors.png[Actions for viewers and editors] image:collection-permissions-light.png[Actions for viewers and editors]
 
@@ -158,8 +158,8 @@ Only set the default access for a Collection to *Restricted* if the Collection c
 [discrete]
 === *Q: How do Collection and Connection permissions determine Report access for users?*
 
-To access a report, users must possess the necessary permissions for the Connections utilized in the report, as well as for the Collection that holds the report.
-For instance, even if a user has been granted view permission for all of the Connections used in a report, if they are not a member of the private Collection containing the report, they will not be able to view the report.
+To access a Report, users must possess the necessary permissions for the Connections utilized in the Report, as well as for the Collection that holds the report.
+For instance, even if a user has been granted view permission for all of the Connections used in a Report, if they are not a member of the private Collection containing the Report, they will not be able to view the Report.
 In other words, access to both the Connections and the Collection is required.
 
 [discrete]
@@ -174,8 +174,8 @@ They cannot create new schedules.
 
 If default access is *None*, only users who have been granted access will be able to take the associated actions.
 
-* *Query*: Write queries against Connection, edit and create Reports using the Connection
-* *View*: View and explore Reports created on that Connection
+* *Query*: Write queries against Connection, edit and create Reports using the Connection.
+* *View*: View and explore Reports created on that Connection.
 
 If only one user has *Query* permission to the Connection, all other users will be able to view the Report, but they will not be able to edit the Report.
 

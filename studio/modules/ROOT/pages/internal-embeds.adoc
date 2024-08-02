@@ -14,15 +14,15 @@ An Internal Embed built using your private data is only visible to logged-in mem
 It can be embedded within private wiki, blog, or any other website or application with access to the internet.
 Here's an example of what an Internal Embed looks like:+++<iframe src="https://app.mode.com/modeanalytics/reports/e2e53f08ba18/embed" width="100%" height="430" frameborder="0">++++++</iframe>+++
 
-Click the green *Powered by {brand}* link at the bottom of the embed to open the underlying report in {brand}.
+Click the green *Powered by {brand}* link at the bottom of the embed to open the underlying Report in {brand}.
 
-NOTE: Generally, you must be logged in to {brand} and have access to the underlying report in order to view an Internal Embed. However, the above embedded report is built on xref:managing-database-connections.adoc#mode-public-warehouse[{brand}'s Public Warehouse] and is therefore viewable by anyone on the internet.
+NOTE: Generally, you must be logged in to {brand} and have access to the underlying Report in order to view an Internal Embed. However, the above embedded report is built on xref:managing-database-connections.adoc#mode-public-warehouse[{brand}'s Public Warehouse] and is therefore viewable by anyone on the internet.
 
 //Learn more about xref:white-label-embeds.adoc#embedding-reports-built-using-the-mode-public-warehouse[embedding reports built on {brand}'s Public Warehouse].
 
 == Create an internal embed URL
 
-An internal embed url can point to either a standard report URL (which displays results from the most recent report run) or a xref:report-layout-and-presentation.adoc#run-history[static report run URL] (which displays results from a specific run).
+An internal embed url can point to either a standard Report URL (which displays results from the most recent report run) or a xref:report-layout-and-presentation.adoc#run-history[static report run URL] (which displays results from a specific run).
 
 TIP: Static report run URLs always include `/runs/[RUN_TOKEN]/` in the URL path.
 
@@ -41,7 +41,7 @@ https://app.mode.com/[ORG_NAME]/reports/[REPORT_TOKEN]/runs/[RUN_TOKEN]/embed
 ----
 
 Another option would be to grab code snippets including template code that you can customize and include in your host application that are generated in {brand}.
-Open the report editor for the report you want to embed and click *Embed* in the header to generate code snippets for one of two types of embed methods:
+Open the Report editor for the Report you want to embed and click *Embed* in the header to generate code snippets for one of two types of embed methods:
 
 image::internal_embed2023.png[Internal Embed modal]
 
@@ -69,7 +69,7 @@ For example:
 <script src="https://app.mode.com/embed/embed.js"></script>
 ----
 
-The helper library adds the following inline styles to each iframe: `width: 100%;`, and `height` set dynamically based on the underlying report's content.
+The helper library adds the following inline styles to each iframe: `width: 100%;`, and `height` set dynamically based on the underlying Report's content.
 
 TIP: If your host application has multiple embeds on a single page and you use this method, you only need to include the helper library once.
 
@@ -92,7 +92,7 @@ For example:
 Remember to adjust the `height` attribute so that the embed results are visible.
 You can also use {brand}'s <<javascript,JavaScript embed helper library>> to dynamically set the height.
 
-NOTE: Unlike White-Label Embeds, internal embeds do not allow for parameter values to be set within the URL.
+NOTE: Unlike White-Label Embeds, internal embeds do not allow for Parameter values to be set within the URL.
 
 == Common techniques
 
@@ -102,14 +102,14 @@ Internal Embeds feature a branded {brand} border, which includes a *Filters* but
 
 === Styling and branding
 
-You can use a xref:organizations.adoc#colors-and-styling[custom theme] or xref:report-layout-and-presentation.adoc#external-assets[CSS] to style an embedded report so its look and feel match that of its host application.
+You can use a xref:organizations.adoc#colors-and-styling[custom theme] or xref:report-layout-and-presentation.adoc#external-assets[CSS] to style an embedded Report so its look and feel match that of its host application.
 
 Learn more about link:https://mode.com/blog/custom-css-for-on-brand-dashboards/[how to style reports using custom CSS,window=_blank].
 
-=== Hide a report element
+=== Hide a Report element
 
-You can instruct an embed to hide individual report elements by adding the `embed-hidden` class to it using the xref:report-layout-and-presentation.adoc#html-editor[HTML editor].
-The following example is the HTML for a report with two side-by-side charts:
+You can instruct an embed to hide individual Report elements by adding the `embed-hidden` class to it using the xref:report-layout-and-presentation.adoc#html-editor[HTML editor].
+The following example is the HTML for a Report with two side-by-side charts:
 
 [source,html]
 ----
@@ -127,7 +127,7 @@ The following example is the HTML for a report with two side-by-side charts:
 </div>
 ----
 
-The `embed-hidden` class is automatically added to the `<div>` that contains the report's xref:report-layout-and-presentation.adoc#name-and-description[name and description].
+The `embed-hidden` class is automatically added to the `<div>` that contains the Report's xref:report-layout-and-presentation.adoc#name-and-description[name and description].
 Accordingly, these are not rendered by default in an embed.
 
 IMPORTANT: Attaching the `embed-hidden` class to an element hides it when an embed renders but *does not* prevent that element's contents from being transmitted to the host application page. These contents will still be accessible if the host application viewer inspects the page.
@@ -139,11 +139,11 @@ IMPORTANT: Attaching the `embed-hidden` class to an element hides it when an emb
 === Troubleshooting
 
 Similar to White-Label Embeds, issues can arise if the URL is incorrect or missing `/embed`.
-If the following error returns, it's likely that your URL is incorrect or pointing at a report that you may not have access to within {brand}.
+If the following error returns, it's likely that your URL is incorrect or pointing at a Report that you may not have access to within {brand}.
 
 image::report_not_found.png[]
 
-* Click on the green *Powered by {brand}* link at the bottom of the embed to open the underlying report in {brand} to see if you have access.
+* Click on the green *Powered by {brand}* link at the bottom of the embed to open the underlying Report in {brand} to see if you have access.
 If the report is visible in {brand} and not within the embed, likely the URL is incorrect.
 * If a user is unable to see the embed in the application, have them make sure to sign into {brand} in another tab.
 Only users that are signed in to {brand} are able to view internal embeds.

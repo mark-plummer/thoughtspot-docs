@@ -80,7 +80,7 @@ NOTE: xref:visualizations.adoc#tables[Table Charts] contain additional options a
 [#formatting-your-exploration]
 === Formatting your Exploration
 
-You can access general formatting options in the "`Format`" panel.
+You can access general formatting options in the *Format* panel.
 You can customize labels, hide and show elements like titles, and control the placement of things like the legend from here.
 
 image::formatXM.png[format your exploration]
@@ -97,8 +97,8 @@ Change how a pill is aggregated by clicking the pill's context menu.
 
 === Filters
 
-When you explore in a report with xref:interactivity.adoc#filters-and-parameters[filters], {brand} will translate the relevant filters into your Exploration automatically.
-This is so the visualization will reflect what you were seeing on the report, and so that the filters will persist when you save your Exploration.
+When you explore in a Report with xref:interactivity.adoc#filters-and-parameters[filters], {brand} will translate the relevant filters into your Exploration automatically.
+This is so the visualization will reflect what you were seeing on the Report, and so that the filters will persist when you save your Exploration.
 Once you begin exploring, you can add or update filters.
 
 When viewing an Exploration, you can see what filters are applied by clicking on the filter's tooltip in the Details panel.
@@ -107,10 +107,10 @@ image::filters-applied.png[filters applied]
 
 === Parameters
 
-An Exploration will always reflect the latest report parameters.
-This means your Exploration's data could change if someone updates the xref:parameters.adoc[parameter] values on the same report you originally explored from.
-At the top of your Exploration, you will see the current parameter values.
-Update them by returning to the report.
+An Exploration will always reflect the latest Report Parameters.
+This means your Exploration's data could change if someone updates the xref:parameters.adoc[Parameter] values on the same Report you originally explored from.
+At the top of your Exploration, you will see the current Parameter values.
+Update them by returning to the Report.
 
 image::parameters-applied.png[parameters applied]
 
@@ -151,7 +151,7 @@ The tooltip will tell you how many Explorations are powered by your query's data
 
 image::dependencies.png[dependencies]
 
-IMPORTANT: Deleting a report or query will also delete all Explorations powered by that report or query. Please keep in mind, if you add or change the names of columns, those updates will show up in Explorations. Similarly, deleting any columns or Calculated Fields will also delete them from Explorations.
+IMPORTANT: Deleting a Report or query will also delete all Explorations powered by that Report or query. Please keep in mind, if you add or change the names of columns, those updates will show up in Explorations. Similarly, deleting any columns or calculated fields will also delete them from Explorations.
 
 [#faqs]
 == FAQs
@@ -161,7 +161,7 @@ IMPORTANT: Deleting a report or query will also delete all Explorations powered 
 
 Yes.
 Once you save your Exploration, you can share the URL with others in your workspace.
-If they have permission to view the report, they can view your Exploration.
+If they have permission to view the Report, they can view your Exploration.
 
 [discrete]
 === *Q: Can other people edit my Exploration?*
@@ -176,12 +176,12 @@ By default, an Exploration will update automatically to show the latest successf
 If a Report runs on a schedule, or is manually refreshed, your Exploration will be refreshed simultaneously.
 
 [discrete]
-=== *Q: What happens if I delete a query or report powering an Exploration?*
+=== *Q: What happens if I delete a query or Report powering an Exploration?*
 
 Explorations are dependent on the Report and query result set powering them, and will also be deleted in the event that you delete the query or Report.
 If deleted, these Explorations will be removed from the *My Explorations* view in Collections, and navigating back to any existing URLs will result in a 404 error.
-If you're worried about deleting someone else's Explorations, we recommend archiving reports instead.
-That way, any Explorations that reference that report will continue to work.
+If you're worried about deleting someone else's Explorations, we recommend archiving Reports instead.
+That way, any Explorations that reference that Report will continue to work.
 
 [discrete]
 === *Q: Can I save my Exploration against a specific query run or snapshot of the data?*
@@ -195,10 +195,10 @@ Explorations will update along with Reports if you've set up a recurring run sch
 As for delivering an Exploration itself on a schedule (that is, to Slack or email), you can't currently share Explorations outside of {brand}.
 
 [discrete]
-=== *Q: What happens if the permissions change on a report being used by Explorations?*
+=== *Q: What happens if the permissions change on a Report being used by Explorations?*
 
 Members in your workspace can only create and view Explorations against Reports they have permission to view.
-If you lose access to view the underlying report your Exploration is saved against, you will not be able to access the Exploration until you regain view permissions for that Report.
+If you lose access to view the underlying Report your Exploration is saved against, you will not be able to access the Exploration until you regain view permissions for that Report.
 
 [discrete]
 === *Q: If I change or delete a chart in my Report, will any Explorations saved off of it change?*
@@ -207,7 +207,7 @@ Explorations aren't dependent or linked to visualizations themselves, but rather
 If you explore a pie chart in a dashboard, for instance, and it later changes to a donut chart type, your Exploration's chart type will not be impacted.
 
 [discrete]
-=== *Q: If I change a query in my report, what happens to the Explorations that use it?*
+=== *Q: If I change a query in my Report, what happens to the Explorations that use it?*
 
 Any Explorations that use your query as their data source will update automatically to reflect the latest run.
 If you add new columns or fields, or change the names, those updates will show up in the field set.

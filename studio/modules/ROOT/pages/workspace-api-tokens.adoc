@@ -30,7 +30,7 @@ Often referred to as the password or access secret during authentication.
 This is only shown once when creating the token and must be saved somewhere secure before closing the modal.
 
 Workspace API tokens are set to expire after 90 days by default.
-The expiration can be updated by clicking the "`gear`" icon and selecting "`Token expiration settings`". To revoke all tokens, select "`Revoke all tokens...`" and confirm the action.
+The expiration can be updated by clicking the "`gear`" icon and selecting *Token expiration settings*. To revoke all tokens, select *Revoke all tokens...* and confirm the action.
 
 Admins will be able to see the following for all active, revoked, and expired API tokens already generated:
 

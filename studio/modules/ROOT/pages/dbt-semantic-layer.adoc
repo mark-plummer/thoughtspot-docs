@@ -34,7 +34,7 @@ You'll be taken to a SQL editor interface.
 
 image::dbt-create-dataset.png[Create a dbt Semantic Layer Dataset]
 
-Once you've pulled in your data, you can add additional fields via Calculated Fields or add descriptions for the existing fields.
+Once you've pulled in your data, you can add additional fields via calculated fields or add descriptions for the existing fields.
 link:https://mode.com/developer/api-reference/analytics/dataset-field-descriptions/[Check out {brand}'s API endpoints for creating and updating field descriptions,window=_blank] to programmatically add and update descriptions from your semantic layer documentation.
 
 === Write a dbt metrics query
@@ -79,7 +79,7 @@ HAVING AGGREGATE(`orders.count`) > 10
 ORDER BY 3 DESC LIMIT 5;
 ----
 
-NOTE: Use backticks around schema, table, and column identifiers. Wrap any LookML measures in the special function AGGREGATE() whether it is in a SELECT clause, a HAVING clause, or an ORDER BY clause. You cannot use LookML measures in a GROUP BY clause.
+NOTE: Use backticks around schema, table, and column identifiers. Wrap any LookML measures in the special function `AGGREGATE()` whether it is in a `SELECT` clause, a `HAVING` clause, or an `ORDER BY` clause. You cannot use LookML measures in a `GROUP BY` clause.
 
 link:https://cloud.google.com/looker/docs/sql-interface[More information on how to query using Looker's Open SQL interface, see Looker's documentation,window=_blank]
 
