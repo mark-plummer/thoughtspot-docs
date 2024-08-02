@@ -1,4 +1,4 @@
-= Organizing reports
+= Organizing Reports
 :categories: ["Navigate and organize content"]
 :categories_weight: 5
 :date: 2018-05-17
@@ -68,7 +68,7 @@ To delete a Report:
 . Click *Delete*.
 
 When you delete a Report, it will no longer be accessible by anyone in your {brand} Workspace.
-To recover a deleted Report, contact customer support.
+To recover a deleted Report, contact {support-url}.
 
 [#move-a-report-to-another-collection]
 == Move a Report to another Collection

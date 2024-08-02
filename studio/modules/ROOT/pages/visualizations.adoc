@@ -652,4 +652,4 @@ By limiting the number of visualizations, you can ensure that your Report loads 
 
 At this time, it is not possible to use our visualization tools, such as Quick Charts and Visual Explorer, to manipulate Python/R dataframes.
 To visualize data from a Notebook, you will need to use a visualization library to create a visualization.
-If you would like to see this functionality added in the future, please contact our Support team, and they will be happy to add a request on your behalf for future consideration.
+If you would like to see this functionality added in the future, please contact {support-url}, and they will be happy to add a request on your behalf for future consideration.

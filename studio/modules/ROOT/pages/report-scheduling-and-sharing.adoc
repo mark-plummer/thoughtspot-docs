@@ -287,4 +287,4 @@ If the schedule for the Report does not fire or is not sent, it could be due to 
 This could be caused by a change in the query or database schema, a loss of connection between {brand} and your database, or one or more queries in the Report taking too long to run and timing out.
 You can check the Report's run history on the *View Details* page to verify the cause.
 
-If the issue is not related to any of the above, please don't hesitate to reach out to our xref:contact-us.adoc[Support team] for further assistance.
+If the issue is not related to any of the above, please don't hesitate to reach out to {support-url} for further assistance.

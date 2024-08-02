@@ -6,7 +6,7 @@
 :description: Embedding.
 :brand: Mode
 
-** xref:internal-embeds.adoc[Internal embedded reports] +
+** xref:internal-embeds.adoc[Internal embedded Reports] +
 Adding internal-facing embedded {brand} Reports to external sites.
 //** xref:white-label-embeds.adoc[White-label embedded reports] +
 //Adding external-facing embedded {brand} reports to external sites.
