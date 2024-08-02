@@ -13,6 +13,6 @@ Visualize your data to gain insight.
 ** xref:visual-explorer.adoc[Visual Explorer] +
 Visualize your data in Visual Explorer.
 ** xref:cal-fields.adoc[Calculated fields] +
-How to add Calculated Fields to Charts.
+How to add calculated fields to charts.
 ** xref:interactivity.adoc[Interactivity] +
 Interact with your data using various tools.

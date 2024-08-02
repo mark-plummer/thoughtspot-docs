@@ -7,10 +7,10 @@
 :brand: Mode
 
 ** xref:internal-embeds.adoc[Internal embedded reports] +
-Adding internal-facing embedded {brand} reports to external sites.
+Adding internal-facing embedded {brand} Reports to external sites.
 //** xref:white-label-embeds.adoc[White-label embedded reports] +
 //Adding external-facing embedded {brand} reports to external sites.
-** xref:embed-in-wordpress.adoc[Embedding a report in a Wordpress site] +
-How to embed a {brand} report in a Wordpress site.
-** xref:embed-in-salesforce.adoc[Embedding a report in Salesforce] +
-How to embed a {brand} report in Salesforce as a Visualforce page.
+** xref:embed-in-wordpress.adoc[Embedding a Report in a Wordpress site] +
+How to embed a {brand} Report in a Wordpress site.
+** xref:embed-in-salesforce.adoc[Embedding a Report in Salesforce] +
+How to embed a {brand} Report in Salesforce as a Visualforce page.

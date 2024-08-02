@@ -15,7 +15,7 @@ You can use webhooks to do automate workflows and trigger other applications.
 For example:
 
 * Trigger a Zap in link:https://zapier.com/[Zapier,window=_blank].
-* Send a customized Slack alert when a {brand} report finishes running.
+* Send a customized Slack alert when a {brand} Report finishes running.
 * Log usage of your {brand} Workspace.
 
 When you set up a webhook, {brand} will send a `POST` message to a URL of your choice in real-time.
@@ -139,7 +139,7 @@ You can access the included URL to learn more about the included resource.
 === *Q: How to set up alerts with Webhooks?*
 
 A convenient way to trigger alerts is by utilizing {brand}'s Webhooks feature.
-This allows you to set up a webhook that sends notifications when a report or query finishes running, as outlined in this guide.
+This allows you to set up a webhook that sends notifications when a Report or query finishes running, as outlined in this guide.
 
 Additionally, you can review the data returned from the run, and if a specific value exceeds a set threshold, an alert can be sent to Slack.
 This link:https://github.com/mode/webhooks-examples/blob/master/examples/aws_lambda/post_to_slack.py[example Python script,window=_blank] demonstrates this process.

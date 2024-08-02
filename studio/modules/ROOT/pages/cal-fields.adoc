@@ -51,7 +51,7 @@ image::create_cal_field_dataview.png[Create calculated field in dataview]
 image::create_cal_field_chart_builder.png[Create calculated field in chart builder]
 
 . Type in a name and formula for your calculated field.
-This example uses the formula:   `SUM(CASE [Status] WHEN 'CANCELLED' THEN 1 ELSE 0 END)/SUM(1)`
+This example uses the formula:   `SUM(CASE [Status] WHEN 'CANCELLED' THEN 1 ELSE 0 END)/SUM(1)`.
 +
 This formula checks for whether the order status was cancelled.
 It will sum up the tally of cancelled orders and divide by the total number of rows to calculate the cancellation rate.
@@ -60,9 +60,9 @@ TIP: To see the full list of functions {brand} currently supports, open the pane
 +
 image:cal_fields_functions_list.png[]
 
-. When you're done, hit Apply or Done.
+. When you're done, hit *Apply* or *Done*.
 
-Congratulations, you have now created your first calculated field!
+You have now created your first calculated field.
 You should see it in your fields list, with an equal sign (=) next to the data type icon to indicate that it is a calculated field.
 
 === Using a calculated field
@@ -87,7 +87,7 @@ These are the four basic components that make up any calculated field:
 
 * *Fields* - columns from your data source, can be either a Dimension or a Measure.
 * *Operators* - symbols that denote a certain operation, like `+` and `-` .
-* *Functions* - transforms the given input to an expected output, like `COUNT()` and `SUM()`.
+* *Functions* - transform the given input to an expected output, like `COUNT()` and `SUM()`.
 * *Literal expressions* - constant values that are represented as is.
 This includes numbers (`1`), strings (`"This is a string"`), dates (`\#2020-06-01#`), booleans (`true`), and `null`.
 
@@ -716,7 +716,7 @@ The given expression must be either an aggregate or a constant. +
 `<start>` and `<end>` are optional integer parameters that define the partition.
 They are indices based on the current reference point. +
 If the start and end are omitted, the entire partition is used. +
-`FIRST()+n` and `LAST()-n` can be used as offsets from the first or last row in the partition
+`FIRST()+n` and `LAST()-n` can be used as offsets from the first or last row in the partition.
 |
 
 | `WINDOW_COUNT(<expression>,` +
@@ -724,9 +724,10 @@ If the start and end are omitted, the entire partition is used. +
 a| Returns the count of the given expression within the window.
 The window is defined by means of offsets from the current row.
 The given expression must be either an aggregate or a constant.`<start>` and `<end>` are optional integer parameters that define the partition.
-They are indices based on the current reference point (see picture below) +
-- If the start and end are omitted, the entire partition is used.
-- `FIRST()+n` and `LAST()-n` can be used as offsets from the first or last row in the partition.
+They are indices based on the current reference point (see picture below):
+
+* If the start and end are omitted, the entire partition is used.
+* `FIRST()+n` and `LAST()-n` can be used as offsets from the first or last row in the partition.
 |
 
 | `WINDOW_SUM(<expression>,` +
@@ -735,9 +736,10 @@ a| Returns the sum of the given expression within the window.
 The window is defined by means of offsets from the current row.
 The given expression must be either an aggregate or a constant. +
 `<start>` and `<end>` are optional integer parameters that define the partition.
-They are indices based on the current reference point (see picture below). +
-- If the start and end are omitted, the entire partition is used.
-- `FIRST()+n` and `LAST()-n` can be used as offsets from the first or last row in the partition.
+They are indices based on the current reference point (see picture below):
+
+* If the start and end are omitted, the entire partition is used.
+* `FIRST()+n` and `LAST()-n` can be used as offsets from the first or last row in the partition. |
 |===
 
 💡 *For calculated field window functions, it will be helpful to understand how window partitions are defined.*
@@ -813,13 +815,13 @@ However, there are limitations to what calculated fields you can use in *functio
 === FAQs
 
 [discrete]
-====== *Q: How do you get the running percentage total of a field?*
+==== *Q: How do you get the running percentage total of a field?*
 
 We do have some ways of utilizing analytic functions within our calculated fields to calculate percent over total.
 Check out this link:https://mode.com/blog/analytic-functions-in-calculated-fields/[blog on Analytic Functions,window=_blank] and how to use them in {brand}.
 
 [discrete]
-====== *Q: How to do a CASE statement where the condition is a comparison (e.g. \<=)?*
+==== *Q: How to do a CASE statement where the condition is a comparison (e.g. \<=)?*
 
 You use `CASE` statements for _direct equality_ against *one* field.
 For example:
@@ -844,7 +846,7 @@ END
 ----
 
 [discrete]
-====== *Q: Are special characters allowed in the calculated field name?*
+==== *Q: Are special characters allowed in the calculated field name?*
 
 We currently do not allow brackets like `[` and `]` in the calculated field name.
 This is for parsing and usability reasons, because you can reference calculated fields by their names in other calculated field formulas.
@@ -853,7 +855,7 @@ This is for parsing and usability reasons, because you can reference calculated 
 ==== Troubleshooting
 
 [discrete]
-====== *1. Why am I getting a 'Cannot combine aggregate and non-aggregate fields' error?*
+===== *1. Why am I getting a 'Cannot combine aggregate and non-aggregate fields' error?*
 
 You cannot _directly_ combine and/or compare aggregate and non-aggregate fields because they are different <<calculated-field-component-types,component types>>.
 
@@ -863,7 +865,7 @@ It has a cardinality of `5`.
 It has a cardinality of `1`.
 
 [discrete]
-====== *2. My calculated field is not saving.*
+===== *2. My calculated field is not saving.*
 
 A calculated field will not be saved if it exceeds the maximum number of characters (1024).
 Please ensure that your calculated field does not exceed this limit in order to save it successfully.

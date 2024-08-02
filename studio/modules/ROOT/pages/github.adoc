@@ -220,9 +220,9 @@ If you have non-{brand} data in the GitHub repository used for the {brand}-GitHu
 == FAQs
 
 [discrete]
-=== *Q: Where is the button for admins to push all reports to GitHub all at once*
+=== *Q: Where is the button for admins to push all reports to GitHub all at once?*
 
-The "Push All" button is found by accessing the Workspace Settings menu, going to the GitHub tab under Features (highlighted in red below), selecting the Unresolved Differences tab (highlighted in orange below), and looking on the right side of the Resolve All Differences section (highlighted in pink below).
+The *Push All* button is found by accessing the Workspace Settings menu, going to the GitHub tab under Features (highlighted in red below), selecting the Unresolved Differences tab (highlighted in orange below), and looking on the right side of the Resolve All Differences section (highlighted in pink below).
 
 image::githubunresolved.png[Github Unresolved Differences]
 

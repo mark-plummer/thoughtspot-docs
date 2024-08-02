@@ -10,7 +10,7 @@
 //+++<flag-icon>++++++</flag-icon>+++
 
 {brand}'s native charts include various tools for interacting with the data they display.
-When a viewer uses any of the interactive features below, none of these changes will persist beyond that viewer's session, and the underlying report will not be affected.
+When a viewer uses any of the interactive features below, none of these changes will persist beyond that viewer's session, and the underlying Report will not be affected.
 
 The following options are available on hover in {brand}'s native charts: image:drilldowns-2023.png[Chart options]
 
@@ -23,9 +23,9 @@ _Learn more about explorations in this xref:explorations.adoc[article]._
  ** *View underlying chart data*: View the filtered, row-level data powering the chart.
 +
 This data can also be exported by using the export to CSV button.
-Clicking on the "`Export to CSV`" option will start generating the CSV file and add it to the "Recent Downloads" drawer.
+Clicking on the *Export to CSV* option will start generating the CSV file and add it to the *Recent Downloads* drawer.
 A blue loading icon will appear while the file is being generated, a red X icon will indicate an error, and a green check icon will indicate that the file is ready for download.
-Clicking on the "Download" button next to the file will download the CSV file.
+Clicking on the *Download* button next to the file will download the CSV file.
 There is a 300,000 row limit that can be exported, above which the data will be truncated.
 
  ** *Copy to {brand} clipboard*: Copy the chart to be pasted in the same or a different {brand} Report.
@@ -39,15 +39,15 @@ Depending on the chart type and available data, viewers can click on an individu
 _Learn more about explorations in this xref:explorations.adoc[article]._
 * *View Data*: Open a display table containing the data behind the chosen data point. +
 This data can also be exported by using the export to CSV button.
-Clicking on the "`Export to CSV`" option will start generating the CSV file and add it to the "Recent Downloads" drawer.
+Clicking on the *Export to CSV* option will start generating the CSV file and add it to the *Recent Downloads* drawer.
 A blue loading icon will appear while the file is being generated, a red X icon will indicate an error, and a green check icon will indicate that the file is ready for download.
-Clicking on the "Download" button next to the file will download the CSV file.
+Clicking on the *Download* button next to the file will download the CSV file.
 There is a 300,000 row limit that can be exported, above which the data will be truncated.
 This option is also available in the chart designer and Explorations.
 * *Granularity controls*: Available when the chart's X-axis is a time-series, and more granular data is available in the underlying data.
-This option can be disabled by un-checking "`Show granularity controls`" in the chart settings gear icon in the chart designer.
+This option can be disabled by un-checking *Show granularity controls* in the chart settings gear icon in the chart designer.
 +
-IMPORTANT: For security purposes, when viewing an embedded report, the **View Data** option is not available, and the **Explore** option is only available to logged-in {brand} users with access to the underlying report.
+IMPORTANT: For security purposes, when viewing an embedded Report, the **View Data** option is not available, and the **Explore** option is only available to logged-in {brand} users with access to the underlying Report.
 
 //IMPORTANT: For security purposes, when viewing an xref:white-label-embeds.adoc[embedded report], the **View Data** option is not available, and the **Explore** option is only available to logged-in {brand} users with access to the underlying report.
 
@@ -81,7 +81,7 @@ NOTE: The drill anywhere actions are not saved in the Report View.
 [#filters-and-parameters]
 == Filters and parameters
 
-Filters and xref:parameters.adoc[Parameters] let viewers customize a report's output without touching code or modifying its configuration.
+Filters and xref:parameters.adoc[Parameters] let viewers customize a Report's output without touching code or modifying its configuration.
 
 ////
 <vidcon>
@@ -94,16 +94,16 @@ image::parameters-filters.png[Parameters and Filters]
 
 . {blank}
 //+++<flag-icon>++++++</flag-icon>+++
-xref:parameters.adoc[**Parameters:**] Dynamically modify the SQL code of the report before it is executed against the database.
-When a report viewer changes a parameter's value, the report must be re-run to see any changes to the results.
+xref:parameters.adoc[**Parameters:**] Dynamically modify the SQL code of the Report before it is executed against the database.
+When a Report viewer changes a Parameter's value, the Report must be re-run to see any changes to the results.
 . *Filters:* Modify the data presented in a report's xref:visualizations.adoc#built-in-charts-and-tables[built-in charts and visualizations].
-Filters are applied to the data visualized in the browser after all of the report's queries have finished running.
+Filters are applied to the data visualized in the browser after all of the Report's queries have finished running.
 
-=== How to add filters to a report
+=== How to add filters to a Report
 
-. Open the report builder and select *Add Filter*.
-. A list of all columns from all queries in the report appears.
-If the same column name appears in multiple queries in your report, applying a corresponding filter will filter all columns of that name across all queries.
+. Open the Report Builder and select *Add Filter*.
+. A list of all columns from all queries in the Report appears.
+If the same column name appears in multiple queries in your Report, applying a corresponding filter will filter all columns of that name across all queries.
 . Choose the column you want to filter on and click *Add*.
 . The filter will appear on the right side of the report builder.
 To customize the filter, hover over it and click on the gear icon.
@@ -117,7 +117,7 @@ This is the default.
 *** Dropdown: A list of options presented in a dropdown menu. +
 This is the default control option when a new Report filter is added.
 ** *Show "All" in the list*: allows selection of all available filter values as an option. +
-This is turned on by default. Unselecting this option will hide the "Select All" option.
+This is turned on by default. Unselecting this option will hide the *Select All* option.
 ** *Only display relevant values* dynamically adjusts the filter value list to display only the relevant values based on previously applied filters. +
 Irrelevant values will be automatically hidden. This option is available for list filters of any data type. When this setting is turned off (default setting), the filter value list displays all available values in the underlying dataset.
 +
@@ -132,6 +132,6 @@ The filters can also be re-positioned using drag and drop.
 ** *Reset filter*: resets all selected options of the filter.
 ** *Delete*: deletes the filter from the report. +
 To configure a specific set of filter selections as the default for a report, add the necessary filter selections in the report builder and then select the *Set as Default* option. +
-This action will save the filter selections, and they will be automatically applied each time the report is viewed.
+This action will save the filter selections, and they will be automatically applied each time the Report is viewed.
 
 NOTE: The filter customization options control filter functionality when viewing a Report. The customization options can be updated only when editing a Report.

@@ -18,14 +18,14 @@ After a report has been successfully run at least once, you can change its name 
 
 You can remove the report's name and/or description from the report layout using the <<html-editor,HTML editor>>.
 
-TIP: You can refer to the report's name and description in the HTML editor using the `{{ title }}` and `{{ description }}` template code. These templates will render to the report's name and description values when the report is viewed.
+TIP: You can refer to the Report's name and description in the HTML editor using the `{{ title }}` and `{{ description }}` template code. These templates will render to the Report's name and description values when the Report is viewed.
 
 [#colors-and-themes]
 == Report themes
 
 Your Workspace includes a number of built-in themes which you may be able to complement with custom themes.
-Themes can be applied to a report in <<settings,report settings>>.
-In addition, you may style any report by <<html-editor,including custom CSS using the HTML editor>>.
+Themes can be applied to a Report in <<settings,Report Settings>>.
+In addition, you may style any Report by <<html-editor,including custom CSS using the HTML editor>>.
 
 *Add a new custom theme*
 
@@ -39,11 +39,11 @@ To import a hosted CSS file, you can use an `@import` statement (for example, `+
 . When you are finished, click *Save*.
 
 Any valid CSS can be included in a custom theme.
-While you cannot include any JavaScript in a custom theme, you can embed JavaScript in reports directly using the HTML Editor.
+While you cannot include any JavaScript in a custom theme, you can embed JavaScript in Reports directly using the HTML Editor.
 
 *Manage custom themes*
 
-Any member can use or create a custom theme, however, a custom theme can only be edited or deleted by its creator or and Workspace admin.
+Any member can use or create a custom theme, however, a custom theme can only be edited or deleted by its creator and/or Workspace admin.
 You cannot delete any of the built-in color themes.
 To manage:
 
@@ -55,13 +55,13 @@ Make any changes and click *Save*.
 . Click on the three vertical dots next to a theme for additional options:
 
 ** *Set as default*: Admins only.
-Set this theme as the default for all new reports.
-Does not impact any existing reports.
-** *Delete*: Deletes the theme.
+Set this theme as the default for all new Reports.
+Does not impact any existing Reports.
+** *Delete*: Delete the theme.
 
 == Color palettes
 
-Your Workspace includes a number of pre-defined color palettes which you may be able to compliment with additional custom color palettes.
+Your Workspace includes a number of pre-defined color palettes which you may be able to complement with additional custom color palettes.
 
 *Add a custom color palette*
 
@@ -73,13 +73,13 @@ Your Workspace includes a number of pre-defined color palettes which you may be 
 ** *Categorical*: Input between 2 and 20 different color link:http://htmlcolorcodes.com/[hex codes,window=_blank].
 After writing or pasting in a value (for example, #37B067), press *enter* to confirm.
 Use the X button to remove the value.
-** *Sequential*: Input a color link:http://htmlcolorcodes.com/[hex codes,window=_blank] for the start and end of the color gradient.
-** *Divergent*: Input a color link:http://htmlcolorcodes.com/[hex codes,window=_blank] for the start, middle, and end of the color gradient.
+** *Sequential*: Input color link:http://htmlcolorcodes.com/[hex codes,window=_blank] for the start and end of the color gradient.
+** *Divergent*: Input color link:http://htmlcolorcodes.com/[hex codes,window=_blank] for the start, middle, and end of the color gradient.
 . Click *Save*.
 
 *Manage custom color palettes*
 
-Any member can use or create a custom color palette, however, a custom color palette can only be edited or deleted by its creator or and Workspace admin.
+Any member can use or create a custom color palette, however, a custom color palette can only be edited or deleted by its creator and/or Workspace admin.
 You cannot delete any of the built-in color palettes.
 To manage:
 
@@ -92,30 +92,30 @@ Make any changes and click *Save*.
 ** *Set as default*: Admins only.
 Set this palette as the default for all new reports.
 Does not impact any existing reports.
-** *Delete*: Deletes the palette.
+** *Delete*: Delete the palette.
 
 [#report-details]
 == Report details
 
-Open a report and click *View Details* in the header to see additional details about the report, including the logic and data behind it.
+Open a Report and click *View Details* in the header to see additional details about the Report, including the logic and data behind it.
 Along the left side, you may see some or all of the following sections, depending on your level of access to the report:
 
-* *Details:* Includes the names of any collaborators (users who have modified the report) and the report's <<run-history,run history>>.
-* *HTML:* The HTML code that defines the <<layout-grid,report layout>> as well as any embedded custom HTML, JavaScript, or CSS.
-* *Notebook:* Any input, output, and markup cells (including Python or R code) if defined in the report's xref:notebook.adoc[Notebook].
+* *Details:* Includes the names of any collaborators (users who have modified the Report) and the Report's <<run-history,run history>>.
+* *HTML:* The HTML code that defines the <<layout-grid,Report layout>> as well as any embedded custom HTML, JavaScript, or CSS.
+* *Notebook:* Any input, output, and markup cells (including Python or R code) if defined in the Report's xref:notebook.adoc[Notebook].
 * *SQL* and *Results*: The SQL code and results for each query in the report.
 +
-TIP: Don't see **View Details** in the report header? You may be in the report editor. If so, click **View** in the header first.
+TIP: Don't see **View Details** in the Report header? You may be in the Report editor. If so, click **View** in the header first.
 
 [#run-history]
 === Run history
 
-Every time you run a report, {brand} saves a copy of its configuration and results (excluding Notebook code, HTML, Chart configuration, and Calculated Field formulas), so you can see exactly how a report looked from a given point in time.
-A historical run is saved even if the queries in the report do not complete successfully.
-Historical report runs are accessible indefinitely unless the report is deleted.
+Every time you run a Report, {brand} saves a copy of its configuration and results (excluding Notebook code, HTML, chart configuration, and calculated field formulas), so you can see exactly how a Report looked from a given point in time.
+A historical run is saved even if the queries in the Report do not complete successfully.
+Historical report runs are accessible indefinitely unless the Report is deleted.
 
-You can access a report's run history from <<report-details,report details>>.
-Click on one of the historical report runs in the list to view the report as it appeared at that time.
+You can access a Report's run history from <<report-details,Report details>>.
+Click on one of the historical report runs in the list to view the Report as it appeared at that time.
 Each historical run has a unique static report run URL so that specific run can be shared with others.
 
 IMPORTANT: {brand} only stores query results for historical runs, not the underlying data from your database. When a report is deleted, historical report run results are retained on {brand}'s servers for 30 days. After 30 days, historical run results are automatically deleted from {brand}'s servers. After an additional 30 days, historical run results are automatically deleted from {brand}'s backups and cannot be recovered by {brand}.
@@ -123,11 +123,11 @@ IMPORTANT: {brand} only stores query results for historical runs, not the underl
 [#report-builder]
 == Report Builder
 
-The Report Builder is a drag-and-drop interface for laying out and adding context to the components of your report.
+The Report Builder is a drag-and-drop interface for laying out and adding context to the components of your Report.
 When editing a Report, access the Report Builder by clicking on *Report Builder* on the left side of the window.
 
 Common <<report-builder-keyboard-shortcuts,keyboard shortcuts>> are available while editing.
-You can re-arrange or re-size your text elements the same way you would any other report element.
+You can re-arrange or re-size your text elements the same way you would any other Report element.
 To remove a text box, click on it and then click *Remove* in the toolbar.
 
 To move a component, click and drag it to move it around the layout.
@@ -135,14 +135,14 @@ To resize a component, click on it and the drag the grab icons on either side to
 You may choose between *small*, *medium* (the default size), and *large*.
 For display tables, you may also set the height to *full* to show up to 1000 records.
 
-IMPORTANT: Any report content added via the <<html-editor,HTML editor>> (for example, D3 visualizations, HTML elements, etc.) will be visible in the report builder, but their size and layout cannot be changed using the drag-and-drop interface.
+IMPORTANT: Any Report content added via the <<html-editor,HTML editor>> (for example, D3 visualizations, HTML elements, etc.) will be visible in the Report Builder, but their size and layout cannot be changed using the drag-and-drop interface.
 
 [#text-boxes]
 === Text boxes
 
-In the report builder, you can add text boxes (including text, links, images, and more) to provide more context for your report:
+In the Report Builder, you can add text boxes (including text, links, images, and more) to provide more context for your Report:
 
-. In the report builder, click *Add Text*.
+. In the Report Builder, click *Add Text*.
 . Add any text or links.
 You can also embed an image.
 . When you are finished editing, click anywhere outside the text box to save.
@@ -152,14 +152,14 @@ You can also embed an image.
 
 To modify the HTML of a report, click *Edit HTML* at the top of the <<report-builder,Report Builder>>.
 After modifying code in the HTML editor, click *Update* to preview your changes.
-Any valid HTML can be added to a report using the HTML editor, including JavaScript inside `<script>` tags and CSS inside `<style>` tags.
+Any valid HTML can be added to a Report using the HTML editor, including JavaScript inside `<script>` tags and CSS inside `<style>` tags.
 
 image::html-panel.png[The HTML Editor]
 
-The report's HTML will automatically adjust as you rearrange and resize any of the elements using the drag-and-drop interface.
-However, for more fine-grained control over report layout and styling, or to add advanced visualizations using JavaScript, you must use the <<html-editor,HTML editor>>.
+The Report's HTML will automatically adjust as you rearrange and resize any of the elements using the drag-and-drop interface.
+However, for more fine-grained control over Report layout and styling, or to add advanced visualizations using JavaScript, you must use the <<html-editor,HTML editor>>.
 
-link:https://app.mode.com/modeanalytics/reports/8f9f78bee527[This report,window=_blank] shows how you can combine various built-in and custom visualizations.
+link:https://app.mode.com/modeanalytics/reports/8f9f78bee527[This Report,window=_blank] shows how you can combine various built-in and custom visualizations.
 Use the Details tab to view the HTML code and see how it works.
 
 [#layout-grid]
@@ -205,20 +205,20 @@ Note that adding custom HTML elements within the grid generated for you by {bran
 
 The Report's <<name-and-description,name and description>> are automatically added to all Reports inside a `<div>` with the class `mode-header`.
 Either can be removed from the layout by deleting them using the HTML editor.
-When a report is embedded, the contents of this `<div>` (including the name and description), will not be rendered in the embed output unless the `embed-hidden` class is removed.
+When a Report is embedded, the contents of this `<div>` (including the name and description) will not be rendered in the embed output unless the `embed-hidden` class is removed.
 
 //When a report is xref:white-label-embeds.adoc[embedded], the contents of this `<div>` (including the name and description), will not be rendered in the embed output unless the `embed-hidden` class is removed.
 
 [#external-assets]
 === External assets
 
-You may include external assets (for example, JavaScript libraries, stylesheets, images, JSON files, etc.) in your report by referencing them via URL with the appropriate tags in the report's HTML.
+You may include external assets (for example, JavaScript libraries, stylesheets, images, JSON files, etc.) in your Report by referencing them via URL with the appropriate tags in the report's HTML.
 
 [NOTE]
 ====
 * Any external assets must be hosted on the internet ({brand} does not host custom assets) and loaded securely using HTTPS, _not_ HTTP.
 * link:http://d3js.org/[D3,window=_blank] (v3.5.17) and link:http://jquery.com/[JQuery,window=_blank] (v2.2.4), two JavaScript libraries commonly used for data visualization, are preloaded into all {brand} reports.
-You do not need to add `<script>` tags to your report to use these libraries.
+You do not need to add `<script>` tags to your Report to use these libraries.
 ====
 
 For example, consider the following Population Map report, specifically the link:https://app.mode.com/benn/reports/31baa986cdfd/presentation[HTML code,window=_blank]:
@@ -228,9 +228,9 @@ For example, consider the following Population Map report, specifically the link
 
 === Loading state customization
 
-In the HTML editor or in a custom theme, you can target a number of CSS classes to customize elements of a report's presentation while data is being loaded and visualizations are being rendered:
+In the HTML editor or in a custom theme, you can target a number of CSS classes to customize elements of a Report's presentation while data is being loaded and visualizations are being rendered:
 
-* `.editor-chart` `.chart-header`: The title of the fully rendered visualization (charts and notebook output).
+* `.editor-chart` `.chart-header`: The title of the fully-rendered visualization (charts and notebook output).
 * `.mode-placeholder` `.placeholder-title`: The title of the chart placeholder.
 * `.mode-placeholder` `.loading-message`: The message appearing in a chart placeholder.
 _Default: "`Fetching your data...`" with an animated ellipses._
@@ -244,9 +244,9 @@ _Note: Only some of the SVGs feature three colors._
 == Access query results with JavaScript
 
 Results from any query in your report can be accessed using JavaScript in the HTML editor via the `datasets` array available in any JavaScript scope.
-The `content` property of any dataset within datasets contains the query results.
+The `content` property of any Dataset within Datasets contains the query results.
 
-If the xref:querying-data.adoc#sorry-this-data-is-larger-than-your-limit[query result exceeds] our legacy limit, the `content` property of the dataset associated with this query will be empty.
+If the xref:querying-data.adoc#sorry-this-data-is-larger-than-your-limit[query result exceeds] our legacy limit, the `content` property of the Dataset associated with this query will be empty.
 Note that users will still be able to view and create {brand} charts and tables in these instances.
 
 The `datasets` array contains the following information for each query in the report:
@@ -302,7 +302,7 @@ one JSON object per row.
 
 | query_token
 | string
-| 12 character GUID for the query (equal to `id`).
+| 12-character GUID for the query (equal to `id`).
 
 | oversized
 | boolean
@@ -314,11 +314,11 @@ If true, `content[]` will be empty.
 | URL for downloading the query result set as a CSV file.
 |===
 
-Queries are added to `datasets[]` in the order that they were added to the report, regardless of the order that they appear in {brand}.
+Queries are added to `datasets[]` in the order that they were added to the Report, regardless of the order that they appear in {brand}.
 
 === Example
 
-For example, suppose the first query (named "2006 Oscar Nominees") in a report returned the following data:
+For example, suppose the first query (named "2006 Oscar Nominees") in a Report returned the following data:
 
 |===
 | nominee | category | movie
@@ -340,11 +340,11 @@ For example, suppose the first query (named "2006 Oscar Nominees") in a report r
 | Dreamgirls
 |===
 
-Accessing `datasets[0]` would return the following JSON object containing all of the query's results and metadata (use ⊕ and ⊖ to explore):
+Accessing `datasets[0]` would return the following JSON object containing all of the query's results and metadata (use ⊕ and ⊖ to explore).
 
-{{< renderjson "/other/datasets-demo.json.svg" />
+//{{< renderjson "/other/datasets-demo.json.svg" />
 
-You can see a live example of this dataset, and learn more about accessing and using the `datasets[]` JSON object, in link:https://app.mode.com/modeanalytics/reports/22bea18bd49e[this example report,window=_blank].
+You can see a live example of this Dataset, and learn more about accessing and using the `datasets[]` JSON object, in link:https://app.mode.com/modeanalytics/reports/22bea18bd49e[this example Report,window=_blank].
 
 === Accessing data by query name
 
@@ -359,7 +359,7 @@ var data = datasets.filter(function(d) { return d.queryName == "My Query"; })[0]
 == Report virtualization
 
 Virtualization, or virtual scrolling, allows the display of a large number of visualizations in a Report by prioritizing displaying only content that is currently visible to the user.
-Subsequently, when content is no longer in view it can be "`detached`" or temporarily hidden, which helps maintain consistent performance regardless of the number of visualizations in the Report.
+Subsequently, when content is no longer in view, it can be "`detached`" or temporarily hidden, which helps maintain consistent performance regardless of the number of visualizations in the Report.
 
 Virtualization allows us to render Reports with large number of interactive visualizations without causing a significant delay to the display of charts that are immediately visible to the user.
 Our virtualized rendering logic will only apply Quick Charts and Visual Explorer charts.
@@ -372,49 +372,49 @@ The following line can be added to the top of the HTML layout `+<!-- no-virtual-
 [#settings]
 === Settings
 
-To access additional report settings from the report editor view, click *Report* in the header and select *Settings*:
+To access additional Report settings from the Report editor view, click *Report* in the header and select *Settings*:
 
-* *Report Theme:* Applies the selected xref:organizations.adoc#report-themes[theme] to the report's styling.
+* *Report Theme:* Applies the selected xref:organizations.adoc#report-themes[theme] to the Report's styling.
 * *Full width:* Disabled by default.
-When enabled, report elements will expand to fill the available viewing window.
-* *Disable the refresh button from the report view:* Prevents report viewers from being able to refresh the report, including running the report's queries.
-When the button is disabled, reports can still be run via a schedule or from the editor view by users with edit access to the report.
+When enabled, Report elements will expand to fill the available viewing window.
+* *Disable the refresh button from the Report view:* Prevents Report viewers from being able to refresh the Report, including running the Report's queries.
+When the button is disabled, Reports can still be run via a schedule or from the editor view by users with edit access to the report.
 * *Enable drill anywhere in Report View:* Allow viewers to drill into Visual Explorer and pivot table charts by any field in the underlying data set.
-
++
 image::report-settings-refresh.png[Report Settings]
 
 === Fullscreen mode
 
-Fullscreen mode maximizes the content of your report so it occupies the entire screen, eliminating all other parts of the {brand} interface and browser window.
-A report in fullscreen mode will automatically refresh and display the latest data whenever the report is successfully run unless you access it using a static xref:report-scheduling-and-sharing.adoc#link[run link].
+Fullscreen mode maximizes the content of your Report so it occupies the entire screen, eliminating all other parts of the {brand} interface and browser window.
+A Report in fullscreen mode will automatically refresh and display the latest data whenever the Report is successfully run unless you access it using a static xref:report-scheduling-and-sharing.adoc#link[run link].
 To enable fullscreen mode:
 
-. In the report header, click *Fullscreen* (this option may be in the *More* menu).
-. Your report will expand to fill the screen.
-Only the margins of the report will expand.
-The report elements themselves will not.
-To include more elements in your dashboard, enable full width mode in <<settings,report settings>>.
+. In the Report header, click *Fullscreen* (this option may be in the *More* menu).
+. Your Report will expand to fill the screen.
+Only the margins of the Report will expand.
+The Report elements themselves will not.
+To include more elements in your dashboard, enable full width mode in <<settings,Report settings>>.
 . To exit fullscreen mode, press the *Escape* key.
 +
-TIP: Don't see the **Fullscreen** button in the report header? You may be in the report editor. Click **View** in the report header and repeat the above steps.
+TIP: Don't see the **Fullscreen** button in the Report header? You may be in the Report editor. Click **View** in the Report header and repeat the above steps.
 
 [#url-query-string]
 === URL query string
 //+++<flag-icon>++++++</flag-icon>+++
 
-You may add one or more field-value pairs to a {brand} report's URL link:https://en.wikipedia.org/wiki/Query_string[query string,window=_blank] to control that report's behavior.
-You may combine multiple field-value pairs in a report's URL query string, separated by `&`.
+You may add one or more field-value pairs to a {brand} Report's URL link:https://en.wikipedia.org/wiki/Query_string[query string,window=_blank] to control that Report's behavior.
+You may combine multiple field-value pairs in a Report's URL query string, separated by `&`.
 
 TIP: All {brand} URLs, including query strings, are case-sensitive.
 
 ==== `run`
 
-Forces the report to re-run and refreshes all query results, Notebook output, and visualizations.
+Forces the Report to re-run and refreshes all query results, Notebook output, and visualizations.
 
 * If present in the query string, must be equal to the value `now`.
-* Whenever a report URL is accessed that includes `run=now` in the query string, the report will re-run.
+* Whenever a Report URL is accessed that includes `run=now` in the query string, the report will re-run.
 If `run=now` is not included in the query string, {brand} will return data from the most recent time the report was run.
-* If the URL query string includes values for xref:parameters.adoc[parameters], then the report will be run each time the URL is accessed, even if `run=now` is not included.
+* If the URL query string includes values for xref:parameters.adoc[Parameters], then the Report will be run each time the URL is accessed, even if `run=now` is not included.
 
 The following example URL will update all queries and visualizations each time it is accessed:
 
@@ -425,16 +425,16 @@ https://app.mode.com/benn/reports/31baa986cdfd?run=now
 
 ==== `param_[PARAMETER_NAME]`
 
-Specifies the value that should be used for a given report xref:parameters.adoc[parameter] of `[PARAMETER_NAME]`.
+Specifies the value that should be used for a given Report xref:parameters.adoc[Parameter] of `[PARAMETER_NAME]`.
 
-* Parameter names and values in report URLs are case-sensitive.
-* Remember to link:https://www.w3schools.com/tags/ref_urlencode.asp[URL-encode any special characters,window=_blank] used in your parameter names or values.
-* If no value or an invalid value is provided for a parameter in the URL query string, the value of the `default` property in the parameter definition will be used.
-* For xref:parameters.adoc#multiselect[multiselect] parameters, each distinct value must be provided as a separate field-value pair in the format `param_[PARAM_NAME][]=[PARAM_VALUE]`.
+* Parameter names and values in Report URLs are case-sensitive.
+* Remember to link:https://www.w3schools.com/tags/ref_urlencode.asp[URL-encode any special characters,window=_blank] used in your Parameter names or values.
+* If no value or an invalid value is provided for a Parameter in the URL query string, the value of the `default` property in the Parameter definition will be used.
+* For xref:parameters.adoc#multiselect[multiselect] Parameters, each distinct value must be provided as a separate field-value pair in the format `param_[PARAM_NAME][]=[PARAM_VALUE]`.
 +
 TIP: Use '_' to denote spaces instead of '+'.
 
-The following example URL will run the target report with "Midwest" and "Northeast" selected for the `sales_region` multiselect parameter and "2000" as the value for the `order_max` text parameter:
+The following example URL will run the target report with "Midwest" and "Northeast" selected for the `sales_region` multiselect Parameter and "2000" as the value for the `order_max` text Parameter:
 
 [source,http]
 ----

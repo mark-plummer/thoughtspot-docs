@@ -36,7 +36,7 @@ WARNING: Remember to store your API token and password securely. Do not expose t
 Only Admins are able to create Workspace tokens.
 You can create as many API access tokens as you need.
 To create one, navigate to your menu:Workspace Settings[Privacy & Security > API].
-Click the "`gear`" icon and select "`Create new API token.`" You will be prompted to add a display name and save the token.
+Click the "`gear`" icon and select *Create new API token*. You will be prompted to add a display name and save the token.
 
 The credentials are comprised of two parts:
 
@@ -78,10 +78,10 @@ We currently publish two headers:
 
 *API method*
 
-You can loop through every single report in the workspace (the ones in public/private collections, but not other members' personal collections), and check each individual report to see whether it's scheduled.
-See the API documentation on how to get all the reports in your workspace is link:https://mode.com/developer/api-cookbook/management/get-all-reports/[here,window=_blank].
+You can loop through every single Report in the workspace (the ones in public/private collections, but not other members' personal collections), and check each individual report to see whether it's scheduled.
+See the API documentation on how to get all the Reports in your workspace is link:https://mode.com/developer/api-cookbook/management/get-all-reports/[here,window=_blank].
 
-From there, you can see the `view_count` property, which will allow you to see the view count for an individual report.
+From there, you can see the `view_count` property, which will allow you to see the view count for an individual Report.
 
 *Discovery Database method*
 

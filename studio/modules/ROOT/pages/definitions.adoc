@@ -14,14 +14,14 @@
 image::raw_definition.png[Definitions - saved SELECT SQL statements]
 
 A Definition is a saved `SELECT` statement that can be referenced in other SQL queries.
-Definitions allow you to write business logic in one place and reference that logic in multiple {brand} reports.
+Definitions allow you to write business logic in one place and reference that logic in multiple {brand} Reports.
 This ensures that members of your Workspace continue to pull the right data when business logic changes.
 Use Definitions to:
 
-* *Reduce repetitive tasks* - Convert frequently referenced pieces of code into Definitions and then reference them in many reports instead of copying and pasting the code.
-* *Simplify complex queries* - Integrate complex query logic into a definition.
+* *Reduce repetitive tasks* - Convert frequently-referenced pieces of code into Definitions and then reference them in many reports instead of copying and pasting the code.
+* *Simplify complex queries* - Integrate complex query logic into a Definition.
 Less SQL-savvy users can then do a simple `SELECT * FROM {{ @definition_name }}` to get results.
-* *Ensure consistency* - Commit important business logic to a definition so that users across your Workspace compute metrics consistently.
+* *Ensure consistency* - Commit important business logic to a Definition so that users across your Workspace compute metrics consistently.
 
 Definitions are similar in concept to a link:https://www.w3schools.com/sql/sql_view.asp[database view,window=_blank].
 However, Definitions are created and maintained in {brand} rather than your database.

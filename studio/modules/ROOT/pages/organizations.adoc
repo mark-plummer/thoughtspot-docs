@@ -79,7 +79,7 @@ You can see the invites you've already sent and resend invitations to users from
 
 To reinvite a former member of your Workspace:
 
-. Locate their name in the Members section in Workspace Settings, in "`Former members & requests`".
+. Locate their name in the Members section in Workspace Settings, in *Former members & requests*.
 . Click on the image:menu-dots-gray-press.svg[menu] button at the end of their row.
 . Select *Reinvite to org*.
 . The user will receive an email invitation that they must accept before being granted access to the Workspace again.
@@ -160,7 +160,7 @@ Admins in {brand}'s paid plans can control and restrict the onboarding of new me
 . In the People section, click on *Member Authorization*.
 . Click on the *Member Permissions* tab.
 . On this tab, you will see a number of options to help you control how new members can join your Workspace:
-
++
 image::Member-Authorization-settings.png[Member Authorization Settings]
 
 [discrete]
@@ -200,7 +200,7 @@ All employees at Octan Industries have an email address ending in @octan.com.
 Ann works for Octan industries and has the email address ann@octan.com.
 She verifies her email address and creates a new {brand} Workspace.
 Ann elects to purchase a link:https://mode.com/compare-plans/[paid {brand} plan,window=_blank] on behalf of her company.
-Ann wants to ensure that every Octan industries user who signs up for a {brand} account on their own ends up in the workspace she is managing, instead of creating their own free workspace.
+Ann wants to ensure that every Octan industries user who signs up for a {brand} account on their own ends up in the Workspace she is managing, instead of creating their own free Workspace.
 Therefore, Ann reaches out to {brand}'s support team to claim the @octan.com domain.
 
 Later, when bill@octan.com signs up for {brand} and verifies his email address, he will be automatically added to the Octan Workspace and can collaborate with Ann in {brand}.
@@ -240,8 +240,8 @@ To verify your email, simply click the link in that email.
 
 === Delete your account
 
-Deleting your account will delete any reports you created against the {brand} Public Warehouse and delete any data you uploaded to the {brand} Public Warehouse.
-Reports created inside of any other Workspace will not be deleted--other members inside that Workspace will still have access to those reports.
+Deleting your account will delete any Reports you created against the {brand} Public Warehouse and delete any data you uploaded to the {brand} Public Warehouse.
+Reports created inside of any other Workspace will not be deleted--other members inside that Workspace will still have access to those Reports.
 
 . From the {brand} homepage, click on your account dropdown menu in the upper left.
 . Click *Account*.
@@ -267,7 +267,7 @@ When you leave a Workspace:
 
 * Any assets (for example, reports, code, etc.) created by you inside the {brand} Workspace are retained and will remain accessible by the remaining users in the Workspace.
 These assets will continue to show your name as the owner.
-* Any report in your xref:spaces.adoc#types-of-spaces[personal Collection] will remain in your personal Collection and remain accessible by any member of the Workspace in possession of the report URL.
+* Any Report in your xref:spaces.adoc#types-of-spaces[personal Collection] will remain in your personal Collection and remain accessible by any member of the Workspace in possession of the report URL.
 * An admin of the Workspace can invite you back to the Workspace at any time.
 
 === Personal API tokens
@@ -288,7 +288,7 @@ Before returning a response, {brand} validates every API call against your permi
 Everyone on the internet can access your {brand} Workspace's public profile page (for example, https://app.mode.com/modeanalytics) as well as the reports in your Workspace's xref:spaces.adoc#community-space[community Collection].
 In addition, all {brand} users can access any data uploaded by members of your Workspace to xref:managing-database-connections.adoc#mode-public-warehouse[{brand}'s Public Warehouse].
 
-Any other report in your Workspace, including its code and query results, is *only* visible to other members of your {brand} Workspace unless someone has explicitly enabled external sharing for that report.
+Any other Report in your Workspace, including its code and query results, is *only* visible to other members of your {brand} Workspace unless someone has explicitly enabled external sharing for that Report.
 
 === GDPR
 
@@ -303,8 +303,8 @@ The DPA can be found link:https://mode.com/legal/dpa/[here,window=_blank].
 [#managing-schedules]
 == Managing Schedules
 
-Workspace Admins can edit individual and delete multiple report schedules from the Schedules page.
-Admins will be able to see all report schedules for their organization/workspace.
+Workspace Admins can edit individual and delete multiple Report schedules from the Schedules page.
+Admins will be able to see all Report schedules for their organization/workspace.
 
 image::workspace_settings_schedules_2.gif[managing schedules 2]
 
@@ -482,7 +482,7 @@ NOTE: Included in Business and Enterprise Plans. link:https://mode.com/developer
 
 ==== {brand}'s Discovery API
 
-The Discovery API provides API access to metadata that gives you insights on reports, usage, and access to help you understand your content and how your teams are using {brand}.
+The Discovery API provides API access to metadata that gives you insights on Reports, usage, and access to help you understand your content and how your teams are using {brand}.
 
 NOTE: Included in Enterprise Plan link:https://mode.com/developer/discovery-api/introduction/[Additional Discovery API Details and Developer Guides,window=_blank]
 
@@ -491,7 +491,7 @@ Please reach out to your CSM or link:mailto:support@mode.com[support@mode.com,wi
 
 == Delete a Workspace
 
-WARNING: Deleting a Workspace will remove all associated data, including public warehouse tables, historical runs, and reports. This action **cannot** be undone.
+WARNING: Deleting a Workspace will remove all associated data, including public warehouse tables, historical runs, and Reports. This action **cannot** be undone.
 
 Only an admin can delete a Workspace.
 To delete a Workspace:
@@ -502,21 +502,21 @@ To delete a Workspace:
 . Click *Delete* in the lower right corner.
 . Type the username of the Workspace in the text box and click *Permanently Delete*.
 +
-IMPORTANT: When a Workspace is deleted, all reports contained within that Workspace are automatically deleted and historical report run results are retained on {brand}'s servers for 30 days. After 30 days, all of the Workspace's report run results are automatically deleted from {brand}'s servers. After an additional 30 days, these report run results are automatically deleted from {brand}'s backups and cannot be recovered by {brand}.
+IMPORTANT: When a Workspace is deleted, all Reports contained within that Workspace are automatically deleted and historical report run results are retained on {brand}'s servers for 30 days. After 30 days, all of the Workspace's report run results are automatically deleted from {brand}'s servers. After an additional 30 days, these report run results are automatically deleted from {brand}'s backups and cannot be recovered by {brand}.
 
 [#faqs]
 == FAQs
 
 [discrete]
-=== *Q: If a user is deactivated, can we retrieve the reports in their personal collection?*
+=== *Q: If a user is deactivated, can we retrieve the Reports in their personal collection?*
 
 Yes.
-Since {brand} reports are owned by workspaces rather than individuals, all of the reports the user created should remain unchanged after they leave the workspace.
-Reports living in personal collections can still be accessed by workspace admins if they have the report URLs.
+Since {brand} Reports are owned by workspaces rather than individuals, all of the Reports the user created should remain unchanged after they leave the workspace.
+Reports living in personal collections can still be accessed by workspace admins if they have the Report URLs.
 
-Workspace admins can move reports from a user's personal collection into a public or private collection of their choice using the link:https://mode.com/developer/api-cookbook/management/move-report/[{brand} API,window=_blank].
-Please note that the report tokens are required for this automation.
-If you need a list of the report tokens in the deactivated user's personal collection, please have a workspace admin contact Support.
+Workspace admins can move Reports from a user's personal collection into a public or private collection of their choice using the link:https://mode.com/developer/api-cookbook/management/move-report/[{brand} API,window=_blank].
+Please note that the Report tokens are required for this automation.
+If you need a list of the Report tokens in the deactivated user's personal collection, please have a workspace admin contact Support.
 
 [discrete]
 === *Q: What are the potential impacts when a user is deactivated?*
@@ -524,21 +524,21 @@ If you need a list of the report tokens in the deactivated user's personal colle
 Please note that if a user is deactivated, the following may experience technical issues:
 
 *White-Label Embeds:*  Any White-Label Embed created by the user will experience technical issues.
-In order to resolve this issue, you can create a duplicate of the report and use the URL for the duplicated report as the embed URL instead, as you are the creator of the duplicated report.
+In order to resolve this issue, you can create a duplicate of the Report and use the URL for the duplicated Report as the embed URL instead, as you are the creator of the duplicated Report.
 
 //For further assistance, please refer to error #4 in our xref:white-label-embeds.adoc#troubleshooting[troubleshooting guide].
 
-*Managing Private and Personal Collection Reports:* Please be aware that since {brand} reports are owned by workspaces rather than individuals, all reports created by the user should remain unchanged after they leave the workspace.
+*Managing Private and Personal Collection Reports:* Please be aware that since {brand} Reports are owned by workspaces rather than individuals, all Reports created by the user should remain unchanged after they leave the workspace.
 Reports located in personal collections can still be accessed by workspace admins if they have the report URLs.
 If the reports are in a public collection, they will still be accessible to the workspace as usual.
-However, if the reports are in a private collection and the user is the only member of this collection, they will not be viewable or movable due to current limitations on permissions.
+However, if the Reports are in a private collection and the user is the only member of this collection, they will not be viewable or movable due to current limitations on permissions.
 
 [discrete]
 === *Q: How to cancel an invite sent out by an admin?*
 
 As an admin, you have the ability to cancel an invite by following these steps:
 
-. On your homepage, navigate to your workspace setting by clicking on the dropdown next to your name, and then *Workspace Settings*.
+. On your home page, navigate to your workspace setting by clicking on the dropdown next to your name, and then *Workspace Settings*.
 . Click on the *Members* tab on the left side navigator.
 . Ensure you have selected the *Pending members* category in the dropdown.
 . Click on the vertical dots on the right side after the *Managed By* column for that specific user.
