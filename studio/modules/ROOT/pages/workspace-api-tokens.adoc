@@ -7,6 +7,7 @@
 :ogdescription: An overview of workspace API Tokens
 :path: /articles/workspace-api-tokens
 :brand: Mode
+:jira: SCAL-219402
 
 //+++<flag-icon>++++++</flag-icon>+++
 
@@ -15,7 +16,7 @@ These tokens mimic Admin access to the Workspace and only Admins will be able to
 
 To generate a new API token, you must be on a paid plan and an Admin of your Workspace.
 
-Navigate to menu:Workspace Settings[Privacy & Security > API].
+Navigate to menu:Workspace Settings[Default Settings  > API].
 Click the "`gear`" icon and select "`Create new API token`". You will be prompted to add a display name and save the token.
 Ensure you save the credentials securely.
 

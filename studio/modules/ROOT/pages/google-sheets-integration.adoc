@@ -3,10 +3,12 @@
 :categories_weight: 3
 :date: 2024-05-30
 :description: Link your Google Accounts to import data directly into Mode's Datasets for analysis and visualization
+:page-layout: default-cloud-early-access
 :hide_from_nav: true
 :ogdescription: Link your Google Accounts to import data directly into Mode's Datasets for analysis and visualization
 :path: /articles/google-sheets-integration
 :brand: Mode
+:jira: SCAL-219403
 
 == Overview
 
