@@ -6,6 +6,7 @@
 :ogdescription: Learn how Mode connects
 :path: /articles/connecting-mode-to-your-database
 :brand: Mode
+:jira: SCAL-219400
 
 == Getting ready to connect
 
@@ -246,6 +247,8 @@ You can also <<install-bridge-with-mode,install the Bridge connector>> on any co
  ** {blank} {support-url} can provide a generic tarball for many other 64-bit Linux systems.
 
 TIP: When connecting to a database in AWS, most customers will run Bridge in an EC2 virtual machine. In these cases, you should set up a 64-bit EC2 instance running Linux that can both connect to your Redshift/RDS cluster and can connect to modeanalytics.com on ports 443 and 8444.
+
+NOTE:  If you have a Studio plan, and are installing via the non-Docker approach, please reach out to {support-url} to help complete the Bridge setup.
 
 [#install-bridge-with-mode]
 === Install Bridge with {brand}
