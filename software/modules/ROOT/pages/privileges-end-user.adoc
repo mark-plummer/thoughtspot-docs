@@ -1,8 +1,9 @@
 = Privileges and access
-:last_updated: 02/23/2021
+:last_updated: 08/24/2024
 :linkattrs:
 :page-partial:
 :experimental:
+:jira: SCAL-205511
 
 The things you can do in ThoughtSpot are determined by the privileges you have. Privileges are granted through group membership.
 
