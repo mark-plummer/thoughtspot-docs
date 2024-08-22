@@ -50,6 +50,7 @@ Users in groups with this privilege (directly or through group inheritance):
 +
 Your installation configuration may enable or disable the availability of this privilege. By default, it is enabled. Administrators or groups with the privilege *Can administer ThoughtSpot* can grant this privilege.
 
+<<<<<<< HEAD
 Has Developer privilege:: Can access and use the xref:spotdev-portal.adoc[Developer Portal] to explore the ThoughtSpot APIs and developer tools, and build web applications with ThoughtSpot content.
 
 [#read-only]
@@ -60,3 +61,6 @@ This privilege is designed to support embedded implementations, and is not avail
 See xref:liveboard-granular-permission.adoc[Granular access to Liveboards] for a deeper discussion of this privilege, and an implementation example.
 +
 NOTE: This privilege is now deprecated. It is unavailable if you are using the xref:answer-experience-new.adoc[new Answer experience]. To use this privilege, return to the classic Answer experience. For details, see xref:deprecation.adoc[Deprecation announcements].
+=======
+Has Developer privilege:: Can access and use the ThoughtSpot Developer Portal to explore the ThoughtSpot APIs and developer tools, and build web applications with ThoughtSpot content.
+>>>>>>> 1b18675f3 (SCAL-205511 - remove Cannot copy or edit existing Liveboards)
