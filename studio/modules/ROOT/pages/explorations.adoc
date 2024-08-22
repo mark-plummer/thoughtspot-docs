@@ -5,7 +5,7 @@
 :description: Explorations are your own personal visualizations.
 :ogdescription: Explorations are your own personal visualizations.
 :path: /articles/explorations
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 

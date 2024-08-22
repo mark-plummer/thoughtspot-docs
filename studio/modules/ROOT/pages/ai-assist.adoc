@@ -5,7 +5,7 @@
 :description: Generate SQL using AI assistance
 :ogdescription: Generate SQL using AI assistance
 :path: /articles/ai-assist
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 
@@ -140,7 +140,7 @@ a| `JOIN dim.users` +
 | Refine data scope
 | Describe how you want to limit your data, have AI define the `WHERE` clause.
 a| `--! exclude returns` +
-`WHERE --! email address contains mode`
+`WHERE --! email address contains thoughtspot`
 
 | Apply relative date ranges
 | Describe a date range, have AI complete the proper syntax.

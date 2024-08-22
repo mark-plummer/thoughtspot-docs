@@ -2,11 +2,11 @@
 :categories: ["API"]
 :categories_weight: 2
 :date: 2024-02-27
-:description: An overview of Mode API
+:description: An overview of Analyst Studio API
 :experimental:
-:ogdescription: An overview of Mode API
+:ogdescription: An overview of Analyst Studio API
 :path: /articles/api-reference
-:brand: Mode
+:brand: Analyst Studio
 :jira: SCAL-219402
 
 //+++<flag-icon>++++++</flag-icon>+++

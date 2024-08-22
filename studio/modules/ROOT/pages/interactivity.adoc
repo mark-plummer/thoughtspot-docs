@@ -2,10 +2,10 @@
 :categories: ["Visualize and present data"]
 :categories_weight: 5
 :date: 2021-04-12
-:description: Interact with your data using various tools
-:ogdescription: Interact with your data using various tools
+:description: Interact with your data using various tools.
+:ogdescription: Interact with your data using various tools.
 :path: /articles/interactivity
-:brand: Mode
+:brand: Analyst Studio
 
 //+++<flag-icon>++++++</flag-icon>+++
 

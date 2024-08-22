@@ -2,10 +2,10 @@
 :categories: ["Query and analyze data"]
 :categories_weight: 20
 :date: 2022-12-12
-:description: Getting started with the Python and R Notebook
-:ogdescription: Getting started with the Python and R Notebook
+:description: Getting started with the Python and R Notebook.
+:ogdescription: Getting started with the Python and R Notebook.
 :path: /articles/notebook
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 
@@ -417,7 +417,7 @@ Each Notebook session has the following resources available, depending on the ve
 | 30 minutes
 | No
 
-| link:https://mode.com/compare-plans/[*Mode Paid Plans*,window=_blank]
+| link:https://mode.com/compare-plans/[*Analyst Studio Paid Plans*,window=_blank]
 | 16 GB
 | 16 Cores
 | 12 hours

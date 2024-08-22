@@ -6,7 +6,7 @@
 :ogdescription: Curate tables of data that can be reused across multiple reports
 :path: /articles/datasets
 //can't find in modern stack
-:brand: Mode
+:brand: Analyst Studio
 
 [#overview]
 == Overview

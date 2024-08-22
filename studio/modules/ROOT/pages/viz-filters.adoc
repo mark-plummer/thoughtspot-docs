@@ -2,12 +2,12 @@
 :categories: ["Query and analyze data"]
 :categories_weight: 40
 :date: 2023-02-28
-:description: How to add filters to a visual in the Chart Builder
-:ogdescription: How to add filters to a visual in the Chart Builder
+:description: How to add filters to a visual in the Chart Builder.
+:ogdescription: How to add filters to a visual in the Chart Builder.
 :path: /articles/viz-filters
 :popular: true
 :versions: ["business"]
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 

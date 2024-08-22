@@ -4,7 +4,7 @@
 :experimental:
 :linkattrs:
 :description: Navigate and organize content.
-:brand: Mode
+:brand: Analyst Studio
 
 ** xref:spaces.adoc[Collections] +
 A Collection is a group of Reports organized around a team or project.

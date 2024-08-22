@@ -2,10 +2,10 @@
 :categories: ["API"]
 :categories_weight: 3
 :date: 2021-04-23
-:description: An overview of Mode Discovery API
-:ogdescription: An overview of Mode Discovery API
+:description: An overview of Analyst Studio Discovery API.
+:ogdescription: An overview of Analyst Studio Discovery API.
 :path: /articles/discovery-api
-:brand: Mode
+:brand: Analyst Studio
 
 //+++<flag-icon>++++++</flag-icon>+++
 

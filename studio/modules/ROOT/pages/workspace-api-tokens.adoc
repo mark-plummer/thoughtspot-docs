@@ -2,11 +2,11 @@
 :categories: ["Administration"]
 :categories_weight: 5
 :date: 2023-06-16
-:description: An overview of workspace API Tokens
+:description: An overview of workspace API Tokens.
 :experimental:
-:ogdescription: An overview of workspace API Tokens
+:ogdescription: An overview of workspace API Tokens.
 :path: /articles/workspace-api-tokens
-:brand: Mode
+:brand: Analyst Studio
 :jira: SCAL-219402
 
 //+++<flag-icon>++++++</flag-icon>+++

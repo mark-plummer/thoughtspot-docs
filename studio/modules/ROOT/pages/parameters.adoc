@@ -2,12 +2,12 @@
 :categories: ["Query and analyze data"]
 :categories_weight: 30
 :date: 2022-12-19
-:description: How to add parameters to Mode reports using Liquid
-:ogdescription: How to add parameters to Mode reports using Liquid
+:description: How to add parameters to Analyst Studio reports using Liquid.
+:ogdescription: How to add parameters to Analyst Studio reports using Liquid.
 :path: /articles/parameters
 :popular: true
 :versions: ["business"]
-:brand: Mode
+:brand: Analyst Studio
 
 [#overview]
 == Overview

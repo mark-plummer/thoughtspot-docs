@@ -2,10 +2,10 @@
 :categories: ["Navigate and organize content"]
 :categories_weight: 6
 :date: 2021-04-07
-:description: How to collaborate and discover reports in Mode
-:ogdescription: How to collaborate and discover reports in Mode
+:description: How to collaborate and discover reports in Analyst Studio
+:ogdescription: How to collaborate and discover reports in Analyst Studio
 :path: /articles/collaboration-and-discovery
-:brand: Mode
+:brand: Analyst Studio
 
 == My Work
 

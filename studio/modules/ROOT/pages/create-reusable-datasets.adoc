@@ -3,8 +3,8 @@
 :last_updated: 7/25/24
 :experimental:
 :linkattrs:
-:description: All of our resources to help you be succesful with Datasets, in one place.
-:brand: Mode
+:description: All of our resources to help you be successful with Datasets, in one place.
+:brand: Analyst Studio
 
 * Creating a Datasets Strategy: +
 Check out our resources on how to craft an effective Datasets strategy.

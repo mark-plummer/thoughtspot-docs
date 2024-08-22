@@ -4,11 +4,11 @@
 :experimental:
 :linkattrs:
 :description: Get started.
-:brand: Mode
+:brand: Analyst Studio
 
 ** xref:quick-reference-guide.adoc[Quick reference guide] +
 First steps with {brand}.
-** xref:getting-started-with-mode.adoc[Getting started with Mode] +
+** xref:getting-started-with-mode.adoc[Getting started with Analyst Studio] +
 A guide on getting started with {brand}.
 ** xref:open-source-code-attributions.adoc[Open Source Code Attributions] +
 A list of Open Source Code Attributions that {brand} supports.

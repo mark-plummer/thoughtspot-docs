@@ -2,10 +2,10 @@
 :categories: ["Query and analyze data"]
 :categories_weight: 1
 :date: 2022-12-19
-:description: How to query data in Mode
-:ogdescription: How to query data in Mode
+:description: How to query data in Analyst Studio.
+:ogdescription: How to query data in Analyst Studio.
 :path: /articles/querying-data
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 

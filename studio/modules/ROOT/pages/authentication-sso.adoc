@@ -6,7 +6,7 @@
 :experimental:
 :ogdescription: Ensure your accounts settings and verify a user’s identity
 :path: /articles/authentication-and-sso
-:brand: Mode
+:brand: Analyst Studio
 
 == Restricting sign-in methods
 //+++<flag-icon>++++++</flag-icon>+++

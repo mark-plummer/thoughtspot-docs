@@ -2,10 +2,10 @@
 :categories: ["Get started"]
 :categories_weight: 3
 :date: 2021-04-21
-:description: A list of Open Source Code Attributions that Mode supports
-:ogdescription: A list of Open Source Code Attributions that Mode supports
+:description: A list of Open Source Code Attributions that Analyst Studio supports.
+:ogdescription: A list of Open Source Code Attributions that Analyst Studio supports.
 :path: /articles/open-source-code-attributions
-:brand: Mode
+:brand: Analyst Studio
 
 == Open-Source licenses
 

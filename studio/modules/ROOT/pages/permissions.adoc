@@ -2,10 +2,10 @@
 :categories: ["Administration"]
 :categories_weight: 2
 :date: 2021-12-17
-:description: How to manage Permissions in Mode
-:ogdescription: How to manage Permissions in Mode
+:description: How to manage Permissions in Analyst Studio.
+:ogdescription: How to manage Permissions in Analyst Studio.
 :path: /articles/permissions
-:brand: Mode
+:brand: Analyst Studio
 
 == Report and Dataset access
 

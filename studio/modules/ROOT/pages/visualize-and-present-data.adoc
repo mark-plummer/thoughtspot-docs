@@ -4,7 +4,7 @@
 :experimental:
 :linkattrs:
 :description: Visualize and present data.
-:brand: Mode
+:brand: Analyst Studio
 
 ** xref:report-layout-and-presentation.adoc[Report layout and presentation] +
 Control the visual aspect of a Report.

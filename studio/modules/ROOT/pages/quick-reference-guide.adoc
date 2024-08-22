@@ -2,10 +2,10 @@
 :categories: ["Get started"]
 :categories_weight: 1
 :date: 2021-04-05
-:description: First steps with Mode
-:ogdescription: First steps with Mode
+:description: First steps with Analyst Studio.
+:ogdescription: First steps with Analyst Studio.
 :path: /articles/quick-reference-guide
-:brand: Mode
+:brand: Analyst Studio
 
 To help you and your team get started with {brand} as quickly as possible, we've put together this checklist of first steps.
 

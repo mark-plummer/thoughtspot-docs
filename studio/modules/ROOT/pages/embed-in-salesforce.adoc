@@ -2,10 +2,10 @@
 :categories: ["Embedding"]
 :categories_weight: 40
 :date: 2018-05-17
-:description: How to embed a Mode report in Salesforce as a Visualforce page.
-:ogdescription: How to embed a Mode report in Salesforce as a Visualforce page.
+:description: How to embed an Analyst Studio report in Salesforce as a Visualforce page.
+:ogdescription: How to embed an Analyst Studio report in Salesforce as a Visualforce page.
 :path: /articles/embed-in-salesforce
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 
@@ -14,7 +14,7 @@ The embed can be configured so that the underlying {brand} Report refreshes when
 
 For example:
 
-image::salesforce-embed.png[Embed Mode Reports in Salesforce]
+image::salesforce-embed.png[Embed Analyst Studio Reports in Salesforce]
 
 == Requirements
 

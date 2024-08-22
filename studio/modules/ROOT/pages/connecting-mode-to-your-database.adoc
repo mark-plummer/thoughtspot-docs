@@ -1,11 +1,11 @@
-= Connecting Mode to your database
+= Connecting Analyst Studio to your database
 :categories: ["Connect your database"]
 :categories_weight: 10
 :date: 2021-04-09
-:description: Learn how Mode connects.
-:ogdescription: Learn how Mode connects
+:description: Learn how Analyst Studio connects.
+:ogdescription: Learn how Analyst Studio connects
 :path: /articles/connecting-mode-to-your-database
-:brand: Mode
+:brand: Analyst Studio
 :jira: SCAL-219400
 
 == Getting ready to connect

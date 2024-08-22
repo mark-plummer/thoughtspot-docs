@@ -2,10 +2,10 @@
 :categories: ["Embedding"]
 :categories_weight: 30
 :date: 2018-05-17
-:description: How to embed a Mode report in a WordPress site.
-:ogdescription: How to embed a Mode report in a WordPress site.
+:description: How to embed an Analyst Studio report in a WordPress site.
+:ogdescription: How to embed an Analyst Studio report in a WordPress site.
 :path: /articles/embed-in-wordpress
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 
@@ -13,7 +13,7 @@ The link:https://wordpress.org/plugins/mode-analytics/[{brand} Wordpress plugin,
 
 //The link:https://wordpress.org/plugins/mode-analytics/[{brand} Wordpress plugin,window=_blank] allows you to easily xref:white-label-embeds.adoc[White-Label Embed] a {brand} report into a WordPress site.
 
-image::wordpress-embed.png[Embed Mode Reports in WordPress]
+image::wordpress-embed.png[Embed Analyst Studio Reports in WordPress]
 
 TIP: This link:https://wordpress.org/plugins/user-switching/[User Switching plugin,window=_blank] can help you quickly swap between user accounts in WordPress. This is handy for seeing what your users are able to see on each page, or for admins to switch between multiple accounts to manage Reports.
 

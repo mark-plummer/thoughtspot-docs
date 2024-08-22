@@ -2,11 +2,11 @@
 :categories: ["Embedding"]
 :categories_weight: 10
 :date: 2020-08-27
-:description: Adding external facing embedded Mode reports to external sites
-:ogdescription: Adding external facing embedded Mode reports to external sites
+:description: Adding external facing embedded Analyst Studio reports to external sites.
+:ogdescription: Adding external facing embedded Analyst Studio reports to external sites.
 :path: /articles/white-label-embeds
 :versions: ["business"]
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 

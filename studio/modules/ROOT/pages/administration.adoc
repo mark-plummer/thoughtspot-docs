@@ -4,7 +4,7 @@
 :experimental:
 :linkattrs:
 :description: Administration.
-:brand: Mode
+:brand: Analyst Studio
 
 ** xref:authentication-sso.adoc[Authentication and SSO] +
 Check your accounts settings and verify a user’s identity.

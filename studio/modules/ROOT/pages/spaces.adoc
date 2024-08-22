@@ -5,7 +5,7 @@
 :description: A Collection is a group of reports organized around a team or project.
 :ogdescription: A Collection is a group of reports organized around a team or project.
 :path: /articles/spaces
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 
