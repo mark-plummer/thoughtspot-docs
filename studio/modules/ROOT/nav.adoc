@@ -24,8 +24,6 @@
 ** xref:viz-filters.adoc[Visualization filters]
 ** xref:definitions.adoc[Definitions]
 
-* xref:create-reusable-datasets.adoc[Create reusable Datasets]
-
 * xref:visualize-and-present-data.adoc[Visualize and present data]
 ** xref:report-layout-and-presentation.adoc[Report layout and presentation]
 ** xref:visualizations.adoc[Visualizations]
