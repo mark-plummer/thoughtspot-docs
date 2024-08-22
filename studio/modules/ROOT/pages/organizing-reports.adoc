@@ -2,10 +2,10 @@
 :categories: ["Navigate and organize content"]
 :categories_weight: 5
 :date: 2018-05-17
-:description: How to create, duplicate, delete, archive, and move reports in Mode.
-:ogdescription: How to create, duplicate, delete, archive, and move reports in Mode.
+:description: How to create, duplicate, delete, archive, and move reports in Analyst Studio.
+:ogdescription: How to create, duplicate, delete, archive, and move reports in Analyst Studio.
 :path: /articles/organizing-reports
-:brand: Mode
+:brand: Analyst Studio
 
 == Create a new Report
 

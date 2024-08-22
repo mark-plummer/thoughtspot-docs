@@ -2,11 +2,11 @@
 :categories: ["Integrations"]
 :categories_weight: 5
 :date: 2021-04-
-:description: An overview of Mode's Slack Integration sync
-:ogdescription: An overview of Mode's Slack Integration sync
+:description: An overview of Analyst Studio's Slack Integration sync.
+:ogdescription: An overview of Analyst Studio's Slack Integration sync.
 :path: /articles/slack
 :versions: ["business"]
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 

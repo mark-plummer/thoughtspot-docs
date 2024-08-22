@@ -2,10 +2,10 @@
 :categories: ["Connect your database"]
 :categories_weight: 30
 :date: 2021-04-26
-:description: Administer Mode connectivity
-:ogdescription: Administer Mode connectivity
+:description: Administer Analyst Studio connectivity
+:ogdescription: Administer Analyst Studio connectivity
 :path: /articles/managing-database-connections
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 

@@ -2,11 +2,11 @@
 :categories: ["Integrations"]
 :categories_weight: 5
 :date: 2022-11-01
-:description: Mode’s integration with semantic layers extends metrics defined in dbt and Looker that business teams can leverage for code-free exploration and reporting.
+:description: Analyst Studio’s integration with semantic layers extends metrics defined in dbt and Looker that you can leverage for code-free exploration and reporting.
 :hide_from_nav: false
-:ogdescription: Mode’s integration with semantic layers extends metrics defined in dbt and Looker so business teams can leverage them for code-free exploration and reporting
+:ogdescription: Analyst Studio’s integration with semantic layers extends metrics defined in dbt and Looker so business teams can leverage them for code-free exploration and reporting
 :path: /articles/semantic-layer-integrations
-:brand: Mode
+:brand: Analyst Studio
 
 NOTE: {brand} will be following dbt's lead in deprecating our integration to the first version of the semantic layer. link:https://mode.com/integrations/get-dbt[Learn about our integration with dbt's Semantic Layer,window=_blank] and please use the xref:supported-databases.adoc#dbt-semantic-layer[new connector].
 

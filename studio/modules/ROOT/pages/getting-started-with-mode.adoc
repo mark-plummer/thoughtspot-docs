@@ -1,11 +1,11 @@
-= Getting started with Mode
+= Getting started with Analyst Studio
 :categories: ["Get started"]
 :categories_weight: 2
 :date: 2021-04-05
-:description: A guide on getting started with Mode
-:ogdescription: First steps with Mode
+:description: A guide on getting started with Analyst Studio
+:ogdescription: First steps with Analyst Studio
 :path: /articles/getting-started-with-mode
-:brand: Mode
+:brand: Analyst Studio
 
 {brand}'s analyst-first approach uses familiar technologies like SQL, Python, and R in an interactive data science environment that modernizes traditional BI workflows.
 Whether you're in the final stages of the purchase decision-making process or about to implement {brand}, this guide will give you specific, actionable information about how to get your entire organization using {brand}'s broad suite of capabilities.

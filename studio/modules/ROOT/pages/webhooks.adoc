@@ -2,11 +2,11 @@
 :categories: ["Integrations"]
 :categories_weight: 5
 :date: 2018-05-17
-:description: An overview of webhooks and how to set them up in Mode
-:ogdescription: An overview of webhooks and how to set them up in Mode
+:description: An overview of webhooks and how to set them up in Analyst Studio.
+:ogdescription: An overview of webhooks and how to set them up in Analyst Studio.
 :path: /articles/webhooks
 :versions: ["business"]
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 

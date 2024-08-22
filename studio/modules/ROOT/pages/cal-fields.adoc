@@ -5,7 +5,7 @@
 :description: How to add Calculated Fields to Charts.
 :ogdescription: How to add Calculated Fields to Charts.
 :path: /articles/cal-fields
-:brand: Mode
+:brand: Analyst Studio
 
 [#overview]
 == Overview

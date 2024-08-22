@@ -2,10 +2,10 @@
 :categories: ["Visualize and present data"]
 :categories_weight: 1
 :date: 2021-04-12
-:description: Control the visual aspect of a report
-:ogdescription: Control the visual aspect of a report
+:description: Control the visual aspect of a report.
+:ogdescription: Control the visual aspect of a report.
 :path: /articles/report-layout-and-presentation
-:brand: Mode
+:brand: Analyst Studio
 
 [#name-and-description]
 == Name and description

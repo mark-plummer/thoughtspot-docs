@@ -2,10 +2,10 @@
 :categories: ["Connect your database"]
 :categories_weight: 20
 :date: 2023-12-11
-:description: Connect Mode to your data
-:ogdescription: Connect Mode to your data
+:description: Connect Analyst Studio to your data.
+:ogdescription: Connect Analyst Studio to your data.
 :path: /articles/supported-databases
-:brand: Mode
+:brand: Analyst Studio
 
 == Connectivity policy
 

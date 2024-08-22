@@ -2,10 +2,10 @@
 :categories: ["API"]
 :categories_weight: 4
 :date: 2021-04-23
-:description: An overview of Mode Database
-:ogdescription: An overview of Mode Database
+:description: An overview of Analyst Studio Database
+:ogdescription: An overview of Analyst Studio Database
 :path: /articles/discovery-database
-:brand: Mode
+:brand: Analyst Studio
 
 //+++<flag-icon>++++++</flag-icon>+++
 

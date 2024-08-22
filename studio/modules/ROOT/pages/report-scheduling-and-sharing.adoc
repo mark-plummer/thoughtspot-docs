@@ -2,11 +2,11 @@
 :categories: ["Explore and share data"]
 :categories_weight: 30
 :date: 2023-12-11
-:description: Share your analysis outside of Mode
+:description: Share your analysis outside of Analyst Studio.
 :experimental:
-:ogdescription: Share your analysis outside of Mode
+:ogdescription: Share your analysis outside of Analyst Studio.
 :path: /articles/report-scheduling-and-sharing
-:brand: Mode
+:brand: Analyst Studio
 
 [#sharing-and-scheduling]
 == Sharing and scheduling

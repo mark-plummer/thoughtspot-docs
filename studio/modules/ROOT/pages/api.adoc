@@ -4,7 +4,7 @@
 :experimental:
 :linkattrs:
 :description: API.
-:brand: Mode
+:brand: Analyst Studio
 
 ** xref:api-reference.adoc[API reference] +
 An overview of {brand} API.

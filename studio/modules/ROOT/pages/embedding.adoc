@@ -4,7 +4,7 @@
 :experimental:
 :linkattrs:
 :description: Embedding.
-:brand: Mode
+:brand: Analyst Studio
 
 ** xref:internal-embeds.adoc[Internal embedded Reports] +
 Adding internal-facing embedded {brand} Reports to external sites.

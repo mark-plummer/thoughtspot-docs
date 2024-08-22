@@ -2,10 +2,10 @@
 :categories: ["Administration"]
 :categories_weight: 4
 :date: 2020-07-02
-:description: How to configure your Mode Workspace.
-:ogdescription: How to configure your Mode Workspace.
+:description: How to configure your Analyst Studio Workspace.
+:ogdescription: How to configure your Analyst Studio Workspace.
 :path: /articles/organizations
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 

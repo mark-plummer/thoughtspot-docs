@@ -2,10 +2,10 @@
 :categories: ["Administration"]
 :categories_weight: 3
 :date: 2021-04-08
-:description: Control your account’s sharing settings for embeds
-:ogdescription: Control your account’s sharing settings for embeds
+:description: Control your account’s sharing settings for embeds.
+:ogdescription: Control your account’s sharing settings for embeds.
 :path: /articles/sharing-and-embedding
-:brand: Mode
+:brand: Analyst Studio
 
 [#sharing]
 == Sharing

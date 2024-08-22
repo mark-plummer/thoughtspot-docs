@@ -2,11 +2,11 @@
 :categories: ["Query and analyze data"]
 :categories_weight: 50
 :date: 2020-07-15
-:description: Develop and reuse saved SELECT statements
-:ogdescription: Develop and reuse saved SELECT statements
+:description: Develop and reuse saved SELECT statements.
+:ogdescription: Develop and reuse saved SELECT statements.
 :path: /articles/definitions
 :versions: ["business"]
-:brand: Mode
+:brand: Analyst Studio
 
 [#overview]
 == Overview

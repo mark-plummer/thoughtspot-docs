@@ -2,11 +2,11 @@
 :categories: ["Integrations"]
 :categories_weight: 2
 :date: 2019-03-13
-:description: An overview of Mode's GitHub sync
-:ogdescription: An overview of Mode's GitHub sync
+:description: An overview of Analyst Studio's GitHub sync.
+:ogdescription: An overview of Analyst Studio's GitHub sync.
 :path: /articles/github
 :versions: ["business"]
-:brand: Mode
+:brand: Analyst Studio
 
 == Overview
 
@@ -70,7 +70,7 @@ In other words, you will not overwrite uncommitted changes to other objects in {
 For example, say you have three reports in {brand}:
 
 |===
-| In Mode | In GitHub
+| In Analyst Studio | In GitHub
 
 | `A`
 | `A`
@@ -174,7 +174,7 @@ NOTE: While we suggest this repository be solely dedicated to syncing with {bran
 Navigate to the link:https://github.com/apps/modeanalytics[installation page for {brand}'s GitHub app,window=_blank] and click *Configure*.
 Confirm the installation location and then select the repository you'd like to use.
 +
-image::github-mode-app.png[GitHub Mode app]
+image::github-mode-app.png[GitHub Analyst Studio app]
 
 . Retrieve the installation ID for your {brand} GitHub app.
 +

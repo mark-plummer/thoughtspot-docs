@@ -2,10 +2,10 @@
 :categories: ["Visualize and present data"]
 :categories_weight: 3
 :date: 2021-12-06
-:description: Visualize your data in Visual Explorer
-:ogdescription: Visualize your data in Visual Explorer
+:description: Visualize your data in Visual Explorer.
+:ogdescription: Visualize your data in Visual Explorer.
 :path: /articles/visual-explorer
-:brand: Mode
+:brand: Analyst Studio
 
 == Getting started
 

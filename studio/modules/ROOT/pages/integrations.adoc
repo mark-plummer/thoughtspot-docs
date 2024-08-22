@@ -4,7 +4,7 @@
 :experimental:
 :linkattrs:
 :description: Integrations.
-:brand: Mode
+:brand: Analyst Studio
 
 ** xref:dbt-data-freshness.adoc[dbt data freshness] +
 {brand}'s dbt integration allows users to view metadata about data freshness from dbt directly in {brand} Reports.

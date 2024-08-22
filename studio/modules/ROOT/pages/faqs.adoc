@@ -5,7 +5,7 @@
 :description: Common questions and solutions
 :ogdescription: Common questions and solutions
 :path: /articles/faqs
-:brand: Mode
+:brand: Analyst Studio
 
 == Frequently Asked Questions and common errors
 

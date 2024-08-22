@@ -1,11 +1,11 @@
-= Contact Mode
+= Contact Us
 :categories: ["Contact us"]
 :categories_weight: 1
 :date: 2019-06-07
-:description: How to get in touch with Mode
-:ogdescription: How to get in touch with Mode
+:description: How to get in touch with Analyst Studio
+:ogdescription: How to get in touch with Analyst Studio
 :path: /articles/contact-us
-:brand: Mode
+:brand: Analyst Studio
 
 Have a question that's not answered here, or looking for assistance with an analytics challenge?
 {support-url} is available to help.

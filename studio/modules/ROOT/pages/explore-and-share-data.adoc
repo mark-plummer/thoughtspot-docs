@@ -4,9 +4,9 @@
 :experimental:
 :linkattrs:
 :description: Explore and share data.
-:brand: Mode
+:brand: Analyst Studio
 
 ** xref:explorations.adoc[Explorations] +
 Explorations are your own personal visualizations.
 ** xref:report-scheduling-and-sharing.adoc[Report scheduling and sharing] +
-Share your analysis outside of Mode.
+Share your analysis outside of Analyst Studio.
