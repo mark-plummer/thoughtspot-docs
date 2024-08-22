@@ -1,6 +1,6 @@
 * xref:get-started.adoc[Get started]
 ** xref:quick-reference-guide.adoc[Quick reference guide]
-** xref:getting-started-with-mode.adoc[Getting started with Mode]
+** xref:getting-started-with-mode.adoc[Getting started with Analyst Studio]
 ** xref:open-source-code-attributions.adoc[Open Source Code Attributions]
 ** xref:supported-browsers.adoc[Supported browsers]
 ** xref:release-notes.adoc[Release notes]
@@ -11,7 +11,7 @@
 ** xref:collaboration-and-discovery.adoc[Collaboration and discovery]
 
 * xref:connect-your-database.adoc[Connect your database]
-** xref:connecting-mode-to-your-database.adoc[Connecting Mode to your database]
+** xref:connecting-mode-to-your-database.adoc[Connecting Analyst Studio to your database]
 ** xref:supported-databases.adoc[Supported databases]
 ** xref:managing-database-connections.adoc[Managing database connections]
 
