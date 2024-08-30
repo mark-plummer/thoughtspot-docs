@@ -25,13 +25,6 @@ Contrast this with xref:keywords.adoc#in[in], which returns results that are an 
 
 === For the IT Ops Engineer
 
-Granular access to Pinboards:: Starting with this release, you can control user's permissions to create or update Pinboards, essentially limiting them to 'read only' access. These users can view and explore Pinboards.
-However, they cannot edit, copy, download, or share Pinboards and Answers.
-+
-This must be enabled on the cluster.
-+
-See xref:pinboard-granular-permission.adoc[Granular access to Pinboards], and xref:about-privileges-end-user.adoc#read-only[Cannot create or update Pinboards] privilege.
-
 Style customization::
 You can now customize the ThoughtSpot application from the Admin Console.
 With style customization, you can change the fonts, chart color palettes, footer text, application logo, and background colors in your embedded ThoughtSpot instance.

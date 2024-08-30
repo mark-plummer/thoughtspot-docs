@@ -15,7 +15,6 @@
 *** xref:stickers.adoc[Use stickers to organize]
 *** xref:about-privileges-end-user.adoc[Privileges]
 **** xref:about-privileges-end-user.adoc[Understanding privileges]
-**** xref:pinboard-granular-permission.adoc[Granular access to pinboards]
 ** xref:search.adoc[Use search]
 *** xref:about-starting-a-new-search.adoc[What are searches and answers?]
 *** Search basics
