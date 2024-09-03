@@ -7,6 +7,7 @@
 :path: /articles/github
 :versions: ["business"]
 :brand: Analyst Studio
+:jira: SCAL-222766
 
 == Overview
 
@@ -100,7 +101,7 @@ You can create branches and open pull requests in GitHub as normal without affec
 Merge to the default branch in GitHub and changes will automatically sync to {brand}.
 If your branch causes any issues, you can revert to the previous version in GitHub.
 
-image::github_actions.png[Merge GitHub changes]
+image::github_sync.png[Merge GitHub changes]
 
 Note that the owner of your GitHub organization will need to install the link:https://github.com/apps/modeanalytics[{brand} GitHub app,window=_blank] in order to use the {brand} Github sync.
 
