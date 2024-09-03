@@ -1,14 +1,14 @@
 site:
   title: ThoughtSpot Cloud
-  url: https://analyst-studio-preview.netlify.app
-  start_page: studio::index.adoc
+  url: https://copilot-preview.netlify.app
+  start_page: copilot::index.adoc
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
   - url: git@github.com:thoughtspot/thoughtspot-docs.git
     # Cloud docs branches
-    branches: [ 'mode-a-studio']
-    start_path: studio/
+    branches: ['1.0.0.cp']
+    start_path: copilot/
 urls:
   html_extension_style: drop
   latest_version_segment_strategy: redirect:to
@@ -25,7 +25,7 @@ asciidoc:
   attributes:
     page-company: ThoughtSpot
     tabs: tabs
-    product: Analyst Studio
+    product: Copilot
     support-url: https://community.thoughtspot.com/customers/s/contactsupport[ThoughtSpot Support^]
     seekwell: SeekWell
     cl-subscription-agreement: https://www.thoughtspot.com/legal/thoughtspot-cloud-subscription-agreement[subscription agreement^]
