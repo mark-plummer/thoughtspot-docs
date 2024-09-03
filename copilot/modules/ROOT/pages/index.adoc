@@ -1,4 +1,4 @@
-= ThoughtSpot {product} Documentation
+= ThoughtSpot {copilot} Documentation
 :page-layout: home-branch-blank
 
 ++++
