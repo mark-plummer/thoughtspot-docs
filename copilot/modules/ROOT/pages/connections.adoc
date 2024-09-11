@@ -1,5 +1,3 @@
-:page-partial:
-
 include::{latest}@cloud:ROOT:connections.adoc[]
 
 
