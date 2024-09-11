@@ -91,5 +91,7 @@ td {
 </style>
 ++++
 
+Copilot is a simple, self-service, chat-based interface for asking questions and getting answers in natural language from your data stored in a cloud data warehouse.
+
 
 
