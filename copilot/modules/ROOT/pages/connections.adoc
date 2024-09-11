@@ -1,0 +1,7 @@
+= {copilot} connections
+
+include::{latest}@cloud:ROOT:connections.adoc[]
+
+
+
+
