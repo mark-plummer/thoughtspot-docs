@@ -28,6 +28,7 @@ asciidoc:
     copilot: Copilot
     support-url: https://community.thoughtspot.com/customers/s/contactsupport[ThoughtSpot Support^]
     seekwell: SeekWell
+    latest: 10.1.0.cl
     cl-subscription-agreement: https://www.thoughtspot.com/legal/thoughtspot-cloud-subscription-agreement[subscription agreement^]
   extensions:
     - '@asciidoctor/tabs'
