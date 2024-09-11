@@ -1,3 +1,4 @@
 * About this release
 ** xref:notes.adoc[Release notes]
+* xref:connections.adoc[]
 
