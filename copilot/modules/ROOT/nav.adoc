@@ -1,4 +1,16 @@
 * About this release
 ** xref:notes.adoc[Release notes]
 * xref:connections.adoc[Connections]
-
+** xref:connection-share.adoc[Share a connection]
+** xref:connections-query-tags.adoc[ThoughSpot query tags]
+** xref:connections-column-indexing-oauth.adoc[Column indexing with OAuth]
+** xref:connections-amazon-athena.adoc[Connect to Amazon Athena]
+*** xref:connections-amazon-athena-add.adoc[Add a connection]
+*** xref:connections-amazon-athena-edit.adoc[Edit a connection]
+*** xref:connections-amazon-athena-remap.adoc[Remap a connection]
+*** xref:connections-amazon-athena-delete-table.adoc[Delete table]
+*** xref:connections-amazon-athena-delete-table-dependencies.adoc[Delete table with dependencies]
+*** xref:connections-amazon-athena-delete.adoc[Delete connection]
+*** xref:connections-amazon-athena-reference.adoc[Connection reference]
+*** xref:connections-amazon-athena-passthrough.adoc[Passthrough functions]
+** xref:connections-amazon-aurora-mysql.adoc[Connect to Amazon Aurora MySQL]
