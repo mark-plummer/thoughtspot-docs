@@ -1,4 +1,4 @@
-include::{latest}@cloud:ROOT:connections-column-indexing.adoc[]
+include::{latest}@cloud:ROOT:connections-column-indexing-oauth.adoc[]
 
 
 
