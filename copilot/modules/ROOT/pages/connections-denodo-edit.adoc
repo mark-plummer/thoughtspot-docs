@@ -1,0 +1,5 @@
+include::{latest}@cloud:ROOT:connections-denodo-edit.adoc[]
+
+
+
+
