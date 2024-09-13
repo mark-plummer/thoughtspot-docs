@@ -103,4 +103,5 @@
 *** xref:connections-denodo-private-link.adoc[Enable a PrivateLink]
 *** xref:connections-denodo-reference.adoc[Connection reference]
 *** xref:connections-denodo-passthrough.adoc[Passthrough functions]
+** xref:connections-dremio.adoc[Connect to Dremio]
 * xref:formula-reference.adoc[Formula reference]
