@@ -1,0 +1,5 @@
+include::{latest}@cloud:ROOT:connections-databricks-delete-table.adoc[]
+
+
+
+
