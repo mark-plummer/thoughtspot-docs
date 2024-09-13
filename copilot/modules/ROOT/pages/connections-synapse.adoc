@@ -1,4 +1,4 @@
-include::{latest}@cloud:ROOT:connections-redshift.adoc[]
+include::{latest}@cloud:ROOT:connections-synapse.adoc[]
 
 
 
