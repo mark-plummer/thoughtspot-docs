@@ -303,4 +303,8 @@
 *** xref:connections-trino-delete.adoc[Delete connection]
 *** xref:connections-trino-reference.adoc[Connection reference]
 *** xref:connections-trino-passthrough.adoc[Passthrough functions]
+** xref:connections-cust-cal.adoc[Custom calendar]
+*** xref:connections-cust-cal-create.adoc[Create custom calendar]
+*** xref:connections-cust-cal-update.adoc[Update custom calendar]
+*** xref:connections-cust-cal-delete.adoc[Delete custom calendar]
 * xref:formula-reference.adoc[Formula reference]
