@@ -4,7 +4,7 @@
 ** xref:connection-share.adoc[Share a connection]
 ** xref:connections-query-tags.adoc[ThoughSpot query tags]
 ** xref:connections-column-indexing-oauth.adoc[Column indexing with OAuth]
-** Connect to Google
+** Amazon
 *** xref:connections-amazon-athena.adoc[Connect to Amazon Athena]
 **** xref:connections-amazon-athena-add.adoc[Add a connection]
 **** xref:connections-amazon-athena-edit.adoc[Edit a connection]
