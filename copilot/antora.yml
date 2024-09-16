@@ -1,5 +1,5 @@
 name: copilot
-title: Copilot
+title: Spotter
 version: '1.0.0.cp'
 display_version: 'draft version'
 nav:
@@ -7,4 +7,4 @@ nav:
 asciidoc:
   attributes:
     page-layout: default-copilot
-    form-factor: Copilot
+    form-factor: Spotter
