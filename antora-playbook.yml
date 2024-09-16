@@ -1,14 +1,14 @@
 site:
   title: ThoughtSpot Cloud
-  url: https://copilot-preview.netlify.app
-  start_page: copilot::index.adoc
+  url: https://spotter-preview.netlify.app
+  start_page: spotter::index.adoc
 content:
   sources:
   # embedding empty credentials in the URL disables the Edit this Page link for any page created from this repository
   - url: git@github.com:thoughtspot/thoughtspot-docs.git
     # Cloud docs branches
     branches: ['1.0.0.cp']
-    start_path: copilot/
+    start_path: spotter/
 urls:
   html_extension_style: drop
   latest_version_segment_strategy: redirect:to
