@@ -306,7 +306,5 @@
 *** xref:connections-cust-cal-create.adoc[Create custom calendar]
 *** xref:connections-cust-cal-update.adoc[Update custom calendar]
 *** xref:connections-cust-cal-delete.adoc[Delete custom calendar]
-** xref:connection-share.adoc[Share a connection]
-** xref:connections-query-tags.adoc[ThoughSpot query tags]
 ** xref:connections-column-indexing-oauth.adoc[Column indexing with OAuth]
 * xref:formula-reference.adoc[Formula reference]
