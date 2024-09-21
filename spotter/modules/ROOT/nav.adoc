@@ -1,6 +1,6 @@
 * About this release
 ** xref:notes.adoc[Release notes]
-* xref:connections.adoc[Connect]
+* xref:connections.adoc[Add data source]
 ** Amazon
 *** xref:connections-amazon-athena.adoc[Amazon Athena]
 **** xref:connections-amazon-athena-add.adoc[Add a connection]
