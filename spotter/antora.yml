@@ -8,3 +8,4 @@ asciidoc:
   attributes:
     page-layout: default-copilot
     form-factor: Spotter
+    model: Model
