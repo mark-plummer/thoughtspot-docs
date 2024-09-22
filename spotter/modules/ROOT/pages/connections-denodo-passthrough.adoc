@@ -1,3 +1,5 @@
+:spotter:
+
 include::{latest}@cloud:ROOT:connections-denodo-passthrough.adoc[]
 
 

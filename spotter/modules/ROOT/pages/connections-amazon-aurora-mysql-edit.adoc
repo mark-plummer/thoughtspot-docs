@@ -1,3 +1,5 @@
+:spotter:
+
 include::{latest}@cloud:ROOT:connections-amazon-aurora-mysql-edit.adoc[]
 
 

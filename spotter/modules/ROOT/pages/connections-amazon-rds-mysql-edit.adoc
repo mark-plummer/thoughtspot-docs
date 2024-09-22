@@ -1,3 +1,5 @@
+:spotter:
+
 include::{latest}@cloud:ROOT:connections-amazon-rds-mysql-edit.adoc[]
 
 
