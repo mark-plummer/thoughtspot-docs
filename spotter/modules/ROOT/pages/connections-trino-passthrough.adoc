@@ -1,3 +1,5 @@
+:spotter:
+
 include::{latest}@cloud:ROOT:connections-trino-passthrough.adoc[]
 
 

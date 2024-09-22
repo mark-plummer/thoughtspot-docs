@@ -1,3 +1,5 @@
+:spotter:
+
 include::{latest}@cloud:ROOT:connections-google-cloud-sql-sql-server-add.adoc[]
 
 

@@ -1,3 +1,5 @@
+:spotter:
+
 include::{latest}@cloud:ROOT:connections-adw-delete-table-dependencies.adoc[]
 
 
