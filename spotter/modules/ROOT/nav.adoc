@@ -1,5 +1,4 @@
-* About this release
-** xref:notes.adoc[Release notes]
+* xref:spotter-getting-started.adoc[Getting started]
 * xref:connections.adoc[Add data source]
 ** Amazon
 *** xref:connections-amazon-athena.adoc[Amazon Athena]
@@ -304,3 +303,6 @@
 *** xref:connections-trino-passthrough.adoc[Passthrough functions]
 ** xref:connections-column-indexing-oauth.adoc[Column indexing with OAuth]
 ** xref:formula-reference.adoc[Formula reference]
+* xref:spotter-manage-data-sources.adoc[Manage data sources]
+* xref:spotter-coach.adoc[Coach Spotter]
+* xref:spotter-admin.adoc[Admin]
