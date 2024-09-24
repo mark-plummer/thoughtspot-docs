@@ -1,9 +1,0 @@
-= {form-factor} release notes
-
-These release notes include information about new and enhanced features.
-
-== Features and functionality
-
-
-
-
