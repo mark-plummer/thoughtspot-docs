@@ -93,10 +93,12 @@ td {
 
 {form-factor} is a simple, self-service, chat-based interface for asking questions and getting answers in natural language from your data stored in a cloud data warehouse. {form-factor} enables you to talk to your data in a whole new way.
 
-xref:{latest}@cloud:notes.adoc[without root]
-xref:{latest}@cloud:ROOT:notes.adoc[with root]
+With Spotter, it's simple as connecting a data source, coaching Spotter on the types of questions you want to ask, and then using chat to get answers.
 
-xref:notes.adoc[]
+[.bordered]
+image::spotter_explainer.png[]
+
+
 
 
 
