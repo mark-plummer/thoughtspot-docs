@@ -1,6 +1,58 @@
 = Getting started with {form-factor}
+:description: Learn how to get started with ThoughtSpot Spotter
 
-== Features and functionality
+Welcome to ThoughtSpot Spotter! This article takes you through how to get up and running with Spotter.
+
+== Prerequisites
+
+To use ThoughtSpot {form-factor}, you must have a user account. This is created by your {form-factor} administrator. Once your user account is created, you will receive an email inviting you to join a trial of ThoughtSpot.
+
+== First-time setup
+
+To start using {form-factor} for the first time, do the following:
+
+. In the email invitation from ThoughtSpot, click *Join now*.
+. In your web browser, the *Welcome to ThoughtSpot Spotter* page appears.
+. Create your Spotter password by doing the following:
+.. Enter your business email address.
+.. Create a password.
+.. Confirm your password.
+.. Click *Start Now*.
++
+The _Welcome back_ page in Spotter appears.
+[.bordered]
+image::spotter-first-time-sign-in.png[]
+
+== Trying out Spotter
+
+When you sign in to Spotter for the first time, you see the chat interface at the bottom of the page, with sample prompts above it. You can click one of the sample prompts to ask that question, or you can enter your own question.
+
+By default, Spotter includes the following datasets which you can use to practice asking questions:
+
+- Hockey Store (Web marketing)
+- PetSpot
+- Retail Sales
+
+To use chat in Spotter, do the following:
+
+. Choose the dataset you want to use, by selecting it from the menu above the chat field.
++
+[.bordered]
+image::spotter-select-data-set.png[]
+
+. Enter a question in the chat field, and click the submit button image:spotter-submit.png[Submit chat, width="40px"].
++
+[.bordered]
+image::spotter-enter-question.png[]
++
+Spotter provides an AI-generated answer to the question.
++
+[.bordered]
+image::spotter-ai-answer.png[]
+You can continue to ask additional questions of you want.
++
+If you want to save your chat history, click *Save* above the search field. After you save your chat once, each additional question you ask, and the answer, are saved automatically. You can access them later in the _Saved Chats_ section of the Spotter page.
+
 
 
 
