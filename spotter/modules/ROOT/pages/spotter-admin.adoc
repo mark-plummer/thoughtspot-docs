@@ -17,7 +17,7 @@ To invite one or more users, do the following:
 The _Invite Teammates_ window appears.
 
 . In the _Team member's email_ box, enter the email address of the person you want to invite.
-. (Optional) To add additional email addresses, click the plus (+) at the end of the _Team member's email_ box, and enter the next email. Repeat for any additional email addresses.
+. (Optional) To add additional email addresses, click the plus *(+)* at the end of the _Team member's email_ box, and enter the next email. Repeat for any additional email addresses.
 . In the _Message (optional)_ box, enter an optional message to include in the invitation.
 . Click *Send invite*.
 +
