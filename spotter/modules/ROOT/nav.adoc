@@ -304,5 +304,6 @@
 ** xref:connections-column-indexing-oauth.adoc[Column indexing with OAuth]
 ** xref:formula-reference.adoc[Formula reference]
 * xref:spotter-manage-data-sources.adoc[Manage data sources]
+** xref:tags.adoc[Using tags]
 * xref:spotter-coach.adoc[Coach Spotter]
 * xref:spotter-admin.adoc[Admin]
