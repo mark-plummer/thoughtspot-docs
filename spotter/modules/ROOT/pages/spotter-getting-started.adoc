@@ -29,9 +29,10 @@ When you sign in to Spotter for the first time, you see the chat interface at th
 
 By default, Spotter includes the following datasets which you can use to practice asking questions:
 
-- Hockey Store (Web marketing)
+- Apparel Retail
 - PetSpot
-- Retail Sales
+- Hockey Store - Web Marketing
+- Support Ops
 
 To use chat in Spotter, do the following:
 
@@ -39,6 +40,8 @@ To use chat in Spotter, do the following:
 +
 [.bordered]
 image::spotter-select-data-set.png[]
++
+TIP: To help you formulate a question to ask, you can see a sample from the dataset itself by clicking *Preview data*.
 
 . Enter a question in the chat field, and click the submit button image:spotter-submit.png[Submit chat, width="40px"].
 +
