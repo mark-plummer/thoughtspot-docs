@@ -96,7 +96,7 @@ td {
 With Spotter, it's as simple as connecting a data source, coaching Spotter on the types of questions you want to ask, and then chatting with Spotter to get answers.
 
 [.bordered]
-image::spotter_explainer.png[]
+image::explainer.png[]
 
 
 
