@@ -18,8 +18,8 @@ add image
 +
 add image
 . In the _Review business terms_ page, review the search token mappings created from your answer and either approve or reject them by doing the following:
-.. To approve, click the green check mark image:spotter-approve-mapping.png[].
-.. To reject, click the red X image:spotter-reject-mapping.png[].
+- To approve, click the green check mark image:spotter-approve-mapping.png[].
+- To reject, click the red X image:spotter-reject-mapping.png[].
 . To ask another question, click *Ask another question*.
 . When you are finished, click *Done*.
 +
