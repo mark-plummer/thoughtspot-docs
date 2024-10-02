@@ -52,7 +52,7 @@ Spotter provides an AI-generated answer to the question.
 +
 [.bordered]
 image::spotter-ai-answer.png[]
-You can continue to ask additional questions of you want.
+You can continue to ask additional questions if you want.
 +
 If you want to save your chat history, click *Save* above the search field. After you save your chat once, each additional question you ask, and the answer, are saved automatically. You can access them later in the _Saved Chats_ section of the Spotter page.
 
