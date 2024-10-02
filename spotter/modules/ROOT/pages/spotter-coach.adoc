@@ -1,7 +1,7 @@
 = Coach {form-factor}
 :description: Learn how to coach ThoughtSpot Spotter
 
-You can coach Spotter on the types of questions you want to ask. This helps you make sure Spotter knows the kind of information you're looking for.
+You can coach Spotter on the types of questions you want to ask. This helps Spotter know the kind of information you're looking for.
 
 To coach Spotter, do the following:
 
