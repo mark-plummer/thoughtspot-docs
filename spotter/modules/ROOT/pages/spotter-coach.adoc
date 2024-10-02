@@ -10,7 +10,7 @@ To coach Spotter, do the following:
 . On the _Reference questions_ page, click *Add coaching*.
 . On the _Ask a Question_ page, select your data source.
 . (Optional) If you want to view a sample from the data source before asking your first question, click *Preview data*.
-. In the chat box, enter your question and click the submit button image:spotter-submit.png[].
+. In the chat box, enter your question and click the submit button image:spotter-submit.png[width="40px"].
 . In the _Review AI-generated Answer_ page, review and modify the search tokens to correct the Answer, if needed.
 +
 add image
