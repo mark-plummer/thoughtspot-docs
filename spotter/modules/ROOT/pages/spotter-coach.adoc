@@ -3,10 +3,10 @@
 
 You can coach Spotter on the types of questions you want to ask. This helps Spotter know the kind of information you're looking for.
 
-To coach Spotter, do the following:
+To coach {form-factor}, do the following:
 
 . Click the app switcher menu image:spotter-app-switcher.png[App switcher] and then click *Spotter*.
-. Click *Manage data* > *Coach Spotter*.
+. Click *Manage data* > *Coach {form-factor}*.
 . On the _Reference questions_ page, click *Add coaching*.
 . On the _Ask a Question_ page, select your data source.
 . (Optional) If you want to view a sample from the data source before asking your first question, click *Preview data*.
