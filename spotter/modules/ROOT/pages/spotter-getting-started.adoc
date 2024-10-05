@@ -1,7 +1,7 @@
 = Getting started with {form-factor}
 :description: Learn how to get started with ThoughtSpot Spotter
 
-Welcome to ThoughtSpot Spotter! This article takes you through how to get up and running with Spotter.
+Welcome to ThoughtSpot {form-factor}! This article takes you through how to get up and running with {form-factor}.
 
 == Prerequisites
 
@@ -12,29 +12,29 @@ To use ThoughtSpot {form-factor}, you must have a user account. This is created 
 To start using {form-factor} for the first time, do the following:
 
 . In the email invitation from ThoughtSpot, click *Join now*.
-. In your web browser, the *Welcome to ThoughtSpot Spotter* page appears.
-. Create your Spotter password by doing the following:
+. In your web browser, the *Welcome to ThoughtSpot {form-factor}* page appears.
+. Create your {form-factor} password by doing the following:
 .. Enter your business email address.
 .. Create a password.
 .. Confirm your password.
 .. Click *Start Now*.
 +
-The _Welcome back_ page in Spotter appears.
+The _Welcome back_ page in {form-factor} appears.
 [.bordered]
 image::spotter-first-time-sign-in.png[]
 
-== Trying out Spotter
+== Trying out {form-factor}
 
-When you sign in to Spotter for the first time, you see the chat interface at the bottom of the page, with sample prompts above it. You can click one of the sample prompts to ask that question, or you can enter your own question.
+When you sign in to {form-factor} for the first time, you see the chat interface at the bottom of the page, with sample prompts above it. You can click one of the sample prompts to ask that question, or you can enter your own question.
 
-By default, Spotter includes the following datasets which you can use to practice asking questions:
+By default, {form-factor} includes the following datasets which you can use to practice asking questions:
 
 - Apparel Retail
 - PetSpot
 - Hockey Store - Web Marketing
 - Support Ops
 
-To use chat in Spotter, do the following:
+To use chat in {form-factor}, do the following:
 
 . Choose the dataset you want to use, by selecting it from the menu above the chat field.
 +
@@ -54,7 +54,7 @@ Spotter provides an AI-generated answer to the question.
 image::spotter-ai-answer.png[]
 You can continue to ask additional questions if you want.
 +
-If you want to save your chat history, click *Save* above the search field. After you save your chat once, each additional question you ask, and the answer, are saved automatically. You can access them later in the _Saved Chats_ section of the Spotter page.
+If you want to save your chat history, click *Save* above the search field. After you save your chat once, each additional question you ask, and the answer, are saved automatically. You can access them later in the _Saved Chats_ section of the {form-factor} page.
 
 
 

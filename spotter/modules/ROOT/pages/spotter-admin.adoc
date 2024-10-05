@@ -3,7 +3,7 @@
 
 A Spotter administrator manages users, groups and access privileges.
 
-To access the administrator page of Spotter, click the app switcher menu image:spotter-app-switcher.png[App switcher] and then click *Admin*.
+To access the administrator page of {form-factor}, click the app switcher menu image:spotter-app-switcher.png[App switcher] and then click *Admin*.
 
 [.bordered]
 image::spotter-admin.png[]
@@ -25,7 +25,7 @@ When the person receives the email invitation, they click *Join now*, and the *W
 
 == Account details
 
-In this section of the Admin page, you can see the different pricing plans for Spotter.
+In this section of the Admin page, you can see the different pricing plans for {form-factor}.
 
 
 
