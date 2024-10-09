@@ -30,10 +30,10 @@ image::spotter-coach-3a.png[]
 . To ask another question, click *Ask another question*.
 . When you are finished, click *Done*.
 +
+On the _Reference questions_ page, you can see details about the questions you asked.
++
 [.bordered]
 image::spotter-coach-4.png[]
-+
-On the _Reference questions_ page, you can see details about the questions you asked.
 . You can either fix, change the access, or delete a reference question using the More menu image:icon-more-10px.png[] associated with the question.
 +
 Changing the access to a question allows you to have the question be visible to only you (User) or to all users (Global).
