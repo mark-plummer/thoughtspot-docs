@@ -11,22 +11,32 @@ To coach {form-factor}, do the following:
 . On the _Ask a Question_ page, select your data source.
 . (Optional) If you want to view a sample from the data source before asking your first question, click *Preview data*.
 . In the chat box, enter your question and click the submit button image:spotter-submit.png[width="40px"].
++
+[.bordered]
+image::spotter-coach-1.png[]
 . In the _Review AI-generated Answer_ page, review and modify the search tokens to correct the Answer, if needed.
 +
-add image
+[.bordered]
+image::spotter-coach-2b.png[]
+
 . When you are satisfied with the Answer, click *Submit Answer*.
+. In the _Review business terms_ page, review the search token mappings created from your answer.
 +
-add image
-. In the _Review business terms_ page, review the search token mappings created from your answer and either approve or reject them by doing the following:
+[.bordered]
+image::spotter-coach-3a.png[]
+. Either approve or reject the search token mappings by doing the following:
 - To approve, click the green check mark image:spotter-approve-mapping.png[].
 - To reject, click the red X image:spotter-reject-mapping.png[].
 . To ask another question, click *Ask another question*.
 . When you are finished, click *Done*.
 +
-add image
+[.bordered]
+image::spotter-coach-4.png[]
 +
 On the _Reference questions_ page, you can see details about the questions you asked.
-. You can either fix or delete a reference question using the More menu image:icon-more-10px.png[] associated with the question.
+. You can either fix, change the access, or delete a reference question using the More menu image:icon-more-10px.png[] associated with the question.
++
+Changing the access to a question allows you to have the question be visible to only you (User) or to all users (Global).
 
 
 
