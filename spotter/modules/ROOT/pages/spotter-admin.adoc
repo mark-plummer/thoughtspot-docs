@@ -1,7 +1,7 @@
 = Administering {form-factor}
 :description: Learn how ThoughtSpot administrators can manage users.
 
-A Spotter administrator manages users, groups and access privileges.
+A Spotter administrator manages users, and can view pricing details.
 
 To access the administrator page of {form-factor}, click the app switcher menu image:spotter-app-switcher.png[App switcher] and then click *Admin*.
 
@@ -23,7 +23,15 @@ The _Invite Teammates_ window appears.
 +
 When the person receives the email invitation, they click *Join now*, and the *Welcome to ThoughtSpot Spotter* page opens in a web browser. At that point, they enter their email address, create a password, and then click *Start Now*. They are then signed in to Spotter.
 
-== Account details
+== Deleting users
+
+To delete one or more users, do the following:
+
+. From the _Admin_ page, hover over the user you want to delete, and select the checkbox associated with the user.
+. (Optional) Select checkboxes for additional users you want to delete.
+. Click *Delete*.
+
+== Pricing
 
 In this section of the Admin page, you can see the different pricing plans for {form-factor}.
 
