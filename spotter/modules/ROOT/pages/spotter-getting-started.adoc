@@ -5,7 +5,8 @@ Welcome to ThoughtSpot {form-factor}! This article takes you through how to get 
 
 == Prerequisites
 
-To use ThoughtSpot {form-factor}, you must have a user account. This is created by your {form-factor} administrator. Once your user account is created, you will receive an email inviting you to join a trial of ThoughtSpot.
+- To use ThoughtSpot {form-factor}, you must have a user account. This is created by your {form-factor} administrator. Once your user account is created, you will receive an email inviting you to join a trial of ThoughtSpot.
+- To use your own data, you must have your data stored in one of the supported cloud data warehouses. For details, see xref:connections.adoc[].
 
 == First-time setup
 
@@ -52,9 +53,24 @@ Spotter provides an AI-generated answer to the question.
 +
 [.bordered]
 image::spotter-ai-answer.png[]
-You can continue to ask additional questions if you want.
 +
-If you want to save your chat history, click *Save* above the search field. After you save your chat once, each additional question you ask, and the answer, are saved automatically. You can access them later in the _Saved Chats_ section of the {form-factor} page.
+You can do the following things with the AI-generated answer:
+
+- To make changes to the answer, click *Edit* next to the search tokens.
+- To switch between chart and table view, click the table/chart toggle button image:table-chart-toggle.png[width="45"].
+- To download the answer in PNG, XLSX, or CSV format, click *Download*.
+- To view the SQL query used to generate the answer, click *View SQL*.
+- To let Spotter know if it got the answer right, do the following:
+* To approve, click the check mark image:spotter-approve-mapping-grey.png[].
+* To reject, click the X image:spotter-reject-mapping-grey.png[].
+- To save the history of your chat, click the *Save* link above the search field. After you save your chat once, each additional question you ask, and the answer, are saved automatically. You can access them later in the _Saved Chats_ section of the {form-factor} page.
+- To start a new chat, click *+ New chat*.
+
+You can continue to ask additional questions if you want.
+
+== Next steps
+
+Now that you've tried out {form-factor}, you're ready to add your own data source and start using {form-factor} to get answers from your data. For details, see xref:connections.adoc[].
 
 
 
