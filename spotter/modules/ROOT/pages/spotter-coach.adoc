@@ -36,7 +36,7 @@ On the _Reference questions_ page, you can see details about the questions you a
 image::spotter-coach-4.png[]
 . You can either fix, change the access, or delete a reference question using the More menu image:icon-more-10px.png[] associated with the question.
 +
-Changing the access to a question allows you to have the question be visible to only you (User) or to all users (Global).
+Changing the access to a question allows you to make the question visible only to you (User), or to all users (Global).
 
 
 
