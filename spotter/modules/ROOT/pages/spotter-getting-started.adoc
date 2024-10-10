@@ -12,7 +12,7 @@ To use ThoughtSpot {form-factor}, you must have a user account. This is created 
 To start using {form-factor} for the first time, do the following:
 
 . In the email invitation from ThoughtSpot, click *Join now*.
-. In your web browser, the *Welcome to ThoughtSpot {form-factor}* page appears.
+. In your web browser, the _Welcome to ThoughtSpot {form-factor}_ page appears.
 . Create your {form-factor} password by doing the following:
 .. Enter your business email address.
 .. Create a password.
