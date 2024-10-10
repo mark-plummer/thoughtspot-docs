@@ -1,4 +1,5 @@
 :spotter:
+= Adding data sources in {form-factor}
 
 include::{latest}@cloud:ROOT:connections.adoc[]
 
