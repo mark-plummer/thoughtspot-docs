@@ -17,7 +17,7 @@ ThoughtSpot initiates the authorization request to Databricks for OAuth. Databri
 
 The configuration details on the ThoughtSpot connection form should be derived from the custom application parameters set up in the Databricks account. There is no integration between ThoughtSpot and the specific IDP for the Databricks authentication process.
 
-NOTE: For OAuth, we recommend checking the {connection} link:https://docs.databricks.com/en/administration-guide/users-groups/single-sign-on/index.html[documentation] to confirm any IDP support and their details.
+NOTE: For OAuth, we recommend checking the {connection} link:https://docs.databricks.com/en/administration-guide/users-groups/single-sign-on/index.html[documentation^] to confirm any IDP support and their details.
 
 
 [#step-1]
@@ -25,11 +25,11 @@ NOTE: For OAuth, we recommend checking the {connection} link:https://docs.databr
 
 You can register an OAuth application for U2M in your account from the Databricks Account Console by following these steps:
 
-. Log in to the link:https://accounts.cloud.databricks.com[Databricks Account Console].
+. Log in to the link:https://accounts.cloud.databricks.com[Databricks Account Console^].
 
 . Navigate to *Settings > App connections*.
 
-. Click link:https://accounts.cloud.databricks.com/settings/app-integrations/add[*Add connection*].
+. Click link:https://accounts.cloud.databricks.com/settings/app-integrations/add[*Add connection*^].
 
 . Enter the application name Redirect URLs and leave all other fields as default.
 
@@ -101,7 +101,7 @@ This is a three-legged OAuth process where Databricks authentication is governed
 
 == Limitation
 
-ThoughtSpot does not support link:https://docs.databricks.com/en/integrations/jdbc/authentication.html#oauth-machine-to-machine-m2m-authentication[OAuth machine-to-machine authentication], also known as Service Principal and OAuth authentication.
+ThoughtSpot does not support link:https://docs.databricks.com/en/integrations/jdbc/authentication.html#oauth-machine-to-machine-m2m-authentication[OAuth machine-to-machine authentication^], also known as Service Principal and OAuth authentication.
 
 '''
 > **Related information**

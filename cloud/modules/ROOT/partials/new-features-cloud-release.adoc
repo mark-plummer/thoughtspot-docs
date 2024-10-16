@@ -135,7 +135,7 @@ Collibra catalog integration is now available to all users and on by default. Yo
 Snowflake secondary role configuration for External OAuth::
 ThoughtSpot now supports secondary role configuration when you create a Snowflake connection using External OAuth. When you set secondary roles to `ALL`, you can access all tables that any single role has access to and combine them in a single SQL query without having to switch roles.
 +
-For more information on primary and secondary roles, see link:https://docs.snowflake.com/en/user-guide/security-access-control-overview#enforcement-model-with-primary-role-and-secondary-roles[Enforcement model with primary role and secondary roles] and xref:connections-snowflake-add.adoc#secondary[Add a Snowflake connection].
+For more information on primary and secondary roles, see link:https://docs.snowflake.com/en/user-guide/security-access-control-overview#enforcement-model-with-primary-role-and-secondary-roles[Enforcement model with primary role and secondary roles^] and xref:connections-snowflake-add.adoc#secondary[Add a Snowflake connection].
 
 Multiple configurations for Snowflake connections [.badge.badge-early-access-relnotes]#Early Access#::
 // Mark – SCAL-94921, doc jira: SCAL-136317
