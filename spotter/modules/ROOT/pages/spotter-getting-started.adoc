@@ -20,7 +20,11 @@ To start using {form-factor} for the first time, do the following:
 .. Confirm your password.
 .. Click *Start Now*.
 +
-The _Welcome back_ page in {form-factor} appears.
+The _Intro to Spotter_ page appears, where you can watch a video about how Spotter works.
+
+. When you are finished, click *Done*.
++
+The _Meet Spotter_ page appears.
 [.bordered]
 image::spotter-first-time-sign-in.png[]
 
