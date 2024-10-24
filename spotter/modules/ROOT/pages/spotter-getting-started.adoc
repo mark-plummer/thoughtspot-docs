@@ -1,14 +1,14 @@
 = Getting started with {form-factor}
 :description: Learn how to get started with ThoughtSpot Spotter
 
-Welcome to ThoughtSpot {form-factor}! This article takes you through how to get up and running with {form-factor}.
+This article takes you through how to get up and running with {form-factor}.
 
 == Prerequisites
 
 - To use ThoughtSpot {form-factor}, you must have a user account. To sign up for a trial of ThoughtSpot {form-factor}, go to https://www.thoughtspot.com/thoughtspot-analytics-copilot[Spotter trial sign-up page^]. Once your user account is created, you will receive an email inviting you to join a trial of ThoughtSpot.
 - To use your own data, you must have your data stored in one of the supported cloud data warehouses. For a list of supported cloud data warehouses, see xref:connections.adoc[].
 +
-IMPORTANT: When you sign in to Spotter for the first time, you will have access to built-in datasets which you can use to try out Spotter. To connect Spotter to your own data, you must contact {support-url}.
+IMPORTANT: When you sign in to Spotter for the first time, you will have access to built-in datasets which you can use to try out Spotter. To connect Spotter to your own data, you must contact ThoughtSpot. For details, see xref:thoughtspot-datasource-setup[Next steps].
 
 == First-time setup
 
@@ -76,7 +76,16 @@ You can continue to ask as many follow-up questions as you want.
 
 == Next steps
 
-Now that you've tried out {form-factor}, you're ready to add your own data source and start using {form-factor} to get answers from your data. For details, see xref:connections.adoc[].
+Now that you've tried out {form-factor}, you're ready to add your own data source and start using {form-factor} to get answers from your data.
+[#thoughtspot-datasource-setup]
+To add you first data source, you must contact ThoughtSpot for assistance. To contact ThoughtSpot, do the following:
+
+. Click the app switcher menu image:spotter-app-switcher.png[App switcher] and then click *Spotter*.
+. Click *Manage data* in the upper left.
++
+You will then be prompted to schedule a time to work with ThoughtSpot to add your data source.
+
+After your first data source is added, you will be able to add additional ones yourself. For details on adding data sources, see xref:connections.adoc[].
 
 
 
