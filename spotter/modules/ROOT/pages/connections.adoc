@@ -1,7 +1,7 @@
 :spotter:
 = Adding data sources in {form-factor}
 
-IMPORTANT: When you sign in to Spotter for the first time, you will have access to built-in datasets which you can use to try out Spotter. To connect Spotter to your own data, you must contact ThoughtSpot. For details, see xref:spotter-getting-started.adoc#thoughtspot-datasource-setup[Next steps]. After connecting your first data source, you will be able to additional data sources yourself.
+IMPORTANT: When you sign in to Spotter for the first time, you will have access to built-in datasets which you can use to try out Spotter. To connect Spotter to your own data, you must contact ThoughtSpot. For details, see xref:spotter-getting-started.adoc#thoughtspot-datasource-setup[Next steps]. After connecting your first data source, you will be able to add additional data sources yourself.
 
 include::{latest}@cloud:ROOT:connections.adoc[]
 
