@@ -5,8 +5,10 @@ Welcome to ThoughtSpot {form-factor}! This article takes you through how to get 
 
 == Prerequisites
 
-- To use ThoughtSpot {form-factor}, you must have a user account. This is created by your {form-factor} administrator. Once your user account is created, you will receive an email inviting you to join a trial of ThoughtSpot.
-- To use your own data, you must have your data stored in one of the supported cloud data warehouses. For details, see xref:connections.adoc[].
+- To use ThoughtSpot {form-factor}, you must have a user account. To sign up for a trial of ThoughtSpot {form-factor}, go to https://www.thoughtspot.com/thoughtspot-analytics-copilot[Spotter trial sign-up page^]. Once your user account is created, you will receive an email inviting you to join a trial of ThoughtSpot.
+- To use your own data, you must have your data stored in one of the supported cloud data warehouses. For a list of supported cloud data warehouses, see xref:connections.adoc[].
++
+IMPORTANT: When you sign in to Spotter for the first time, you will have access to built-in datasets which you can use to try out Spotter. To connect Spotter to your own data, you must contact {support-url}.
 
 == First-time setup
 
