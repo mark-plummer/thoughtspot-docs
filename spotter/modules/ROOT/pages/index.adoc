@@ -92,7 +92,7 @@ td {
 </style>
 ++++
 
-Welcome to the ThoughtSpot Trial!
+Welcome to the ThoughtSpot Spotter Trial!
 
 {form-factor} is a simple, self-service, chat-based interface for getting answers from your data. {form-factor} enables you to talk to your data in a whole new way.
 
