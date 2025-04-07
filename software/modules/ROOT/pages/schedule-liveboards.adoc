@@ -1,6 +1,6 @@
 = Liveboard schedule management
 :experimental:
-:last_updated: 05/10/2022
+:last_updated: 04/07/2025
 :linkattrs:
 :page-partial:
 :page-aliases: /admin/manage-jobs/about-scheduled-pinboards.adoc, schedule-pinboards.adoc
@@ -41,9 +41,9 @@ To specify the layout of the Liveboard in the email, select *Configure layout op
 |===
 | CSV | PDF | XLSX
 
-| The CSV file gets data only for table visualizations.
+| The CSV file gets data only for table visualizations. Pivot tables are not included.
 | The PDF file gets data for all visualizations.
-|The XLSX file gets data only for table visualizations.
+| The XLSX file gets data only for table visualizations. Pivot tables are not included.
 
 a| The email has _n_ CSV attachments, where there are _n_ table visualizations in the Liveboard.
 | The email has only one attachment file, which includes every visualization on its own page.
