@@ -78,7 +78,7 @@ Introducing Models. Models are an easier way of creating what previously were ca
 
 Redesigned home page [.badge.badge-early-access-relnotes]#Early Access#::
 // Mark. doc jira: SCAL-151210
-In this release, you can try our redesigned and customizable home page, where you can ask natural-language questions with Sage, view your watchlist, favorites, library of Answers and Liveboards, and more. With the new left-hand navigation, you can go directly to your Liveboards, Answers, SpotIQ Analysis, and Monitor Subscriptions.
+In this release, you can try our redesigned and customizable home page, where you can view your watchlist, favorites, library of Answers and Liveboards, and more. With the new left-hand navigation, you can go directly to your Liveboards, Answers, and SpotIQ Analysis.
 +
 This new home page experience is disabled by default. Contact your ThoughtSpot administrator to enable this feature for your cluster. After that, open your user profile, and in the _Experience_ section, set the _Navigation and Homepage_ to *New experience*. Note that this setting also enables persona-based navigation. For more information, see xref:thoughtspot-homepage.adoc[].
 
