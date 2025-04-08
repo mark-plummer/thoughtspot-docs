@@ -69,7 +69,7 @@ ifdef::pendo-links[]
 xref:thoughtspot-homepage.adoc[Persona-based navigation,window=_blank].
 endif::[]
 
-image::app-switcher.png[Persona-based navigation]
+image::app-switcher-sw.png[Persona-based navigation]
 endif::free-trial-feature[]
 
 [#10-1-0-sw-null]
