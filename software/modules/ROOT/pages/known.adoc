@@ -10,13 +10,36 @@
 These are the known issues in this release of ThoughtSpot Software.
 
 [#releases-10-1-x]
-== 10.1.0.sw known issues
+////
+== 10.1.0.sw.cu1 known issues
 
 [cols="17%,39%,38%"]
 |===
 |Issue ID |Description|Symptoms, conditions, and workaround
 
 |SCAL-220290
+|Filter chips overlap on a chart after clicking the downward-facing arrow to display all filters in Explore mode.
+a|*Symptoms*:
+
+On the homepage, by default the number of views for Liveboards and Answers in the Liveboards & Answers listing section appear as 0. This is a bug which ThoughtSpot is fixing and the fix will be available in a separate patch."
+
+
+*Conditions*:
+
+The Navigation and Homepage is set to _Classic experience_
+
+*Workaround*:
+
+Manually collapse the filter by clicking the upward-facing arrow.
+|===
+////
+== 10.1.0.sw known issues
+
+[cols="17%,39%,38%"]
+|===
+|Issue ID |Description|Symptoms, conditions, and workaround
+
+|SCAL-249562
 |Filter chips overlap on a chart after clicking the downward-facing arrow to display all filters in Explore mode.
 a|*Symptoms*:
 
@@ -63,3 +86,4 @@ Tables with specific columns exist with joins between them. An Answer is generat
 . Export the TML of the Answer using ‘Export Answer & Associated Objects (models, etc.)’.
 . Delete the current Answer.
 . Import the Answer TML zip file. All unused formulas will be removed from the Answers.
+|===

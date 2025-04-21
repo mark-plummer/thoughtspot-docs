@@ -15,6 +15,8 @@
 </style>
 ++++
 
+// ThoughtSpot version 10.1.0.sw.cu1 is now available.
+
 ThoughtSpot version 10.1.0.sw is now available.
 
 These release notes include information about new and enhanced features.
@@ -23,9 +25,18 @@ To see our feature deprecation plans, please see xref:deprecation.adoc[].
 
 For a complete list of known issues in this release, see xref:known.adoc#releases-10-1-x[Known issues].
 
-* <<new-10-1-0,10.1.0.sw New Features and Functionality>>
 * <<upgrade-paths,Supported Upgrade Paths>>
+////
+[#new-10-1-0-cu1]
+== 10.1.0.sw.cu1 New Features and Functionality
 
+// Mark – SCAL-216879.
+Manage tags for Answers and Liveboards::
+You can now manage all your Answer and Liveboard tags from one convenient window. Just click the *Manage tags* button at the top of your list of Liveboards or Answers, then create, edit, and delete tags. To delete and edit tags you must have administrator privileges or the _can manage tags_ role if RBAC is enabled.
++
+For more information, see
+xref:tags.adoc[Use tags to organize].
+////
 [#new-10-1-0]
 == 10.1.0.sw New Features and Functionality
 
@@ -41,13 +52,6 @@ The following changes to the ThoughtSpot UI are introduced in this release:
 +
 For more information, see xref:scriptability.adoc[Import and export TML files] and xref:tags.adoc[Use tags to organize].
 ****
-
-
-* <<analyst-10-1-0-sw,For the Analyst>>
-* <<business-user-10-1-0-sw,For the Business User>>
-* <<data-engineer-10-1-0-sw,For the Data Engineer>>
-* <<it-ops-engineer-10-1-0-sw,For the IT Ops Engineer>>
-* <<developer-10-1-0-sw,For the Developer>>
 
 [#analyst-10-1-0-sw]
 === For the Analyst
