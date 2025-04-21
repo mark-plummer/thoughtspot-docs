@@ -36,7 +36,7 @@ Explore key features with several short videos. This section contains videos abo
 //View several longer, more in-depth tutorials on how to use specific aspects of the product, and revisit walkthroughs for new areas of the product. This section contains a button to restart the home page tour, a short keyword reference, and in-depth videos about joins, Worksheets, and formulas.
 
 What's new::
-View short summaries for each new feature in the release your cluster is running. This pop-up appears when you first sign in to ThoughtSpot after an upgrade to a new release. You can revisit the pop-up here.
+View short summaries for each new feature in the release your instance is running. This pop-up appears when you first sign in to ThoughtSpot after an upgrade to a new release. You can revisit the pop-up here.
 
 About ThoughtSpot:: Find your ThoughtSpot version. Open this option to see your current ThoughtSpot version and to access the version's release notes.
 
