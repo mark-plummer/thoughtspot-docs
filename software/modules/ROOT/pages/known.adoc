@@ -10,27 +10,27 @@
 These are the known issues in this release of ThoughtSpot Software.
 
 [#releases-10-1-x]
-////
+///
 == 10.1.0.sw.cu1 known issues
 
 [cols="17%,39%,38%"]
 |===
 |Issue ID |Description|Symptoms, conditions, and workaround
 
-|SCAL-220290
-|Filter chips overlap on a chart after clicking the downward-facing arrow to display all filters in Explore mode.
+|SCAL-249562
+|Classic homepage displays `0` _Views_ by default for Liveboards and Answers.
 a|*Symptoms*:
 
-On the homepage, by default the number of views for Liveboards and Answers in the Liveboards & Answers listing section appear as 0. This is a bug which ThoughtSpot is fixing and the fix will be available in a separate patch."
+The _Views_ column on the homepage displays the number `0` by default for Liveboards and Answers.
 
 
 *Conditions*:
 
-The Navigation and Homepage is set to _Classic experience_
+The Navigation and Homepage is set to _Classic experience_ in the user's profile.
 
 *Workaround*:
 
-Manually collapse the filter by clicking the upward-facing arrow.
+None.
 |===
 ////
 == 10.1.0.sw known issues
