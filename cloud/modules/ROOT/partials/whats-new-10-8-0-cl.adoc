@@ -299,7 +299,7 @@ ThoughtSpot introduces a brand new pivot table chart. The new pivot table charts
 * Faster load times with pagination.
 //* You can now expand and collapse all in pivot tables.
 * We now support custom sort order.
-* You can now adjust _column_ widths.
+* You can now adjust column widths.
 * You can now slice with measures and attributes.
 * You can now use values for more granular control in configurations.
 
