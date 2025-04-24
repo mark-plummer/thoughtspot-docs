@@ -1,16 +1,16 @@
 = Known issues
 :keywords: known issues
-:last_updated: 11/12/2024
+:last_updated: 4/23/2025
 :experimental:
 :page-layout:
 :linkattrs:
 :description: These are the known issues in recent ThoughtSpot Software releases.
 :jira: SCAL-232281
 
-These are the known issues in this release of ThoughtSpot Software.
+These are the known issues in these releases of ThoughtSpot Software.
 
 [#releases-10-1-x]
-///
+
 == 10.1.0.sw.cu1 known issues
 
 [cols="17%,39%,38%"]
@@ -32,7 +32,7 @@ The Navigation and Homepage is set to _Classic experience_ in the user's profile
 
 None.
 |===
-////
+
 == 10.1.0.sw known issues
 
 [cols="17%,39%,38%"]
