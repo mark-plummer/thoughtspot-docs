@@ -37,7 +37,7 @@ For more information, see
 xref:tags.adoc[Use tags to organize].
 
 // Mark – SCAL-216879.
-Org name filter added to system Liveboards::
+Org Name filter added to system Liveboards::
 The Org Name filter has been added to the following system Liveboards:
 
 - User Adoption
