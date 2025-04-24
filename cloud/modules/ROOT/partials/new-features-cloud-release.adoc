@@ -151,8 +151,10 @@ For more information, see xref:spotter-conversations-liveboard.adoc[Spotter Conv
 ClickHouse connection [.badge.badge-early-access-relnotes]#Early Access#:: You can now create connections from ThoughtSpot to ClickHouse. To enable this feature, contact your administrator. For more information, see
 xref:connections-clickhouse.adoc[ClickHouse].
 
-// Naomi. jira: SCAL-222174 docs jira: SCAL-240422
-Optimize data model for Spotter:: You can now optimize your data model for Spotter directly from the data model page. This option allows you to enable indexing easily, ensuring accurate searches on specific column values. Improve query precision and performance with a single click.
+// Mark. jira: SCAL-222174. docs jira: SCAL-232768, SCAL-240422
+// PM: Anant
+Suggest indexing of columns for Spotter::
+In this release, we introduce *Optimize for Spotter*. It is an easier way of indexing the Worksheet and Model attribute columns required for accurate searches on specific column values in Spotter. After enabling Sage on a Worksheet or Model and clicking the *Optimize for Spotter* button, ThoughtSpot detects which columns are not indexed and allows you to index the ones you need for Spotter. For more information, see xref:spotter-worksheet-model.adoc#optimize-spotter[Optimize for Spotter].
 
 // Naomi. jira: SCAL-147895. docs jira: SCAL-240697
 User-defined ID in TML [.badge.badge-beta-relnotes]#Beta#:: Rather than using a system-generated GUID to identify individual objects in TML files, you can now manually set an object property (`obj_id`) with a uniqueness constraint on the Org level. This allows you to manage content across multiple Orgs without having to manually change the GUID of an object each time you move it between Orgs. To enable this feature, contact {support-url}.
@@ -211,4 +213,3 @@ Row counts connection configuration [.badge.badge-early-access-relnotes]#Early A
 ThoughtSpot now allows you to assign different configurations when creating a connection, to run row count stats and keep them separate from other process and user queries. Use this feature to help with auditing and tracking your cloud data warehouse usage by user and process. Optimize costs by assigning the right resources to the right process and users.
 +
 To enable this feature, contact your administrator.
-
