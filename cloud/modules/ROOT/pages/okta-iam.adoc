@@ -71,6 +71,7 @@ NOTE: If users forget their username that is required for the *Forgot Password* 
 . To validate local account migration,
 create a user in ThoughtSpot and validate that user creation is successful.
 
+
 === Customers with SAML and local accounts
 After migration, authentication will continue as normal for customers with IAM configured.
 Complete the following steps to migrate to IAM V2.
