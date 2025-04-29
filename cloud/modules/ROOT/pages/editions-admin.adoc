@@ -1,5 +1,5 @@
 = Administration in ThoughtSpot editions
-:last_updated: 4/24/2024
+:last_updated: 4/29/2025
 :linkattrs:
 :experimental:
 :page-layout: default-cloud
@@ -73,6 +73,8 @@ This article provides information about the capabilities administrators have in 
 
 == Application settings by edition
 
+The following table shows which application settings for each edition that an administrator can change, and the ones that are set globally by ThoughtSpot.
+
 [cols="20%,20%,20%,20%,20%" stripes="even"]
 |===
 .^|Capability ^.^|Team and Essentials +++<br>+++ (multi-tenant) ^.^|Pro +++<br>+++ (multi-tenant) ^.^|Pro ^.^|Enterprise
@@ -132,9 +134,9 @@ This article provides information about the capabilities administrators have in 
 ^.^|image:checkmark_black.svg[Yes,15]
 |===
 
-+*+ _Enabled, but not configurable by customer._
++*+ _Enabled and set globally by ThoughtSpot._
 
-+#+ _Included in consumption plans, per user. Available as an add-on for other plans._
++#+ _Changeable by ThoughtSpot administrator if the customer has licensed ThoughtSpot on a query consumption plan, per-user plan, or if the Spotter add-on has been purchased._
 
 == Application settings for Pro multi-tenant customers
 
